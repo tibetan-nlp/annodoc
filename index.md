@@ -44,6 +44,13 @@ T1 PERSON 0 11 Barack Obama
 T2 PERSON 12 15 Donal Trump 
 ~~~
 
+~~~ ann
+ཁྱོད་ལ་དེ་ཀུན་གང་ནས་བྱུང་གསུང་བས།
+T1 PERSON 0 7 Doug
+T2 PERSON 8 12 Tom
+T3 PERSON 15 22 Frank
+~~~
+
 <span style="float:right;font-size:75%;opacity:0.5">(Not seeing a visualization above? See <a href="#troubleshooting">troubleshooting</a>)</span>
 
 </div>
