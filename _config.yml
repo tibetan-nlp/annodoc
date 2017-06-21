@@ -30,3 +30,5 @@ collections:
     output: true
   relation:
     output: true
+
+theme: jekyll-theme-cayman
