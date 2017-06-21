@@ -39,8 +39,9 @@ For example, consider the following fragment of documentation
 Mentions of person names are annotated as [PERSON]()
 
 ~~~ ann
-Barack Obama is the current president.
-T1 PERSON 0 12 Barack Obama
+BarackObamaisthecurrentpresident.
+T1 PERSON 0 11 Barack Obama
+T2 PERSON 12 15 Donal Trump 
 ~~~
 
 <span style="float:right;font-size:75%;opacity:0.5">(Not seeing a visualization above? See <a href="#troubleshooting">troubleshooting</a>)</span>
