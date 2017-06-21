@@ -368,20 +368,22 @@ by the following example:
 gives
 
 ~~~ conllx
-1       གང་     གང་√p   PRON    p.interrog      PronType=Int    1       _       _       _
-2       ཞིག་     ཅིག་√d   DET     d.indef PronType=Ind    1       det     _       _
-3       ཐུགས་བསྐྱད་དགེ་ཚོགས་བདུད་རྩི    ཐུགས་བསྐྱད་དགེ་ཚོགས་བདུད་རྩི་   NOUN    n.count Number=Sing     3       _       _       _
-4       འི་      གྱི་√case ADP     case.gen        _       3       case    _       _
-5       ཟས་ཅན་  ཟས་ཅན་  NOUN    n.count Number=Sing     5       _       _       _
-6       ལས་     ལས་√case        ADP     case.abl        _       5       case    _       _
-7       བྱུང་     འབྱུང་    VERB    v.past  Tense=Past      7       _       _       _
-8       བརྣག་དཀ  བརྣག་དཀ་ NOUN    n.count Number=Sing     8       _       _       _
-9       འི་      གྱི་√case ADP     case.gen        _       8       case    _       _
-10      བཟོད་པ   བཟོད་    VERB    n.v.invar       VerbForm=Vnoun  10      _       _       _
-11      ས་      གྱིས་√case        ADP     case.agn        _       11      _       _       _
-12      གཟི་དཔལ་ གཟི་དཔལ་ NOUN    n.count Number=Sing     12      _       _       _
-13      འབར་བ   འབར་    VERB    n.v.fut.n.v.pres        Tense=Fut,Pres|VerbForm=Vnoun   13      _       _       _
-14      །       །       PUNCT   punc    _       13      punct   _       _
+1       དོན་     དོན་     NOUN    n.count Number=Sing     _       _       _       _
+2       གཉིས་    གཉིས་    NUM     num.card        NumType=Card|NumForm=Word       _       _       _       _
+3       མཐ      མཐའ་    NOUN    n.rel   NounType=Rel    _       _       _       _
+4       ར་      དུ་√case ADP     case.term       _       _       _       _       _
+5       ཕྱིན་     _       VERB    v.past  Tense=Past      _       _       _       [འགྲོ་][ཕྱིན་]
+6       ཀུན་མཁྱེན་སྦྲམ་རྩི་    ཀུན་མཁྱེན་སྦྲམ་རྩི་    NOUN    n.count Number=Sing     _       _       _       _
+7       ཀུན་     ཀུན་√d   DET     d.plural        Number=Plur     6       det     _       _
+8       ནས་     ནས་√case        ADP     case.ela        _       6       case    _       _
+9       སྐྲན་བྱེད་  སྐྲན་བྱེད་  NOUN    n.count Number=Sing     _       _       _       _
+10      ནམ་མཁ   ནམ་མཁའ་ NOUN    n.count Number=Sing     _      _       _       _
+11      འི་      གྱི་√case ADP     case.gen        _       10      case    _       _
+12      ནོར་བུ་   ནོར་བུ་   NOUN    n.mass  Number=Coll     _      _       _       _
+13      རྒྱལ་བ་   རྒྱལ་བ་   NOUN    n.count Number=Sing     _      _       _       _
+14      རྒྱལ་     རྒྱལ་     VERB    v.imp   Mood=Imp        _      _       _       _
+15      ཅིག      ཅིག་√cv  PART    cv.imp  Mood=Imp        14      discourse       _       _
+16      །       །       PUNCT   punc    _       14      punct   _       _
 ~~~
 
 ~~~ conllx
