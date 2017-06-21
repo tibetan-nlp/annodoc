@@ -368,25 +368,6 @@ by the following example:
 gives
 
 ~~~ conllx
-1       དོན་     དོན་     NOUN    _ Number=Sing     _       _       _       _
-2       གཉིས་    གཉིས་    NUM     _        NumType=Card|NumForm=Word       _       _       _       _
-3       མཐ      མཐའ་    NOUN    _   NounType=Rel    _       _       _       _
-4       ར་      དུ་√case ADP     _       _       _       _       _       _
-5       ཕྱིན་     _       VERB    _  Tense=Past      _       _       _       [འགྲོ་][ཕྱིན་]
-6       ཀུན་མཁྱེན་སྦྲམ་རྩི་    ཀུན་མཁྱེན་སྦྲམ་རྩི་    NOUN    _ Number=Sing     _       _       _       _
-7       ཀུན་     ཀུན་√d   DET     _        Number=Plur     6       det     _       _
-8       ནས་     ནས་√case        ADP     _        _       6       case    _       _
-9       སྐྲན་བྱེད་  སྐྲན་བྱེད་  NOUN    _ Number=Sing     _       _       _       _
-10      ནམ་མཁ   ནམ་མཁའ་ NOUN    _ Number=Sing     _      _       _       _
-11      འི་      གྱི་√case ADP     _        _       10      case    _       _
-12      ནོར་བུ་   ནོར་བུ་   NOUN    _  Number=Coll     _      _       _       _
-13      རྒྱལ་བ་   རྒྱལ་བ་   NOUN    _ Number=Sing     _      _       _       _
-14      རྒྱལ་     རྒྱལ་     VERB    _   Mood=Imp        _      _       _       _
-15      ཅིག      ཅིག་√cv  PART    _  Mood=Imp        14      discourse       _       _
-16      །       །       PUNCT   _    _       14      punct   _       _
-~~~
-
-~~~ conllx
 1    Dogs   dog    _    NNS    _    2    nsubj
 2    run    run    _    VBP    _    0    ROOT
 ~~~
@@ -401,6 +382,15 @@ Finally, parses in the CoNLL-U format can be embedded as shown below:
 
 resulting in
 
+~~~ conllu
+1       བཅོམ་ལྡན་འདས་     བཅོམ་ལྡན་འདས་     NOUN    n.count Number=Sing     _       _       _       SpaceAfter=No
+2       ཤཱཀྱ་སེང་གེ་        ཤཱཀྱ་སེང་གེ་        PROPN   n.prop  _       _       _       _       SpaceAfter=No
+3       ལ་      ལ་√case ADP     case.all        _       2       case    _       SpaceAfter=No
+4       ཕྱག་     ཕྱག་     NOUN    n.count Number=Sing     _       _       _       SpaceAfter=No
+5       འཚལ་    _       VERB    v.fut.v.pres    Tense=Fut,Pres  _       _       _       SpaceAfter=No|[འཚལ་√1][འཚལ་√2]
+6       ལོ       འོ་√cv   PART    cv.fin  Mood=Ind        5       discourse       _       SpaceAfter=No
+7       །       །       PUNCT   punc    _       5       punct   _       _
+~~~
 
 ~~~ conllu
 1    They    they    PRON    PRN    Case=Nom|Num=Plur            2    nsubj    _    _
