@@ -65,28 +65,6 @@ T8	PUNCT 34 35	།
 R8	punct Arg1:T7 Arg2:T8
 ~~~
 
-~~~ ann
-ངོ་མཚར་དོན་  
-གྱི་      གྱི་√case ADP     case.gen        _       1       case    _       _
-རིན་ཆེན་  རིན་ཆེན་  NOUN    n.mass  Number=Coll     3       _       _       _
-ཅི       ཅི་√p    PRON    p.interrog      PronType=Int    4       _       _       _
-ས་      གྱིས་√case        ADP     case.agn        _       4       case    _       _
-མི་      མི་√neg  PART    neg     Polarity=Neg    7       advmod  _       _
-རྙེད      རྙེད་     VERB    v.fut.v.pres    Tense=Fut,Pres  7       _       _       _
-།       །       PUNCT   punc    _       7       punct   _       _
-
-~~~
-
-~~~ conllu
-1       ངོ་མཚར་དོན་       ངོ་མཚར་དོན་       NOUN    n.count Number=Sing     1       _       _       _
-2       གྱི་      གྱི་√case ADP     case.gen        _       1       case    _       _
-3       རིན་ཆེན་  རིན་ཆེན་  NOUN    n.mass  Number=Coll     3       _       _       _
-4       ཅི       ཅི་√p    PRON    p.interrog      PronType=Int    4       _       _       _
-5       ས་      གྱིས་√case        ADP     case.agn        _       4       case    _       _
-6       མི་      མི་√neg  PART    neg     Polarity=Neg    7       advmod  _       _
-7       རྙེད      རྙེད་     VERB    v.fut.v.pres    Tense=Fut,Pres  7       _       _       _
-8       །       །       PUNCT   punc    _       7       punct   _       _
-~~~
 <span style="float:right;font-size:75%;opacity:0.5">(Not seeing a visualization above? See <a href="#troubleshooting">troubleshooting</a>)</span>
 
 </div>
