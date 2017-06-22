@@ -45,12 +45,39 @@ T2 PERSON 11 14 Donal Trump
 ~~~
 
 ~~~ ann
-ཁྱོད་ལ་དེ་ཀུན་གང་ནས་བྱུང་གསུང་བས།
-T1 PERSON 0 7 Doug
-T2 PERSON 7 10 Tom
-T3 PERSON 10 13 Frank
+ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
+T1	NOUN 0 11
+T2	ADP 11 15
+T3	NOUN 15 23
+T4	PRON 23 25
+T5	ADP 25 26
+T6	PART 26 29
+T7	VERB 29 33
+T8	PUNCT 33 34
 ~~~
 
+~~~ ann
+ངོ་མཚར་དོན་  
+གྱི་      གྱི་√case ADP     case.gen        _       1       case    _       _
+རིན་ཆེན་  རིན་ཆེན་  NOUN    n.mass  Number=Coll     3       _       _       _
+ཅི       ཅི་√p    PRON    p.interrog      PronType=Int    4       _       _       _
+ས་      གྱིས་√case        ADP     case.agn        _       4       case    _       _
+མི་      མི་√neg  PART    neg     Polarity=Neg    7       advmod  _       _
+རྙེད      རྙེད་     VERB    v.fut.v.pres    Tense=Fut,Pres  7       _       _       _
+།       །       PUNCT   punc    _       7       punct   _       _
+
+~~~
+
+~~~ conllu
+1       ངོ་མཚར་དོན་       ངོ་མཚར་དོན་       NOUN    n.count Number=Sing     1       _       _       _
+2       གྱི་      གྱི་√case ADP     case.gen        _       1       case    _       _
+3       རིན་ཆེན་  རིན་ཆེན་  NOUN    n.mass  Number=Coll     3       _       _       _
+4       ཅི       ཅི་√p    PRON    p.interrog      PronType=Int    4       _       _       _
+5       ས་      གྱིས་√case        ADP     case.agn        _       4       case    _       _
+6       མི་      མི་√neg  PART    neg     Polarity=Neg    7       advmod  _       _
+7       རྙེད      རྙེད་     VERB    v.fut.v.pres    Tense=Fut,Pres  7       _       _       _
+8       །       །       PUNCT   punc    _       7       punct   _       _
+~~~
 <span style="float:right;font-size:75%;opacity:0.5">(Not seeing a visualization above? See <a href="#troubleshooting">troubleshooting</a>)</span>
 
 </div>
