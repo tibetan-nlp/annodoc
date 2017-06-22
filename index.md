@@ -41,7 +41,7 @@ Mentions of person names are annotated as [PERSON]()
 ~~~ ann
 BarackObamaisthecurrentpresident.
 T1 PERSON 0 11 Barack Obama
-T2 PERSON 12 15 Donal Trump 
+T2 PERSON 11 14 Donal Trump 
 ~~~
 
 ~~~ ann
