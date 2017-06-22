@@ -58,8 +58,8 @@ omitting others.
 - PRON -> **p**
 - X -> **X**
 
-Since open class words such as nouns can be linked to predicates as 
-their arguments, we retain most open class word tags, leaving them capitalized 
+Open class words such as nouns can be linked to predicates as 
+their arguments, and so we retain most open class word tags, leaving them capitalized 
 but abbreviating them to one character. 
 As for closed class words, we include only those categories - determiners,
 numerals, and pronouns - which can "head" a noun phrase in the absence of
@@ -70,11 +70,13 @@ annotation, their tags may be omitted from the user interface.
 ### Annotating function words
 
 By excluding closed class categories such as case markers (ADP) and 
-converbs (SCONJ), the above method is unable to capture the manner in which
+converbs (SCONJ), the above approach is unable to capture the manner in which
 a predicate's arguments are introduced, and therefore incapable of profiling
 the valency of a predicate, or its change in valency over time. Therefore, it is 
 also necessary to add dependency relations between these function
-words and the content words they depend on.
+words and the content words they depend on. In this way we can capture the fact
+that a verbal argument is marked with agentive case on one occasion, but left
+unmarked on another occasion.
 
 We will achieve this objective with a second, semi-automated sweep through the data.
 This sweep will link numerals, determiners, and case markers (ADP) to the nouns they 
