@@ -65,7 +65,7 @@ their arguments, we retain most open class word tags, leaving them capitalized
 but abbreviating them to one character. 
 As for closed class words, we include only those categories - determiners,
 numerals, and pronouns - which can "head" a noun phrase in the absence of
-a head noun. Other closed class categories - such as adpositions - never 
+a head noun. Other closed class categories - such as case markers (ADP) - never 
 occur on their own, and therefore for the purposes of predicate-argument
 annotation, their tags may be omitted from the user interface.
 
@@ -74,11 +74,14 @@ annotation, their tags may be omitted from the user interface.
 By excluding closed class categories such as case markers (ADP) and 
 converbs (SCONJ), the above method is unable to capture the manner in which
 a predicate's arguments are introduced, and therefore incapable of profiling
-the valency of a predicate, or its valency change over time. Therefore, it is 
+the valency of a predicate, or its change in valency over time. Therefore, it is 
 also necessary to add dependency relations between these function
 words and the content words they depend on.
 
-We achieve this objective with a second, semi-automated sweep through the data.
+We will achieve this objective with a second, semi-automated sweep through the data.
+This sweep will link numerals, determiners, and case markers (ADP) to the nouns they 
+depend on, and also link converbs (SCONJ) and final particles to the verbs they
+depend on. Human adjudication will be required to confirm the accuracy of this sweep.
 
 ~~~ ann
 ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
