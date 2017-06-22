@@ -1,12 +1,34 @@
 ---
 layout: entry
-title: Annodoc annotation documentation support system
+title: Lexicography in Motion - Annotation Documentation 
 ---
 
-This is a page of documentation created using the Annodoc
-system. It serves a double purpose as *documentation* for the Annodoc
-system and as a *template* that you can use as a starting point for
-creating your own documentation using annodoc.
+This page provides documentation on the annotation scheme for
+Tibetan language texts used by
+the project *Lexicography in Motion* based at SOAS in London and
+LMU Munich.
+
+The project is focused on verbs, with the annotation of predicate-argument structure
+a key objective. In the process, we hope also to build a dependency corpus for
+Tibetan that will be contributed to the [Universal Dependencies](http://universaldependencies.org/)
+project.
+
+Our annotation guidelines follow the UD project in privileging content words over
+function words. Instead of linking a predicate to the function word (for example, the case
+marker) that marks its argument, we link the predicate to the content head word (for example,
+the noun) of the argument. Function words then depend on the content words which they "modify".
+
+According to the UD project, there is an advantage to this position:
+
+> Preferring content words as heads maximizes parallelism between languages because content words vary less than function words between languages. In particular, one commonly finds the same grammatical relation being expressed by morphology in some languages or constructions and by function words in other languages or constructions, while some languages may not mark the information at all (such as not marking tense or definiteness).
+
+The advantage might be seen equally, however, when investigating a single language from
+a diachronic perspective. Since our project examines predicate-argument structure in Old,
+Classical, and Modern Tibetan, a period spanning more than a century, there are likely also
+to be changes in argument marking over time, with one case marker being preferred at one
+stage of the language, and another at another stage. Viewing predicate-argument annotation
+as a relation between content words allows us to both abstract over such differences and
+to describe those differences in a systematic way. 
 
 ## Table of contents
 
