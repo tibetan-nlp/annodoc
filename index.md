@@ -54,6 +54,19 @@ T4	PR 23 25	ཅི
 A4a	PronType T4 Int
 T7	V 30 34	རྙེད
 A7a	Tense T7 Fut,Pres
+E1	V:T7 Arg1:T4 Arg2:T3
+~~~
+
+~~~ ann
+ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
+T1	N 0 11	ངོ་མཚར་དོན་
+A1a	Number T1 Sing
+T3	N 15 23	རིན་ཆེན་
+A3a	Number T3 Coll	
+T4	PR 23 25	ཅི
+A4a	PronType T4 Int
+T7	V 30 34	རྙེད
+A7a	Tense T7 Fut,Pres
 ~~~
 
 ~~~ ann
