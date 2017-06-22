@@ -1,4 +1,4 @@
-Annodoc: annotation documentation support system
-================================================
+Lexicography in Motion Annotation Documentation
+===============================================
 
-Home page: <http://spyysalo.github.io/annodoc>
+See: <https://tibetan-nlp.github.io/lim-annodoc/>
