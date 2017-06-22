@@ -46,6 +46,22 @@ T2 PERSON 11 14 Donal Trump
 
 ~~~ ann
 ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
+T1	N 0 11	ངོ་མཚར་དོན་
+A1a	Number T1 Sing
+T2	c 11 15	གྱི་
+T3	N 15 23	རིན་ཆེན་
+A3a	Number T3 Coll	
+T4	PR 23 25	ཅི
+A4a	PronType T4 Int
+T5	c 25 27	ས་
+T6	p 27 30	མི་
+A6a	Polarity T6 Neg
+T7	V 30 34	རྙེད
+A7a	Tense T7 Fut,Pres
+~~~
+
+~~~ ann
+ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
 T1	NOUN 0 11	ངོ་མཚར་དོན་
 A1a	Number T1 Sing
 T2	ADP 11 15	གྱི་
