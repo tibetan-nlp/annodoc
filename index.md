@@ -22,7 +22,7 @@ The UD project maintains that there is an advantage to this approach:
 
 > Preferring content words as heads maximizes parallelism between languages because content words vary less than function words between languages. In particular, one commonly finds the same grammatical relation being expressed by morphology in some languages or constructions and by function words in other languages or constructions, while some languages may not mark the information at all (such as not marking tense or definiteness).
 
-This advantage could be seen equally when investigating a single language from
+This advantage would also be evident when investigating a single language from
 a diachronic perspective. Since our project examines predicate-argument structure in Old,
 Classical, and Modern Tibetan, a period spanning over one century, there are likely 
 to be changes in argument and predicate marking over time.
