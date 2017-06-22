@@ -4,9 +4,8 @@ title: Lexicography in Motion - Annotation Documentation
 ---
 
 This page provides documentation of the annotation scheme for
-Tibetan language texts used by
-the project *Lexicography in Motion* based at SOAS University of London and 
-LMU Munich.
+Tibetan language texts used by the project *Lexicography in Motion* (LIM) 
+based at SOAS University of London and LMU Munich.
 
 The project is focused on verbs, with the annotation of predicate-argument structure
 a key objective. In the process, we hope to build a dependency corpus for
@@ -23,12 +22,11 @@ The UD project maintains that there is an advantage to this approach:
 > Preferring content words as heads maximizes parallelism between languages because content words vary less than function words between languages. In particular, one commonly finds the same grammatical relation being expressed by morphology in some languages or constructions and by function words in other languages or constructions, while some languages may not mark the information at all (such as not marking tense or definiteness).
 
 This advantage would also be evident when investigating a single language from
-a diachronic perspective. Since our project examines predicate-argument structure in Old,
-Classical, and Modern Tibetan, a period spanning over one century, there are likely 
+a diachronic perspective. LIM examines predicate-argument structure in Old,
+Classical, and Modern Tibetan, a period spanning over one century, and there are likely 
 to be changes in argument and predicate marking over time.
-For example, a particular predicate might mark its agent with one case marker 
-at one stage, and another at another stage.
-Viewing predicate-argument annotation
+A particular predicate might mark its agent with one case marker at one stage, 
+and another at another stage. Viewing predicate-argument annotation
 as a relation between content words allows us to both abstract over such differences and
 to describe them in a systematic way. 
 
