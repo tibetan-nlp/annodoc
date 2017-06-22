@@ -112,6 +112,28 @@ R8	punct Arg1:T7 Arg2:T8
 ~~~
 
 ~~~ ann
+Clevercookie this is whereit is at.Just tell mewhoyouare and I'll get onit.
+T1      NOUN 0 11       ངོ་མཚར་དོན་
+A1a     Number T1 Sing
+T2      ADP 11 15       གྱི་
+R2      case Arg1:T1 Arg2:T2
+T3      NOUN 15 23      རིན་ཆེན་
+A3a     Number T3 Coll
+T4      PRON 23 25      ཅི
+A4a     PronType T4 Int
+T5      ADP 25 27       ས་
+R5      case Arg1:T4 Arg2:T5
+T6      PART 27 30      མི་
+A6a     Polarity T6 Neg
+R6      advmod Arg1:T7 Arg2:T6
+T7      VERB 30 34      རྙེད
+A7a     Tense T7 Fut,Pres
+T8      PUNCT 34 35     །
+R8      punct Arg1:T7 Arg2:T8
+~~~
+
+
+~~~ ann
 ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
 T1	ω 0 11	ངོ་མཚར་དོན་
 A1a	Number T1 Sing
