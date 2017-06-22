@@ -65,6 +65,48 @@ T8	PUNCT 34 35	།
 R8	punct Arg1:T7 Arg2:T8
 ~~~
 
+~~~ ann
+ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
+T1	ω 0 11	ངོ་མཚར་དོན་
+A1a	Number T1 Sing
+T2	ω 11 15	གྱི་
+R2	case Arg1:T1 Arg2:T2
+T3	ω 15 23	རིན་ཆེན་
+A3a	Number T3 Coll	
+T4	ω 23 25	ཅི
+A4a	PronType T4 Int
+T5	ω 25 27	ས་
+R5	case Arg1:T4 Arg2:T5
+T6	ω 27 30	མི་
+A6a	Polarity T6 Neg
+R6	advmod Arg1:T7 Arg2:T6
+T7	ω 30 34	རྙེད
+A7a	Tense T7 Fut,Pres
+T8	ω 34 35	།
+R8	punct Arg1:T7 Arg2:T8
+~~~
+
+~~~ ann
+ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
+T1	μ 0 11	ངོ་མཚར་དོན་
+A1a	Number T1 Sing
+T2	μ 11 15	གྱི་
+R2	case Arg1:T1 Arg2:T2
+T3	μ 15 23	རིན་ཆེན་
+A3a	Number T3 Coll	
+T4	μ 23 25	ཅི
+A4a	PronType T4 Int
+T5	μ 25 27	ས་
+R5	case Arg1:T4 Arg2:T5
+T6	μ 27 30	མི་
+A6a	Polarity T6 Neg
+R6	advmod Arg1:T7 Arg2:T6
+T7	μ 30 34	རྙེད
+A7a	Tense T7 Fut,Pres
+T8	μ 34 35	།
+R8	punct Arg1:T7 Arg2:T8
+~~~
+
 <span style="float:right;font-size:75%;opacity:0.5">(Not seeing a visualization above? See <a href="#troubleshooting">troubleshooting</a>)</span>
 
 </div>
