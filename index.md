@@ -40,32 +40,45 @@ to describe them in a systematic way.
 
 ## Annotation interface
 
-Since we are primarily concerned with annotating predicate-argument
+### Predicate-argument annotation
+
+Since we are concerned primarily with annotating predicate-argument
 structure as a relation between content words, we declutter the user interface
 by simplifying and minimizing the display of part-of-speech tags. First, we use 
 universal POS tags as mapped from the [SOAS system](http://larkpie.net/tibetancorpus/tags).
 Second, for the purposes of the annotation interface, we use shortened versions of
-some [universal POS tags](http://universaldependencies.org/u/pos/all.html), and 
-leave out the others.
+some [universal POS tags](http://universaldependencies.org/u/pos/all.html), while 
+omitting others.
 
-- **A**: ADJ
-- **AV**: ADV
-- **N**: NOUN
-- **PN**: PROPN
-- **V**: VERB
-- **d**: DET
-- **n**: NUM
-- **p**: PRON
-- **X**: X
+- ADJ -> **A**
+- ADV -> **D**
+- NOUN -> **N** (excluding *n.rel*)
+- PROPN -> **P**
+- VERB -> **V**
+- DET -> **d** (only *d.dem*)
+- NUM -> **n**
+- PRON -> **p**
+- X -> **X**
 
 Since open class words such as nouns can be linked to predicates as 
-their arguments, we retain most content word tags, leaving them capitalized 
-but abbreviating them to one character if possible. 
+their arguments, we retain most open class word tags, leaving them capitalized 
+but abbreviating them to one character. 
 As for closed class words, we include only those categories - determiners,
 numerals, and pronouns - which can "head" a noun phrase in the absence of
 a head noun. Other closed class categories - such as adpositions - never 
 occur on their own, and therefore for the purposes of predicate-argument
-annotation, their tags can be omitted from the user interface.
+annotation, their tags may be omitted from the user interface.
+
+### Annotating function words
+
+By excluding closed class categories such as case markers (ADP) and 
+converbs (SCONJ), the above method is unable to capture the manner in which
+a predicate's arguments are introduced, and therefore incapable of profiling
+the valency of a predicate, or its valency change over time. Therefore, it is 
+also necessary to add dependency relations between these function
+words and the content words they depend on.
+
+We achieve this objective with a second, semi-automated sweep through the data.
 
 ~~~ ann
 ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
