@@ -34,10 +34,38 @@ to describe them in a systematic way.
 
 ## Table of contents
 
+* [Annotation interface](#annotation-interface)
 * [Zero arguments](#zero-arguments)
 * [Multiword expressions](#multiword-expressions)
 
-## Zero arguments 
+## Annotation interface
+
+Since we are primarily concerned with annotating predicate-argument
+structure as a relation between content words, we declutter the user interface
+by simplifying and minimizing the display of part-of-speech tags. First, we use 
+universal POS tags as mapped from the [SOAS system](http://larkpie.net/tibetancorpus/tags).
+Second, for the purposes of the annotation interface, we use shortened versions of
+some [universal POS tags](http://universaldependencies.org/u/pos/all.html), and 
+leave out the others.
+
+- **A**: ADJ
+- **AV**: ADV
+- **N**: NOUN
+- **PN**: PROPN
+- **V**: VERB
+- **d**: DET
+- **n**: NUM
+- **p**: PRON
+- **X**: X
+
+Since open class words such as nouns can be linked to predicates as 
+their arguments, we retain most content word tags, leaving them capitalized 
+but abbreviating them to one character if possible. 
+As for closed class words, we include only those categories - determiners,
+numerals, and pronouns - which can "head" a noun phrase in the absence of
+a head noun. Other closed class categories - such as adpositions - never 
+occur on their own, and therefore for the purposes of predicate-argument
+annotation, their tags can be omitted from the user interface.
 
 ~~~ ann
 ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
@@ -211,9 +239,12 @@ this example is generated from the following input:
 
 * .ann standoff format: <http://brat.nlplab.org/standoff.html>
 
+
+## Zero arguments 
+
 ## Multiword expressions
 
-### .ann standoff format
+## .ann standoff format
 
 This section provides information on the .ann standoff (Ann) format.
 For full documentation, please refer to
