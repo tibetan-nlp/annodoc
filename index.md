@@ -37,7 +37,7 @@ to describe them in a systematic way.
 * [Zero arguments](#zero-arguments)
 * [Multiword expressions](#multiword-expressions)
 
-## Stuff
+## Zero arguments 
 
 ~~~ ann
 ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
@@ -48,6 +48,18 @@ A3a	Number T3 Coll
 T7	V 30 34	རྙེད
 A7a	Tense T7 Fut,Pres
 E1	V:T7 Arg1:T1 Arg2:T3
+~~~
+
+
+~~~ ann
+The rain is reallyinterestingwhat do you thinkabout it I wishIhadanidea!
+T1      N 0 11  ངོ་མཚར་དོན་
+A1a     Number T1 Sing
+T3      N 15 23 རིན་ཆེན་
+A3a     Number T3 Coll
+T7      V 30 34 རྙེད
+A7a     Tense T7 Fut,Pres
+E1      V:T7 Arg1:T1 Arg2:T3
 ~~~
 
 ~~~ ann
@@ -177,8 +189,9 @@ this example is generated from the following input:
 
 * .ann standoff format: <http://brat.nlplab.org/standoff.html>
 
+## Multiword expressions
 
-## .ann standoff format
+### .ann standoff format
 
 This section provides information on the .ann standoff (Ann) format.
 For full documentation, please refer to
