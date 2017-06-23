@@ -83,7 +83,7 @@ T6  p 26 28 སུ་√p
 A6a PronType T6 Int
 T8  V 30 34 འབྲི་√1
 A8a Tense T8 Past
-E1  V:T8 Arg1:T6 Arg2:T5
+E1  V:T8 1:T6 2:T5
 ~~~
 > Who wrote your last testment?
 
