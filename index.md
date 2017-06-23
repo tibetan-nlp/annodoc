@@ -68,8 +68,8 @@ occur on their own, and therefore for the purposes of predicate-argument
 annotation, their tags may be omitted from the user interface.
 
 The following example shows the use of the two-place predicate "write". The writer
-is the best proto-agent and so is marked as *Arg1*. The rightmost of three nominals
-linked by two genitives ('letter') is marked as *Arg2*.
+is the best proto-agent and so is marked as *nsubj*. The rightmost of three nominals
+linked by two genitives ('letter') is marked as *obj*.
 
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
@@ -88,9 +88,6 @@ R2  obj Arg1:T5 Arg2:T8
 ~~~
 > Who wrote your last testment?
 
-
-
-
 ### Annotating function words
 
 By excluding closed class categories such as case markers (ADP) and 
@@ -102,28 +99,21 @@ words and the content words they depend on. In this way we can capture the fact
 that a verbal argument is marked with agentive case on one occasion, but left
 unmarked on another occasion.
 
-We will achieve this objective with a second, semi-automated sweep through the data.
-This sweep will link numerals, determiners, and case markers (ADP) to the nouns they 
+We achieve this objective with a second, semi-automated sweep through the data.
+This sweep links numerals, determiners, and case markers (ADP) to the nouns they 
 depend on, and also link converbs (SCONJ) and final particles to the verbs they
-depend on. Human adjudication will be required to confirm the accuracy of this sweep.
-
-<span style="float:right;font-size:75%;opacity:0.5">(Not seeing a visualization above? See <a href="#troubleshooting">troubleshooting</a>)</span>
-
-</div>
-
-this example is generated from the following input:
-
-    Mentions of person names are annotated as [PERSON]()
-
-    ~~~ ann
-    Barack Obama is the current president.
-    T1 PERSON 0 12 Barack Obama
-    ~~~
-
-* .ann standoff format: <http://brat.nlplab.org/standoff.html>
+depend on. Human adjudication is required to confirm the accuracy of the sweep.
 
 
 ## Zero arguments 
+
+In Tibetan, verbal arguments are often inferred from the context or from previous
+discourse. In the following example, the verb is linked to its object and indirect
+object, but there is no overt subject. Provided that the arguments that do appear
+are annotated as *obj* and *iobj*, then it is not necessary to insert a zero
+element for the missing subject. It is understood that two-place predicates must
+have an *nsubj* argument - therefore, a verb with an *obj* and *iobj* must have
+a missing subject.
 
 ~~~ ann
 ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
@@ -131,14 +121,22 @@ T1  N 0 6  	ཡི་གེ་
 A1a Number T1 Sing
 T3  N 9 14  བླ་མ་
 A3a Number T3 Sing
-T5  V 17 20 འབུལ་
+T5  V 16 19 འབུལ་
 R1  obj Arg1:T1 Arg2:T5
 R2  iobj Arg1:T3 Arg2:T5
 ~~~
 
 > (He) presented the letter to the lama.
 
+The same logic applies to the omission of *obj*. Provided *iobj* is present,
+then *obj* is inferred, since two-place predicates must have an *nsubj* and
+an *obj*.
 
+However, this reasoning does not allow us to distinguish between a three-place
+predicate with a missing *iobj* and a two-place predicate. We do not yet know 
+whether this situation arises in practice - that is, whether or not we will
+need to distinguish, for the same lemma, between two-place and three-place
+valency variants.
 
 ## Multiword expressions
 
