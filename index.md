@@ -21,10 +21,10 @@ The UD project maintains that there is an advantage to this approach:
 
 > Preferring content words as heads maximizes parallelism between languages because content words vary less than function words between languages. In particular, one commonly finds the same grammatical relation being expressed by morphology in some languages or constructions and by function words in other languages or constructions, while some languages may not mark the information at all (such as not marking tense or definiteness).
 
-This advantage would also be evident when investigating a single language from
+This advantage is also be evident when investigating a single language from
 a diachronic perspective. LIM examines predicate-argument structure in Old,
-Classical, and Modern Tibetan, a period spanning over one century, and there are likely 
-to be changes in argument and predicate marking over time.
+Classical, and Modern Tibetan, a period spanning over one century and one that
+witnesses changes in argument and predicate marking over time.
 A particular predicate might mark its agent with one case marker at one stage, 
 and another at another stage. Viewing predicate-argument annotation
 as a relation between content words allows us to both abstract over such differences and
@@ -42,10 +42,12 @@ to describe them in a systematic way.
 Since we are concerned primarily with annotating predicate-argument
 structure as a relation between content words, we declutter the user interface
 by simplifying and minimizing the display of part-of-speech tags. First, we use 
-universal POS tags as mapped from the [SOAS system](http://larkpie.net/tibetancorpus/tags).
+universal POS tags rather than the more verbose SOAS tags. These tags are mapped 
+directly from the [SOAS system](http://larkpie.net/tibetancorpus/tags)
+without any loss of information.
 Second, for the purposes of the annotation interface, we use shortened versions of
 some [universal POS tags](http://universaldependencies.org/u/pos/all.html), while 
-omitting others.
+omitting others entirely from the UI.
 
 - ADJ -> **A**
 - ADV -> **D**
@@ -64,25 +66,24 @@ As for closed class words, we include only those categories - determiners,
 numerals, and pronouns - which can "head" a noun phrase in the absence of
 a head noun. Other closed class categories - such as case markers (ADP) - never 
 occur on their own, and therefore for the purposes of predicate-argument
-annotation, their tags may be omitted from the user interface.
+annotation, their tags may be omitted from the UI.
 
-By excluding closed class categories such as case markers (ADP) and 
+By excluding closed class function words such as case markers (ADP) and 
 converbs (SCONJ), the above approach is unable to capture the manner in which
 a predicate's arguments are introduced, and therefore incapable of profiling
 the valency of a predicate, or its change in valency over time. Therefore, it is 
 also necessary to add dependency relations between these function
-words and the content words they depend on. In this way we can capture the fact
+words and the content words they depend on. In this way, we can capture the fact
 that a verbal argument is marked with agentive case on one occasion, but left
-unmarked on another occasion.
-
-We achieve this objective with a second, semi-automated sweep through the data.
+unmarked on another occasion. We achieve this objective with a second, 
+semi-automated sweep through the data.
 This sweep links numerals, determiners, and case markers (ADP) to the nouns they 
-depend on, and also link converbs (SCONJ) and final particles to the verbs they
+depend on, and also links converbs (SCONJ) and final particles (PART) to the verbs they
 depend on. Human adjudication is required to confirm the accuracy of the sweep.
 
 ## Annotation examples
 
-The following example shows the use of the two-place predicate "write". The writer
+The following example shows a use of the two-place predicate "write". The writer
 is the best proto-agent and so is marked as *nsubj*. The rightmost of three nominals
 linked by two genitives ('letter') is marked as *obj*.
 
@@ -127,12 +128,10 @@ R2  iobj Arg1:T3 Arg2:T5
 
 The same logic applies to the omission of *obj*. Provided *iobj* is present,
 then *obj* is inferred, since two-place predicates must have an *nsubj* and
-an *obj*.
-
-However, this reasoning does not allow us to distinguish between a three-place
-predicate with a missing *iobj* and a two-place predicate. We do not yet know 
-whether this situation arises in practice - that is, whether or not we will
-need to distinguish, for the same lemma, between two-place and three-place
-valency variants.
+an *obj*. Unfortunately, this reasoning does not allow us to distinguish 
+between a three-place predicate with a missing *iobj* and a two-place predicate. 
+We do not yet know  whether this situation arises in practice - that is, 
+whether or not we will need to distinguish, for the same lemma, 
+between two-place and three-place valency variants.
 
 ## Multiword expressions
