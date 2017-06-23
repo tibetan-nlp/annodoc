@@ -134,7 +134,7 @@ A3a Number T3 Sing
 T5  V 17 20 འབུལ་
 R1  obj Arg1:T1 Arg2:T5
 R2  iobj Arg1:T3 Arg2:T5
-~~
+~~~
 
 > (He) presented the letter to the lama.
 
