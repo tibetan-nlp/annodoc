@@ -98,14 +98,18 @@ depend on, and also link converbs (SCONJ) and final particles to the verbs they
 depend on. Human adjudication will be required to confirm the accuracy of this sweep.
 
 ~~~ ann
-ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
-T1	N 0 11	ངོ་མཚར་དོན་
-A1a	Number T1 Sing
-T3	N 15 23	རིན་ཆེན་
-A3a	Number T3 Coll	
-T7	V 30 34	རྙེད
-A7a	Tense T7 Fut,Pres
-E1	V:T7 Arg1:T1 Arg2:T3
+ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
+T1  p 0 5 ཁྱོད་√p
+A1a PronType T1 Prs
+T3  N 9 16  ཁ་ཆེམས་
+A3a Number T3 Sing
+T5  N 20 26 ཡི་གེ་
+A5a Number T5 Sing
+T6  p 26 28 སུ་√p
+A6a PronType T6 Int
+T8  V 30 34 འབྲི་√1
+A8a Tense T8 Past
+E1  V:T8 Arg1:T6 Arg2:T5
 ~~~
 
 
