@@ -67,9 +67,9 @@ a head noun. Other closed class categories - such as case markers (ADP) - never
 occur on their own, and therefore for the purposes of predicate-argument
 annotation, their tags may be omitted from the user interface.
 
-The following example shows a use of the two-place predicate "write". The writer
-is the best proto-agent and so is marked by *nsubj*. The rightmost of three nominals
-linked by two genitives ('letter') is marked by *obj*.
+The following example shows the use of the two-place predicate "write". The writer
+is the best proto-agent and so is marked as *Arg1*. The rightmost of three nominals
+linked by two genitives ('letter') is marked as *Arg2*.
 
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
@@ -83,9 +83,12 @@ T6  p 26 28 སུ་√p
 A6a PronType T6 Int
 T8  V 30 34 འབྲི་√1
 A8a Tense T8 Past
-E1  V:T8 1:T6 2:T5
+R1  nsubj Arg1:T6 Arg2:T8
+R2  obj Arg1:T5 Arg2:T8
 ~~~
 > Who wrote your last testment?
+
+
 
 
 ### Annotating function words
@@ -104,151 +107,6 @@ This sweep will link numerals, determiners, and case markers (ADP) to the nouns 
 depend on, and also link converbs (SCONJ) and final particles to the verbs they
 depend on. Human adjudication will be required to confirm the accuracy of this sweep.
 
-~~~ ann
-The rain is reallyinterestingwhat do you thinkabout it I wishIhadanidea!
-T1      N 0 11  ངོ་མཚར་དོན་
-A1a     Number T1 Sing
-T3      N 15 23 རིན་ཆེན་
-A3a     Number T3 Coll
-T7      V 30 34 རྙེད
-A7a     Tense T7 Fut,Pres
-E1      V:T7 Arg1:T1 Arg2:T3
-~~~
-
-~~~ ann
-ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
-T1	N 0 11	ངོ་མཚར་དོན་
-A1a	Number T1 Sing
-T3	N 15 23	རིན་ཆེན་
-A3a	Number T3 Coll	
-T4	PR 23 25	ཅི
-A4a	PronType T4 Int
-T7	V 30 34	རྙེད
-A7a	Tense T7 Fut,Pres
-~~~
-
-~~~ ann
-ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
-T1	N 0 11	ངོ་མཚར་དོན་
-A1a	Number T1 Sing
-T2	c 11 15	གྱི་
-T3	N 15 23	རིན་ཆེན་
-A3a	Number T3 Coll	
-T4	PR 23 25	ཅི
-A4a	PronType T4 Int
-T5	c 25 27	ས་
-T6	p 27 30	མི་
-A6a	Polarity T6 Neg
-T7	V 30 34	རྙེད
-A7a	Tense T7 Fut,Pres
-~~~
-
-~~~ ann
-ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
-T1	NOUN 0 11	ངོ་མཚར་དོན་
-A1a	Number T1 Sing
-T2	ADP 11 15	གྱི་
-R2	case Arg1:T1 Arg2:T2
-T3	NOUN 15 23	རིན་ཆེན་
-A3a	Number T3 Coll	
-T4	PRON 23 25	ཅི
-A4a	PronType T4 Int
-T5	ADP 25 27	ས་
-R5	case Arg1:T4 Arg2:T5
-T6	PART 27 30	མི་
-A6a	Polarity T6 Neg
-R6	advmod Arg1:T7 Arg2:T6
-T7	VERB 30 34	རྙེད
-A7a	Tense T7 Fut,Pres
-T8	PUNCT 34 35	།
-R8	punct Arg1:T7 Arg2:T8
-~~~
-
-~~~ ann
-Clevercookie this is whereit is at.Just tell mewhoyouare and I'll get onit.
-T1      NOUN 0 11       ངོ་མཚར་དོན་
-A1a     Number T1 Sing
-T2      ADP 11 15       གྱི་
-R2      case Arg1:T1 Arg2:T2
-T3      NOUN 15 23      རིན་ཆེན་
-A3a     Number T3 Coll
-T4      PRON 23 25      ཅི
-A4a     PronType T4 Int
-T5      ADP 25 27       ས་
-R5      case Arg1:T4 Arg2:T5
-T6      PART 27 30      མི་
-A6a     Polarity T6 Neg
-R6      advmod Arg1:T7 Arg2:T6
-T7      VERB 30 34      རྙེད
-A7a     Tense T7 Fut,Pres
-T8      PUNCT 34 35     །
-R8      punct Arg1:T7 Arg2:T8
-~~~
-
-
-~~~ ann
-ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
-T1	ω 0 11	ངོ་མཚར་དོན་
-A1a	Number T1 Sing
-T2	ω 11 15	གྱི་
-R2	case Arg1:T1 Arg2:T2
-T3	ω 15 23	རིན་ཆེན་
-A3a	Number T3 Coll	
-T4	ω 23 25	ཅི
-A4a	PronType T4 Int
-T5	ω 25 27	ས་
-R5	case Arg1:T4 Arg2:T5
-T6	ω 27 30	མི་
-A6a	Polarity T6 Neg
-R6	advmod Arg1:T7 Arg2:T6
-T7	ω 30 34	རྙེད
-A7a	Tense T7 Fut,Pres
-T8	ω 34 35	།
-R8	punct Arg1:T7 Arg2:T8
-~~~
-
-~~~ ann
-ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
-T1	μ 0 11	ངོ་མཚར་དོན་
-A1a	Number T1 Sing
-T2	μ 11 15	གྱི་
-R2	case Arg1:T1 Arg2:T2
-T3	μ 15 23	རིན་ཆེན་
-A3a	Number T3 Coll	
-T4	μ 23 25	ཅི
-A4a	PronType T4 Int
-T5	μ 25 27	ས་
-R5	case Arg1:T4 Arg2:T5
-T6	μ 27 30	མི་
-A6a	Polarity T6 Neg
-R6	advmod Arg1:T7 Arg2:T6
-T7	μ 30 34	རྙེད
-A7a	Tense T7 Fut,Pres
-T8	μ 34 35	།
-R8	punct Arg1:T7 Arg2:T8
-~~~
-
-~~~ ann
-ངོ་མཚར་དོན་གྱི་རིན་ཆེན་ཅིས་མི་རྙེད།
-T1	. 0 11	ངོ་མཚར་དོན་
-A1a	Number T1 Sing
-T2	. 11 15	གྱི་
-R2	case Arg1:T1 Arg2:T2
-T3	. 15 23	རིན་ཆེན་
-A3a	Number T3 Coll	
-T4	. 23 25	ཅི
-A4a	PronType T4 Int
-T5	. 25 27	ས་
-R5	case Arg1:T4 Arg2:T5
-T6	. 27 30	མི་
-A6a	Polarity T6 Neg
-R6	advmod Arg1:T7 Arg2:T6
-T7	. 30 34	རྙེད
-A7a	Tense T7 Fut,Pres
-T8	. 34 35	།
-R8	punct Arg1:T7 Arg2:T8
-~~~
-
 <span style="float:right;font-size:75%;opacity:0.5">(Not seeing a visualization above? See <a href="#troubleshooting">troubleshooting</a>)</span>
 
 </div>
@@ -266,6 +124,21 @@ this example is generated from the following input:
 
 
 ## Zero arguments 
+
+~ ann
+ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
+T1  N 0 6  	ཡི་གེ་
+A1a Number T1 Sing
+T3  N 9 14  བླ་མ་
+A3a Number T3 Sing
+T5  V 17 20 འབུལ་
+R1  obj Arg1:T1 Arg2:T5
+R2  iobj Arg1:T3 Arg2:T5
+~~
+
+> (He) presented the letter to the lama.
+
+
 
 ## Multiword expressions
 
