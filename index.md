@@ -125,7 +125,7 @@ this example is generated from the following input:
 
 ## Zero arguments 
 
-~ ann
+~~~ ann
 ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
 T1  N 0 6  	ཡི་གེ་
 A1a Number T1 Sing
