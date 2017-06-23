@@ -67,6 +67,10 @@ a head noun. Other closed class categories - such as case markers (ADP) - never
 occur on their own, and therefore for the purposes of predicate-argument
 annotation, their tags may be omitted from the user interface.
 
+The following example shows a use of the two-place predicate "write". The writer
+is the best proto-agent and so is marked by *nsubj*. The rightmost of three nominals
+linked by two genitives ('letter') is marked by *obj*.
+
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
 T1  p 0 5 ཁྱོད་√p
@@ -79,7 +83,10 @@ T6  p 26 28 སུ་√p
 A6a PronType T6 Int
 T8  V 30 34 འབྲི་√1
 A8a Tense T8 Past
+E1  V:T8 Arg1:T6 Arg2:T5
 ~~~
+> Who wrote your last testment?
+
 
 ### Annotating function words
 
@@ -96,22 +103,6 @@ We will achieve this objective with a second, semi-automated sweep through the d
 This sweep will link numerals, determiners, and case markers (ADP) to the nouns they 
 depend on, and also link converbs (SCONJ) and final particles to the verbs they
 depend on. Human adjudication will be required to confirm the accuracy of this sweep.
-
-~~~ ann
-ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
-T1  p 0 5 ཁྱོད་√p
-A1a PronType T1 Prs
-T3  N 9 16  ཁ་ཆེམས་
-A3a Number T3 Sing
-T5  N 20 26 ཡི་གེ་
-A5a Number T5 Sing
-T6  p 26 28 སུ་√p
-A6a PronType T6 Int
-T8  V 30 34 འབྲི་√1
-A8a Tense T8 Past
-E1  V:T8 Arg1:T6 Arg2:T5
-~~~
-
 
 ~~~ ann
 The rain is reallyinterestingwhat do you thinkabout it I wishIhadanidea!
