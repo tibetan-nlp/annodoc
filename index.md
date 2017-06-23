@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: Lexicography in Motion - Annotation Documentation 
+title: Lexicography in Motion Annodoc
 ---
 
 This page provides documentation of the annotation scheme for
