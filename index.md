@@ -106,11 +106,13 @@ argument labeling policy; if nominals in two different sentences with the same v
 bear the same argument relation to that verb, then they should depend on the verb
 in the same way.
 
-The main difficulty is that most verbal arguments can be omitted and inferred
-by context. Therefore if a verb occurs with one overt argument, it could have
-anywhere from one to three arguments (assuming a maximum of three core arguments).
-It would be a recipe for disaster if our annotation scheme failed to distinguish
-these distinct scenarios. 
+We use three depedency relations for core arguments, adopting the labeling of the
+UD project. The most agentive argument is labeled `nsubj`, the second argument
+(often a patient) is labeled `obj`, and the third argument is labeled `iobj`.
+It is understood, furthermore, that the second and third arguments rely on the
+existence of the first and second, respectively. Therefore, there is no `obj`
+without an `nsubj`, and no `iobj` without an `obj`. This becomes important
+when considering sentences with [missing arguments](#missing-arguments).
 
 ## Annotation examples
 
