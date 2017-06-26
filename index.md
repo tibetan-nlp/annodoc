@@ -45,14 +45,14 @@ lexicographer.
 * [Annotation examples](#annotation-examples)
   * [Three-place predicates](#three-place-predicates)
   * [Two-place predicates](#two-place-predicates)
-  * [Intransitive predicates](#intransitive-predicates)
+  * [One-place predicates](#one-place-predicates)
   * [Missing arguments](#missing-arguments)
 * [Multiword expressions](#multiword-expressions)
 
 ## Introduction
 
 The examples below are drawn from Old (OT), Classical (CT) and
-Modern Tibetan (MT). Each example is cited with its stage and source..
+Modern Tibetan (MT). Each example is cited with its stage and source.
 
 ## Annotation interface
 
@@ -89,7 +89,7 @@ annotation, their tags may be omitted from the UI.
 
 By excluding closed class function words such as `ADP` and `SCONJ`,
 the above approach is unable to capture the manner in which
-a predicate's arguments are introduced, and therefore incapable of profiling
+a predicate's arguments are introduced, and therefore incapable of fully profiling
 the valency of a predicate, or its change in valency over time. Therefore, it is 
 also necessary to add dependency relations between these function
 words and the content words they depend on. In this way, we can capture the fact
@@ -106,8 +106,8 @@ Arguments depend on predicates via typed dependency relations. In order to
 generalize across instances of a predicate, it is necessary to adopt a consistent
 argument labeling policy.
 We follow the UD project and use three dependency relations for core arguments.
-The most agentive argument is labeled `nsubj`, the second argument
-(often a patient) is labeled `obj`, and the third argument is labeled `iobj`.
+The most agentive argument is labeled `nsubj`, the second and most affected argument
+(often a patient) is labeled `obj`, and the third and final argument is labeled `iobj`.
 It is understood that the second and third arguments rely on the
 existence of the first and second, respectively. Therefore, there can be no `obj`
 without an `nsubj`, and no `iobj` without an `obj`. This becomes important
@@ -118,8 +118,6 @@ when considering sentences with [missing arguments](#missing-arguments).
 ### Three-place predicates
 
 The arguments of a three-place predicate are marked `nsubj`, `obj`, and `iobj`.
-However, for clarity, the second argument can additionally be specified as
-`obj:ditrans` to convey that it is the object of a ditransitive verb.
 
 ### Two-place predicates
 
@@ -140,6 +138,7 @@ T6  p 26 28 སུ་√p
 A6a PronType T6 Int
 T8  V 30 34 འབྲི་√1
 A8a Tense T8 Past
+A8b Args T8 2:(nsubj,obj) 
 R1  nsubj Arg1:T6 Arg2:T8
 R2  obj Arg1:T5 Arg2:T8
 ~~~
@@ -160,16 +159,15 @@ T3  p 7 8 ང་√p
 A3a PronType T3 Pers
 T5  V 10 15 འབྲི་√1
 A5a Tense T5 Past
+A5b Args T5 2:(nsubj,obj)
 R1  nsubj Arg1:T3 Arg2:T5
 R2  obj Arg1:T1 Arg2:T5
 ~~~
 > _I wrote the words._ (MT - An Interview with the Fiddler Drado)
 
-### Intransitive predicates
+### One-place predicates
 
-The sole argument of an intransitive predicate is marked `nsubj`. However, for clarity,
-this argument can additionally specified as `nsubj:intrans`
-to convey that it is the subject of an intransitive verb.
+The sole argument of a one-place predicate is marked `nsubj`.
 
 ### Missing arguments 
 
@@ -184,6 +182,7 @@ A1a Number T1 Sing
 T3  N 9 14  བླ་མ་
 A3a Number T3 Sing
 T5  V 16 19 འབུལ་
+A5b Args T5 3:(nsubj,obj,iobj)
 R1  obj Arg1:T1 Arg2:T5
 R2  iobj Arg1:T3 Arg2:T5
 ~~~
@@ -198,14 +197,19 @@ then `obj` is inferred, since three-place predicates must also have an `nsubj` a
 an `obj`.
 
 Unfortunately, this reasoning does not allow us to distinguish 
-between a three-place predicate with a missing `iobj` and a two-place predicate. 
-Nor does it allow us to distinguish between a two-place predicate with a missing
-`obj` and a intransitive predicate.
+between a saturated two-place predicate and a three-place predicate with 
+a missing `iobj`. Nor does it allow us to distinguish between a saturated
+one-place predicate and a two-place predicate with a missing `obj`. Finally,
+it does not allow us to determine how many arguments a verb has when none of
+its arguments are overt.
 
-We do not know how often these scenarios will arise, but an effective safeguard
-would be to use the sub-types alluded to above. Marking a ditransitive object as
-`obj:ditrans` immediately says that we expect an `iobj`, whether overt or inferred
-by context. Similarly, marking an intransitive subject as `nsubj:intrans` is enough
-to ensure that it will not be confused with a sentence 
+One possible solution to this problem would be to introduce empty elements to hold
+the place of missing arguments and participate in the necessary dependency relations.
+Given that Tibetan's word-order is extremely flexible, it would be difficult to
+know where to put such empty elements, if one was inclined to use them. A simpler
+solution - and the one we adopt - is to attach an attribute to the verb which states
+how many and what types of arguments it has. Hover over any of the verbs in the
+examples on this page and you will see this attribute.
+
 
 ## Multiword expressions
