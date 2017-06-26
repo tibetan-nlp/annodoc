@@ -21,10 +21,10 @@ The UD project maintains that there is an advantage to this approach:
 
 > Preferring content words as heads maximizes parallelism between languages because content words vary less than function words between languages. In particular, one commonly finds the same grammatical relation being expressed by morphology in some languages or constructions and by function words in other languages or constructions, while some languages may not mark the information at all (such as not marking tense or definiteness).
 
-This advantage is also be evident when investigating a single language from
+This advantage is also evident when investigating a single language from
 a diachronic perspective. LIM examines predicate-argument structure in Old,
-Classical, and Modern Tibetan, a period spanning over one century and one that
-witnesses changes in argument and predicate marking over time.
+Classical, and Modern Tibetan, a period spanning over a century - a period
+that witnessed significant changes in argument and predicate marking.
 A particular predicate might mark its agent with one case marker at one stage, 
 and another at another stage. Viewing predicate-argument annotation
 as a relation between content words allows us to both abstract over such differences and
@@ -33,7 +33,7 @@ to describe them in a systematic way.
 The following guidelines are designed for *annotators* as opposed to *lexicographers*,
 and as such the aim is to keep them as simple and manageable as possible. Annotators
 should be able to agree with each other on their implementation of these instructions.
-We aim to keep semantic decisions to a minimum, deferring such considerations to the
+We aim to keep semantic decisions to a minimum, leaving such considerations to the
 lexicographer.
 
 ## Table of contents
@@ -43,19 +43,18 @@ lexicographer.
   * [POS tags](#pos-tags)
   * [Dependency relations](#dependency-relations)
 * [Annotation examples](#annotation-examples)
-  * [Two-place predicates](#two-place-predicates)
   * [Three-place predicates](#three-place-predicates)
+  * [Two-place predicates](#two-place-predicates)
   * [Intransitive predicates](#intransitive-predicates)
   * [Missing arguments](#missing-arguments)
 * [Multiword expressions](#multiword-expressions)
 
 ## Introduction
 
-Examples below are drawn from Old Tibetan (OT), Classical Tibetan (CT), and
-Modern Tibetan (MT). Each example is given with its stage and specific source.
+The examples below are drawn from Old (OT), Classical (CT) and
+Modern Tibetan (MT). Each example is cited with its stage and source..
 
 ## Annotation interface
-
 
 ### POS tags
 
@@ -103,7 +102,7 @@ depend on. Human adjudication is required to confirm the accuracy of the sweep.
 
 ### Dependency relations
 
-Arguments depend on predicates via labeled dependency relations. In order to
+Arguments depend on predicates via typed dependency relations. In order to
 generalize across instances of a predicate, it is necessary to adopt a consistent
 argument labeling policy.
 We follow the UD project and use three dependency relations for core arguments.
@@ -119,15 +118,15 @@ when considering sentences with [missing arguments](#missing-arguments).
 ### Three-place predicates
 
 The arguments of a three-place predicate are marked `nsubj`, `obj`, and `iobj`.
-However, for clarity, the second argument can be additionally specified as
-`obj:ditrans` to communicate that it is the object of a ditransitive verb.
+However, for clarity, the second argument can additionally be specified as
+`obj:ditrans` to convey that it is the object of a ditransitive verb.
 
 ### Two-place predicates
 
 The arguments of a two-place predicate are marked `nsubj` and `obj`, as in the
 the following example with the verb "to write". Here, the agent (the writer)
 is marked `nsubj`, and the rightmost of three nominals linked by two 
-genitives ('letter') is marked `obj`.
+genitives ("letter") is marked `obj`.
 
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
@@ -146,9 +145,10 @@ R2  obj Arg1:T5 Arg2:T8
 ~~~
 > _Who wrote your last testment?_ (CT - Milarepa)
 
-The next example illustrates the same verbal lemma as used in Modern Tibetan.
-Despite the presence of periphrastic TAME marking following the verb, dependency
-relations still link the verb directly to its two nominal arguments.
+The next example illustrates the same verbal lemma in Modern Tibetan.
+Despite the presence of periphrastic TAME marking following the verb, 
+the dependency relations still link the verb directly to its two nominal
+arguments.
 
 ~~~ ann
 ཚིག་དེ་ངས་བྲིས་པ་ཡིན།
@@ -167,19 +167,15 @@ R2  obj Arg1:T1 Arg2:T5
 
 ### Intransitive predicates
 
-The argument of an intransitive predicate is marked `nsubj`. However, for clarity,
-this argument can be additionally specified with a feature and marked `nsubj:intrans`
-to communicate that it is the subject of an intransitive verb.
+The sole argument of an intransitive predicate is marked `nsubj`. However, for clarity,
+this argument can additionally specified as `nsubj:intrans`
+to convey that it is the subject of an intransitive verb.
 
 ### Missing arguments 
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
 discourse. In the following example, the verb is linked to its object and its indirect
-object, but there is no overt subject. Provided that the arguments that do appear
-are annotated as `obj` and `iobj`, then it is not necessary to insert a zero
-element for the missing `nsubj`. It is understood that three-place predicates must
-have an `nsubj` argument - therefore, a verb with an `obj` and `iobj` must have
-a missing subject.
+object, but there is no overt subject.
 
 ~~~ ann
 ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
@@ -193,14 +189,23 @@ R2  iobj Arg1:T3 Arg2:T5
 ~~~
 > _(He) presented the letter to the lama._ (CT - Milarepa)
 
-The same logic applies to the omission of `obj`. Provided `iobj` is present,
+Provided that the arguments that do appear
+are annotated as `obj` and `iobj`, then it is not necessary to insert a zero
+element for the missing `nsubj`. It is understood that a three-place predicate must
+have an `nsubj` argument - therefore, a sentence with an `obj` and `iobj` must have
+a missing `nsubj`. The same logic applies to the omission of `obj`. Provided `iobj` is present,
 then `obj` is inferred, since three-place predicates must also have an `nsubj` and
 an `obj`.
 
 Unfortunately, this reasoning does not allow us to distinguish 
 between a three-place predicate with a missing `iobj` and a two-place predicate. 
-We do not yet know  whether this situation arises in practice - that is, 
-whether or not we will need to distinguish, for the same lemma, 
-between two-place and three-place valency variants.
+Nor does it allow us to distinguish between a two-place predicate with a missing
+`obj` and a intransitive predicate.
+
+We do not know how often these scenarios will arise, but an effective safeguard
+would be to use the sub-types alluded to above. Marking a ditransitive object as
+`obj:ditrans` immediately says that we expect an `iobj`, whether overt or inferred
+by context. Similarly, marking an intransitive subject as `nsubj:intrans` is enough
+to ensure that it will not be confused with a sentence 
 
 ## Multiword expressions
