@@ -108,7 +108,26 @@ A8a Tense T8 Past
 R1  nsubj Arg1:T6 Arg2:T8
 R2  obj Arg1:T5 Arg2:T8
 ~~~
-> Who wrote your last testment? ***(CT:Milarepa)**
+> Who wrote your last testment? **(CT:Milarepa)**
+
+
+The next example illustrates the same verbal lemma as used in Modern Tibetan.
+Despite the presence of periphrastic TAME marking following the verb, dependency
+relations still link the verb directly to its two nominal arguments.
+
+~~~ ann
+ཚིག་དེ་ངས་བྲིས་པ་ཡིན།
+T1  N 0 4 ཚིག་
+A1a Number T1 Sing
+T2  p 4 7 དེ་√d
+A2a PronType T2 Dem
+T3  p 7 8 ང་√p
+A3a PronType T3 Pers
+T5  V 10 15 འབྲི་√1
+A5a Tense T5 Past
+~~~
+> I wrote the words. **(MT:An Interview with the Fiddler Drado)
+
 
 ## Missing arguments 
 
