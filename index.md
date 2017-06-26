@@ -40,8 +40,8 @@ lexicographer.
 
 * [Introduction](#introduction)
 * [Annotation interface](#annotation-interface)
-** [POS tags](#pos-tags)
-** [Dependency relations](#dependency-relations)
+  * [POS tags](#pos-tags)
+  * [Dependency relations](#dependency-relations)
 * [Annotation examples](#annotation-examples)
 * [Missing arguments](#missing-arguments)
 * [Multiword expressions](#multiword-expressions)
