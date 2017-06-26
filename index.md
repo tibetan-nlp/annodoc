@@ -81,12 +81,12 @@ their arguments, and so we retain most open class word tags, leaving them capita
 but abbreviating them to one character. 
 As for closed class words, we include only those categories - determiners,
 numerals, and pronouns - which can "head" a noun phrase in the absence of
-a head noun. Other closed class categories - such as case markers (`ADP`) - never 
+a head noun. Other closed class categories - such as `ADP` - never 
 occur on their own, and therefore for the purposes of predicate-argument
 annotation, their tags may be omitted from the UI.
 
-By excluding closed class function words such as case markers (`ADP`) and 
-converbs (`SCONJ`), the above approach is unable to capture the manner in which
+By excluding closed class function words such as `ADP` and `SCONJ`,
+the above approach is unable to capture the manner in which
 a predicate's arguments are introduced, and therefore incapable of profiling
 the valency of a predicate, or its change in valency over time. Therefore, it is 
 also necessary to add dependency relations between these function
@@ -94,8 +94,8 @@ words and the content words they depend on. In this way, we can capture the fact
 that a verbal argument is marked with agentive case on one occasion, but left
 unmarked on another occasion. We achieve this objective with a second, 
 semi-automated sweep through the data.
-This sweep links numerals, determiners, and case markers (`ADP`) to the nouns they 
-depend on, and also links converbs (`SCONJ`) and final particles (`PART`) to the verbs they
+This sweep links numerals, determiners, and `ADP` to the nouns they 
+depend on, and also links `SCONJ` and `PART` to the verbs they
 depend on. Human adjudication is required to confirm the accuracy of the sweep.
 
 ### Dependency relations
