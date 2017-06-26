@@ -32,10 +32,16 @@ to describe them in a systematic way.
 
 ## Table of contents
 
+* [Introduction](#introduction)
 * [Annotation interface](#annotation-interface)
 * [Annotation examples](#annotation-examples)
 * [Missing arguments](#missing-arguments)
 * [Multiword expressions](#multiword-expressions)
+
+## Introduction
+
+Examples below are drawn from Old Tibetan (OT), Classical Tibetan (CT), and
+Modern Tibetan (MT). Each example is given with its stage and specific source.
 
 ## Annotation interface
 
@@ -87,6 +93,7 @@ The following example shows a use of the two-place predicate "write". The writer
 is the best proto-agent and so is marked as *nsubj*. The rightmost of three nominals
 linked by two genitives ('letter') is marked as *obj*.
 
+**CT - Milarepa**
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
 T1  p 0 5 ཁྱོད་√p
@@ -114,6 +121,7 @@ element for the missing subject. It is understood that two-place predicates must
 have an *nsubj* argument - therefore, a verb with an *obj* and *iobj* must have
 a missing subject.
 
+**CT - Milarepa**
 ~~~ ann
 ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
 T1  N 0 6  	ཡི་གེ་
