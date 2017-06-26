@@ -203,13 +203,15 @@ one-place predicate and a two-place predicate with a missing `obj`. Finally,
 it does not allow us to determine how many arguments a verb has when none of
 its arguments are overt.
 
-One possible solution to this problem would be to introduce empty elements to hold
-the place of missing arguments and participate in the necessary dependency relations.
+It is not yet known how often this situation will arise - that is, how often the
+same verbal lemma will occur with different numbers of arguments where the 
+difference is sense-significant. One solution to this possible problem would be 
+to introduce empty elements to hold the place of missing arguments and 
+participate in the necessary dependency relations.
 Given that Tibetan's word-order is extremely flexible, it would be difficult to
 know where to put such empty elements, if one was inclined to use them. A simpler
 solution - and the one we adopt - is to attach an attribute to the verb which states
 how many and what types of arguments it has. Hover over any of the verbs in the
 examples on this page and you will see this attribute.
-
 
 ## Multiword expressions
