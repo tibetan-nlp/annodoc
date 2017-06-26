@@ -30,10 +30,18 @@ and another at another stage. Viewing predicate-argument annotation
 as a relation between content words allows us to both abstract over such differences and
 to describe them in a systematic way. 
 
+The following guidelines are designed for *annotators* as opposed to *lexicographers*,
+and as such the aim is to keep them as simple and manageable as possible. Annotators
+should be able to agree with each other on their implementation of these instructions.
+We aim to keep semantic decisions to a minimum, deferring such considerations to the
+lexicographer.
+
 ## Table of contents
 
 * [Introduction](#introduction)
 * [Annotation interface](#annotation-interface)
+** [POS tags](#pos-tags)
+** [Dependency relations](#dependency-relations)
 * [Annotation examples](#annotation-examples)
 * [Missing arguments](#missing-arguments)
 * [Multiword expressions](#multiword-expressions)
@@ -44,6 +52,9 @@ Examples below are drawn from Old Tibetan (OT), Classical Tibetan (CT), and
 Modern Tibetan (MT). Each example is given with its stage and specific source.
 
 ## Annotation interface
+
+
+### POS tags
 
 Since we are concerned primarily with annotating predicate-argument
 structure as a relation between content words, we declutter the user interface
@@ -87,6 +98,20 @@ This sweep links numerals, determiners, and case markers (ADP) to the nouns they
 depend on, and also links converbs (SCONJ) and final particles (PART) to the verbs they
 depend on. Human adjudication is required to confirm the accuracy of the sweep.
 
+### Dependency relations
+
+Arguments depend on predicates via labeled dependency relations. In order to
+generalize across instances of a predicate, it is necessary to adopt a consistent
+argument labeling policy; if nominals in two different sentences with the same verb
+bear the same argument relation to that verb, then they should depend on the verb
+in the same way.
+
+The main difficulty is that most verbal arguments can be omitted and inferred
+by context. Therefore if a verb occurs with one overt argument, it could have
+anywhere from one to three arguments (assuming a maximum of three core arguments).
+It would be a recipe for disaster if our annotation scheme failed to distinguish
+these distinct scenarios. 
+
 ## Annotation examples
 
 The following example shows a use of the two-place predicate "write". The writer
@@ -108,7 +133,7 @@ A8a Tense T8 Past
 R1  nsubj Arg1:T6 Arg2:T8
 R2  obj Arg1:T5 Arg2:T8
 ~~~
-> _Who wrote your last testment?_ / CT - Milarepa
+> _Who wrote your last testment?_ (CT - Milarepa)
 
 
 The next example illustrates the same verbal lemma as used in Modern Tibetan.
@@ -129,7 +154,7 @@ A5a Tense T5 Past
 R1  nsubj Arg1:T3 Arg2:T5
 R2  obj Arg1:T1 Arg2:T5
 ~~~
-> _I wrote the words._ / MT - An Interview with the Fiddler Drado
+> _I wrote the words._ (MT - An Interview with the Fiddler Drado)
 
 ## Missing arguments 
 
@@ -151,7 +176,7 @@ T5  V 16 19 འབུལ་
 R1  obj Arg1:T1 Arg2:T5
 R2  iobj Arg1:T3 Arg2:T5
 ~~~
-> _(He) presented the letter to the lama._ / CT - Milarepa
+> _(He) presented the letter to the lama._ (CT - Milarepa)
 
 The same logic applies to the omission of *obj*. Provided *iobj* is present,
 then *obj* is inferred, since two-place predicates must have an *nsubj* and
