@@ -43,7 +43,10 @@ lexicographer.
   * [POS tags](#pos-tags)
   * [Dependency relations](#dependency-relations)
 * [Annotation examples](#annotation-examples)
-* [Missing arguments](#missing-arguments)
+  * [Two-place predicates](#two-place-predicates)
+  * [Three-place predicates](#three-place-predicates)
+  * [Intransitive predicates](#intransitive-predicates)
+  * [Missing arguments](#missing-arguments)
 * [Multiword expressions](#multiword-expressions)
 
 ## Introduction
@@ -76,12 +79,12 @@ omitting others entirely from the UI.
 - PRON -> **p**
 - X -> **X**
 
-Open class words such as nouns can be linked to predicates as 
+Open class word classes such as `NOUN` can be linked to predicates as 
 their arguments, and so we retain most open class word tags, leaving them capitalized 
 but abbreviating them to one character. 
-As for closed class words, we include only those categories - determiners,
-numerals, and pronouns - which can "head" a noun phrase in the absence of
-a head noun. Other closed class categories - such as `ADP` - never 
+As for closed class words, we include only those categories - `DET`,
+`NUM` and `PRON` - which can "head" a noun phrase in the absence of
+a `NOUN`. Other closed class categories - such as `ADP` - never 
 occur on their own, and therefore for the purposes of predicate-argument
 annotation, their tags may be omitted from the UI.
 
@@ -94,7 +97,7 @@ words and the content words they depend on. In this way, we can capture the fact
 that a verbal argument is marked with agentive case on one occasion, but left
 unmarked on another occasion. We achieve this objective with a second, 
 semi-automated sweep through the data.
-This sweep links numerals, determiners, and `ADP` to the nouns they 
+This sweep links `NUM`, `DET` and `ADP` to the nouns they 
 depend on, and also links `SCONJ` and `PART` to the verbs they
 depend on. Human adjudication is required to confirm the accuracy of the sweep.
 
@@ -106,16 +109,25 @@ argument labeling policy.
 We follow the UD project and use three dependency relations for core arguments.
 The most agentive argument is labeled `nsubj`, the second argument
 (often a patient) is labeled `obj`, and the third argument is labeled `iobj`.
-It is understood, furthermore, that the second and third arguments rely on the
-existence of the first and second, respectively. Therefore, there is no `obj`
+It is understood that the second and third arguments rely on the
+existence of the first and second, respectively. Therefore, there can be no `obj`
 without an `nsubj`, and no `iobj` without an `obj`. This becomes important
 when considering sentences with [missing arguments](#missing-arguments).
 
 ## Annotation examples
 
-The following example shows a use of the two-place predicate "write". The writer
-is the best proto-agent and so is marked as `nsubj`. The rightmost of three nominals
-linked by two genitives ('letter') is marked as `obj`.
+### Three-place predicates
+
+The arguments of a three-place predicate are marked `nsubj`, `obj`, and `iobj`.
+However, for clarity, the second argument can be additionally specified as
+`obj:ditrans` to communicate that it is the object of a ditransitive verb.
+
+### Two-place predicates
+
+The arguments of a two-place predicate are marked `nsubj` and `obj`, as in the
+the following example with the verb "to write". Here, the agent (the writer)
+is marked `nsubj`, and the rightmost of three nominals linked by two 
+genitives ('letter') is marked `obj`.
 
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
@@ -134,11 +146,9 @@ R2  obj Arg1:T5 Arg2:T8
 ~~~
 > _Who wrote your last testment?_ (CT - Milarepa)
 
-
 The next example illustrates the same verbal lemma as used in Modern Tibetan.
 Despite the presence of periphrastic TAME marking following the verb, dependency
 relations still link the verb directly to its two nominal arguments.
-
 
 ~~~ ann
 ཚིག་དེ་ངས་བྲིས་པ་ཡིན།
@@ -155,13 +165,19 @@ R2  obj Arg1:T1 Arg2:T5
 ~~~
 > _I wrote the words._ (MT - An Interview with the Fiddler Drado)
 
-## Missing arguments 
+### Intransitive predicates
+
+The argument of an intransitive predicate is marked `nsubj`. However, for clarity,
+this argument can be additionally specified with a feature and marked `nsubj:intrans`
+to communicate that it is the subject of an intransitive verb.
+
+### Missing arguments 
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
-discourse. In the following example, the verb is linked to its object and indirect
+discourse. In the following example, the verb is linked to its object and its indirect
 object, but there is no overt subject. Provided that the arguments that do appear
 are annotated as `obj` and `iobj`, then it is not necessary to insert a zero
-element for the missing subject. It is understood that two-place predicates must
+element for the missing `nsubj`. It is understood that three-place predicates must
 have an `nsubj` argument - therefore, a verb with an `obj` and `iobj` must have
 a missing subject.
 
@@ -178,8 +194,10 @@ R2  iobj Arg1:T3 Arg2:T5
 > _(He) presented the letter to the lama._ (CT - Milarepa)
 
 The same logic applies to the omission of `obj`. Provided `iobj` is present,
-then `obj` is inferred, since two-place predicates must have an `nsubj` and
-an `obj`. Unfortunately, this reasoning does not allow us to distinguish 
+then `obj` is inferred, since three-place predicates must also have an `nsubj` and
+an `obj`.
+
+Unfortunately, this reasoning does not allow us to distinguish 
 between a three-place predicate with a missing `iobj` and a two-place predicate. 
 We do not yet know  whether this situation arises in practice - that is, 
 whether or not we will need to distinguish, for the same lemma, 
