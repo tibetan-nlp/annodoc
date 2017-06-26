@@ -110,6 +110,23 @@ R2  obj Arg1:T5 Arg2:T8
 ~~~
 > Who wrote your last testment? **[CT - Milarepa]**
 
+<div class="ann">
+ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
+T1  p 0 5 ཁྱོད་√p
+A1a PronType T1 Prs
+T3  N 9 16  ཁ་ཆེམས་
+A3a Number T3 Sing
+T5  N 20 26 ཡི་གེ་
+A5a Number T5 Sing
+T6  p 26 28 སུ་√p
+A6a PronType T6 Int
+T8  V 30 34 འབྲི་√1
+A8a Tense T8 Past
+R1  nsubj Arg1:T6 Arg2:T8
+R2  obj Arg1:T5 Arg2:T8
+<span class="translation">Who wrote your last testment?</span>
+</div>
+
 ## Missing arguments 
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
