@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: LIM Annotation Documentation 
+title: Annotation Documentation 
 ---
 
 This page provides documentation of the annotation scheme for
