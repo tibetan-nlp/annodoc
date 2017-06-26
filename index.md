@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: Annotation Documentation 
+title: LIM Annotation Documentation 
 ---
 
 This page provides documentation of the annotation scheme for
@@ -93,7 +93,6 @@ The following example shows a use of the two-place predicate "write". The writer
 is the best proto-agent and so is marked as *nsubj*. The rightmost of three nominals
 linked by two genitives ('letter') is marked as *obj*.
 
-**CT - Milarepa**
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
 T1  p 0 5 ཁྱོད་√p
@@ -109,7 +108,7 @@ A8a Tense T8 Past
 R1  nsubj Arg1:T6 Arg2:T8
 R2  obj Arg1:T5 Arg2:T8
 ~~~
-> Who wrote your last testment?
+> Who wrote your last testment? **[CT - Milarepa]**
 
 ## Missing arguments 
 
@@ -121,7 +120,6 @@ element for the missing subject. It is understood that two-place predicates must
 have an *nsubj* argument - therefore, a verb with an *obj* and *iobj* must have
 a missing subject.
 
-**CT - Milarepa**
 ~~~ ann
 ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
 T1  N 0 6  	ཡི་གེ་
@@ -132,7 +130,7 @@ T5  V 16 19 འབུལ་
 R1  obj Arg1:T1 Arg2:T5
 R2  iobj Arg1:T3 Arg2:T5
 ~~~
-> (He) presented the letter to the lama.
+> (He) presented the letter to the lama. **[CT - Milarepa]**
 
 The same logic applies to the omission of *obj*. Provided *iobj* is present,
 then *obj* is inferred, since two-place predicates must have an *nsubj* and

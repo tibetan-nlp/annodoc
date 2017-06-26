@@ -15,7 +15,7 @@ markdown_ext: md
 
 # Site settings
 
-name: Lexicography in Motion 
+name: LIM 
 baseurl: "/lim-annodoc"
 homeurl: "https://github.com/tibetan-nlp/lim-annodoc/"
 issueurl: "https://github.com/tibetan-nlp/lim-annodoc/issues"
