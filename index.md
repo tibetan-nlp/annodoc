@@ -108,12 +108,13 @@ A8a Tense T8 Past
 R1  nsubj Arg1:T6 Arg2:T8
 R2  obj Arg1:T5 Arg2:T8
 ~~~
-> Who wrote your last testment? **(CT:Milarepa)**
+> _Who wrote your last testment?_ / CT - Milarepa
 
 
 The next example illustrates the same verbal lemma as used in Modern Tibetan.
 Despite the presence of periphrastic TAME marking following the verb, dependency
 relations still link the verb directly to its two nominal arguments.
+
 
 ~~~ ann
 ཚིག་དེ་ངས་བྲིས་པ་ཡིན།
@@ -125,9 +126,10 @@ T3  p 7 8 ང་√p
 A3a PronType T3 Pers
 T5  V 10 15 འབྲི་√1
 A5a Tense T5 Past
+R1  nsubj Arg1:T3 Arg2:T5
+R2  obj Arg1:T1 Arg2:T5
 ~~~
-> I wrote the words. **(MT:An Interview with the Fiddler Drado)
-
+> _I wrote the words._ / MT - An Interview with the Fiddler Drado
 
 ## Missing arguments 
 
@@ -149,7 +151,7 @@ T5  V 16 19 འབུལ་
 R1  obj Arg1:T1 Arg2:T5
 R2  iobj Arg1:T3 Arg2:T5
 ~~~
-> (He) presented the letter to the lama. **(CT:Milarepa)**
+> _(He) presented the letter to the lama._ / CT - Milarepa
 
 The same logic applies to the omission of *obj*. Provided *iobj* is present,
 then *obj* is inferred, since two-place predicates must have an *nsubj* and
