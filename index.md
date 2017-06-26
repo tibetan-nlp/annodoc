@@ -81,12 +81,12 @@ their arguments, and so we retain most open class word tags, leaving them capita
 but abbreviating them to one character. 
 As for closed class words, we include only those categories - determiners,
 numerals, and pronouns - which can "head" a noun phrase in the absence of
-a head noun. Other closed class categories - such as case markers (ADP) - never 
+a head noun. Other closed class categories - such as case markers (`ADP`) - never 
 occur on their own, and therefore for the purposes of predicate-argument
 annotation, their tags may be omitted from the UI.
 
-By excluding closed class function words such as case markers (ADP) and 
-converbs (SCONJ), the above approach is unable to capture the manner in which
+By excluding closed class function words such as case markers (`ADP`) and 
+converbs (`SCONJ`), the above approach is unable to capture the manner in which
 a predicate's arguments are introduced, and therefore incapable of profiling
 the valency of a predicate, or its change in valency over time. Therefore, it is 
 also necessary to add dependency relations between these function
@@ -94,20 +94,17 @@ words and the content words they depend on. In this way, we can capture the fact
 that a verbal argument is marked with agentive case on one occasion, but left
 unmarked on another occasion. We achieve this objective with a second, 
 semi-automated sweep through the data.
-This sweep links numerals, determiners, and case markers (ADP) to the nouns they 
-depend on, and also links converbs (SCONJ) and final particles (PART) to the verbs they
+This sweep links numerals, determiners, and case markers (`ADP`) to the nouns they 
+depend on, and also links converbs (`SCONJ`) and final particles (`PART`) to the verbs they
 depend on. Human adjudication is required to confirm the accuracy of the sweep.
 
 ### Dependency relations
 
 Arguments depend on predicates via labeled dependency relations. In order to
 generalize across instances of a predicate, it is necessary to adopt a consistent
-argument labeling policy; if nominals in two different sentences with the same verb
-bear the same argument relation to that verb, then they should depend on the verb
-in the same way.
-
-We use three depedency relations for core arguments, adopting the labeling of the
-UD project. The most agentive argument is labeled `nsubj`, the second argument
+argument labeling policy.
+We follow the UD project and use three dependency relations for core arguments.
+The most agentive argument is labeled `nsubj`, the second argument
 (often a patient) is labeled `obj`, and the third argument is labeled `iobj`.
 It is understood, furthermore, that the second and third arguments rely on the
 existence of the first and second, respectively. Therefore, there is no `obj`
@@ -117,8 +114,8 @@ when considering sentences with [missing arguments](#missing-arguments).
 ## Annotation examples
 
 The following example shows a use of the two-place predicate "write". The writer
-is the best proto-agent and so is marked as *nsubj*. The rightmost of three nominals
-linked by two genitives ('letter') is marked as *obj*.
+is the best proto-agent and so is marked as `nsubj`. The rightmost of three nominals
+linked by two genitives ('letter') is marked as `obj`.
 
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
@@ -163,9 +160,9 @@ R2  obj Arg1:T1 Arg2:T5
 In Tibetan, verbal arguments are often inferred from the context or from previous
 discourse. In the following example, the verb is linked to its object and indirect
 object, but there is no overt subject. Provided that the arguments that do appear
-are annotated as *obj* and *iobj*, then it is not necessary to insert a zero
+are annotated as `obj` and `iobj`, then it is not necessary to insert a zero
 element for the missing subject. It is understood that two-place predicates must
-have an *nsubj* argument - therefore, a verb with an *obj* and *iobj* must have
+have an `nsubj` argument - therefore, a verb with an `obj` and `iobj` must have
 a missing subject.
 
 ~~~ ann
@@ -180,10 +177,10 @@ R2  iobj Arg1:T3 Arg2:T5
 ~~~
 > _(He) presented the letter to the lama._ (CT - Milarepa)
 
-The same logic applies to the omission of *obj*. Provided *iobj* is present,
-then *obj* is inferred, since two-place predicates must have an *nsubj* and
-an *obj*. Unfortunately, this reasoning does not allow us to distinguish 
-between a three-place predicate with a missing *iobj* and a two-place predicate. 
+The same logic applies to the omission of `obj`. Provided `iobj` is present,
+then `obj` is inferred, since two-place predicates must have an `nsubj` and
+an `obj`. Unfortunately, this reasoning does not allow us to distinguish 
+between a three-place predicate with a missing `iobj` and a two-place predicate. 
 We do not yet know  whether this situation arises in practice - that is, 
 whether or not we will need to distinguish, for the same lemma, 
 between two-place and three-place valency variants.
