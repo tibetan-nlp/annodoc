@@ -16,10 +16,9 @@ markdown_ext: md
 # Site settings
 
 name: Annodoc
-baseurl: "/annodoc"
-homeurl: "https://github.com/spyysalo/annodoc/"
-editurl: "https://github.com/spyysalo/annodoc/edit/gh-pages"
-issueurl: "https://github.com/spyysalo/annodoc/issues"
+baseurl: "/lim-annodoc"
+homeurl: "https://github.com/tibetan-nlp/lim-annodoc/"
+issueurl: "https://github.com/tibetan-nlp/lim-annodoc/issues"
 
 ##############################################################################
 
