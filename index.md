@@ -87,15 +87,15 @@ Second, for the purposes of the annotation interface, we use shortened versions 
 some [universal POS tags](http://universaldependencies.org/u/pos/all.html), while 
 omitting others entirely from the UI.
 
-- ADJ -> **A**
-- ADV -> **D**
-- NOUN -> **N** (excluding *n.rel*)
-- PROPN -> **P**
-- VERB -> **V**
-- DET -> **d** (only *d.dem*)
-- NUM -> **n**
-- PRON -> **p**
-- X -> **X**
+- `ADJ` -> `A`
+- `ADV` -> `D`
+- `NOUN` -> `N` (excluding `n.rel`)
+- `PROPN` -> `P`
+- `VERB` -> `V`
+- `DET` -> `d` (only `d.dem`)
+- `NUM` -> `n`
+- `PRON` -> `p`
+- `X` -> `X`
 
 Open class word classes such as `NOUN` can be linked to predicates as 
 their arguments, and so we retain most open class word tags, leaving them capitalized 
