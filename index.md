@@ -47,8 +47,8 @@ we ask the annotator to perform the following tasks:
     * Link the head word of each such modifier to the verb, using one of
     the following dependency relations: `advcl`, `acl`, or `obl`. 
 
-This task list may be easy to follow, but it is not mechanical. It poses
-several challenges for the annotator. Implicit in step 2 is the requirement
+This task list poses some challenges for the annotator. 
+Implicit in step 2 is the requirement
 that the annotator is able to discern when the core arguments of a verb
 have been omitted (see [missing arguments](#missing-arguments)). Fortunately,
 the initial identification of a verb's core argument structure should suffice
@@ -57,7 +57,7 @@ valency shifting operations in Tibetan.
 
 The second obvious challenge for the annotator is to distinguish between
 core arguments and oblique modifiers. Given that core arguments can be
-omitted, optionality of overt expression is not the key factor. We may have
+omitted, optionality of overt expression cannot be the key factor. We may have
 to learn this as we go along, documenting the specific `ADP`, `SCONJ` and other 
 function words that are likely to signal an oblique.
 
@@ -130,23 +130,26 @@ The UD project maintains that there is an advantage to this approach:
 
 This advantage is also evident when investigating a single language from
 a diachronic perspective. LIM examines predicate-argument structure in Old,
-Classical, and Modern Tibetan, a period spanning over a century - a period
+Classical, and Modern Tibetan - a period spanning over a century, and one
 that witnessed significant changes in argument and predicate marking.
 A particular predicate might mark its agent with one case marker at one stage, 
 and another at another stage. Viewing predicate-argument annotation
-as a relation between content words allows us to both abstract over such differences and
-to describe them in a systematic way. 
+as a relation between content words allows us both to abstract over such differences and
+to describe them in a systematic way.
 
 Arguments depend on predicates via typed dependency relations. In order to
 generalize across instances of a predicate, it is necessary to adopt a consistent
 argument labeling policy.
-We follow the UD project and use three dependency relations for core arguments.
+We follow the UD project and use three dependency relations for most core arguments.
 The most agentive argument is labeled `nsubj`, the second and most affected argument
 (often a patient) is labeled `obj`, and the third and final argument is labeled `iobj`.
 It is understood that the second and third arguments rely on the
 existence of the first and second, respectively. Therefore, there can be no `obj`
 without an `nsubj`, and no `iobj` without an `obj`. This becomes important
 when considering sentences with [missing arguments](#missing-arguments).
+
+The additional dependency relations `csubj`, `ccomp` and `xcomp` are available
+for marking core arguments that are clausal in nature.
 
 ## Annotation examples
 
