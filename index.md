@@ -31,7 +31,7 @@ The following guidelines are designed for *annotators* rather than *lexicographe
 The aim is to create a set of easy to follow instructions that facilitate a high 
 degree of inter-annotator agreement. In particular, we aim
 to keep semantic decisions to a minimum, leaving such considerations to the
-lexicographer. For each part-of-speech tagged annotation unit,, 
+lexicographer. For each part-of-speech tagged annotation unit,
 we ask the annotator to perform the following tasks:
 
 1. Identify and label the verbs.
