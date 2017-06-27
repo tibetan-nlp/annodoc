@@ -22,8 +22,9 @@ project.
   * [Three-place predicates](#three-place-predicates)
   * [Two-place predicates](#two-place-predicates)
   * [One-place predicates](#one-place-predicates)
+  * [Clausal arguments](#clausal-arguments)
   * [Missing arguments](#missing-arguments)
-* [Multiword expressions](#multiword-expressions)
+  * [Light verbs](#light-verbs)
 
 ## Introduction
 
@@ -210,6 +211,31 @@ R2  obj Arg1:T1 Arg2:T5
 
 The sole argument of a one-place predicate is marked `nsubj`.
 
+### Clausal arguments
+
+~~~ ann
+ནང་ལ་བསྡད་འདུག་ག་ངས་ནི་རང་བསྡད་ཨ་ཡོད་བསམས་བྱུང་།
+T1  N 0 3 ནང་
+A1a Number T1 Sing
+T3  V 5 10  བསྡད་
+A3a Tense T3 Past
+T4  V 10 15 འདུག་
+A4a Tense T4 Invar
+T6  p 17 18 ང་
+A6a PronType T6 Pers
+T8  p 22 25 རང་
+A8a PronType T8 Pers
+T9  V 25 30 བསྡད་
+A9a Tense T9 Past
+T11 V 32 36 ཡོད་
+A11a  Tense T11 Invar
+T12 V 36 41 སེམས་
+A12a  Tense T12 Past
+T13 V 41 46 བྱུང་√x
+A13a  Tense T13 Invar
+~~~
+> _You're home. I thought you might not be home._ (MT - A Handmade Altar)
+
 ### Missing arguments 
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
@@ -252,7 +278,7 @@ participate in the necessary dependency relations.
 Given that Tibetan's word-order is extremely flexible, it would be difficult to
 know where to put such empty elements, if one was inclined to use them. A simpler
 solution - and the one we adopt - is to attach an attribute to the verb that states
-which arguments it has. Hover over any of the verbs in the
+what its core arguments are. Hover over any of the verbs in the
 examples on this page and you will see this attribute.
 
-## Multiword expressions
+### Light verbs
