@@ -31,22 +31,20 @@ The following guidelines are designed for *annotators* rather than *lexicographe
 The aim is to create a set of easy to follow instructions that facilitate a high 
 degree of inter-annotator agreement. In particular, we aim
 to keep semantic decisions to a minimum, leaving such considerations to the
-lexicographer.
-
-For each part-of-speech tagged sentence or annotation unit, 
+lexicographer. For each part-of-speech tagged annotation unit,, 
 we ask the annotator to perform the following tasks:
 
 1. Identify and label the verbs.
-    1. Identify each verb.
-    1. Label each verb with the argument frame that is required to capture
+    * Identify each verb.
+    * Label each verb with the argument frame that is required to capture
     all of its understood arguments on that occasion of use.
 1. Identify and label the core arguments of each verb.
-    1. Identify at most one head word for each core argument position.
-    1. Link each argument head word to its verb using one of the following
+    * Identify at most one head word for each core argument position.
+    * Link each argument head word to its verb using one of the following
     dependency relations: `nsubj`, `obj`, `iobj`, `csubj`, `ccomp` or `xcomp`.
 1. Identify and label the oblique modifiers of each verb.
-    1. Identify any modifiers related to the verb.
-    1. Link the head word of each such modifier to the verb, using one of
+    * Identify any modifiers related to the verb.
+    * Link the head word of each such modifier to the verb, using one of
     the following dependency relations: `advcl`, `acl`, or `obl`. 
 
 This task list may be easy to follow, but it is not mechanical. It poses
