@@ -12,35 +12,11 @@ a key objective. In the process, we hope to build a dependency corpus for
 Tibetan that can be contributed to the [Universal Dependencies](http://universaldependencies.org/)
 project.
 
-Our annotation guidelines follow the UD project in privileging content words over
-function words. Instead of linking a predicate to the function word (for example, the case
-marker) that marks its argument, we link the predicate to the content head word (for example,
-the head noun) of the argument. Function words then depend on the content words which they "modify".
-
-The UD project maintains that there is an advantage to this approach:
-
-> Preferring content words as heads maximizes parallelism between languages because content words vary less than function words between languages. In particular, one commonly finds the same grammatical relation being expressed by morphology in some languages or constructions and by function words in other languages or constructions, while some languages may not mark the information at all (such as not marking tense or definiteness).
-
-This advantage is also evident when investigating a single language from
-a diachronic perspective. LIM examines predicate-argument structure in Old,
-Classical, and Modern Tibetan, a period spanning over a century - a period
-that witnessed significant changes in argument and predicate marking.
-A particular predicate might mark its agent with one case marker at one stage, 
-and another at another stage. Viewing predicate-argument annotation
-as a relation between content words allows us to both abstract over such differences and
-to describe them in a systematic way. 
-
-The following guidelines are designed for *annotators* as opposed to *lexicographers*,
-and as such the aim is to keep them as simple and manageable as possible. Annotators
-should be able to agree with each other on their implementation of these instructions.
-We aim to keep semantic decisions to a minimum, leaving such considerations to the
-lexicographer.
-
 ## Table of contents
 
 * [Introduction](#introduction)
-* [Annotation interface](#annotation-interface)
-  * [POS tags](#pos-tags)
+* [Universal dependencies](#universal-dependencies)
+  * [Part-of-speech tags](#part-of-speech-tags)
   * [Dependency relations](#dependency-relations)
 * [Annotation examples](#annotation-examples)
   * [Three-place predicates](#three-place-predicates)
@@ -51,12 +27,55 @@ lexicographer.
 
 ## Introduction
 
-The examples below are drawn from Old (OT), Classical (CT) and
-Modern Tibetan (MT). Each example is cited with its stage and source.
+The following guidelines are designed for *annotators* rather than *lexicographers*.
+The aim is to create a set of easy to follow instructions that facilitate a high 
+degree of inter-annotator agreement. In particular, we aim
+to keep semantic decisions to a minimum, leaving such considerations to the
+lexicographer.
 
-## Annotation interface
+For each part-of-speech tagged sentence or annotation unit, 
+we ask the annotator to perform the following tasks:
 
-### POS tags
+1. Identify and label the verbs.
+    1. Identify each verb.
+    1. Label each verb with the argument frame that is required to capture
+    all of its understood arguments on that occasion of use.
+1. Identify and label the core arguments of each verb.
+    1. Identify at most one head word for each core argument position.
+    1. Link each argument head word to its verb using one of the following
+    dependency relations: `nsubj`, `obj`, `iobj`, `csubj`, `ccomp` or `xcomp`.
+1. Identify and label the oblique modifiers of each verb.
+    1. Identify any modifiers related to the verb.
+    1. Link the head word of each such modifier to the verb, using one of
+    the following dependency relations: `advcl`, `acl`, or `obl`. 
+
+This task list may be easy to follow, but it is not mechanical. It poses
+several challenges for the annotator. Implicit in step 2 is the requirement
+that the annotator is able to discern when the core arguments of a verb
+have been omitted (see [missing arguments](#missing-arguments)). Fortunately,
+the initial identification of a verb's core argument structure should suffice
+to solve this problem in most cases, given the paucity of non-form affecting 
+valency shifting operations in Tibetan.
+
+The second obvious challenge for the annotator is to distinguish between
+core arguments and oblique modifiers. Given that core arguments can be
+omitted, optionality of overt expression is not the key factor. We may have
+to learn this as we go along, documenting the specific `ADP`, `SCONJ` and other 
+function words that are likely to signal an oblique.
+
+Note that annotators are not asked to do the following:
+
+1. Identify equivalencies across different verbs.
+2. Label the semantic roles of core arguments or oblique modifiers.
+
+For example, the `nsubj` for different verbs could be marked with completely
+different `ADP`, or have completely different semantic roles. It is only
+necessary that a given verb's `nsubj` is held constant across the various
+uses of *the same verb*.
+
+## Universal dependencies
+
+### Part-of-speech tags
 
 Since we are concerned primarily with annotating predicate-argument
 structure as a relation between content words, we declutter the user interface
@@ -102,6 +121,24 @@ depend on. Human adjudication is required to confirm the accuracy of the sweep.
 
 ### Dependency relations
 
+Our annotation guidelines follow the UD project in privileging content words over
+function words. Instead of linking a predicate to the function word (for example, the case
+marker) that marks its argument, we link the predicate to the content head word (for example,
+the head noun) of the argument. Function words then depend on the content words which they "modify".
+
+The UD project maintains that there is an advantage to this approach:
+
+> Preferring content words as heads maximizes parallelism between languages because content words vary less than function words between languages. In particular, one commonly finds the same grammatical relation being expressed by morphology in some languages or constructions and by function words in other languages or constructions, while some languages may not mark the information at all (such as not marking tense or definiteness).
+
+This advantage is also evident when investigating a single language from
+a diachronic perspective. LIM examines predicate-argument structure in Old,
+Classical, and Modern Tibetan, a period spanning over a century - a period
+that witnessed significant changes in argument and predicate marking.
+A particular predicate might mark its agent with one case marker at one stage, 
+and another at another stage. Viewing predicate-argument annotation
+as a relation between content words allows us to both abstract over such differences and
+to describe them in a systematic way. 
+
 Arguments depend on predicates via typed dependency relations. In order to
 generalize across instances of a predicate, it is necessary to adopt a consistent
 argument labeling policy.
@@ -114,6 +151,9 @@ without an `nsubj`, and no `iobj` without an `obj`. This becomes important
 when considering sentences with [missing arguments](#missing-arguments).
 
 ## Annotation examples
+
+In this section, we draw examples from Old (OT), Classical (CT) and
+Modern Tibetan (MT). Each example is cited with its stage and source.
 
 ### Three-place predicates
 
