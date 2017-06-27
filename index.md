@@ -219,19 +219,25 @@ T1  N 0 3 ནང་
 A1a Number T1 Sing
 T3  V 5 10  བསྡད་
 A3a Tense T3 Past
+A3b Args T3 nsubj
 T4  V 10 15 འདུག་
 A4a Tense T4 Invar
 T6  p 17 18 ང་
 A6a PronType T6 Pers
-T8  p 22 25 རང་
+T8  p 23 26 རང་
 A8a PronType T8 Pers
-T9  V 25 30 བསྡད་
+T9  V 26 31 བསྡད་
 A9a Tense T9 Past
-T11 V 32 36 ཡོད་
+A9b Args T9 nsubj
+R9a nsubj Arg1:T9 Arg2:T8
+T11 V 33 37 ཡོད་
 A11a  Tense T11 Invar
-T12 V 36 41 སེམས་
+T12 V 37 42 སེམས་
 A12a  Tense T12 Past
-T13 V 41 46 བྱུང་√x
+A12b  Args T12 nsubj,ccomp
+R12a  nsubj T12 T6
+R12b  ccomp T12 T9
+T13 V 42 47 བྱུང་√x
 A13a  Tense T13 Invar
 ~~~
 > _You're home. I thought you might not be home._ (MT - A Handmade Altar)
