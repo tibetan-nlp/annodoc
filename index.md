@@ -235,8 +235,8 @@ A11a  Tense T11 Invar
 T12 V 37 42 སེམས་
 A12a  Tense T12 Past
 A12b  Args T12 nsubj,ccomp
-R12a  nsubj T12 T6
-R12b  ccomp T12 T9
+R12a  nsubj Arg1:T12 Arg2:T6
+R12b  ccomp Arg1:T12 Arg2:T9
 T13 V 42 47 བྱུང་√x
 A13a  Tense T13 Invar
 ~~~
