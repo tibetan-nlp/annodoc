@@ -213,6 +213,10 @@ The sole argument of a one-place predicate is marked `nsubj`.
 
 ### Clausal arguments
 
+The following example shows a clausal argument of the verb བསམས་ "think".
+The content head word of the embedded clause (the verb བསྡད་) is linked to this
+verb by the `ccomp` relationship.
+
 ~~~ ann
 ནང་ལ་བསྡད་འདུག་ག་ངས་ནི་རང་བསྡད་ཨ་ཡོད་བསམས་བྱུང་།
 T1  N 0 3 ནང་
