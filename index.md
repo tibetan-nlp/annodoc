@@ -138,7 +138,7 @@ T6  p 26 28 སུ་√p
 A6a PronType T6 Int
 T8  V 30 34 འབྲི་√1
 A8a Tense T8 Past
-A8b Args T8 2:(nsubj,obj) 
+A8b Args T8 nsubj,obj 
 R1  nsubj Arg1:T6 Arg2:T8
 R2  obj Arg1:T5 Arg2:T8
 ~~~
@@ -159,7 +159,7 @@ T3  p 7 8 ང་√p
 A3a PronType T3 Pers
 T5  V 10 15 འབྲི་√1
 A5a Tense T5 Past
-A5b Args T5 2:(nsubj,obj)
+A5b Args T5 nsubj,obj
 R1  nsubj Arg1:T3 Arg2:T5
 R2  obj Arg1:T1 Arg2:T5
 ~~~
@@ -182,7 +182,7 @@ A1a Number T1 Sing
 T3  N 9 14  བླ་མ་
 A3a Number T3 Sing
 T5  V 16 19 འབུལ་
-A5b Args T5 3:(nsubj,obj,iobj)
+A5b Args T5 nsubj,obj,iobj
 R1  obj Arg1:T1 Arg2:T5
 R2  iobj Arg1:T3 Arg2:T5
 ~~~
@@ -210,8 +210,8 @@ to introduce empty elements to hold the place of missing arguments and
 participate in the necessary dependency relations.
 Given that Tibetan's word-order is extremely flexible, it would be difficult to
 know where to put such empty elements, if one was inclined to use them. A simpler
-solution - and the one we adopt - is to attach an attribute to the verb which states
-how many and what types of arguments it has. Hover over any of the verbs in the
+solution - and the one we adopt - is to attach an attribute to the verb that states
+which arguments it has. Hover over any of the verbs in the
 examples on this page and you will see this attribute.
 
 ## Multiword expressions
