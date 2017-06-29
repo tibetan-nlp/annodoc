@@ -350,8 +350,8 @@ relation. This is likely not the right approach for Tibetan. Instead,
 we link the `NOUN` to the `VERB` via the `obj` relation. So in the above examples,
 the verb has the frame `Args: nsubj,obj`.
 
-We take this approach for three reasons. First, if a third core argument occurs 
-with a light verb, then it may not appear with (unmarked) absolutive case, 
+We take this approach for three reasons. First, if an additional, non-subject 
+core argument occurs with a light verb, then it must not appear with (unmarked) absolutive case, 
 but must instead bear an overt case marker like an `iobj`. This suggests that the 
 `NOUN` part of a light verb construction is an object. Second, adopting the `compound` 
 dependency relation would make it more difficult to compare the use of a verb 
