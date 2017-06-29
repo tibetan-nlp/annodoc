@@ -343,3 +343,27 @@ T5  V 19 22 ཤོག
 ~~~
 > _Take three steps._ (MT - Sang né la: A0002)
 
+The UD project appears to suggest that in light verb constructions, the `NOUN` 
+should depend on the `VERB` via the 
+[`compound`](http://universaldependencies.org/u/dep/all.html#al-u-dep/compound)
+relation. We feel however that this is not the right approach for our project.
+If a third core argument occurs in a light verb construction in Tibetan,
+then it may not appear with (unmarked) absolutive case, but must instead
+bear an overt case marker as if it were an `iobj`. This suggests that the 
+`NOUN` in a light verb construction is an object.
+
+A second objection to using the `compound` dependency relation is that it
+could make it more difficult to compare constructions across different stages
+of the history of the language. Light verb constructions are widespread in
+Modern Tibetan, but perhaps less so in Classical and Old Tibetan. Yet, it
+is certainly possible that instantiations of this construction arose from
+combinations that were once semantically compositional.
+
+Third and finally, in the absence of sound syntactic tests, there is a certain
+subjectivity in diagnosing light verb constructions. We are not convinced that
+annotators would agree on when to label a relation as `compound`.
+
+Despite these objections, the importance to our project of identifying 
+light verbs cannot be understated. A proper verb lexicon needs to include
+those `NOUN` + `VERB` collocations that convey fundamental verbal meanings
+in the language. So a challenge remains.
