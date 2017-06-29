@@ -346,23 +346,24 @@ T5  V 19 22 ཤོག
 The UD project appears to suggest that in light verb constructions, the `NOUN` 
 should depend on the `VERB` via the 
 [`compound`](http://universaldependencies.org/u/dep/all.html#al-u-dep/compound)
-relation. This is likely not the right approach for Tibetan
-If a third core argument occurs with a light verb,
-then it may not appear with (unmarked) absolutive case, but must instead
-bear an overt case marker like an `iobj`. This suggests that the 
-`NOUN` part of a light verb construction is an object.
+relation. This is likely not the right approach for Tibetan. Instead,
+we link the `NOUN` to the `VERB` via the `obj` relation. So in the above examples,
+the verb has the frame `Args: nsubj,obj`.
 
-A second objection to using the `compound` dependency relation is that it
-would make it more difficult to compare the use of a verb across different stages
-of the history of the language. Light verb constructions are widespread in
-Modern Tibetan, but perhaps less so in Classical and Old Tibetan. Yet, it
-is certainly possible that instantiations of this construction arose from
-collocations that were once semantically compositional.
-Third and finally, in the absence of sound syntactic tests, there is a certain
-subjectivity in diagnosing light verb constructions. We are not convinced that
+We take this approach for three reasons. First, if a third core argument occurs 
+with a light verb, then it may not appear with (unmarked) absolutive case, 
+but must instead bear an overt case marker like an `iobj`. This suggests that the 
+`NOUN` part of a light verb construction is an object. Second, adopting the `compound` 
+dependency relation would make it more difficult to compare the use of a verb 
+across different stages of the history of the language. Light verb constructions 
+are widespread in Modern Tibetan, but perhaps less so in Classical and Old Tibetan.
+Yet, it is certainly possible that members of this construction arose from
+collocations that were once semantically compositional. Third and finally, 
+in the absence of sound syntactic tests, there is a certain subjectivity 
+in diagnosing light verb constructions. We are not convinced that
 annotators would agree on when to label a `compound` relation.
 
 Despite these objections, the importance to our project of identifying 
-light verbs cannot be understated. A proper verb lexicon needs to include
-those `NOUN` + `VERB` collocations that convey fundamental verbal meanings
-in the language. So a challenge remains.
+light verbs cannot be understated. A proper verb lexicon for Tibetan needs 
+to include those `NOUN` + `VERB` collocations that convey fundamental verbal 
+meanings in the language. So a challenge most certainly remains.
