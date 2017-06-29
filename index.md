@@ -333,13 +333,6 @@ T1  N 0 6 གོམ་པ་
 A1a Number T1 Sing
 T2  N 6 9 ལན་
 A2a Number T2 Sing
-T3  n 9 16  གསུམ་
-A3a NumType T3 Card
-T4  V 16 21 རྒྱག་√1
-A4a Tense T4 Pres
-A4b Args T4 nsubj,obj
-R4a obj Arg1:T4 Arg2:T1
-T5  V 21 24 ཤོག
 ~~~
 > _Take three steps._ (MT - Sang né la: A0002)
 
