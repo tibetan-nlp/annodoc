@@ -148,9 +148,15 @@ It is understood that the second and third arguments rely on the
 existence of the first and second, respectively. Therefore, there can be no `obj`
 without an `nsubj`, and no `iobj` without an `obj`. This becomes important
 when considering sentences with [missing arguments](#missing-arguments).
-
 The additional dependency relations `csubj`, `ccomp` and `xcomp` are available
 for marking core arguments that are clausal in nature.
+
+Note that the above characterization of core grammatical relations differs somewhat
+from that described by the UD project, where for example `nsubj` is said to be
+"in the position that passes typical grammatical tests for subjecthood". Here, we
+make no claims that there is a subject position in Tibetan grammar; rather, we
+are merely saying that `nsubj` is assigned to the most prominent argument _of a
+given predicate_.
 
 ## Annotation examples
 
@@ -292,3 +298,48 @@ what its core arguments are. Hover over any of the verbs in the
 examples on this page and you will see this attribute.
 
 ### Light verbs
+
+Like other languages of the region, Tibetan has a wealth of idiomatic light verb
+constructions. Usually these consist of a `NOUN` without any case marking followed
+by a semantically bleached `VERB`. Some such verbs are used with many different
+nouns to form different light verb constructions, whereas other verbs are
+limited to occur with only one or a small number of nouns.
+
+The following illustrates the use of the light verb གོམ་པ་རྒྱབ་ "to walk" - literally 
+"take steps". Here, the `VERB` immediately follows the `NOUN`.
+
+~~~ ann
+གོམ་པ་རྒྱབ་བྱས་ཐད་དོ།
+T1  N 0 6 གོམ་པ་
+A1a Number T1 Sing
+T2  V 6 11  རྒྱག་√1
+A2a Tense T2 Past
+A2b Args T2 nsubj,obj
+R2a obj Arg1:T2 Arg2:T1
+T3  V 11 15 བྱེད་
+A3a Tense T3 Past
+T4  V 15 18 ཐད་
+A4a Tense T4 Fut,Pres
+~~~
+> _Let's walk there._ (MT - A Visit to the Hospital, Abridged)
+
+In the following case, by contrast, the adverbial phrase ལན་གསུམ་ "three times"
+intervenes, showing that the component parts of the light verb construction
+are separable.
+
+~~~ ann
+གོམ་པ་ལན་གསུམ་རྒྱབ་ཤོག
+T1  N 0 6 གོམ་པ་
+A1a Number T1 Sing
+T2  N 6 9 ལན་
+A2a Number T2 Sing
+T3  n 9 16  གསུམ་
+A3a NumType T3 Card
+T4  V 16 21 རྒྱག་√1
+A4a Tense T4 Pres
+A4b Args T4 nsubj,obj
+R4a obj T4 obj
+T5  V 21 24 ཤོག
+~~~
+> _Take three steps._ (MT - Sang né la: A0002)
+
