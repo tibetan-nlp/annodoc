@@ -333,6 +333,8 @@ T1  N 0 6 གོམ་པ་
 A1a Number T1 Sing
 T2  N 6 9 ལན་
 A2a Number T2 Sing
+T3  n 9 16  གསུམ་
+A3a NumType T3 Card
 ~~~
 > _Take three steps._ (MT - Sang né la: A0002)
 
