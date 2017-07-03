@@ -174,7 +174,7 @@ relation between the verb and its overt arguments.
 
 A valid argument frame is composed of a set of core argument dependency
 relations, selected from the following list: 
-[`nsubj`](http://universaldependencies.org/u/dep/nsubj.html){, 
+[`nsubj`](http://universaldependencies.org/u/dep/nsubj.html),
 [`obj`](http://universaldependencies.org/u/dep/obj.html),
 [`iobj`](http://universaldependencies.org/u/dep/iobj.html),
 [`csubj`](http://universaldependencies.org/u/dep/csubj.html),
