@@ -229,6 +229,10 @@ A6a Number T6 Sing
 T7  V 29 37 སྦྱིན་པ་
 A7a Tense T7 Invar
 A7b VerbForm T7 Vnoun
+A7c Args T7 nsubj,obj,iobj
+R7a nsubj Arg1:T7 Arg2:T1
+R7b obj Arg1:T7 Arg2:T6
+R7c iobj Arg1:T7 Arg2:T4
 T8  V 37 41 ཟེར་
 A8a Mood T8 Qot
 T10 N 44 49 ལེའུ་
