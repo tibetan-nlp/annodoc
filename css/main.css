@@ -217,11 +217,11 @@ a:visited { color: #205caa; }
   padding: 8px 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px; */
-  font-size: 15px;
+  border-radius: 3px;
+  font-size: 15px; */
 }
 
-.entry code { padding: 1px 5px; }
+.entry code { /* padding: 1px 5px; */ }
 
 .entry ul,
 .entry ol { margin-left: 1.35em; }
