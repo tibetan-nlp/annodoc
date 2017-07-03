@@ -306,13 +306,15 @@ T2  P 2 21   ལྦ་ཤིང་ཀྲན་སྒྲི་སི་
 T3  V 23 30  ཕྱིན་པ་
 A3a Tense T3 Past
 A3b VerbForm T3 Vnoun
+A3c Args T3 nsubj
+R3a nsubj T3 Arg1:T3 Arg2:T1
 T4  V 30 34 ཡིན་
 A4a Tense T4 Invar
 T5  N 34 43 བདུན་ཕྲག་
 A5a Number T5 Sing
 T6  Num 43 47 གཉིས་
 ~~~
-> _I went to the Washington D.C for two weeks._ (MT - A Handmade Altar)
+> _I went to Washington D.C for two weeks._ (MT - A Handmade Altar)
 
 ### Special cases
 
