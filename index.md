@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: LIM Annotation Documentation 
+title: LIM Annotation Documentation  
 ---
 
 This page provides documentation of the annotation scheme for
@@ -18,7 +18,8 @@ project.
 * [Universal dependencies](#universal-dependencies)
   * [Part-of-speech tags](#part-of-speech-tags)
   * [Dependency relations](#dependency-relations)
-* [Annotation examples](#annotation-examples)
+* [Argument frames](#argument-frames)
+  * [Args: nsubj,obj](#args-nsubj-obj)
   * [Three-place predicates](#three-place-predicates)
   * [Two-place predicates](#two-place-predicates)
   * [One-place predicates](#one-place-predicates)
@@ -158,10 +159,12 @@ make no claims that there is a subject position in Tibetan grammar; rather, we
 are merely saying that `nsubj` is assigned to the most prominent argument _of a
 given predicate_.
 
-## Annotation examples
+## Argument frames
 
 In this section, we draw examples from Old (OT), Classical (CT) and
 Modern Tibetan (MT). Each example is cited with its stage and source.
+
+### Args: nsubj,obj
 
 ### Three-place predicates
 
