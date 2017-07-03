@@ -23,6 +23,7 @@ project.
     * [`nsubj, obj`](#nsubj-obj)
     * [`nsubj, obj, iobj`](#nsubj-obj-iobj)
     * [`nsubj, ccomp`](#nsubj-ccomp)
+    * [`nsubj, xcomp`](#nsubj-xcomp)
     * [`nsubj`](#nsubj)
   * [Special cases](#special-cases)
     * [Missing arguments](#missing-arguments)
@@ -295,16 +296,31 @@ A13a  Tense T13 Invar
 ~~~
 > _You're home. I thought you might not be home._ (MT - A Handmade Altar)
 
+#### `nsubj, xcomp`
+
+~~~ ann
+ཨ་ནི་ངས་ཨང་ཀི་དེ་ཕུལ་གག་ཕྱིན།
+T2  p 5 6 ང་
+T4  N 8 14  ཨང་ཀི་
+A4a Number T4 Sing
+T5  d 14 16 དེ་√d
+A5a PronType T5 Dem
+T6  V 16 20 འབུལ་
+T7  V 23 27 ཕྱིན་
+A7a Tense T7 Past
+~~~
+> _I will go give the number._ (MT - A Visit to the Hospital, Abridged)
+
 #### `nsubj`
 
 The sole argument of a one-place predicate is marked `nsubj`.
-
-We classify the canonical use of verbs of motion as sole argument verbs.
-Verbs of motion can occur with a variety of adpositional phrases, 
-specifying source, destination, and so on. These phrases should be linked to 
-the verb as oblique modifiers rather than arguments, using the 
-[obl](http://universaldependencies.org/u/dep/obl.html) relation.
-In the following example, in addition to an `nsubj`, there are two obliques.
+Although they can occur with a variety of adpositional phrases, 
+specifying source, destination, and so on, we classify the canonical 
+use of verbs of motion as sole argument verbs. Adpositional phrases
+should be linked to motion verbs as oblique modifiers rather than 
+as arguments, using the [obl](http://universaldependencies.org/u/dep/obl.html) 
+relation. In the following example, in addition to an `nsubj`, 
+there are two obliques.
 
 ~~~ ann
 ང་ལྦ་ཤིང་ཀྲན་སྒྲི་སི་ལ་ཕྱིན་པ་ཡིན་བདུན་ཕྲག་གཉིས།
