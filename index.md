@@ -19,10 +19,10 @@ project.
   * [Part-of-speech tags](#part-of-speech-tags)
   * [Dependency relations](#dependency-relations)
 * [Argument frames](#argument-frames)
-  * [`nsubj, obj`](#nsubj-obj)
-  * [`nsubj, obj, iobj`](#nsubj-obj-iobj)
-  * [`nsubj, ccomp`](#nsubj-ccomp)
-  * [`nsubj`](#nsubj)
+  * [V(nsubj, obj)](#v-nsubj-obj)
+  * [V(nsubj, obj, iobj)](#v-nsubj-obj-iobj)
+  * [V(nsubj, ccomp)](#v-nsubj-ccomp)
+  * [V(nsubj)](#v-nsubj)
   * [Three-place predicates](#three-place-predicates)
   * [Two-place predicates](#two-place-predicates)
   * [One-place predicates](#one-place-predicates)
@@ -167,13 +167,13 @@ given predicate_.
 In this section, we draw examples from Old (OT), Classical (CT) and
 Modern Tibetan (MT). Each example is cited with its stage and source.
 
-### `nsubj, obj`
+### V(nsubj, obj)
 
-### `nsubj, obj, iobj`
+### V(nsubj, obj, iobj)
 
-### `nsubj, ccomp`
+### V(nsubj, ccomp)
 
-### `nsubj`
+### V(nsubj)
 
 ### Three-place predicates
 
