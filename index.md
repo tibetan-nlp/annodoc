@@ -307,7 +307,7 @@ T3  V 23 30  ཕྱིན་པ་
 A3a Tense T3 Past
 A3b VerbForm T3 Vnoun
 A3c Args T3 nsubj
-R3a nsubj T3 Arg1:T3 Arg2:T1
+R3a nsubj Arg1:T3 Arg2:T1
 T4  V 30 34 ཡིན་
 A4a Tense T4 Invar
 T5  N 34 43 བདུན་ཕྲག་
