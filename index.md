@@ -173,10 +173,15 @@ it is necessary to specify the argument frame of the verb as well as the
 relation between the verb and its overt arguments.
 
 A valid argument frame is composed of a set of core argument dependency
-relations, selected from the following list: `nsubj`, `obj`, `iobj`, `csubj`,
-`ccomp`, and `xcomp`. In the examples that follow, observe that each annotated
-verb has an Args attribute which specifies its argument frame on that occasion
-of use.
+relations, selected from the following list: 
+[nsubj](http://universaldependencies.org/u/dep/nsubj.html), 
+[obj](http://universaldependencies.org/u/dep/obj.html),
+[iobj](http://universaldependencies.org/u/dep/iobj.html),
+[csubj](http://universaldependencies.org/u/dep/csubj.html),
+[ccomp](http://universaldependencies.org/u/dep/ccomp.html), and
+[xcomp](http://universaldependencies.org/u/dep/xcomp.html).
+In the examples that follow, each annotated verb has an Args attribute
+that specifies its argument frame on that occasion of use.
 
 #### nsubj, obj
 
