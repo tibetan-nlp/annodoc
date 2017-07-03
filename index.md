@@ -19,7 +19,7 @@ project.
   * [Part-of-speech tags](#part-of-speech-tags)
   * [Dependency relations](#dependency-relations)
 * [Argument frames](#argument-frames)
-  * [Args: nsubj,obj](#args-nsubj-obj)
+  * [Args: `nsubj,obj`](#args-nsubj-obj)
   * [Three-place predicates](#three-place-predicates)
   * [Two-place predicates](#two-place-predicates)
   * [One-place predicates](#one-place-predicates)
