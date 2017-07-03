@@ -299,6 +299,21 @@ A13a  Tense T13 Invar
 
 The sole argument of a one-place predicate is marked `nsubj`.
 
+~~~ ann
+ང་ལྦ་ཤིང་ཀྲན་སྒྲི་སི་ལ་ཕྱིན་པ་ཡིན་བདུན་ཕྲག་གཉིས།
+T1  p 0 2 ང་
+T2  P 2 21   ལྦ་ཤིང་ཀྲན་སྒྲི་སི་
+T3  V 23 30  ཕྱིན་པ་
+A3a Tense T3 Past
+A3b VerbForm T3 Vnoun
+T4  V 30 34 ཡིན་
+A4a Tense T4 Invar
+T5  N 34 43 བདུན་ཕྲག་
+A5a Number T5 Sing
+T6  Num 43 47 གཉིས་
+~~~
+> _I went to the Washington D.C for two weeks._ (MT - A Handmade Altar)
+
 ### Special cases
 
 Some special cases to be aware of.
