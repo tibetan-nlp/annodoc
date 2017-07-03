@@ -20,10 +20,10 @@ project.
   * [Dependency relations](#dependency-relations)
 * [Annotation scheme](#annotation-scheme)
   * [Argument frames](#argument-frames)
-    * [nsubj, obj](#nsubj-obj)
-    * [nsubj, obj, iobj](#nsubj-obj-iobj)
-    * [nsubj, ccomp](#nsubj-ccomp)
-    * [nsubj](#nsubj)
+    * [`nsubj, obj`](#nsubj-obj)
+    * [`nsubj, obj, iobj`](#nsubj-obj-iobj)
+    * [`nsubj, ccomp`](#nsubj-ccomp)
+    * [`nsubj`](#nsubj)
   * [Special cases](#special-cases)
     * [Missing arguments](#missing-arguments)
     * [Light verbs](#light-verbs)
@@ -174,16 +174,16 @@ relation between the verb and its overt arguments.
 
 A valid argument frame is composed of a set of core argument dependency
 relations, selected from the following list: 
-[nsubj](http://universaldependencies.org/u/dep/nsubj.html), 
-[obj](http://universaldependencies.org/u/dep/obj.html),
-[iobj](http://universaldependencies.org/u/dep/iobj.html),
-[csubj](http://universaldependencies.org/u/dep/csubj.html),
-[ccomp](http://universaldependencies.org/u/dep/ccomp.html), and
-[xcomp](http://universaldependencies.org/u/dep/xcomp.html).
+[`nsubj`](http://universaldependencies.org/u/dep/nsubj.html){, 
+[`obj`](http://universaldependencies.org/u/dep/obj.html),
+[`iobj`](http://universaldependencies.org/u/dep/iobj.html),
+[`csubj`](http://universaldependencies.org/u/dep/csubj.html),
+[`ccomp`](http://universaldependencies.org/u/dep/ccomp.html), and
+[`xcomp`](http://universaldependencies.org/u/dep/xcomp.html).
 In the examples that follow, each annotated verb has an Args attribute
 that specifies its argument frame on that occasion of use.
 
-#### nsubj, obj
+#### `nsubj, obj`
 
 The arguments of a two-place predicate are marked `nsubj` and `obj`, as in the
 the following example with the verb "to write". Here, the agent (the writer)
@@ -229,7 +229,7 @@ R2  obj Arg1:T1 Arg2:T5
 ~~~
 > _I wrote the words._ (MT - An Interview with the Fiddler Drado)
 
-#### nsubj, obj, iobj
+#### `nsubj, obj, iobj`
 
 The arguments of a three-place predicate are marked `nsubj`, `obj`, and `iobj`.
 
@@ -260,7 +260,7 @@ A12a  Tense T12 Invar
 ~~~
 > _This is the chapter on the story of the great sentient being giving his body to the tigress._ (MT - An Oral Commentary on The Tale of the Hungry Tigress: A Reader of Classical Tibetan 1.1)
 
-#### nsubj, ccomp
+#### `nsubj, ccomp`
 
 The following example shows a clausal argument of the verb བསམས་ "think".
 The content head word of the embedded clause (the verb བསྡད་) is linked to this
@@ -295,7 +295,7 @@ A13a  Tense T13 Invar
 ~~~
 > _You're home. I thought you might not be home._ (MT - A Handmade Altar)
 
-#### nsubj
+#### `nsubj`
 
 The sole argument of a one-place predicate is marked `nsubj`.
 
