@@ -167,7 +167,13 @@ given predicate_.
 In this section, we draw examples from Old (OT), Classical (CT) and
 Modern Tibetan (MT). Each example is cited with its stage and source.
 
-### Args: nsubj,obj
+### `nsubj, obj`
+
+### `nsubj, obj, iobj`
+
+### `nsubj, ccomp`
+
+### `nsubj`
 
 ### Three-place predicates
 
