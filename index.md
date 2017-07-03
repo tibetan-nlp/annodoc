@@ -18,17 +18,15 @@ project.
 * [Universal dependencies](#universal-dependencies)
   * [Part-of-speech tags](#part-of-speech-tags)
   * [Dependency relations](#dependency-relations)
-* [Argument frames](#argument-frames)
-  * [nsubj, obj](#nsubj-obj)
-  * [nsubj, obj, iobj](#nsubj-obj-iobj)
-  * [nsubj, ccomp](#nsubj-ccomp)
-  * [nsubj](#nsubj)
-  * [Three-place predicates](#three-place-predicates)
-  * [Two-place predicates](#two-place-predicates)
-  * [One-place predicates](#one-place-predicates)
-  * [Clausal arguments](#clausal-arguments)
-  * [Missing arguments](#missing-arguments)
-  * [Light verbs](#light-verbs)
+* [Annotation scheme](#annotation-scheme)
+  * [Argument frames](#argument-frames)
+    * [nsubj, obj](#nsubj-obj)
+    * [nsubj, obj, iobj](#nsubj-obj-iobj)
+    * [nsubj, ccomp](#nsubj-ccomp)
+    * [nsubj](#nsubj)
+  * [Special cases](#special-cases)
+    * [Missing arguments](#missing-arguments)
+    * [Light verbs](#light-verbs)
 
 ## Introduction
 
@@ -162,12 +160,14 @@ make no claims that there is a subject position in Tibetan grammar; rather, we
 are merely saying that `nsubj` is assigned to the most prominent argument _of a
 given predicate_.
 
-## Argument frames
+## Annotation scheme
+
+### Argument frames
 
 In this section, we draw examples from Old (OT), Classical (CT) and
 Modern Tibetan (MT). Each example is cited with its stage and source.
 
-### nsubj, obj
+#### nsubj, obj
 
 The arguments of a two-place predicate are marked `nsubj` and `obj`, as in the
 the following example with the verb "to write". Here, the agent (the writer)
@@ -213,11 +213,11 @@ R2  obj Arg1:T1 Arg2:T5
 ~~~
 > _I wrote the words._ (MT - An Interview with the Fiddler Drado)
 
-### nsubj, obj, iobj
+#### nsubj, obj, iobj
 
 The arguments of a three-place predicate are marked `nsubj`, `obj`, and `iobj`.
 
-### nsubj, ccomp
+#### nsubj, ccomp
 
 The following example shows a clausal argument of the verb བསམས་ "think".
 The content head word of the embedded clause (the verb བསྡད་) is linked to this
@@ -252,11 +252,15 @@ A13a  Tense T13 Invar
 ~~~
 > _You're home. I thought you might not be home._ (MT - A Handmade Altar)
 
-### nsubj
+#### nsubj
 
 The sole argument of a one-place predicate is marked `nsubj`.
 
-### Missing arguments 
+### Special cases
+
+Some special cases to be aware of.
+
+#### Missing arguments 
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
 discourse. In the following example, the verb is linked to its object and its indirect
@@ -301,7 +305,7 @@ solution - and the one we adopt - is to attach an attribute to the verb that sta
 what its core arguments are. Hover over any of the verbs in the
 examples on this page and you will see this attribute.
 
-### Light verbs
+#### Light verbs
 
 Like other languages of the region, Tibetan has a wealth of idiomatic light verb
 constructions. Usually these consist of a `NOUN` without any case marking followed
