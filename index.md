@@ -298,16 +298,27 @@ A13a  Tense T13 Invar
 
 #### `nsubj, xcomp`
 
+In the following example, the verb ཕྱིན་ takes an
+[`xcomp`](http://universaldependencies.org/u/dep/xcomp.html)
+clausal argument, where the embedded subject (the subject of ཕུལ་)
+must be the same as its own subject. Note that the `xcomp` relation
+links the main verb to the embedded verb.
+
 ~~~ ann
 ཨ་ནི་ངས་ཨང་ཀི་དེ་ཕུལ་གག་ཕྱིན།
 T2  p 5 6 ང་
 T4  N 8 14  ཨང་ཀི་
 A4a Number T4 Sing
-T5  d 14 16 དེ་√d
+T5  d 14 17 དེ་√d
 A5a PronType T5 Dem
-T6  V 16 20 འབུལ་
-T7  V 23 27 ཕྱིན་
+T6  V 17 21 འབུལ་
+A6a Args T6 nsubj,obj,iobj
+R6a obj Arg1:T6 Arg2:T4
+T7  V 24 28 ཕྱིན་
 A7a Tense T7 Past
+A7b Args T7 nsubj,xcomp
+R7a nsubj Arg1:T7 Arg2:T2
+R7b xcomp Arg1:T7 Arg2:T6
 ~~~
 > _I will go give the number._ (MT - A Visit to the Hospital, Abridged)
 
