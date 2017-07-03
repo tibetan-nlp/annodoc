@@ -162,10 +162,21 @@ given predicate_.
 
 ## Annotation scheme
 
-### Argument frames
-
 In this section, we draw examples from Old (OT), Classical (CT) and
 Modern Tibetan (MT). Each example is cited with its stage and source.
+
+### Argument frames
+
+This section describes each of the known argument frames that Tibetan verbs
+select for. Because arguments can generally be [omitted](#missing-arguments), 
+it is necessary to specify the argument frame of the verb as well as the 
+relation between the verb and its overt arguments.
+
+A valid argument frame is composed of a set of core argument dependency
+relations, selected from the following list: `nsubj`, `obj`, `iobj`, `csubj`,
+`ccomp`, and `xcomp`. In the examples that follow, observe that each annotated
+verb has an Args attribute which specifies its argument frame on that occasion
+of use.
 
 #### nsubj, obj
 
