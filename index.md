@@ -19,10 +19,10 @@ project.
   * [Part-of-speech tags](#part-of-speech-tags)
   * [Dependency relations](#dependency-relations)
 * [Argument frames](#argument-frames)
-  * [Args: nsubj, obj](#args-nsubj-obj)
-  * [Args: nsubj, obj, iobj](#args-nsubj-obj-iobj)
-  * [Args: nsubj, ccomp](#args-nsubj-ccomp)
-  * [Args: nsubj](#args-nsubj)
+  * [nsubj, obj](#nsubj-obj)
+  * [nsubj, obj, iobj](#nsubj-obj-iobj)
+  * [nsubj, ccomp](#nsubj-ccomp)
+  * [nsubj](#nsubj)
   * [Three-place predicates](#three-place-predicates)
   * [Two-place predicates](#two-place-predicates)
   * [One-place predicates](#one-place-predicates)
@@ -167,19 +167,7 @@ given predicate_.
 In this section, we draw examples from Old (OT), Classical (CT) and
 Modern Tibetan (MT). Each example is cited with its stage and source.
 
-### Args: nsubj, obj
-
-### Args: nsubj, obj, iobj
-
-### Args: nsubj, ccomp
-
-### Args: nsubj
-
-### Three-place predicates
-
-The arguments of a three-place predicate are marked `nsubj`, `obj`, and `iobj`.
-
-### Two-place predicates
+### nsubj, obj
 
 The arguments of a two-place predicate are marked `nsubj` and `obj`, as in the
 the following example with the verb "to write". Here, the agent (the writer)
@@ -225,11 +213,11 @@ R2  obj Arg1:T1 Arg2:T5
 ~~~
 > _I wrote the words._ (MT - An Interview with the Fiddler Drado)
 
-### One-place predicates
+### nsubj, obj, iobj
 
-The sole argument of a one-place predicate is marked `nsubj`.
+The arguments of a three-place predicate are marked `nsubj`, `obj`, and `iobj`.
 
-### Clausal arguments
+### nsubj, ccomp
 
 The following example shows a clausal argument of the verb བསམས་ "think".
 The content head word of the embedded clause (the verb བསྡད་) is linked to this
@@ -263,6 +251,10 @@ T13 V 42 47 བྱུང་√x
 A13a  Tense T13 Invar
 ~~~
 > _You're home. I thought you might not be home._ (MT - A Handmade Altar)
+
+### nsubj
+
+The sole argument of a one-place predicate is marked `nsubj`.
 
 ### Missing arguments 
 
