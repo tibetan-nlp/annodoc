@@ -225,21 +225,20 @@ T2  A 8 14  ཆེན་པོས་
 T4  N 16 23 སྟག་མོ་
 A4a Number T4 Sing
 T6  N 25 29 ལུས་
-A6a Number T1 Sing
-T7  V 29 35 སྦྱིན་པ་
+A6a Number T6 Sing
+T7  V 29 37 སྦྱིན་པ་
 A7a Tense T7 Invar
 A7b VerbForm T7 Vnoun
-T8  V 35 39 ཟེར་
+T8  V 37 41 ཟེར་
 A8a Mood T8 Qot
-T10 N 42 47 ལེའུ་
+T10 N 44 49 ལེའུ་
 A10a  Number T10 Sing
-T11 d 47 50 དེ་√d
+T11 d 49 52 དེ་√d
 A11a  PronType T11 Dem
-T12 V 50 53 རེད་
+T12 V 52 55 རེད་
 A12a  Tense T12 Invar
 ~~~
 > _This is the chapter on the story of the great sentient being giving his body to the tigress._ (MT - An Oral Commentary on The Tale of the Hungry Tigress: A Reader of Classical Tibetan 1.1)
-
 
 #### nsubj, ccomp
 
