@@ -299,20 +299,29 @@ A13a  Tense T13 Invar
 
 The sole argument of a one-place predicate is marked `nsubj`.
 
+We classify the canonical use of verbs of motion as sole argument verbs.
+Verbs of motion can occur with a variety of adpositional phrases, 
+specifying source, destination, and so on. These phrases should be linked to 
+the verb as oblique modifiers rather than arguments, using the 
+[obl](http://universaldependencies.org/u/dep/obl.html) relation.
+In the following example, in addition to an `nsubj`, there are two obliques.
+
 ~~~ ann
 ང་ལྦ་ཤིང་ཀྲན་སྒྲི་སི་ལ་ཕྱིན་པ་ཡིན་བདུན་ཕྲག་གཉིས།
 T1  p 0 2 ང་
 T2  P 2 21   ལྦ་ཤིང་ཀྲན་སྒྲི་སི་
-T3  V 23 30  ཕྱིན་པ་
-A3a Tense T3 Past
-A3b VerbForm T3 Vnoun
-A3c Args T3 nsubj
-R3a nsubj Arg1:T3 Arg2:T1
-T4  V 30 34 ཡིན་
-A4a Tense T4 Invar
-T5  N 34 43 བདུན་ཕྲག་
-A5a Number T5 Sing
-T6  Num 43 47 གཉིས་
+T4  V 23 30  ཕྱིན་པ་
+A4a Tense T4 Past
+A4b VerbForm T4 Vnoun
+A4c Args T4 nsubj
+R4a nsubj Arg1:T4 Arg2:T1
+R4b obl Arg1:T4 Arg2:T2
+R4c obl Arg1:T4 Arg2:T6
+T5  V 30 34 ཡིན་
+A5a Tense T5 Invar
+T6  N 34 43 བདུན་ཕྲག་
+A6a Number T6 Sing
+T7  Num 43 47 གཉིས་
 ~~~
 > _I went to Washington D.C for two weeks._ (MT - A Handmade Altar)
 
