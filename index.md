@@ -217,6 +217,30 @@ R2  obj Arg1:T1 Arg2:T5
 
 The arguments of a three-place predicate are marked `nsubj`, `obj`, and `iobj`.
 
+~~~ ann
+སེམས་ཅན་ཆེན་པོས་སྟག་མོ་ལ་ལུས་སྦྱིན་པ་ཟེར་ཡས་ལེའུ་དེ་རེད།
+T1  N 0 8 སེམས་ཅན་
+A1a Number T1 Sing
+T2  A 8 14  ཆེན་པོས་
+T4  N 16 23 སྟག་མོ་
+A4a Number T4 Sing
+T6  N 25 29 ལུས་
+A6a Number T1 Sing
+T7  V 29 35 སྦྱིན་པ་
+A7a Tense T7 Invar
+A7b VerbForm T7 Vnoun
+T8  V 35 39 ཟེར་
+A8a Mood T8 Qot
+T10 N 42 47 ལེའུ་
+A10a  Number T10 Sing
+T11 d 47 50 དེ་√d
+A11a  PronType T11 Dem
+T12 V 50 53 རེད་
+A12a  Tense T12 Invar
+~~~
+> _This is the chapter on the story of the great sentient being giving his body to the tigress._ (MT - An Oral Commentary on The Tale of the Hungry Tigress: A Reader of Classical Tibetan 1.1)
+
+
 #### nsubj, ccomp
 
 The following example shows a clausal argument of the verb བསམས་ "think".
