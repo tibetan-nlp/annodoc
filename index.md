@@ -329,7 +329,7 @@ Although they can occur with a variety of adpositional phrases,
 specifying source, destination, and so on, we classify the canonical 
 use of verbs of motion as sole argument verbs. Adpositional phrases
 should be linked to motion verbs as oblique modifiers rather than 
-as arguments, using the [obl](http://universaldependencies.org/u/dep/obl.html) 
+as arguments, using the [`obl`](http://universaldependencies.org/u/dep/obl.html) 
 relation. In the following example, in addition to an `nsubj`, 
 there are two obliques.
 
