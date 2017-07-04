@@ -230,6 +230,25 @@ R2  obj Arg1:T1 Arg2:T5
 ~~~
 > _I wrote the words._ (MT - An Interview with the Fiddler Drado)
 
+It is not necessary for an `nsubj, obj` verb to be agentive. In the
+following case, the verb is involuntary, and the object forms a
+[light verb](#light-verbs) construction together with the verb.
+Still, there are clearly two distinct verbal aguments in play.
+
+~~~ ann
+ང་གྲོད་ཁོག་ཞེ་པོ་བཤལ་གྱིས་ལགས།
+T1  p 0 2 ང་
+T2  N 2 11 གྲོད་ཁོག་
+A2a Number T2 Sing
+T3  D 11 17  ཞེ་པོ་
+T4  V 17 21 བཤལ་
+A4a Tense V Pres
+A4b Args T4 nsubj,obj
+R4a nsubj Arg1:T4 Arg2:T1
+R4b obj Arg1:T4 Arg2:T2
+~~~
+> _I've got bad diarrhea._ (MT - Diarrhea)
+
 #### `nsubj, obj, iobj`
 
 The arguments of a three-place predicate are marked `nsubj`, `obj`, and `iobj`.
