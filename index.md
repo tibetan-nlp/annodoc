@@ -70,8 +70,8 @@ valency shifting operations in Tibetan.
 
 The second obvious challenge for the annotator is to distinguish between
 core arguments and oblique modifiers. Given that core arguments can be
-omitted, optionality of overt expression cannot be the key factor. We may have
-to learn this as we go along, documenting the specific `ADP`, `SCONJ` and other 
+omitted, optionality of overt expression cannot be the key factor. 
+It will be helpful to document the specific `ADP`, `SCONJ` and other 
 function words that are likely to signal an oblique.
 
 Note that annotators are not asked to do the following:
@@ -498,4 +498,4 @@ annotators would agree on when to label a `compound` relation.
 Despite these objections, the importance to our project of identifying 
 light verbs cannot be understated. A proper verb lexicon for Tibetan needs 
 to include those `NOUN` + `VERB` collocations that convey fundamental verbal 
-meanings in the language. So a challenge most certainly remains.
+meanings in the language.
