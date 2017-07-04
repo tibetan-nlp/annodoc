@@ -143,7 +143,7 @@ The UD project maintains that there is an advantage to this approach:
 
 This advantage is also evident when investigating a single language from
 a diachronic perspective. LIM examines predicate-argument structure in Old,
-Classical, and Modern Tibetan - a period spanning over a century, and one
+Classical, and Modern Tibetan - a period spanning over a millenium, and one
 that witnessed significant changes in argument and predicate marking.
 A particular predicate might mark its agent with one case marker at one stage, 
 and another at another stage. Viewing predicate-argument annotation
