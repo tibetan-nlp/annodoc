@@ -5,7 +5,8 @@ title: LIM Annotation Documentation
 
 This page provides documentation of the annotation scheme for
 Tibetan language texts used by the project *Lexicography in Motion* (LIM) 
-based at SOAS University of London and LMU Munich.
+based at SOAS University of London and the Bavarian Academy of Sciences
+and Humanities (_Bayerische Akademie der Wissenschaften_) in Munich.
 
 The project is focused on verbs, with the annotation of predicate-argument structure
 a key objective. In the process, we hope to build a dependency corpus for
