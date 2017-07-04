@@ -45,11 +45,19 @@ we ask the annotator to perform the following tasks:
 1. Identify and label the core arguments of each verb.
     * Identify at most one head word for each core argument position.
     * Link each argument head word to its verb using one of the following
-    dependency relations: `nsubj`, `obj`, `iobj`, `csubj`, `ccomp` or `xcomp`.
+    dependency relations: 
+    [`nsubj`](http://universaldependencies.org/u/dep/nsubj.html), 
+    [`obj`](http://universaldependencies.org/u/dep/obj.html), 
+    [`iobj`](http://universaldependencies.org/u/dep/iobj.html), 
+    [`csubj`](http://universaldependencies.org/u/dep/csubj.html), 
+    [`ccomp`](http://universaldependencies.org/u/dep/ccomp.html), or 
+    [`xcomp`](http://universaldependencies.org/u/dep/xcomp.html).
 1. Identify and label the oblique modifiers of each verb.
     * Identify any modifiers related to the verb.
     * Link the head word of each such modifier to the verb, using one of
-    the following dependency relations: `advcl`, `acl`, or `obl`. 
+    the following dependency relations: 
+    [`obl`](http://universaldependencies.org/u/dep/obl.html) or 
+    [`advcl`](http://universaldependencies.org/u/dep/advcl.html).
 
 This task list poses some challenges for the annotator. 
 Implicit in step 2 is the requirement
