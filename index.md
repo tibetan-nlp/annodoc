@@ -380,6 +380,29 @@ T7  Num 43 47 གཉིས་
 ~~~
 > _I went to Washington D.C for two weeks._ (MT - A Handmade Altar)
 
+~~~ ann
+དེ་ཚོ་བརྒྱབ་ནས་ལོ་ག་ཚོད་ཕྱིན་ཡོད་རེད།
+T1  d 0 3 དེ་√d
+A1a PronType T1 Dem
+T3  V 6 12  རྒྱག་√1
+A3a Tense T3 Past
+A3b Args T3 nsubj,obj
+R3a obj Arg1:T3 Arg2:T1
+T5  N 15 18 ལོ་
+A5a Number T5 Sing
+T6  d 18 24 ག་ཚོད་
+A6a PronType T6 Int
+T7  V 24 29 ཕྱིན་
+A7a Tense T7 Past
+A7b Args T7 nsubj
+T8  V 29 33 ཡོད་
+A8a Tense T8 Invar
+T9  V 33 36 རེད་√1
+A8a Tense T8 Invar
+~~~
+> _How long has it been since they were built?_ (MT - The Chapter 26 Dialog from A Manual)
+
+
 ### Special cases
 
 Some special cases to be aware of.
