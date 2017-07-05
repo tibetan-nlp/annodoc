@@ -380,6 +380,12 @@ T7  Num 43 47 གཉིས་
 ~~~
 > _I went to Washington D.C for two weeks._ (MT - A Handmade Altar)
 
+The next example shows the same verb ཕྱིན་ occurring with a single
+argument - this time, it refers to the passage of time. Note that
+in this case the head (verb) of the adverbial clause is linked to
+the main verb via the [`advcl`](http://universaldependencies.org/u/dep/advcl.html) 
+relation.
+
 ~~~ ann
 དེ་ཚོ་བརྒྱབ་ནས་ལོ་ག་ཚོད་ཕྱིན་ཡོད་རེད།
 T1  d 0 3 དེ་√d
@@ -395,13 +401,14 @@ A6a PronType T6 Int
 T7  V 24 29 ཕྱིན་
 A7a Tense T7 Past
 A7b Args T7 nsubj
+R7a nsubj Arg1:T7 Arg2:T5
+R7b advcl Arg1:T7 Arg2:T3
 T8  V 29 33 ཡོད་
 A8a Tense T8 Invar
 T9  V 33 36 རེད་√1
 A8a Tense T8 Invar
 ~~~
-> _How long has it been since they were built?_ (MT - The Chapter 26 Dialog from A Manual)
-
+> _How many years has it been since they were built?_ (MT - The Chapter 26 Dialog from A Manual)
 
 ### Special cases
 
