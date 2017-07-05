@@ -381,10 +381,9 @@ T7  Num 43 47 གཉིས་
 > _I went to Washington D.C for two weeks._ (MT - A Handmade Altar)
 
 The next example shows the same verb ཕྱིན་ occurring with a single
-argument - this time, it refers to the passage of time. Note that
-in this case the head (verb) of the adverbial clause is linked to
-the main verb via the [`advcl`](http://universaldependencies.org/u/dep/advcl.html) 
-relation.
+argument, referring to the passage of time. Note that
+the head (verb) of the adverbial clause is linked to the main verb via 
+the [`advcl`](http://universaldependencies.org/u/dep/advcl.html) relation.
 
 ~~~ ann
 དེ་ཚོ་བརྒྱབ་ནས་ལོ་ག་ཚོད་ཕྱིན་ཡོད་རེད།
