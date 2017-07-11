@@ -143,7 +143,7 @@ The UD project maintains that there is an advantage to this approach:
 
 This advantage is also evident when investigating a single language from
 a diachronic perspective. LIM examines predicate-argument structure in Old,
-Classical, and Modern Tibetan - a period spanning over a millenium, and one
+Classical, and Modern Tibetan - a period spanning over a millennium, and one
 that witnessed significant changes in argument and predicate marking.
 A particular predicate might mark its agent with one case marker at one stage, 
 and another at another stage. Viewing predicate-argument annotation
@@ -216,7 +216,7 @@ A8b Args T8 nsubj,obj
 R1  nsubj Arg1:T6 Arg2:T8
 R2  obj Arg1:T5 Arg2:T8
 ~~~
-> _Who wrote your last testment?_ (CT - Milarepa)
+> _Who wrote your will?_ (CT - Milarepa)
 
 The next example illustrates the same verbal lemma in Modern Tibetan.
 Despite the presence of periphrastic TAME marking following the verb, 
