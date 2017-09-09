@@ -391,7 +391,7 @@ level, as and when it becomes necessary.
 #### Auxiliaries
 
 In a verbal linking construction, use the 
-[`aux`]((http://universaldependencies.org/u/dep/all.html#al-u-dep/aux) 
+[`aux`](http://universaldependencies.org/u/dep/all.html#al-u-dep/aux) 
 relation to link a `V` or `V n`
 to the `x` or `x n`. The copula itself does not have an
 argument structure when used as an auxiliary in periphrastic constructions. 
