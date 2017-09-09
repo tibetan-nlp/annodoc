@@ -7,7 +7,6 @@ This page provides documentation of the annotation scheme for
 Tibetan language texts used by the project *Lexicography in Motion* (LIM) 
 based at SOAS University of London and the Bavarian Academy of Sciences
 and Humanities (_Bayerische Akademie der Wissenschaften_) in Munich.
-
 The project is focused on verbs, with the annotation of predicate-argument structure
 a key objective. In the process, we hope to build a dependency corpus for
 Tibetan that can be contributed to the [Universal Dependencies](http://universaldependencies.org/)
@@ -47,20 +46,6 @@ we ask the annotator to perform the following tasks:
     the following dependency relations: 
     [`obl`](http://universaldependencies.org/u/dep/obl.html) or 
     [`advcl`](http://universaldependencies.org/u/dep/advcl.html).
-
-This task list poses some challenges for the annotator. 
-Implicit in step 2 is the requirement
-that the annotator is able to discern when the core arguments of a verb
-have been omitted (see [missing arguments](#missing-arguments)). Fortunately,
-the initial identification of a verb's core argument structure should suffice
-to solve this problem in most cases, given the paucity of non-form affecting 
-valency shifting operations in Tibetan.
-
-The second obvious challenge for the annotator is to distinguish between
-core arguments and oblique modifiers. Given that core arguments can be
-omitted, optionality of overt expression cannot be the key factor. 
-It will be helpful to document the specific `ADP`, `SCONJ` and other 
-function words that are likely to signal an oblique.
 
 Note that annotators are not asked to do the following:
 
@@ -115,23 +100,19 @@ This advantage is also evident when investigating a single language from
 a diachronic perspective. LIM examines predicate-argument structure in Old,
 Classical, and Modern Tibetan - a period spanning over a millennium, and one
 that witnessed significant changes in argument and predicate marking.
-A particular predicate might mark its agent with one case marker at one stage, 
-and another at another stage. Viewing predicate-argument annotation
+A particular predicate might mark its agent with agentive case at one stage, 
+and no case at another stage. Viewing predicate-argument annotation
 as a relation between content words allows us both to abstract over such differences and
 to describe them in a systematic way.
 
-Arguments depend on predicates via typed dependency relations. In order to
-generalize across instances of a predicate, it is necessary to adopt a consistent
-argument labeling policy. This policy has the following principles: 
+In order to generalize across instances of a predicate, it is necessary to adopt a consistent
+argument labeling policy. We adopt the following principles: 
 
-1. Arguments must occur either with agentive case or without case-marking. 
-2. When a verb has more than one argument, `arg1` links to the argument that satisfies the most proto-agent properties.
+1. Arguments can occur marked by agentive case or without case-marking. Other case markers signal an oblique. Therefore, agentive case is given unique treatment amongst the adpositional case markers; it is the only `ADP` that doesn't force its nominal to be linked as an `obl`. 
+2. When a verb has more than one argument, `arg1` links to the argument that is the best proto-agent.
 3. `arg1` and `arg2` are reserved for nominal arguments, and `argcl` is reserved for clausal arguments.
-4. Being an argument (in our sense) is not the same as contributing a semantic role to the verb. For example, we classify the nouns in light verb constructions as `arg2` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` even though they may be essential to the meaning of the phrase.
-
-Based on the above, it should be clear that agentive case is given unique
-treatment amongst the adpositional case markers. For our purposes, it is
-the only `ADP` that doesn't force its nominal to be linked as an `obl`. 
+4. Being an argument is distinct from contributing a semantic role to the verb. For example, the nouns in light verb constructions are classified as `arg2` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` even though they may be essential to the meaning of the phrase.
+5. A word cannot be the argument of more than one verb at the same time. When this principle appears to be violated, then you are likely to have a scenario where all but one of the verbs has a missing argument. In this case, link the word to the verb whose local context it occurs in. (This verb might, though not necessarily, determine the word's case marking.) In general, this principle implies that argument-marking is local rather than long-distance. It also implies that when a word has been displaced from its "usual" position - for example, as the external head of a relative clause - then its usual position will be considered to be "occupied" by a missing argument.
 
 ## Annotation scheme
 
