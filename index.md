@@ -109,12 +109,12 @@ as a relation between content words allows us both to abstract over such differe
 to describe them in a systematic way.
 
 In order to generalize across instances of a predicate, it is necessary to adopt a consistent
-argument labeling policy. We adopt the following principles: 
+annotation policy. We adopt the following principles: 
 
 1. _Every verb is annotated and no verb is ignored._ A verb is either linked to its arguments or pointed to by a main predicate (as in the case of auxiliaries and copulas, which lack argument structure).
 2. _Arguments can occur marked by agentive case or without case-marking._ Other case markers signal an oblique. Agentive case is therefore given unique treatment amongst the adpositional case markers; it is the only `ADP` that doesn't force its nominal to be linked as an `obl`. 
-3. _When a verb has more than one argument, `arg1` links to the argument that is the best proto-agent._
-4. _`arg1` and `arg2` are reserved for nominal arguments, and `argcl` is reserved for clausal arguments._
+3. _When a verb has more than one argument, link `arg1` to the argument that is the best proto-agent._ That is, compare the arguments in terms of the agent properties that they have, and pick the one that is the best agent. 
+4. _`arg1` and `arg2` are reserved for nominal arguments, and `argcl` is reserved for clausal arguments._ `argcl` includes what UD refers to as [`ccomp`](http://universaldependencies.org/u/dep/ccomp.html) and [`xcomp`](http://universaldependencies.org/u/dep/xcomp.html). 
 5. _A word cannot be the argument of more than one verb at the same time._ When this principle appears to be violated, then all but one of the verbs likely has a missing argument. Link the word to the verb in whose local context it occurs. (This verb may, though not necessarily, determine the word's case marking.) This principle implies that argument-marking is local rather than long-distance. It also implies that when a word has been displaced from its "usual" position - for example, as the external head of a relative clause - then its usual position will be "occupied" by a missing argument.
 6. _Being an argument is distinct from contributing a semantic role to the verb._ For example, the nouns in light verb constructions are classified as `arg2` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` even though they may be essential to the meaning of the phrase.
 
@@ -128,9 +128,7 @@ Modern Tibetan (MT). Each example is cited with its stage and source.
 This section illustrates some of the argument frames that Tibetan verbs
 select for. Because arguments can generally be [omitted](#missing-arguments),
 care must be taken to assign the correct roles to the arguments that are 
-overt. 
-
-A valid argument frame is composed of a set of core argument dependency
+overt. A valid argument frame is composed of a set of core argument dependency
 relations, selected from the following list: 
 `arg1`, `arg2`, `argcl`.
 
@@ -392,16 +390,19 @@ level, as and when it becomes necessary.
 
 #### Auxiliaries
 
-In a verbal linking construction, use the `aux` relation to link a `V` or `V n`
+In a verbal linking construction, use the 
+[`aux`]((http://universaldependencies.org/u/dep/all.html#al-u-dep/aux) 
+relation to link a `V` or `V n`
 to the `x` or `x n`. The copula itself does not have an
 argument structure when used as an auxiliary in periphrastic constructions. 
-See http://universaldependencies.org/u/dep/all.html#al-u-dep/aux 
 
 #### Copulas
 
-In a copular linking construction, use the `cop` relation to link a predicate
+In a copular linking construction, use the 
+[`cop`](http://universaldependencies.org/u/dep/all.html#al-u-dep/cop)
+relation to link a predicate
 (e.g. an adjective) to the `x` or `x n`. The copula itself does not have an
-argument structure. See http://universaldependencies.org/u/dep/all.html#al-u-dep/cop
+argument structure. 
  
 #### Light verbs
 
@@ -459,8 +460,8 @@ relation. This is likely not the right approach for Tibetan. Instead,
 we link the `NOUN` to the `VERB` via the `arg2` relation. So in the above examples,
 the verb has the frame `arg1, arg2`.
 
-We take this approach for three reasons. First, if an additional, non-subject 
-core argument occurs with a light verb, then it must not appear with (unmarked) absolutive case, 
+We take this approach for three reasons. First, if an additional non-agent 
+semantic role occurs with a light verb, then it must not appear with (unmarked) absolutive case, 
 but must instead bear an overt oblique case marker. This suggests that the 
 `NOUN` part of a light verb construction is a syntactic object. Second, adopting the `compound` 
 dependency relation would make it more difficult to compare the use of a verb 
