@@ -23,9 +23,12 @@ project.
     * [`arg1, arg2`](#arg1-arg2)
     * [`arg1, argcl`](#arg1-argcl)
     * [`arg1`](#arg1)
-  * [Special cases](#special-cases)
-    * [Missing arguments](#missing-arguments)
+  * [Missing arguments](#missing-arguments)
+  * [Specific constructions](#specific-constructions)
+    * [Auxiliaries](#auxiliaries)
+    * [Copulas](#copulas)
     * [Light verbs](#light-verbs)
+    * [Relative clauses](#relative-clauses)
 
 ## Introduction
 
@@ -108,11 +111,12 @@ to describe them in a systematic way.
 In order to generalize across instances of a predicate, it is necessary to adopt a consistent
 argument labeling policy. We adopt the following principles: 
 
-1. _Arguments can occur marked by agentive case or without case-marking._ Other case markers signal an oblique. Therefore, agentive case is given unique treatment amongst the adpositional case markers; it is the only `ADP` that doesn't force its nominal to be linked as an `obl`. 
-2. _When a verb has more than one argument, `arg1` links to the argument that is the best proto-agent._
-3. _`arg1` and `arg2` are reserved for nominal arguments, and `argcl` is reserved for clausal arguments._
-4. _A word cannot be the argument of more than one verb at the same time._ When this principle appears to be violated, then all but one of the verbs likely has a missing argument. Link the word to the verb in whose local context it occurs. (This verb may, though not necessarily, determine the word's case marking.) This principle implies that argument-marking is local rather than long-distance. It also implies that when a word has been displaced from its "usual" position - for example, as the external head of a relative clause - then its usual position will be "occupied" by a missing argument.
-5. _Being an argument is distinct from contributing a semantic role to the verb._ For example, the nouns in light verb constructions are classified as `arg2` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` even though they may be essential to the meaning of the phrase.
+1. _Every verb is annotated and no verb is ignored._ A verb is either linked to its arguments or pointed to by a main predicate (as in the case of auxiliaries and copulas, which lack argument structure).
+2. _Arguments can occur marked by agentive case or without case-marking._ Other case markers signal an oblique. Agentive case is therefore given unique treatment amongst the adpositional case markers; it is the only `ADP` that doesn't force its nominal to be linked as an `obl`. 
+3. _When a verb has more than one argument, `arg1` links to the argument that is the best proto-agent._
+4. _`arg1` and `arg2` are reserved for nominal arguments, and `argcl` is reserved for clausal arguments._
+5. _A word cannot be the argument of more than one verb at the same time._ When this principle appears to be violated, then all but one of the verbs likely has a missing argument. Link the word to the verb in whose local context it occurs. (This verb may, though not necessarily, determine the word's case marking.) This principle implies that argument-marking is local rather than long-distance. It also implies that when a word has been displaced from its "usual" position - for example, as the external head of a relative clause - then its usual position will be "occupied" by a missing argument.
+6. _Being an argument is distinct from contributing a semantic role to the verb._ For example, the nouns in light verb constructions are classified as `arg2` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` even though they may be essential to the meaning of the phrase.
 
 ## Annotation scheme
 
@@ -336,11 +340,10 @@ A8a Tense T8 Invar
 
 Another example of a single argument verb is ཡོད་.
 
-### Special cases
+ཨ་ཁུ་ལ་བུ་མང་པོ་ཡོད་པ།
+> _The uncle had many sons._ 
 
-Some special cases to be aware of.
-
-#### Missing arguments 
+### Missing arguments 
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
 discourse. In the following example, the verb is linked to its `arg2`, 
@@ -384,6 +387,21 @@ address argument structure at the level of the lemma - and perhaps later,
 at the level of word sense. Annotators are required to choose a lemma;
 for the moment, we assume that argument structure will be handled at this
 level, as and when it becomes necessary.
+
+### Specific constructions
+
+#### Auxiliaries
+
+In a verbal linking construction, use the `aux` relation to link a `V` or `V n`
+to the `x` or `x n`. The copula itself does not have an
+argument structure when used as an auxiliary in periphrastic constructions. 
+See http://universaldependencies.org/u/dep/all.html#al-u-dep/aux 
+
+#### Copulas
+
+In a copular linking construction, use the `cop` relation to link a predicate
+(e.g. an adjective) to the `x` or `x n`. The copula itself does not have an
+argument structure. See http://universaldependencies.org/u/dep/all.html#al-u-dep/cop
  
 #### Light verbs
 
@@ -429,6 +447,11 @@ T5  V 19 22 ཤོག
 ~~~
 > _Take three steps._ (MT - Sang né la: A0002)
 
+There are also examples in Classical Tibetan, for example:
+
+zhang pos so nam byas pa’i nas 
+> _the barley which was cultivated by the uncle_ (CT - Mila 11a)
+
 The UD project appears to suggest that in light verb constructions, the `NOUN` 
 should depend on the `VERB` via the 
 [`compound`](http://universaldependencies.org/u/dep/all.html#al-u-dep/compound)
@@ -453,3 +476,12 @@ Despite these objections, the importance to our project of identifying
 light verbs cannot be understated. A proper verb lexicon for Tibetan needs 
 to include those `NOUN` + `VERB` collocations that convey fundamental verbal 
 meanings in the language.
+
+#### Relative clauses
+
+Repeating the example from above:
+
+zhang pos so nam byas pa’i nas
+> _the barley which was cultivated by the uncle_ (CT - Mila 11a)
+
+
