@@ -21,11 +21,9 @@ project.
   * [Dependency relations](#dependency-relations)
 * [Annotation scheme](#annotation-scheme)
   * [Argument frames](#argument-frames)
-    * [`nsubj, obj`](#nsubj-obj)
-    * [`nsubj, obj, iobj`](#nsubj-obj-iobj)
-    * [`nsubj, ccomp`](#nsubj-ccomp)
-    * [`nsubj, xcomp`](#nsubj-xcomp)
-    * [`nsubj`](#nsubj)
+    * [`arg1, arg2`](#arg1-arg2)
+    * [`arg1, argcl`](#arg1-argcl)
+    * [`arg1`](#arg1)
   * [Special cases](#special-cases)
     * [Missing arguments](#missing-arguments)
     * [Light verbs](#light-verbs)
@@ -39,20 +37,10 @@ to keep semantic decisions to a minimum, leaving such considerations to the
 lexicographer. For each part-of-speech tagged annotation unit,
 we ask the annotator to perform the following tasks:
 
-1. Identify and label the verbs.
-    * Identify each verb.
-    * Label each verb with the argument frame that is required to capture
-    all of its understood arguments on that occasion of use.
 1. Identify and label the core arguments of each verb.
     * Identify at most one head word for each core argument position.
     * Link each argument head word to its verb using one of the following
-    dependency relations: 
-    [`nsubj`](http://universaldependencies.org/u/dep/nsubj.html), 
-    [`obj`](http://universaldependencies.org/u/dep/obj.html), 
-    [`iobj`](http://universaldependencies.org/u/dep/iobj.html), 
-    [`csubj`](http://universaldependencies.org/u/dep/csubj.html), 
-    [`ccomp`](http://universaldependencies.org/u/dep/ccomp.html), or 
-    [`xcomp`](http://universaldependencies.org/u/dep/xcomp.html).
+    dependency relations: `arg1`, `arg2`, or `argcl`. 
 1. Identify and label the oblique modifiers of each verb.
     * Identify any modifiers related to the verb.
     * Link the head word of each such modifier to the verb, using one of
@@ -79,56 +67,38 @@ Note that annotators are not asked to do the following:
 1. Identify equivalencies across different verbs.
 2. Label the semantic roles of core arguments or oblique modifiers.
 
-For example, the `nsubj` for different verbs could be marked with completely
-different `ADP`, or have completely different semantic roles. It is only
-necessary that a given verb's `nsubj` is held constant across the various
+For example, the `arg1` for different verbs could have different semantic roles.
+It is only necessary that a given verb's `arg1` is held constant across the various
 uses of *the same verb*.
 
 ## Universal dependencies
 
 ### Part-of-speech tags
 
-Since we are concerned primarily with annotating predicate-argument
-structure as a relation between content words, we declutter the user interface
-by simplifying and minimizing the display of part-of-speech tags. First, we use 
-universal POS tags rather than the more verbose SOAS tags. These tags are mapped 
-directly from the [SOAS system](http://larkpie.net/tibetancorpus/tags)
+We use the universal POS tag scheme rather than the more verbose SOAS tags.
+We have mapped directly from the 
+[SOAS system](http://larkpie.net/tibetancorpus/tags)
 without any loss of information.
-Second, for the purposes of the annotation interface, we use shortened versions of
-some [universal POS tags](http://universaldependencies.org/u/pos/all.html), while 
-omitting others entirely from the UI.
+To declutter the annotation interface, however, we shorten the 
+[UD tags](http://universaldependencies.org/u/pos/all.html)
+as follows: 
 
-- `ADJ` -> `A`
-- `ADV` -> `D`
-- `NOUN` -> `N` (excluding `n.rel`)
-- `PROPN` -> `P`
-- `VERB` -> `V`
-- `DET` -> `d` (only `d.dem`)
-- `NUM` -> `n`
-- `PRON` -> `p`
-- `X` -> `X`
 
-Open class word classes such as `NOUN` can be linked to predicates as 
-their arguments, and so we retain most open class word tags, leaving them capitalized 
-but abbreviating them to one character. 
-As for closed class words, we include only those categories - `DET`,
-`NUM` and `PRON` - which can "head" a noun phrase in the absence of
-a `NOUN`. Other closed class categories - such as `ADP` - never 
-occur on their own, and therefore for the purposes of predicate-argument
-annotation, their tags may be omitted from the UI.
-
-By excluding closed class function words such as `ADP` and `SCONJ`,
-the above approach is unable to capture the manner in which
-a predicate's arguments are introduced, and therefore incapable of fully profiling
-the valency of a predicate, or its change in valency over time. Therefore, it is 
-also necessary to add dependency relations between these function
-words and the content words they depend on. In this way, we can capture the fact
-that a verbal argument is marked with agentive case on one occasion, but left
-unmarked on another occasion. We achieve this objective with a second, 
-semi-automated sweep through the data.
-This sweep links `NUM`, `DET` and `ADP` to the nouns they 
-depend on, and also links `SCONJ` and `PART` to the verbs they
-depend on. Human adjudication is required to confirm the accuracy of the sweep.
+- ADJ -> A 
+- ADP -> c
+- ADV -> AV 
+- AUX -> x 
+- DET -> d
+- INTJ -> i
+- NOUN -> N 
+- NUM -> n
+- PART -> p
+- PRON -> pr 
+- PROPN -> PN 
+- PUNCT -> .
+- SCONJ -> s
+- VERB -> V 
+- X -> ? 
 
 ### Dependency relations
 
@@ -152,23 +122,16 @@ to describe them in a systematic way.
 
 Arguments depend on predicates via typed dependency relations. In order to
 generalize across instances of a predicate, it is necessary to adopt a consistent
-argument labeling policy.
-We follow the UD project and use three dependency relations for most core arguments.
-The most agentive argument is labeled `nsubj`, the second and most affected argument
-(often a patient) is labeled `obj`, and the third and final argument is labeled `iobj`.
-It is understood that the second and third arguments rely on the
-existence of the first and second, respectively. Therefore, there can be no `obj`
-without an `nsubj`, and no `iobj` without an `obj`. This becomes important
-when considering sentences with [missing arguments](#missing-arguments).
-The additional dependency relations `csubj`, `ccomp` and `xcomp` are available
-for marking core arguments that are clausal in nature.
+argument labeling policy. This policy has the following principles: 
 
-Note that the above characterization of core grammatical relations differs somewhat
-from that described by the UD project, where for example `nsubj` is said to be
-"in the position that passes typical grammatical tests for subjecthood". Here, we
-make no claims that there is a subject position in Tibetan grammar; rather, we
-are merely saying that `nsubj` is assigned to the most prominent argument _of a
-given predicate_.
+1. Arguments must occur either with agentive case or without case-marking. 
+2. When a verb has more than one argument, `arg1` links to the argument that satisfies the most proto-agent properties.
+3. `arg1` and `arg2` are reserved for nominal arguments, and `argcl` is reserved for clausal arguments.
+4. Being an argument (in our sense) is not the same as contributing a semantic role to the verb. For example, we classify the nouns in light verb constructions as `arg2` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` even though they may be essential to the meaning of the phrase.
+
+Based on the above, it should be clear that agentive case is given unique
+treatment amongst the adpositional case markers. For our purposes, it is
+the only `ADP` that doesn't force its nominal to be linked as an `obl`. 
 
 ## Annotation scheme
 
@@ -177,28 +140,21 @@ Modern Tibetan (MT). Each example is cited with its stage and source.
 
 ### Argument frames
 
-This section describes each of the known argument frames that Tibetan verbs
-select for. Because arguments can generally be [omitted](#missing-arguments), 
-it is necessary to specify the argument frame of the verb as well as the 
-relation between the verb and its overt arguments.
+This section illustrates some of the argument frames that Tibetan verbs
+select for. Because arguments can generally be [omitted](#missing-arguments),
+care must be taken to assign the correct roles to the arguments that are 
+overt. 
 
 A valid argument frame is composed of a set of core argument dependency
 relations, selected from the following list: 
-[`nsubj`](http://universaldependencies.org/u/dep/nsubj.html),
-[`obj`](http://universaldependencies.org/u/dep/obj.html),
-[`iobj`](http://universaldependencies.org/u/dep/iobj.html),
-[`csubj`](http://universaldependencies.org/u/dep/csubj.html),
-[`ccomp`](http://universaldependencies.org/u/dep/ccomp.html), and
-[`xcomp`](http://universaldependencies.org/u/dep/xcomp.html).
-In the examples that follow, each annotated verb has an Args attribute
-that specifies its argument frame on that occasion of use.
+`arg1`, `arg2`, `argcl`.
 
-#### `nsubj, obj`
+#### `arg1, arg2`
 
-The arguments of a two-place predicate are marked `nsubj` and `obj`, as in the
+The arguments of a two-place predicate are marked `arg1` and `arg2`, as in the
 the following example with the verb "to write". Here, the agent (the writer)
-is marked `nsubj`, and the rightmost of three nominals linked by two 
-genitives ("letter") is marked `obj`.
+is marked `arg1`, and the rightmost of three nominals linked by two 
+genitives ("letter") is marked `arg2`.
 
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
@@ -212,9 +168,8 @@ T6  p 26 28 སུ་√p
 A6a PronType T6 Int
 T8  V 30 34 འབྲི་√1
 A8a Tense T8 Past
-A8b Args T8 nsubj,obj 
-R1  nsubj Arg1:T6 Arg2:T8
-R2  obj Arg1:T5 Arg2:T8
+R1  arg1 Arg1:T6 Arg2:T8
+R2  arg2 Arg1:T5 Arg2:T8
 ~~~
 > _Who wrote your will?_ (CT - Milarepa)
 
@@ -233,13 +188,12 @@ T3  p 7 8 ང་√p
 A3a PronType T3 Pers
 T5  V 10 15 འབྲི་√1
 A5a Tense T5 Past
-A5b Args T5 nsubj,obj
-R1  nsubj Arg1:T3 Arg2:T5
-R2  obj Arg1:T1 Arg2:T5
+R1  arg1 Arg1:T3 Arg2:T5
+R2  arg2 Arg1:T1 Arg2:T5
 ~~~
 > _I wrote the words._ (MT - An Interview with the Fiddler Drado)
 
-It is not necessary for an `nsubj, obj` verb to be agentive. In the
+It is not necessary for an `arg1, arg2` verb to be agentive. In the
 following case, the verb is involuntary, and the object forms a
 [light verb](#light-verbs) construction together with the verb.
 Still, there are clearly two distinct verbal aguments in play.
@@ -252,15 +206,14 @@ A2a Number T2 Sing
 T3  D 11 17  ཞེ་པོ་
 T4  V 17 21 བཤལ་
 A4a Tense V Pres
-A4b Args T4 nsubj,obj
-R4a nsubj Arg1:T4 Arg2:T1
-R4b obj Arg1:T4 Arg2:T2
+R4a arg1 Arg1:T4 Arg2:T1
+R4b arg2 Arg1:T4 Arg2:T2
 ~~~
 > _I've got bad diarrhea._ (MT - Diarrhea)
 
-#### `nsubj, obj, iobj`
-
-The arguments of a three-place predicate are marked `nsubj`, `obj`, and `iobj`.
+What in other contexts might be called a three-place predicate
+is for us a two-place predicate with an oblique nominal, since the
+third nominal occurs followed by an `ADP` other than agentive case.
 
 ~~~ ann
 སེམས་ཅན་ཆེན་པོས་སྟག་མོ་ལ་ལུས་སྦྱིན་པ་ཟེར་ཡས་ལེའུ་དེ་རེད།
@@ -274,10 +227,9 @@ A6a Number T6 Sing
 T7  V 29 37 སྦྱིན་པ་
 A7a Tense T7 Invar
 A7b VerbForm T7 Vnoun
-A7c Args T7 nsubj,obj,iobj
-R7a nsubj Arg1:T7 Arg2:T1
-R7b obj Arg1:T7 Arg2:T6
-R7c iobj Arg1:T7 Arg2:T4
+R7a arg1 Arg1:T7 Arg2:T1
+R7b arg2 Arg1:T7 Arg2:T6
+R7c obl Arg1:T7 Arg2:T4
 T8  V 37 41 ཟེར་
 A8a Mood T8 Qot
 T10 N 44 49 ལེའུ་
@@ -289,11 +241,11 @@ A12a  Tense T12 Invar
 ~~~
 > _This is the chapter on the story of the great sentient being giving his body to the tigress._ (MT - An Oral Commentary on The Tale of the Hungry Tigress: A Reader of Classical Tibetan 1.1)
 
-#### `nsubj, ccomp`
+#### `arg1, argcl`
 
 The following example shows a clausal argument of the verb བསམས་ "think".
 The content head word of the embedded clause (the verb བསྡད་) is linked to this
-verb by the `ccomp` relationship.
+verb by the `argcl` relationship.
 
 ~~~ ann
 ནང་ལ་བསྡད་འདུག་ག་ངས་ནི་རང་བསྡད་ཨ་ཡོད་བསམས་བྱུང་།
@@ -316,21 +268,18 @@ T11 V 33 37 ཡོད་
 A11a  Tense T11 Invar
 T12 V 37 42 སེམས་
 A12a  Tense T12 Past
-A12b  Args T12 nsubj,ccomp
-R12a  nsubj Arg1:T12 Arg2:T6
-R12b  ccomp Arg1:T12 Arg2:T9
+R12a  arg1 Arg1:T12 Arg2:T6
+R12b  argcl Arg1:T12 Arg2:T9
 T13 V 42 47 བྱུང་√x
 A13a  Tense T13 Invar
 ~~~
 > _You're home. I thought you might not be home._ (MT - A Handmade Altar)
 
-#### `nsubj, xcomp`
-
-In the following example, the verb ཕྱིན་ takes an
-[`xcomp`](http://universaldependencies.org/u/dep/xcomp.html)
-clausal argument, where the embedded subject (the subject of ཕུལ་)
-must be the same as its own subject. Note that the `xcomp` relation
-links the main verb to the embedded verb.
+In the following example, the verb ཕྱིན་ takes a
+clausal argument where the embedded subject (the subject of ཕུལ་)
+must be the same as its own subject. (In UD, this is called an
+`xcomp` as opposed to a `ccomp`, but for simplicity we lump both
+categories together under `argcl`.)
 
 ~~~ ann
 ཨ་ནི་ངས་ཨང་ཀི་དེ་ཕུལ་གག་ཕྱིན།
@@ -340,25 +289,23 @@ A4a Number T4 Sing
 T5  d 14 17 དེ་√d
 A5a PronType T5 Dem
 T6  V 17 21 འབུལ་
-A6a Args T6 nsubj,obj,iobj
-R6a obj Arg1:T6 Arg2:T4
+R6a arg2 Arg1:T6 Arg2:T4
 T7  V 24 28 ཕྱིན་
 A7a Tense T7 Past
-A7b Args T7 nsubj,xcomp
-R7a nsubj Arg1:T7 Arg2:T2
-R7b xcomp Arg1:T7 Arg2:T6
+R7a arg1 Arg1:T7 Arg2:T2
+R7b argcl Arg1:T7 Arg2:T6
 ~~~
 > _I will go give the number._ (MT - A Visit to the Hospital, Abridged)
 
-#### `nsubj`
+#### `arg1`
 
-The sole argument of a one-place predicate is marked `nsubj`.
+The sole argument of a one-place predicate is marked `arg1`.
 Although they can occur with a variety of adpositional phrases, 
 specifying source, destination, and so on, we classify the canonical 
 use of verbs of motion as sole argument verbs. Adpositional phrases
 should be linked to motion verbs as oblique modifiers rather than 
 as arguments, using the [`obl`](http://universaldependencies.org/u/dep/obl.html) 
-relation. In the following example, in addition to an `nsubj`, 
+relation. In the following example, in addition to an `arg1`, 
 there are two obliques.
 
 ~~~ ann
@@ -368,8 +315,7 @@ T2  P 2 21   ལྦ་ཤིང་ཀྲན་སྒྲི་སི་
 T4  V 23 30  ཕྱིན་པ་
 A4a Tense T4 Past
 A4b VerbForm T4 Vnoun
-A4c Args T4 nsubj
-R4a nsubj Arg1:T4 Arg2:T1
+R4a arg1 Arg1:T4 Arg2:T1
 R4b obl Arg1:T4 Arg2:T2
 R4c obl Arg1:T4 Arg2:T6
 T5  V 30 34 ཡིན་
@@ -391,16 +337,14 @@ T1  d 0 3 དེ་√d
 A1a PronType T1 Dem
 T3  V 6 12  རྒྱག་√1
 A3a Tense T3 Past
-A3b Args T3 nsubj,obj
-R3a obj Arg1:T3 Arg2:T1
+R3a arg2 Arg1:T3 Arg2:T1
 T5  N 15 18 ལོ་
 A5a Number T5 Sing
 T6  d 18 24 ག་ཚོད་
 A6a PronType T6 Int
 T7  V 24 29 ཕྱིན་
 A7a Tense T7 Past
-A7b Args T7 nsubj
-R7a nsubj Arg1:T7 Arg2:T5
+R7a arg1 Arg1:T7 Arg2:T5
 R7b advcl Arg1:T7 Arg2:T3
 T8  V 29 33 ཡོད་
 A8a Tense T8 Invar
@@ -409,6 +353,8 @@ A8a Tense T8 Invar
 ~~~
 > _How many years has it been since they were built?_ (MT - The Chapter 26 Dialog from A Manual)
 
+Another example of a single argument verb is ཡོད་.
+
 ### Special cases
 
 Some special cases to be aware of.
@@ -416,8 +362,8 @@ Some special cases to be aware of.
 #### Missing arguments 
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
-discourse. In the following example, the verb is linked to its object and its indirect
-object, but there is no overt subject.
+discourse. In the following example, the verb is linked to its `arg2`, 
+but `arg1` is not present.
 
 ~~~ ann
 ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
@@ -426,38 +372,38 @@ A1a Number T1 Sing
 T3  N 9 14  བླ་མ་
 A3a Number T3 Sing
 T5  V 16 19 འབུལ་
-A5b Args T5 nsubj,obj,iobj
-R1  obj Arg1:T1 Arg2:T5
-R2  iobj Arg1:T3 Arg2:T5
+R1  arg2 Arg1:T1 Arg2:T5
+R2  obl Arg1:T3 Arg2:T5
 ~~~
 > _(He) presented the letter to the lama._ (CT - Milarepa)
 
-Provided that the arguments that do appear
-are annotated as `obj` and `iobj`, then it is not necessary to insert a zero
-element for the missing `nsubj`. It is understood that a three-place predicate must
-have an `nsubj` argument - therefore, a sentence with an `obj` and `iobj` must have
-a missing `nsubj`. The same logic applies to the omission of `obj`. Provided `iobj` is present,
-then `obj` is inferred, since three-place predicates must also have an `nsubj` and
-an `obj`.
+Provided that the argument that does appear
+is annotated as `arg2`, then it is not necessary to insert a zero
+element for the missing `arg1`. It is understood that a two-place predicate must
+have an `arg1` argument - therefore, a sentence with an `arg2` must have
+a missing `arg1`. 
 
-Unfortunately, this reasoning does not allow us to distinguish 
-between a saturated two-place predicate and a three-place predicate with 
-a missing `iobj`. Nor does it allow us to distinguish between a saturated
-one-place predicate and a two-place predicate with a missing `obj`. Finally,
-it does not allow us to determine how many arguments a verb has when none of
-its arguments are overt.
+This reasoning does not allow us to distinguish between a saturated
+one-place predicate and a two-place predicate with a missing `arg2`. 
+Nor does it allow us to determine how many arguments a verb has when
+none of its arguments are overt.
 
-It is not yet known how often this situation will arise - that is, how often the
-same verbal lemma will occur with different numbers of arguments where the 
-difference is sense-significant. One solution to this possible problem would be 
-to introduce empty elements to hold the place of missing arguments and 
-participate in the necessary dependency relations.
-Given that Tibetan's word-order is extremely flexible, it would be difficult to
-know where to put such empty elements, if one was inclined to use them. A simpler
-solution - and the one we adopt - is to attach an attribute to the verb that states
-what its core arguments are. Hover over any of the verbs in the
-examples on this page and you will see this attribute.
+In an earlier version of this documentation, we proposed to handle
+such difficulties by labeling each verb with its argument structure.
+However, doing so comes with problems of its own. It can be difficult,
+especially during the early days of our understanding, to distinguish
+between a required but missing argument and something that just isn't
+there, and forcing annotators to make this decision is bound to slow
+them down. Moreover, the gain made by doing so is not obvious, given that
+we have yet to identify verbs that occur in the same form with multiple
+argument structures.
 
+In light of these considerations, it makes most sense at this point to
+address argument structure at the level of the lemma - and perhaps later,
+at the level of word sense. Annotators are required to choose a lemma;
+for the moment, we assume that argument structure will be handled at this
+level, as and when it becomes necessary.
+ 
 #### Light verbs
 
 Like other languages of the region, Tibetan has a wealth of idiomatic light verb
@@ -475,8 +421,7 @@ T1  N 0 6 གོམ་པ་
 A1a Number T1 Sing
 T2  V 6 11  རྒྱག་√1
 A2a Tense T2 Past
-A2b Args T2 nsubj,obj
-R2a obj Arg1:T2 Arg2:T1
+R2a arg2 Arg1:T2 Arg2:T1
 T3  V 11 15 བྱེད་
 A3a Tense T3 Past
 T4  V 15 18 ཐད་
@@ -498,8 +443,7 @@ T3  n 9 14  གསུམ་
 A3a NumType T3 Card
 T4  V 14 19 རྒྱག་√1
 A4a Tense T4 Pres
-A4b Args T4 nsubj,obj
-R4a obj Arg1:T4 Arg2:T1
+R4a arg2 Arg1:T4 Arg2:T1
 T5  V 19 22 ཤོག
 ~~~
 > _Take three steps._ (MT - Sang né la: A0002)
@@ -508,13 +452,13 @@ The UD project appears to suggest that in light verb constructions, the `NOUN`
 should depend on the `VERB` via the 
 [`compound`](http://universaldependencies.org/u/dep/all.html#al-u-dep/compound)
 relation. This is likely not the right approach for Tibetan. Instead,
-we link the `NOUN` to the `VERB` via the `obj` relation. So in the above examples,
-the verb has the frame `Args: nsubj,obj`.
+we link the `NOUN` to the `VERB` via the `arg2` relation. So in the above examples,
+the verb has the frame `arg1, arg2`.
 
 We take this approach for three reasons. First, if an additional, non-subject 
 core argument occurs with a light verb, then it must not appear with (unmarked) absolutive case, 
-but must instead bear an overt case marker like an `iobj`. This suggests that the 
-`NOUN` part of a light verb construction is an object. Second, adopting the `compound` 
+but must instead bear an overt oblique case marker. This suggests that the 
+`NOUN` part of a light verb construction is a syntactic object. Second, adopting the `compound` 
 dependency relation would make it more difficult to compare the use of a verb 
 across different stages of the history of the language. Light verb constructions 
 are widespread in Modern Tibetan, but perhaps less so in Classical and Old Tibetan.
@@ -522,7 +466,7 @@ Yet, it is certainly possible that members of this construction arose from
 collocations that were once semantically compositional. Third and finally, 
 in the absence of sound syntactic tests, there is a certain subjectivity 
 in diagnosing light verb constructions. We are not convinced that
-annotators would agree on when to label a `compound` relation.
+annotators would agree on when to label the `compound` relation.
 
 Despite these objections, the importance to our project of identifying 
 light verbs cannot be understated. A proper verb lexicon for Tibetan needs 
