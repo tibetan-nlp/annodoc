@@ -29,7 +29,7 @@ project.
     * [Copulas](#copulas)
     * [Honorific verbal compounds](#honorific-verbal-compounds)
     * [Light verbs](#light-verbs)
-        [Surprising cases](#surprising-cases)
+        * [Surprising cases](#surprising-cases)
     * [Relative clauses](#relative-clauses)
 
 ## Introduction
