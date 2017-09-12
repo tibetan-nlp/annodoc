@@ -412,7 +412,16 @@ argument structure.
 Honorific verbal compounds in Tibetan are formed by prepending an honorific `NOUN`
 to a `VERB`, without altering the argument structure of the host. For example:
 
-> ཡབ་མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་སྐུ་གཤེགས་
+~~~ ann
+T104    NOUN 461 464    ཡབ་
+A104a   Number T104 Sing
+T105    PROPN 464 485   མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
+T106    NOUN 485 489    སྐུ་
+A106a   Number T106 Sing
+T107    VERB 489 495    གཤེགས་
+R14     arg1 Arg1:T107 Arg2:T104
+R85     compound Arg1:T107 Arg2:T106
+~~~
 
 If སྐུ་ were coded as `arg2`, then the valency of གཤེགས་ would needlessly shift
 just because it's an honorific. This doesn't seem warranted, and so we instead
