@@ -340,7 +340,7 @@ A8a Tense T8 Invar
 
 Another example of a single argument verb is ཡོད་.
 
-ཨ་ཁུ་ལ་བུ་མང་པོ་ཡོད་པ།
+> ཨ་ཁུ་ལ་བུ་མང་པོ་ཡོད་པ།
 > _The uncle had many sons._ 
 
 ### Missing arguments 
@@ -464,6 +464,7 @@ T5  V 19 22 ཤོག
 There are also examples in Classical Tibetan, for example:
 
 > ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
+
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
 
 The UD project appears to suggest that in light verb constructions, the `NOUN` 
@@ -502,6 +503,8 @@ verb in the following examples:
 
 > ཞལ་ཆེམས་ཀྱི་ཡི་གེ་རྒྱུས་ཡོད་པ་
 
+> _[They] had knowledge of the written testament._ (CT - Mila 11a)
+
 Here, རྒྱས་ "knowledge" is linked as `arg1` while ཡི་གེ་ "letter" is linked as `arg2`.
 
 ### Relative clauses
@@ -509,5 +512,6 @@ Here, རྒྱས་ "knowledge" is linked as `arg1` while ཡི་གེ་ "
 Repeating the example from above:
 
 > ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
+
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
 
