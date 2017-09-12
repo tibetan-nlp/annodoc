@@ -341,6 +341,7 @@ A8a Tense T8 Invar
 Another example of a single argument verb is ཡོད་.
 
 > ཨ་ཁུ་ལ་བུ་མང་པོ་ཡོད་པ།
+
 > _The uncle had many sons._ 
 
 ### Missing arguments 
