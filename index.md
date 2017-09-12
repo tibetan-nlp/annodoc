@@ -419,7 +419,7 @@ A104a	Number T104 Sing
 T105  PROPN 3 24  མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
 T106  NOUN 24 28  སྐུ་
 A106a	Number T106 Sing
-T107	VERB 29 35	གཤེགས་
+T107	VERB 28 34	གཤེགས་
 R14	arg1 Arg1:T107 Arg2:T104
 R85	compound Arg1:T107 Arg2:T106
 ~~~
