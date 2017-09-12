@@ -73,7 +73,6 @@ To declutter the annotation interface, however, we shorten the
 [UD tags](http://universaldependencies.org/u/pos/all.html)
 as follows: 
 
-
 - ADJ -> A 
 - ADP -> c
 - ADV -> AV 
@@ -414,12 +413,12 @@ to a `VERB`, without altering the argument structure of the host. For example:
 
 ~~~ ann
 ཡབ་མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་སྐུ་གཤེགས་
-T104  NOUN 0 3  ཡབ་
+T104  N 0 3  ཡབ་
 A104a Number T104 Sing
-T105  PROPN 3 24  མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
-T106  NOUN 24 28  སྐུ་
+T105  PN 3 24  མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
+T106  N 24 28  སྐུ་
 A106a Number T106 Sing
-T107  VERB 28 34  གཤེགས་
+T107  V 28 34  གཤེགས་
 R14 arg1 Arg1:T107 Arg2:T104
 R85 compound Arg1:T107 Arg2:T106
 ~~~
