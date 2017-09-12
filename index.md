@@ -463,7 +463,7 @@ T5  V 19 22 ཤོག
 
 There are also examples in Classical Tibetan, for example:
 
-zhang pos so nam byas pa’i nas 
+> ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
 
 The UD project appears to suggest that in light verb constructions, the `NOUN` 
@@ -508,7 +508,6 @@ Here, རྒྱས་ "knowledge" is linked as `arg1` while ཡི་གེ་ "
 
 Repeating the example from above:
 
-zhang pos so nam byas pa’i nas
+> ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
-
 
