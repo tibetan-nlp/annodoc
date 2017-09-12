@@ -419,7 +419,6 @@ A104a Number T104 Sing
 T105  PROPN 3 24  མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
 T106  NOUN 24 28  སྐུ་
 A106a Number T106	Sing
-T107  VERB 29 35	གཤེགས་
 ~~~
 
 If སྐུ་ were coded as `arg2`, then the valency of གཤེགས་ would needlessly shift
