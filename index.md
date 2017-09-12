@@ -29,7 +29,7 @@ project.
     * [Copulas](#copulas)
     * [Honorific verbal compounds](#honorific-verbal-compounds)
     * [Light verbs](#light-verbs)
-        *[Surprising light verbs](#surprising-light-verbs)
+        [Surprising cases](#surprising-cases)
     * [Relative clauses](#relative-clauses)
 
 ## Introduction
@@ -491,7 +491,7 @@ light verbs cannot be understated. A proper verb lexicon for Tibetan needs
 to include those `NOUN` + `VERB` collocations that convey fundamental verbal 
 meanings in the language.
 
-#### Surprising light verbs
+#### Surprising cases
 
 In the above cases, which are typical examples of light verbs, the `NOUN`
 fills an argument position without introducing additional arguments. However,
