@@ -415,10 +415,13 @@ to a `VERB`, without altering the argument structure of the host. For example:
 ~~~ ann
 ཡབ་མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་སྐུ་གཤེགས་
 T104  NOUN 0 3  ཡབ་
-A104a	Number T104 Sing
+A104a Number T104 Sing
 T105  PROPN 3 24  མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
 T106  NOUN 24 28  སྐུ་
-T107	VERB 28 34	གཤེགས་
+A106a Number T106 Sing
+T107  VERB 28 34  གཤེགས་
+R14 arg1 Arg1:T107 Arg2:T104
+R85 compound Arg1:T107 Arg2:T106
 ~~~
 
 If སྐུ་ were coded as `arg2`, then the valency of གཤེགས་ would needlessly shift
