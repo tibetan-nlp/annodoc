@@ -388,9 +388,9 @@ at the level of word sense. Annotators are required to choose a lemma;
 for the moment, we assume that argument structure will be handled at this
 level, as and when it becomes necessary.
 
-### Specific constructions
+## Specific constructions
 
-#### Auxiliaries
+### Auxiliaries
 
 In a verbal linking construction, use the 
 [`aux`](http://universaldependencies.org/u/dep/all.html#al-u-dep/aux) 
@@ -398,7 +398,7 @@ relation to link a `V` or `V n`
 to the `x` or `x n`. The copula itself does not have an
 argument structure when used as an auxiliary in periphrastic constructions. 
 
-#### Copulas
+### Copulas
 
 In a copular linking construction, use the 
 [`cop`](http://universaldependencies.org/u/dep/all.html#al-u-dep/cop)
@@ -406,7 +406,7 @@ relation to link a predicate
 (e.g. an adjective) to the `x` or `x n`. The copula itself does not have an
 argument structure. 
 
-#### Honorific verbal compounds
+### Honorific verbal compounds
 
 Honorific verbal compounds in Tibetan are formed by prepending an honorific `NOUN`
 to a `VERB`, without altering the argument structure of the host. For example:
@@ -417,7 +417,7 @@ If སྐུ་ were coded as `arg2`, then the valency of གཤེགས་ wou
 just because it's an honorific. This doesn't seem warranted, and so we instead
 link སྐུ་ to the གཤེགས་ via the `compound` relation.
  
-#### Light verbs
+### Light verbs
 
 Like other languages of the region, Tibetan has a wealth of idiomatic light verb
 constructions. Usually these consist of a `NOUN` without any case marking followed
@@ -491,7 +491,7 @@ light verbs cannot be understated. A proper verb lexicon for Tibetan needs
 to include those `NOUN` + `VERB` collocations that convey fundamental verbal 
 meanings in the language.
 
-##### Surprising light verbs
+#### Surprising light verbs
 
 In the above cases, which are typical examples of light verbs, the `NOUN`
 fills an argument position without introducing additional arguments. However,
@@ -504,7 +504,7 @@ verb in the following examples:
 
 Here, རྒྱས་ "knowledge" is linked as `arg1` while ཡི་གེ་ "letter" is linked as `arg2`.
 
-#### Relative clauses
+### Relative clauses
 
 Repeating the example from above:
 
