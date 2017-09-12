@@ -487,6 +487,8 @@ A19b    VerbForm T19 Vnoun
 T20     C 18 21      འི་
 A20a    Case T20 Gen
 T21     N 21 24    ནས་
+R1      arg1 Arg1:T19 Arg2:T16
+R2      arg2 Arg1:T19 Arg2:T18
 ~~~
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
 
@@ -534,7 +536,24 @@ Here, རྒྱས་ "knowledge" is linked as `arg1` while ཡི་གེ་ "
 
 Repeating the example from above:
 
-> ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
-
+~~~ ann
+ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
+T16     N 0 5      ཞང་པོ
+A16a    Number T16 Sing
+T17     C 5 7       ས་
+A17a    Case T17 Agn
+T18     N 7 13      སོ་ནམ་
+A18a    Number T18 Sing
+T19     V 13 18      བྱས་པ
+A19a    Tense T19 Past
+A19b    VerbForm T19 Vnoun
+T20     C 18 21      འི་
+A20a    Case T20 Gen
+T21     N 21 24    ནས་
+R1      arg1 Arg1:T19 Arg2:T16
+R2      arg2 Arg1:T19 Arg2:T18
+~~~
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
+
+
 
