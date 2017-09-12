@@ -29,6 +29,7 @@ project.
     * [Copulas](#copulas)
     * [Honorific verbal compounds](#honorific-verbal-compounds)
     * [Light verbs](#light-verbs)
+      *[Surprising light verbs](#surprising-light-verbs)
     * [Relative clauses](#relative-clauses)
 
 ## Introduction
@@ -489,6 +490,19 @@ Despite these objections, the importance to our project of identifying
 light verbs cannot be understated. A proper verb lexicon for Tibetan needs 
 to include those `NOUN` + `VERB` collocations that convey fundamental verbal 
 meanings in the language.
+
+##### Surprising light verbs
+
+In the above cases, which are typical examples of light verbs, the `NOUN`
+fills an argument position without introducing additional arguments. However,
+in other cases that we have found, the noun in a light verb construction
+causes the valency of the verb to change, introducing another otherwise
+unlicensed argument. For example, ཡོད་ itself occurs surprisingly as a light
+verb in the following examples:
+
+> ཞལ་ཆེམས་ཀྱི་ཡི་གེ་རྒྱུས་ཡོད་པ་
+
+Here, རྒྱས་ "knowledge" is linked as `arg1` while ཡི་གེ་ "letter" is linked as `arg2`.
 
 #### Relative clauses
 
