@@ -416,6 +416,8 @@ to a `VERB`, without altering the argument structure of the host. For example:
 ཡབ་མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་སྐུ་གཤེགས་
 T104  NOUN 0 3  ཡབ་
 A104a Number T104 Sing
+T105  PROPN 3 24  མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
+T106  NOUN 24 28  སྐུ་
 ~~~
 
 If སྐུ་ were coded as `arg2`, then the valency of གཤེགས་ would needlessly shift
