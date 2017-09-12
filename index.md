@@ -27,6 +27,7 @@ project.
   * [Specific constructions](#specific-constructions)
     * [Auxiliaries](#auxiliaries)
     * [Copulas](#copulas)
+    * [Honorific verbal compounds](#honorific-verbal-compounds)
     * [Light verbs](#light-verbs)
     * [Relative clauses](#relative-clauses)
 
@@ -403,6 +404,18 @@ In a copular linking construction, use the
 relation to link a predicate
 (e.g. an adjective) to the `x` or `x n`. The copula itself does not have an
 argument structure. 
+
+#### Honorific verbal compounds
+
+Honorific verbal compounds in Tibetan are formed by prepending a `VERB` with
+an honorific `NOUN`, without altering the argument structure of the host `VERB`.
+For example:
+
+> ཡབ་མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་སྐུ་གཤེགས་
+
+If སྐུ་ were linked as `arg2`, then the valency of the verb would needlessly shift
+just because it's an honorific. This doesn't seem warranted, and so we instead
+link སྐུ་ to the verb via the `compound` relation.
  
 #### Light verbs
 
