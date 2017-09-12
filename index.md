@@ -407,15 +407,14 @@ argument structure.
 
 #### Honorific verbal compounds
 
-Honorific verbal compounds in Tibetan are formed by prepending a `VERB` with
-an honorific `NOUN`, without altering the argument structure of the host `VERB`.
-For example:
+Honorific verbal compounds in Tibetan are formed by prepending an honorific `NOUN`
+to a `VERB`, without altering the argument structure of the host. For example:
 
 > ཡབ་མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་སྐུ་གཤེགས་
 
-If སྐུ་ were linked as `arg2`, then the valency of the verb would needlessly shift
+If སྐུ་ were coded as `arg2`, then the valency of གཤེགས་ would needlessly shift
 just because it's an honorific. This doesn't seem warranted, and so we instead
-link སྐུ་ to the verb via the `compound` relation.
+link སྐུ་ to the གཤེགས་ via the `compound` relation.
  
 #### Light verbs
 
