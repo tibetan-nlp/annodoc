@@ -184,7 +184,7 @@ following case, the verb is involuntary, and the object forms a
 [light verb](#light-verbs) construction together with the verb.
 Still, there are clearly two distinct verbal aguments in play.
 Because the human experiencer is a better proto-agent than their
-stomach, the 1p pronoun _ང_ is `arg1`.
+stomach, `arg1` is the 1p pronoun ང་.
 
 ~~~ ann
 ང་གྲོད་ཁོག་ཞེ་པོ་བཤལ་གྱིས་ལགས།
@@ -288,9 +288,10 @@ R7b argcl Arg1:T7 Arg2:T6
 #### `arg1`
 
 The sole argument of a one-place predicate is marked `arg1`.
-Although they can occur with a variety of adpositional phrases, 
-specifying source, destination, and so on, we classify the canonical 
-use of verbs of motion as sole argument verbs. Adpositional phrases
+
+Although verbs of motion can occur with a variety of adpositional phrases, 
+specifying source, destination, and so on, we classify their canonical 
+use as sole argument verbs. Adpositional phrases
 should be linked to motion verbs as oblique modifiers rather than 
 as arguments, using the [`obl`](http://universaldependencies.org/u/dep/obl.html) 
 relation. In the following example, in addition to an `arg1`, 
@@ -395,7 +396,7 @@ level, as and when it becomes necessary.
 
 ### Auxiliaries
 
-In a verbal linking construction, use the 
+In a verbal linking construction, we use the 
 [`aux`](http://universaldependencies.org/u/dep/all.html#al-u-dep/aux) 
 relation to link a `V` or `V n`
 to the `x` or `x n`. The copula itself does not have an
@@ -403,7 +404,7 @@ argument structure when used as an auxiliary in periphrastic constructions.
 
 ### Copulas
 
-In a copular linking construction, use the 
+In a copular linking construction, we use the 
 [`cop`](http://universaldependencies.org/u/dep/all.html#al-u-dep/cop)
 relation to link a predicate
 (e.g. an adjective) to the `x` or `x n`. The copula itself does not have an
