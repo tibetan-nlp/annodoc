@@ -528,13 +528,26 @@ fills an argument position without introducing additional arguments. However,
 in other cases that we have found, the noun in a light verb construction
 causes the valency of the verb to change, introducing another otherwise
 unlicensed argument. For example, ཡོད་ itself occurs surprisingly as a light
-verb in the following examples:
+verb in the following example:
 
-> ཞལ་ཆེམས་ཀྱི་ཡི་གེ་རྒྱུས་ཡོད་པ་
-
+~~~ ann
+ཞལ་ཆེམས་ཀྱི་ཡི་གེ་རྒྱུས་ཡོད་པ་
+T110    NOUN 0 6    ཞལ་ཆེམས་
+A110a   Number T110 Sing
+T111    ADP 6 10     ཀྱི་
+A111a   Case T111 Gen
+T112    NOUN 10 16    ཡི་གེ་
+A112a   Number T112 Sing
+T113    NOUN 16 22    རྒྱས་
+A113a   Number T113 Sing
+T114    VERB 22 28    ཡོད་པ་
+A114a   VerbForm T114 Vnoun
+R35     arg1 Arg1:T114 Arg2:T113
+R70     obl Arg1:T114 Arg2:T112
+~~~
 > _[They] had knowledge of the written testament._ (CT - Mila 11a)
 
-Here, རྒྱས་ "knowledge" is linked as `arg1` while ཡི་གེ་ "letter" is linked as `arg2`.
+Here, `arg1` is  རྒྱས་ "knowledge" and `arg2` is ཡི་གེ་ "letter".
 
 ### Relative clauses
 
