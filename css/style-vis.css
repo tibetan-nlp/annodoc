@@ -41,8 +41,7 @@ svg {
   width: 100%;
   height: 1px;
   border: 1px solid #7fa2ff;
-  font-size: 15px;
-  /* font-size: 14px; */
+  font-size: 14px;
 }
 svg.reselect {
   border: 1px solid #ff3333;
@@ -69,8 +68,7 @@ path {
 
 /* "basic" font */
 .span text {
-  /*  font-size: 10.5px; */
-  font-size: 10px;
+  font-size: 10.5px;
   text-anchor: middle;
   font-family: 'PT Sans Caption', sans-serif;
   pointer-events: none;
