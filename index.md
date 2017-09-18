@@ -20,9 +20,9 @@ project.
     * [Dependency relations](#dependency-relations)
 * [Annotation overview](#annotation-overview)
     * [Argument frames](#argument-frames)
-        * [`arg1, arg2`](#arg1-arg2)
-        * [`arg1, argcl`](#arg1-argcl)
-        * [`arg1`](#arg1)
+        * [`arga, argb`](#arga-argb)
+        * [`arga, argcl`](#arga-argcl)
+        * [`arga`](#arga)
     * [Missing arguments](#missing-arguments)
 * [Specific constructions](#specific-constructions)
     * [Auxiliaries](#auxiliaries)
@@ -44,7 +44,7 @@ we ask the annotator to perform the following tasks:
 1. Identify and label the core arguments of each verb.
     * Identify at most one head word for each core argument position.
     * Link each argument head word to its verb using one of the following
-    dependency relations: `arg1`, `arg2`, or `argcl`. 
+    dependency relations: `arga`, `argb`, or `argcl`. 
 1. Identify and label the oblique modifiers of each verb.
     * Identify any modifiers related to the verb.
     * Link the head word of each such modifier to the verb, using one of
@@ -57,8 +57,8 @@ Note that annotators are not asked to do the following:
 1. Identify equivalencies across different verbs.
 2. Label the semantic roles of core arguments or oblique modifiers.
 
-For example, the `arg1` for different verbs could have different semantic roles.
-It is only necessary that a given verb's `arg1` is held constant across the various
+For example, the `arga` for different verbs could have different semantic roles.
+It is only necessary that a given verb's `arga` is held constant across the various
 uses of *the same verb*.
 
 ## Universal dependencies
@@ -114,10 +114,10 @@ annotation policy. We adopt the following principles:
 
 1. _Every verb is annotated and no verb is ignored._ A verb is either linked to its arguments or pointed to by a main predicate (as in the case of auxiliaries and copulas, which lack argument structure).
 2. _Arguments can occur marked by agentive case or without case-marking._ Other case markers signal an oblique. Agentive case is therefore given unique treatment amongst the adpositional case markers; it is the only `ADP` that doesn't force its nominal to be linked as an `obl`. 
-3. _When a verb has more than one argument, link `arg1` to the argument that is the best proto-agent._ That is, compare the arguments in terms of the agent properties that they have, and pick the one that is the best agent. 
-4. _`arg1` and `arg2` are reserved for nominal arguments, and `argcl` is reserved for clausal arguments._ `argcl` subsumes what UD refers to as [`ccomp`](http://universaldependencies.org/u/dep/ccomp.html) and [`xcomp`](http://universaldependencies.org/u/dep/xcomp.html). 
+3. _When a verb has more than one argument, link `arga` to the argument that is the best proto-agent._ That is, compare the arguments in terms of the agent properties that they have, and pick the one that is the best agent. 
+4. _`arga` and `argb` are reserved for nominal arguments, and `argcl` is reserved for clausal arguments._ `argcl` subsumes what UD refers to as [`ccomp`](http://universaldependencies.org/u/dep/ccomp.html) and [`xcomp`](http://universaldependencies.org/u/dep/xcomp.html). 
 5. _A word cannot be the argument of more than one verb at the same time._ When this principle appears to be violated, then all but one of the verbs likely has a missing argument. Link the word to the verb in whose local context it occurs. (This verb may, though not necessarily, determine the word's case marking.) This principle implies that argument-marking is local rather than long-distance. It also implies that when a word has been displaced from its "usual" position - for example, as the external head of a relative clause - then its usual position will be "occupied" by a missing argument.
-6. _Being an argument is distinct from contributing a semantic role to the verb._ For example, the nouns in light verb constructions are classified as `arg2` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` even though they may be essential to the meaning of the phrase.
+6. _Being an argument is distinct from contributing a semantic role to the verb._ For example, the nouns in light verb constructions are classified as `argb` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` even though they may be essential to the meaning of the phrase.
 
 ## Annotation overview 
 
@@ -132,14 +132,14 @@ Because arguments can generally be [omitted](#missing-arguments),
 care must be taken to assign the correct roles to the arguments that are 
 overt. A valid argument frame is composed of a set of core argument dependency
 relations, selected from the following list: 
-`arg1`, `arg2`, `argcl`.
+`arga`, `argb`, `argcl`.
 
-#### `arg1, arg2`
+#### `arga, argb`
 
-The arguments of a two-place predicate are marked `arg1` and `arg2`, as in the
+The arguments of a two-place predicate are marked `arga` and `argb`, as in the
 the following example with the verb "to write". Here, the agent (the writer)
-is marked `arg1`, and the rightmost of three nominals linked by two 
-genitives ("letter") is marked `arg2`.
+is marked `arga`, and the rightmost of three nominals linked by two 
+genitives ("letter") is marked `argb`.
 
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
@@ -153,8 +153,8 @@ T6  pr 26 28 སུ་√p
 A6a PronType T6 Int
 T8  V 30 34 འབྲི་√1
 A8a Tense T8 Past
-R1  arg1 Arg1:T6 Arg2:T8
-R2  arg2 Arg1:T5 Arg2:T8
+R1  arga Arg1:T6 Arg2:T8
+R2  argb Arg1:T5 Arg2:T8
 ~~~
 > _Who wrote your will?_ (CT - Milarepa)
 
@@ -174,17 +174,17 @@ A3a PronType T3 Pers
 T5  V 10 17 འབྲི་པ་√1
 A5a Tense T5 Past
 A5b VerbForm T5 Vnoun
-R1  arg1 Arg1:T3 Arg2:T5
-R2  arg2 Arg1:T1 Arg2:T5
+R1  arga Arg1:T3 Arg2:T5
+R2  argb Arg1:T1 Arg2:T5
 ~~~
 > _I wrote the words._ (MT - An Interview with the Fiddler Drado)
 
-It is not necessary for an `arg1, arg2` verb to be agentive. In the
+It is not necessary for an `arga, argb` verb to be agentive. In the
 following case, the verb is involuntary, and the object forms a
 [light verb](#light-verbs) construction together with the verb.
 Still, there are clearly two distinct verbal aguments in play.
 Because the human experiencer is a better proto-agent than their
-stomach, `arg1` is the 1p pronoun ང་.
+stomach, `arga` is the 1p pronoun ང་.
 
 ~~~ ann
 ང་གྲོད་ཁོག་ཞེ་པོ་བཤལ་གྱིས་ལགས།
@@ -194,8 +194,8 @@ A2a Number T2 Sing
 T3  AV 11 17  ཞེ་པོ་
 T4  V 17 21 བཤལ་
 A4a Tense V Pres
-R4a arg1 Arg1:T4 Arg2:T1
-R4b arg2 Arg1:T4 Arg2:T2
+R4a arga Arg1:T4 Arg2:T1
+R4b argb Arg1:T4 Arg2:T2
 ~~~
 > _I've got bad diarrhea._ (MT - Diarrhea)
 
@@ -215,8 +215,8 @@ A6a Number T6 Sing
 T7  V 29 37 སྦྱིན་པ་
 A7a Tense T7 Invar
 A7b VerbForm T7 Vnoun
-R7a arg1 Arg1:T7 Arg2:T1
-R7b arg2 Arg1:T7 Arg2:T6
+R7a arga Arg1:T7 Arg2:T1
+R7b argb Arg1:T7 Arg2:T6
 R7c obl Arg1:T7 Arg2:T4
 T8  V 37 41 ཟེར་
 A8a Mood T8 Qot
@@ -229,7 +229,7 @@ A12a  Tense T12 Invar
 ~~~
 > _This is the chapter on the story of the great sentient being giving his body to the tigress._ (MT - An Oral Commentary on The Tale of the Hungry Tigress: A Reader of Classical Tibetan 1.1)
 
-#### `arg1, argcl`
+#### `arga, argcl`
 
 The following example shows a clausal argument of the verb བསམས་ "think".
 The content head word of the embedded clause (the verb བསྡད་) is linked to this
@@ -251,12 +251,12 @@ A8a PronType T8 Pers
 T9  V 26 31 བསྡད་
 A9a Tense T9 Past
 A9b Args T9 nsubj
-R9a arg1 Arg1:T9 Arg2:T8
+R9a arga Arg1:T9 Arg2:T8
 T11 V 33 37 ཡོད་
 A11a  Tense T11 Invar
 T12 V 37 42 སེམས་
 A12a  Tense T12 Past
-R12a  arg1 Arg1:T12 Arg2:T6
+R12a  arga Arg1:T12 Arg2:T6
 R12b  argcl Arg1:T12 Arg2:T9
 T13 V 42 47 བྱུང་√x
 A13a  Tense T13 Invar
@@ -277,24 +277,24 @@ A4a Number T4 Sing
 T5  d 14 17 དེ་√d
 A5a PronType T5 Dem
 T6  V 17 21 འབུལ་
-R6a arg2 Arg1:T6 Arg2:T4
+R6a argb Arg1:T6 Arg2:T4
 T7  V 24 28 ཕྱིན་
 A7a Tense T7 Past
-R7a arg1 Arg1:T7 Arg2:T2
+R7a arga Arg1:T7 Arg2:T2
 R7b argcl Arg1:T7 Arg2:T6
 ~~~
 > _I will go give the number._ (MT - A Visit to the Hospital, Abridged)
 
-#### `arg1`
+#### `arga`
 
-The sole argument of a one-place predicate is marked `arg1`.
+The sole argument of a one-place predicate is marked `arga`.
 
 Although verbs of motion can occur with a variety of adpositional phrases, 
 specifying source, destination, and so on, we classify their canonical 
 use as sole argument verbs. Adpositional phrases
 should be linked to motion verbs as oblique modifiers rather than 
 as arguments, using the [`obl`](http://universaldependencies.org/u/dep/obl.html) 
-relation. In the following example, in addition to an `arg1`, 
+relation. In the following example, in addition to an `arga`, 
 there are two obliques. We follow UD guidelines in labeling the
 postposed temporal modifier as an
 [`obl`](http://universaldependencies.org/u/dep/obl.html),
@@ -307,7 +307,7 @@ T2  PN 2 21   ལྦ་ཤིང་ཀྲན་སྒྲི་སི་
 T4  V 23 30  ཕྱིན་པ་
 A4a Tense T4 Past
 A4b VerbForm T4 Vnoun
-R4a arg1 Arg1:T4 Arg2:T1
+R4a arga Arg1:T4 Arg2:T1
 R4b obl Arg1:T4 Arg2:T2
 R4c obl Arg1:T4 Arg2:T6
 T5  V 30 34 ཡིན་
@@ -329,14 +329,14 @@ T1  d 0 3 དེ་√d
 A1a PronType T1 Dem
 T3  V 6 12  རྒྱག་√1
 A3a Tense T3 Past
-R3a arg2 Arg1:T3 Arg2:T1
+R3a argb Arg1:T3 Arg2:T1
 T5  N 15 18 ལོ་
 A5a Number T5 Sing
 T6  pr 18 24 ག་ཚོད་
 A6a PronType T6 Int
 T7  V 24 29 ཕྱིན་
 A7a Tense T7 Past
-R7a arg1 Arg1:T7 Arg2:T5
+R7a arga Arg1:T7 Arg2:T5
 R7b advcl Arg1:T7 Arg2:T3
 T8  V 29 33 ཡོད་
 A8a Tense T8 Invar
@@ -350,8 +350,8 @@ Another example of a single argument verb in many of its uses is ཡོད་.
 ### Missing arguments 
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
-discourse. In the following example, the verb is linked to its `arg2`, 
-but `arg1` is not present.
+discourse. In the following example, the verb is linked to its `argb`, 
+but `arga` is not present.
 
 ~~~ ann
 ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
@@ -360,19 +360,19 @@ A1a Number T1 Sing
 T3  N 9 14  བླ་མ་
 A3a Number T3 Sing
 T5  V 16 19 འབུལ་
-R1  arg2 Arg1:T1 Arg2:T5
+R1  argb Arg1:T1 Arg2:T5
 R2  obl Arg1:T3 Arg2:T5
 ~~~
 > _(He) presented the letter to the lama._ (CT - Milarepa)
 
 Provided that the argument that does appear
-is annotated as `arg2`, then it is not necessary to insert a zero
-element for the missing `arg1`. It is understood that a two-place predicate must
-have an `arg1` argument - therefore, a sentence with an `arg2` must have
-a missing `arg1`. 
+is annotated as `argb`, then it is not necessary to insert a zero
+element for the missing `arga`. It is understood that a two-place predicate must
+have an `arga` argument - therefore, a sentence with an `argb` must have
+a missing `arga`. 
 
 This reasoning does not allow us to distinguish between a saturated
-one-place predicate and a two-place predicate with a missing `arg2`. 
+one-place predicate and a two-place predicate with a missing `argb`. 
 Nor does it allow us to determine how many arguments a verb has when
 none of its arguments are overt.
 
@@ -423,11 +423,11 @@ T105  PN 3 24  མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
 T106  N 24 28  སྐུ་
 A106a Number T106 Sing
 T107  V 28 34  གཤེགས་
-R14 arg1 Arg1:T107 Arg2:T104
+R14 arga Arg1:T107 Arg2:T104
 R85 compound Arg1:T107 Arg2:T106
 ~~~
 
-If སྐུ་ were coded as `arg2`, then the valency of གཤེགས་ would needlessly shift
+If སྐུ་ were coded as `argb`, then the valency of གཤེགས་ would needlessly shift
 just because it's an honorific. This doesn't seem warranted, and so we instead
 link སྐུ་ to the གཤེགས་ via the `compound` relation.
  
@@ -448,7 +448,7 @@ T1  N 0 6 གོམ་པ་
 A1a Number T1 Sing
 T2  V 6 11  རྒྱག་√1
 A2a Tense T2 Past
-R2a arg2 Arg1:T2 Arg2:T1
+R2a argb Arg1:T2 Arg2:T1
 T3  V 11 15 བྱེད་
 A3a Tense T3 Past
 T4  V 15 18 ཐད་
@@ -470,7 +470,7 @@ T3  n 9 14  གསུམ་
 A3a NumType T3 Card
 T4  V 14 19 རྒྱག་√1
 A4a Tense T4 Pres
-R4a arg2 Arg1:T4 Arg2:T1
+R4a argb Arg1:T4 Arg2:T1
 T5  V 19 22 ཤོག
 ~~~
 > _Take three steps._ (MT - Sang né la: A0002)
@@ -491,8 +491,8 @@ A19b    VerbForm T19 Vnoun
 T20     c 18 21      འི་
 A20a    Case T20 Gen
 T21     N 21 24    ནས་
-R1      arg1 Arg1:T19 Arg2:T16
-R2      arg2 Arg1:T19 Arg2:T18
+R1      arga Arg1:T19 Arg2:T16
+R2      argb Arg1:T19 Arg2:T18
 ~~~
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
 
@@ -500,8 +500,8 @@ The UD project appears to suggest that in light verb constructions, the `NOUN`
 should depend on the `VERB` via the 
 [`compound`](http://universaldependencies.org/u/dep/all.html#al-u-dep/compound)
 relation. This is likely not the right approach for Tibetan. Instead,
-we link the `NOUN` to the `VERB` via the `arg2` relation. So in the above examples,
-the verb has the frame `arg1, arg2`.
+we link the `NOUN` to the `VERB` via the `argb` relation. So in the above examples,
+the verb has the frame `arga, argb`.
 
 We take this approach for three reasons. First, if an additional non-agent 
 semantic role occurs with a light verb, then it must not appear with (unmarked) absolutive case, 
@@ -542,12 +542,12 @@ T113    N 18 24    རྒྱས་
 A113a   Number T113 Sing
 T114    V 24 30    ཡོད་པ་
 A114a   VerbForm T114 Vnoun
-R35     arg1 Arg1:T114 Arg2:T113
-R70     arg2 Arg1:T114 Arg2:T112
+R35     arga Arg1:T114 Arg2:T113
+R70     argb Arg1:T114 Arg2:T112
 ~~~
 > _[They] had knowledge of the written testament._ (CT - Mila 11a)
 
-Here, `arg1` is  རྒྱས་ "knowledge" and `arg2` is ཡི་གེ་ "letter".
+Here, `arga` is  རྒྱས་ "knowledge" and `argb` is ཡི་གེ་ "letter".
 
 ### Relative clauses
 
@@ -567,8 +567,8 @@ A19b    VerbForm T19 Vnoun
 T20     c 18 21      འི་
 A20a    Case T20 Gen
 T21     N 21 24    ནས་
-R1      arg1 Arg1:T19 Arg2:T16
-R2      arg2 Arg1:T19 Arg2:T18
+R1      arga Arg1:T19 Arg2:T16
+R2      argb Arg1:T19 Arg2:T18
 ~~~
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
 
