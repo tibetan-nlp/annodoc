@@ -532,15 +532,15 @@ verb in the following example:
 
 ~~~ ann
 ཞལ་ཆེམས་ཀྱི་ཡི་གེ་རྒྱུས་ཡོད་པ་
-T110    N 0 6    ཞལ་ཆེམས་
+T110    N 0 8    ཞལ་ཆེམས་
 A110a   Number T110 Sing
-T111    c 6 10     ཀྱི་
+T111    c 8 12     ཀྱི་
 A111a   Case T111 Gen
-T112    N 10 16    ཡི་གེ་
+T112    N 12 18    ཡི་གེ་
 A112a   Number T112 Sing
-T113    N 16 22    རྒྱས་
+T113    N 18 24    རྒྱས་
 A113a   Number T113 Sing
-T114    V 22 28    ཡོད་པ་
+T114    V 24 30    ཡོད་པ་
 A114a   VerbForm T114 Vnoun
 R35     arg1 Arg1:T114 Arg2:T113
 R70     obl Arg1:T114 Arg2:T112
