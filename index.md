@@ -126,8 +126,9 @@ Modern Tibetan (MT). Each example is cited with its stage and source.
 
 ### Argument frames
 
-This section illustrates some of the argument frames that Tibetan verbs
-select for. Because arguments can generally be [omitted](#missing-arguments),
+This section catalogues the argument frames that Tibetan verbs are known to
+select for. Newly discovered frames should be added here. 
+Because arguments can generally be [omitted](#missing-arguments),
 care must be taken to assign the correct roles to the arguments that are 
 overt. A valid argument frame is composed of a set of core argument dependency
 relations, selected from the following list: 
@@ -181,6 +182,8 @@ It is not necessary for an `arg1, arg2` verb to be agentive. In the
 following case, the verb is involuntary, and the object forms a
 [light verb](#light-verbs) construction together with the verb.
 Still, there are clearly two distinct verbal aguments in play.
+Because the human experiencer is a better proto-agent than their
+stomach, the 1p pronoun _ང_ is `arg1`.
 
 ~~~ ann
 ང་གྲོད་ཁོག་ཞེ་པོ་བཤལ་གྱིས་ལགས།
@@ -290,7 +293,10 @@ use of verbs of motion as sole argument verbs. Adpositional phrases
 should be linked to motion verbs as oblique modifiers rather than 
 as arguments, using the [`obl`](http://universaldependencies.org/u/dep/obl.html) 
 relation. In the following example, in addition to an `arg1`, 
-there are two obliques.
+there are two obliques. We follow UD guidelines in labeling the
+postposed temporal modifier as an
+[`obl`](http://universaldependencies.org/u/dep/obl.html),
+despite its being a nominal.
 
 ~~~ ann
 ང་ལྦ་ཤིང་ཀྲན་སྒྲི་སི་ལ་ཕྱིན་པ་ཡིན་བདུན་ཕྲག་གཉིས།
@@ -311,8 +317,8 @@ T7  Num 43 47 གཉིས་
 > _I went to Washington D.C for two weeks._ (MT - A Handmade Altar)
 
 The next example shows the same verb ཕྱིན་ occurring with a single
-argument, referring to the passage of time. Note that
-the head (verb) of the adverbial clause is linked to the main verb via 
+argument, referring to the passage of time. 
+The head (verb) of the adverbial clause is linked to the main verb via 
 the [`advcl`](http://universaldependencies.org/u/dep/advcl.html) relation.
 
 ~~~ ann
@@ -337,11 +343,7 @@ A8a Tense T8 Invar
 ~~~
 > _How many years has it been since they were built?_ (MT - The Chapter 26 Dialog from A Manual)
 
-Another example of a single argument verb is ཡོད་.
-
-> ཨ་ཁུ་ལ་བུ་མང་པོ་ཡོད་པ།
-
-> _The uncle had many sons._ 
+Another example of a single argument verb in many of its uses is ཡོད་.
 
 ### Missing arguments 
 
@@ -377,15 +379,15 @@ such difficulties by labeling each verb with its argument structure.
 However, doing so comes with problems of its own. It can be difficult,
 especially during the early days of our understanding, to distinguish
 between a required but missing argument and something that just isn't
-there, and forcing annotators to make this decision is bound to slow
-them down. Moreover, the gain made by doing so is not obvious, given that
-we have yet to identify verbs that occur in the same form with multiple
+there, Forcing annotators to make this decision is not always 
+helpful, and the gain made by doing so is not always obvious -
+we have so far identified few verbs that occur in the same form with multiple
 argument structures.
 
 In light of these considerations, it makes most sense at this point to
-address argument structure at the level of the lemma - and perhaps later,
-at the level of word sense. Annotators are required to choose a lemma;
-for the moment, we assume that argument structure will be handled at this
+address argument structure at the word sense level. Annotators are 
+required to choose a lemma, and perhaps eventually a word sense.
+For the moment, we assume that argument structure will be handled at this
 level, as and when it becomes necessary.
 
 ## Specific constructions
