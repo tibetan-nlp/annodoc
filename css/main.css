@@ -204,13 +204,13 @@ a:visited { color: #205caa; }
   font-size: 18px;
   opacity: .6;
   letter-spacing: -1px;
+  font-style: italic;
   margin: 30px 0;
 }
 
 .entry-content ul,
 .entry-content ol { padding-left: 20px; }
 
-/*
 .entry pre,
 .entry code {
   border: 1px solid #d5d5e9;
@@ -222,8 +222,7 @@ a:visited { color: #205caa; }
   font-size: 15px;
 }
 
-.entry code {  padding: 1px 5px;  }
-*/
+.entry code { padding: 1px 5px; }
 
 .entry ul,
 .entry ol { margin-left: 1.35em; }
