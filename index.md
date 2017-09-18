@@ -543,7 +543,7 @@ A113a   Number T113 Sing
 T114    V 24 30    ཡོད་པ་
 A114a   VerbForm T114 Vnoun
 R35     arg1 Arg1:T114 Arg2:T113
-R70     obl Arg1:T114 Arg2:T112
+R70     arg2 Arg1:T114 Arg2:T112
 ~~~
 > _[They] had knowledge of the written testament._ (CT - Mila 11a)
 
