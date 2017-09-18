@@ -143,13 +143,13 @@ genitives ("letter") is marked `arg2`.
 
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
-T1  p 0 5 ཁྱོད་√p
+T1  pr 0 5 ཁྱོད་√p
 A1a PronType T1 Prs
 T3  N 9 16  ཁ་ཆེམས་
 A3a Number T3 Sing
 T5  N 20 26 ཡི་གེ་
 A5a Number T5 Sing
-T6  p 26 28 སུ་√p
+T6  pr 26 28 སུ་√p
 A6a PronType T6 Int
 T8  V 30 34 འབྲི་√1
 A8a Tense T8 Past
@@ -167,9 +167,9 @@ arguments.
 ཚིག་དེ་ངས་བྲིས་པ་ཡིན།
 T1  N 0 4 ཚིག་
 A1a Number T1 Sing
-T2  p 4 7 དེ་√d
+T2  pr 4 7 དེ་√d
 A2a PronType T2 Dem
-T3  p 7 8 ང་√p
+T3  pr 7 8 ང་√p
 A3a PronType T3 Pers
 T5  V 10 17 འབྲི་པ་√1
 A5a Tense T5 Past
@@ -188,10 +188,10 @@ stomach, `arg1` is the 1p pronoun ང་.
 
 ~~~ ann
 ང་གྲོད་ཁོག་ཞེ་པོ་བཤལ་གྱིས་ལགས།
-T1  p 0 2 ང་
+T1  pr 0 2 ང་
 T2  N 2 11 གྲོད་ཁོག་
 A2a Number T2 Sing
-T3  D 11 17  ཞེ་པོ་
+T3  AV 11 17  ཞེ་པོ་
 T4  V 17 21 བཤལ་
 A4a Tense V Pres
 R4a arg1 Arg1:T4 Arg2:T1
@@ -244,14 +244,14 @@ A3a Tense T3 Past
 A3b Args T3 nsubj
 T4  V 10 15 འདུག་
 A4a Tense T4 Invar
-T6  p 17 18 ང་
+T6  pr 17 18 ང་
 A6a PronType T6 Pers
-T8  p 23 26 རང་
+T8  pr 23 26 རང་
 A8a PronType T8 Pers
 T9  V 26 31 བསྡད་
 A9a Tense T9 Past
 A9b Args T9 nsubj
-R9a nsubj Arg1:T9 Arg2:T8
+R9a arg1 Arg1:T9 Arg2:T8
 T11 V 33 37 ཡོད་
 A11a  Tense T11 Invar
 T12 V 37 42 སེམས་
@@ -271,7 +271,7 @@ categories together under `argcl`.)
 
 ~~~ ann
 ཨ་ནི་ངས་ཨང་ཀི་དེ་ཕུལ་གག་ཕྱིན།
-T2  p 5 6 ང་
+T2  pr 5 6 ང་
 T4  N 8 14  ཨང་ཀི་
 A4a Number T4 Sing
 T5  d 14 17 དེ་√d
@@ -302,8 +302,8 @@ despite its being a nominal.
 
 ~~~ ann
 ང་ལྦ་ཤིང་ཀྲན་སྒྲི་སི་ལ་ཕྱིན་པ་ཡིན་བདུན་ཕྲག་གཉིས།
-T1  p 0 2 ང་
-T2  P 2 21   ལྦ་ཤིང་ཀྲན་སྒྲི་སི་
+T1  pr 0 2 ང་
+T2  PN 2 21   ལྦ་ཤིང་ཀྲན་སྒྲི་སི་
 T4  V 23 30  ཕྱིན་པ་
 A4a Tense T4 Past
 A4b VerbForm T4 Vnoun
@@ -332,7 +332,7 @@ A3a Tense T3 Past
 R3a arg2 Arg1:T3 Arg2:T1
 T5  N 15 18 ལོ་
 A5a Number T5 Sing
-T6  d 18 24 ག་ཚོད་
+T6  pr 18 24 ག་ཚོད་
 A6a PronType T6 Int
 T7  V 24 29 ཕྱིན་
 A7a Tense T7 Past
@@ -481,14 +481,14 @@ There are also examples in Classical Tibetan, for example:
 ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
 T16     N 0 5      ཞང་པོ
 A16a    Number T16 Sing
-T17     C 5 7       ས་
+T17     c 5 7       ས་
 A17a    Case T17 Agn
 T18     N 7 13      སོ་ནམ་
 A18a    Number T18 Sing
 T19     V 13 18      བྱས་པ
 A19a    Tense T19 Past
 A19b    VerbForm T19 Vnoun
-T20     C 18 21      འི་
+T20     c 18 21      འི་
 A20a    Case T20 Gen
 T21     N 21 24    ནས་
 R1      arg1 Arg1:T19 Arg2:T16
@@ -534,7 +534,7 @@ verb in the following example:
 ཞལ་ཆེམས་ཀྱི་ཡི་གེ་རྒྱུས་ཡོད་པ་
 T110    N 0 6    ཞལ་ཆེམས་
 A110a   Number T110 Sing
-T111    C 6 10     ཀྱི་
+T111    c 6 10     ཀྱི་
 A111a   Case T111 Gen
 T112    N 10 16    ཡི་གེ་
 A112a   Number T112 Sing
@@ -557,14 +557,14 @@ Repeating the example from above:
 ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
 T16     N 0 5      ཞང་པོ
 A16a    Number T16 Sing
-T17     C 5 7       ས་
+T17     c 5 7       ས་
 A17a    Case T17 Agn
 T18     N 7 13      སོ་ནམ་
 A18a    Number T18 Sing
 T19     V 13 18      བྱས་པ
 A19a    Tense T19 Past
 A19b    VerbForm T19 Vnoun
-T20     C 18 21      འི་
+T20     c 18 21      འི་
 A20a    Case T20 Gen
 T21     N 21 24    ནས་
 R1      arg1 Arg1:T19 Arg2:T16
