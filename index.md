@@ -171,8 +171,9 @@ T2  p 4 7 དེ་√d
 A2a PronType T2 Dem
 T3  p 7 8 ང་√p
 A3a PronType T3 Pers
-T5  V 10 15 འབྲི་√1
+T5  V 10 17 འབྲི་པ་√1
 A5a Tense T5 Past
+A5b VerbForm T5 Vnoun
 R1  arg1 Arg1:T3 Arg2:T5
 R2  arg2 Arg1:T1 Arg2:T5
 ~~~
