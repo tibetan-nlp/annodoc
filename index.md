@@ -207,7 +207,7 @@ third nominal occurs followed by an `ADP` other than agentive case.
 སེམས་ཅན་ཆེན་པོས་སྟག་མོ་ལ་ལུས་སྦྱིན་པ་ཟེར་ཡས་ལེའུ་དེ་རེད།
 T1  N 0 8 སེམས་ཅན་
 A1a Number T1 Sing
-T2  A 8 14  ཆེན་པོས་
+T2  ADJ 8 14  ཆེན་པོས་
 T4  N 16 23 སྟག་མོ་
 A4a Number T4 Sing
 T6  N 25 29 ལུས་
