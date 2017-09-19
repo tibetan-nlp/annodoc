@@ -143,15 +143,15 @@ genitives ("letter") is marked `arg2`.
 
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
-T1  pr 0 5 ཁྱོད་√p
+T1  PRON 0 5 ཁྱོད་√p
 A1a PronType T1 Prs
-T3  N 9 16  ཁ་ཆེམས་
+T3  NOUN 9 16  ཁ་ཆེམས་
 A3a Number T3 Sing
-T5  N 20 26 ཡི་གེ་
+T5  NOUN 20 26 ཡི་གེ་
 A5a Number T5 Sing
-T6  pr 26 28 སུ་√p
+T6  PRON 26 28 སུ་√p
 A6a PronType T6 Int
-T8  V 30 34 འབྲི་√1
+T8  VERB 30 34 འབྲི་√1
 A8a Tense T8 Past
 R1  arg1 Arg1:T6 Arg2:T8
 R2  arg2 Arg1:T5 Arg2:T8
@@ -165,13 +165,13 @@ arguments.
 
 ~~~ ann
 ཚིག་དེ་ངས་བྲིས་པ་ཡིན།
-T1  N 0 4 ཚིག་
+T1  NOUN 0 4 ཚིག་
 A1a Number T1 Sing
-T2  pr 4 7 དེ་√d
+T2  PRON 4 7 དེ་√d
 A2a PronType T2 Dem
-T3  pr 7 8 ང་√p
+T3  PRON 7 8 ང་√p
 A3a PronType T3 Pers
-T5  V 10 17 འབྲི་པ་√1
+T5  VERB 10 17 འབྲི་པ་√1
 A5a Tense T5 Past
 A5b VerbForm T5 Vnoun
 R1  arg1 Arg1:T3 Arg2:T5
@@ -188,11 +188,11 @@ stomach, `arg1` is the 1p pronoun ང་.
 
 ~~~ ann
 ང་གྲོད་ཁོག་ཞེ་པོ་བཤལ་གྱིས་ལགས།
-T1  pr 0 2 ང་
-T2  N 2 11 གྲོད་ཁོག་
+T1  PRON 0 2 ང་
+T2  NOUN 2 11 གྲོད་ཁོག་
 A2a Number T2 Sing
-T3  AV 11 17  ཞེ་པོ་
-T4  V 17 21 བཤལ་
+T3  ADV 11 17  ཞེ་པོ་
+T4  VERB 17 21 བཤལ་
 A4a Tense V Pres
 R4a arg1 Arg1:T4 Arg2:T1
 R4b arg2 Arg1:T4 Arg2:T2
@@ -205,29 +205,29 @@ third nominal occurs followed by an `ADP` other than agentive case.
 
 ~~~ ann
 སེམས་ཅན་ཆེན་པོས་སྟག་མོ་ལ་ལུས་སྦྱིན་པ་ཟེར་ཡས་ལེའུ་དེ་རེད།
-T1  N 0 8 སེམས་ཅན་
+T1  NOUN 0 8 སེམས་ཅན་
 A1a Number T1 Sing
 T2  ADJ 8 14  ཆེན་པོས་
-T4  N 16 23 སྟག་མོ་
+T4  NOUN 16 23 སྟག་མོ་
 A4a Number T4 Sing
-T6  N 25 29 ལུས་
+T6  NOUN 25 29 ལུས་
 A6a Number T6 Sing
-T7  V 29 37 སྦྱིན་པ་
+T7  VERB 29 37 སྦྱིན་པ་
 A7a Tense T7 Invar
 A7b VerbForm T7 Vnoun
 R7a arg1 Arg1:T7 Arg2:T1
 R7b arg2 Arg1:T7 Arg2:T6
 R7c obl Arg1:T7 Arg2:T4
-T8  V 37 41 ཟེར་
+T8  VERB 37 41 ཟེར་
 A8a Mood T8 Qot
-T10 N 44 49 ལེའུ་
+T10 NOUN 44 49 ལེའུ་
 A10a  Number T10 Sing
-T11 d 49 52 དེ་√d
+T11 DET 49 52 དེ་√d
 A11a  PronType T11 Dem
-T12 V 52 55 རེད་
+T12 VERB 52 55 རེད་
 A12a  Tense T12 Invar
 ~~~
-> _This is the chapter on the story of the great sentient being giving his body to the tigress._ (MT - An Oral Commentary on The Tale of the Hungry Tigress: A Reader of Classical Tibetan 1.1)
+> _This dis the chapter on the story of the great sentient being giving his body to the tigress._ (MT - An Oral Commentary on The Tale of the Hungry Tigress: A Reader of Classical Tibetan 1.1)
 
 #### `arg1, argcl`
 
@@ -237,28 +237,28 @@ verb by the `argcl` relationship.
 
 ~~~ ann
 ནང་ལ་བསྡད་འདུག་ག་ངས་ནི་རང་བསྡད་ཨ་ཡོད་བསམས་བྱུང་།
-T1  N 0 3 ནང་
+T1  NOUN 0 3 ནང་
 A1a Number T1 Sing
-T3  V 5 10  བསྡད་
+T3  VERB 5 10  བསྡད་
 A3a Tense T3 Past
 A3b Args T3 nsubj
-T4  V 10 15 འདུག་
+T4  VERB 10 15 འདུག་
 A4a Tense T4 Invar
-T6  pr 17 18 ང་
+T6  PRON 17 18 ང་
 A6a PronType T6 Pers
-T8  pr 23 26 རང་
+T8  PRON 23 26 རང་
 A8a PronType T8 Pers
-T9  V 26 31 བསྡད་
+T9  VERB 26 31 བསྡད་
 A9a Tense T9 Past
 A9b Args T9 nsubj
 R9a arg1 Arg1:T9 Arg2:T8
-T11 V 33 37 ཡོད་
+T11 VERB 33 37 ཡོད་
 A11a  Tense T11 Invar
-T12 V 37 42 སེམས་
+T12 VERB 37 42 སེམས་
 A12a  Tense T12 Past
 R12a  arg1 Arg1:T12 Arg2:T6
 R12b  argcl Arg1:T12 Arg2:T9
-T13 V 42 47 བྱུང་√x
+T13 VERB 42 47 བྱུང་√x
 A13a  Tense T13 Invar
 ~~~
 > _You're home. I thought you might not be home._ (MT - A Handmade Altar)
@@ -271,14 +271,14 @@ categories together under `argcl`.)
 
 ~~~ ann
 ཨ་ནི་ངས་ཨང་ཀི་དེ་ཕུལ་གག་ཕྱིན།
-T2  pr 5 6 ང་
-T4  N 8 14  ཨང་ཀི་
+T2  PRON 5 6 ང་
+T4  NOUN 8 14  ཨང་ཀི་
 A4a Number T4 Sing
-T5  d 14 17 དེ་√d
+T5  DET 14 17 དེ་√d
 A5a PronType T5 Dem
-T6  V 17 21 འབུལ་
+T6  VERB 17 21 འབུལ་
 R6a arg2 Arg1:T6 Arg2:T4
-T7  V 24 28 ཕྱིན་
+T7  VERB 24 28 ཕྱིན་
 A7a Tense T7 Past
 R7a arg1 Arg1:T7 Arg2:T2
 R7b argcl Arg1:T7 Arg2:T6
@@ -302,19 +302,19 @@ despite its being a nominal.
 
 ~~~ ann
 ང་ལྦ་ཤིང་ཀྲན་སྒྲི་སི་ལ་ཕྱིན་པ་ཡིན་བདུན་ཕྲག་གཉིས།
-T1  pr 0 2 ང་
-T2  PN 2 21   ལྦ་ཤིང་ཀྲན་སྒྲི་སི་
-T4  V 23 30  ཕྱིན་པ་
+T1  PRON 0 2 ང་
+T2  PROPN 2 21   ལྦ་ཤིང་ཀྲན་སྒྲི་སི་
+T4  VERB 23 30  ཕྱིན་པ་
 A4a Tense T4 Past
 A4b VerbForm T4 Vnoun
 R4a arg1 Arg1:T4 Arg2:T1
 R4b obl Arg1:T4 Arg2:T2
 R4c obl Arg1:T4 Arg2:T6
-T5  V 30 34 ཡིན་
+T5  VERB 30 34 ཡིན་
 A5a Tense T5 Invar
-T6  N 34 43 བདུན་ཕྲག་
+T6  NOUN 34 43 བདུན་ཕྲག་
 A6a Number T6 Sing
-T7  Num 43 47 གཉིས་
+T7  NUM 43 47 གཉིས་
 ~~~
 > _I went to Washington D.C for two weeks._ (MT - A Handmade Altar)
 
@@ -325,22 +325,22 @@ the [`advcl`](http://universaldependencies.org/u/dep/advcl.html) relation.
 
 ~~~ ann
 དེ་ཚོ་བརྒྱབ་ནས་ལོ་ག་ཚོད་ཕྱིན་ཡོད་རེད།
-T1  d 0 3 དེ་√d
+T1  DET 0 3 དེ་√d
 A1a PronType T1 Dem
-T3  V 6 12  རྒྱག་√1
+T3  VERB 6 12  རྒྱག་√1
 A3a Tense T3 Past
 R3a arg2 Arg1:T3 Arg2:T1
-T5  N 15 18 ལོ་
+T5  NOUN 15 18 ལོ་
 A5a Number T5 Sing
-T6  pr 18 24 ག་ཚོད་
+T6  PRON 18 24 ག་ཚོད་
 A6a PronType T6 Int
-T7  V 24 29 ཕྱིན་
+T7  VERB 24 29 ཕྱིན་
 A7a Tense T7 Past
 R7a arg1 Arg1:T7 Arg2:T5
 R7b advcl Arg1:T7 Arg2:T3
-T8  V 29 33 ཡོད་
+T8  VERB 29 33 ཡོད་
 A8a Tense T8 Invar
-T9  V 33 36 རེད་√1
+T9  VERB 33 36 རེད་√1
 A8a Tense T8 Invar
 ~~~
 > _How many years has it been since they were built?_ (MT - The Chapter 26 Dialog from A Manual)
@@ -355,11 +355,11 @@ but `arg1` is not present.
 
 ~~~ ann
 ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
-T1  N 0 6  	ཡི་གེ་
+T1  NOUN 0 6  	ཡི་གེ་
 A1a Number T1 Sing
-T3  N 9 14  བླ་མ་
+T3  NOUN 9 14  བླ་མ་
 A3a Number T3 Sing
-T5  V 16 19 འབུལ་
+T5  VERB 16 19 འབུལ་
 R1  arg2 Arg1:T1 Arg2:T5
 R2  obl Arg1:T3 Arg2:T5
 ~~~
@@ -417,12 +417,12 @@ to a `VERB`, without altering the argument structure of the host. For example:
 
 ~~~ ann
 ཡབ་མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་སྐུ་གཤེགས་
-T104  N 0 3  ཡབ་
+T104  NOUN 0 3  ཡབ་
 A104a Number T104 Sing
-T105  PN 3 24  མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
-T106  N 24 28  སྐུ་
+T105  PROPN 3 24  མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
+T106  NOUN 24 28  སྐུ་
 A106a Number T106 Sing
-T107  V 28 34  གཤེགས་
+T107  VERB 28 34  གཤེགས་
 R14 arg1 Arg1:T107 Arg2:T104
 R85 compound Arg1:T107 Arg2:T106
 ~~~
@@ -444,14 +444,14 @@ The following illustrates the use of the light verb གོམ་པ་རྒྱ�
 
 ~~~ ann
 གོམ་པ་རྒྱབ་བྱས་ཐད་དོ།
-T1  N 0 6 གོམ་པ་
+T1  NOUN 0 6 གོམ་པ་
 A1a Number T1 Sing
-T2  V 6 11  རྒྱག་√1
+T2  VERB 6 11  རྒྱག་√1
 A2a Tense T2 Past
 R2a arg2 Arg1:T2 Arg2:T1
-T3  V 11 15 བྱེད་
+T3  VERB 11 15 བྱེད་
 A3a Tense T3 Past
-T4  V 15 18 ཐད་
+T4  VERB 15 18 ཐད་
 A4a Tense T4 Fut,Pres
 ~~~
 > _Let's walk there._ (MT - A Visit to the Hospital, Abridged)
@@ -462,16 +462,16 @@ are separable.
 
 ~~~ ann
 གོམ་པ་ལན་གསུམ་རྒྱབ་ཤོག
-T1  N 0 6 གོམ་པ་
+T1  NOUN 0 6 གོམ་པ་
 A1a Number T1 Sing
-T2  N 6 9 ལན་
+T2  NOUN 6 9 ལན་
 A2a Number T2 Sing
-T3  n 9 14  གསུམ་
+T3  NOUN 9 14  གསུམ་
 A3a NumType T3 Card
-T4  V 14 19 རྒྱག་√1
+T4  VERB 14 19 རྒྱག་√1
 A4a Tense T4 Pres
 R4a arg2 Arg1:T4 Arg2:T1
-T5  V 19 22 ཤོག
+T5  VERB 19 22 ཤོག
 ~~~
 > _Take three steps._ (MT - Sang né la: A0002)
 
@@ -479,18 +479,18 @@ There are also examples in Classical Tibetan, for example:
 
 ~~~ ann
 ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
-T16     N 0 5      ཞང་པོ
+T16     NOUN 0 5      ཞང་པོ
 A16a    Number T16 Sing
-T17     c 5 7       ས་
+T17     ADP 5 7       ས་
 A17a    Case T17 Agn
-T18     N 7 13      སོ་ནམ་
+T18     NOUN 7 13      སོ་ནམ་
 A18a    Number T18 Sing
-T19     V 13 18      བྱས་པ
+T19     VERB 13 18      བྱས་པ
 A19a    Tense T19 Past
 A19b    VerbForm T19 Vnoun
-T20     c 18 21      འི་
+T20     ADP 18 21      འི་
 A20a    Case T20 Gen
-T21     N 21 24    ནས་
+T21     NOUN 21 24    ནས་
 R1      arg1 Arg1:T19 Arg2:T16
 R2      arg2 Arg1:T19 Arg2:T18
 ~~~
@@ -532,15 +532,15 @@ verb in the following example:
 
 ~~~ ann
 ཞལ་ཆེམས་ཀྱི་ཡི་གེ་རྒྱུས་ཡོད་པ་
-T110    N 0 8    ཞལ་ཆེམས་
+T110    NOUN 0 8    ཞལ་ཆེམས་
 A110a   Number T110 Sing
-T111    c 8 12     ཀྱི་
+T111    ADP 8 12     ཀྱི་
 A111a   Case T111 Gen
-T112    N 12 18    ཡི་གེ་
+T112    NOUN 12 18    ཡི་གེ་
 A112a   Number T112 Sing
-T113    N 18 24    རྒྱས་
+T113    NOUN 18 24    རྒྱས་
 A113a   Number T113 Sing
-T114    V 24 30    ཡོད་པ་
+T114    VERB 24 30    ཡོད་པ་
 A114a   VerbForm T114 Vnoun
 R35     arg1 Arg1:T114 Arg2:T113
 R70     arg2 Arg1:T114 Arg2:T112
@@ -555,18 +555,18 @@ Repeating the example from above:
 
 ~~~ ann
 ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
-T16     N 0 5      ཞང་པོ
+T16     NOUN 0 5      ཞང་པོ
 A16a    Number T16 Sing
-T17     c 5 7       ས་
+T17     ADP 5 7       ས་
 A17a    Case T17 Agn
-T18     N 7 13      སོ་ནམ་
+T18     NOUN 7 13      སོ་ནམ་
 A18a    Number T18 Sing
-T19     V 13 18      བྱས་པ
+T19     VERB 13 18      བྱས་པ
 A19a    Tense T19 Past
 A19b    VerbForm T19 Vnoun
-T20     c 18 21      འི་
+T20     ADP 18 21      འི་
 A20a    Case T20 Gen
-T21     N 21 24    ནས་
+T21     NOUN 21 24    ནས་
 R1      arg1 Arg1:T19 Arg2:T16
 R2      arg2 Arg1:T19 Arg2:T18
 ~~~
