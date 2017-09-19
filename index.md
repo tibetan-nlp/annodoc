@@ -182,7 +182,7 @@ R2  arg2 Arg1:T1 Arg2:T5
 It is not necessary for an `arg1, arg2` verb to be agentive. In the
 following case, the verb is involuntary, and the object forms a
 [light verb](#light-verbs) construction together with the verb.
-Still, there are clearly two distinct verbal aguments in play.
+Still, there are clearly two distinct verbal arguments in play.
 Because the human experiencer is a better proto-agent than their
 stomach, `arg1` is the 1p pronoun ང་.
 
