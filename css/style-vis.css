@@ -52,10 +52,6 @@ div.haserror > svg {
 }
 
 /* "basic" font */
-.sentnum text {
-  font-size: 13px;
-  font-family: 'Liberation Sans', Verdana, Arial, Helvetica, sans-serif;
-}
 text {
   font-size: 24px;
   font-family: 'DDC UChen', 'Liberation Sans', Verdana, Arial, Helvetica, sans-serif;
@@ -298,6 +294,7 @@ rect.shadow_EditHighlight {
 }
 
 .sentnum text {
+  font-size: 13px;
   display: none; /* sentence number disabled by default (JS may toggle) */
   fill: #999999;
   text-anchor: end;
