@@ -241,7 +241,6 @@ T1  NOUN 0 3 ནང་
 A1a Number T1 Sing
 T3  VERB 5 10  བསྡད་
 A3a Tense T3 Past
-A3b Args T3 nsubj
 T4  VERB 10 15 འདུག་
 A4a Tense T4 Invar
 T6  PRON 17 18 ང་
@@ -250,7 +249,6 @@ T8  PRON 23 26 རང་
 A8a PronType T8 Pers
 T9  VERB 26 31 བསྡད་
 A9a Tense T9 Past
-A9b Args T9 nsubj
 R9a arg1 Arg1:T9 Arg2:T8
 T11 VERB 33 37 ཡོད་
 A11a  Tense T11 Invar
