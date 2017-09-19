@@ -53,8 +53,8 @@ div.haserror > svg {
 
 /* "basic" font */
 text {
-  font-size: 13px;
-  font-family: 'Liberation Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-family: 'DDC UChen', 'Liberation Sans', Verdana, Arial, Helvetica, sans-serif;
 }
 
 @-webkit-keyframes pulse {
