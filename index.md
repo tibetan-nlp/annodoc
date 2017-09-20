@@ -397,11 +397,11 @@ level, as and when it becomes necessary.
 The [`aux`](http://universaldependencies.org/u/dep/aux_.html)
 relation is used to link functional auxiliaries to main verbs.
 Modal verbs such as དགོས་ 'need to', ནུས་ 'able to', and འདོད་ 'want to'
-fall under this category when used after a main verb, as in the
+fall under this category when used after main verbs, as in the
 following example:
 
 ~~~ ann
-ཨ་ཁུ་དང་ཨ་ནེ་ལ་ངོ་མི་མི་ཚ་ཚ་བ་ཅིག་བྱེད་དགོས་
+ཨ་ཁུ་དང་ཨ་ནེ་ལ་ངོ་མི་ཚ་བ་ཅིག་བྱེད་དགོས་
 T861    NOUN 0 5    ཨ་ཁུ་
 A861a   Number T861 Sing
 T862    ADP 5 8     དང་
