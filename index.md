@@ -27,8 +27,8 @@ project.
 * [Specific constructions](#specific-constructions)
     * [Auxiliaries](#auxiliaries)
     * [Copulas](#copulas)
-    * [Honorific verbal compounds](#honorific-verbal-compounds)
     * [Light verbs](#light-verbs)
+        * [Honorifics](#honorifics)
         * [Special cases](#special-cases)
     * [Relative clauses](#relative-clauses)
 
@@ -442,27 +442,6 @@ relation to link a predicate
 (e.g. an adjective) to the `x` or `x n`. The copula itself does not have an
 argument structure. 
 
-### Honorific verbal compounds
-
-Honorific verbal compounds in Tibetan are formed by prepending an honorific `NOUN`
-to a `VERB`, without altering the argument structure of the host. For example:
-
-~~~ ann
-ཡབ་མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་སྐུ་གཤེགས་
-T104  NOUN 0 3  ཡབ་
-A104a Number T104 Sing
-T105  PROPN 3 24  མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
-T106  NOUN 24 28  སྐུ་
-A106a Number T106 Sing
-T107  VERB 28 34  གཤེགས་
-R14 arg1 Arg1:T107 Arg2:T104
-R85 compound Arg1:T107 Arg2:T106
-~~~
-
-If སྐུ་ were coded as `arg2`, then the valency of གཤེགས་ would needlessly shift
-just because it's an honorific. This doesn't seem warranted, and so we instead
-link སྐུ་ to the གཤེགས་ via the `compound` relation.
- 
 ### Light verbs
 
 Like other languages of the region, Tibetan has a wealth of idiomatic light verb
@@ -552,6 +531,29 @@ Despite these objections, the importance to our project of identifying
 light verbs cannot be understated. A proper verb lexicon for Tibetan needs 
 to include those `NOUN` + `VERB` collocations that convey fundamental verbal 
 meanings in the language.
+
+#### Honorifics
+
+Complex honorific verbs in Tibetan are formed by prepending an honorific `NOUN`
+to a `VERB`. Semantically, such constructions differ from typical light verb
+constructions, in that the `VERB` is not bleached of meaning, and the `NOUN`
+contributes only honorific function. Nevertheless, given our present understanding
+of Tibetan grammar, these constructions cannot be formally distinguished from
+light verb constructions. Therefore, we treat them the same:
+ 
+~~~ ann
+ཡབ་མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་སྐུ་གཤེགས་
+T104  NOUN 0 3  ཡབ་
+A104a Number T104 Sing
+T105  PROPN 3 24  མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་
+T106  NOUN 24 28  སྐུ་
+A106a Number T106 Sing
+T107  VERB 28 34  གཤེགས་
+R14 arg1 Arg1:T107 Arg2:T104
+R85 arg2 Arg1:T107 Arg2:T106
+~~~
+
+Here the honorific noun སྐུ་ is coded as `arg2` of the verb གཤེགས་.
 
 #### Special cases
 
