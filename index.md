@@ -459,7 +459,7 @@ T1  NOUN 0 6 གོམ་པ་
 A1a Number T1 Sing
 T2  VERB 6 11  རྒྱག་√1
 A2a Tense T2 Past
-R2a arg2:lvc Arg1:T2 Arg2:T1
+R2a arg2-lvc Arg1:T2 Arg2:T1
 T3  VERB 11 15 བྱེད་
 A3a Tense T3 Past
 T4  VERB 15 18 ཐད་
@@ -481,7 +481,7 @@ T3  NOUN 9 14  གསུམ་
 A3a NumType T3 Card
 T4  VERB 14 19 རྒྱག་√1
 A4a Tense T4 Pres
-R4a arg2:lvc Arg1:T4 Arg2:T1
+R4a arg2-lvc Arg1:T4 Arg2:T1
 T5  VERB 19 22 ཤོག
 ~~~
 > _Take three steps._ (MT - Sang né la: A0002)
@@ -503,7 +503,7 @@ T20     ADP 18 21      འི་
 A20a    Case T20 Gen
 T21     NOUN 21 24    ནས་
 R1      arg1 Arg1:T19 Arg2:T16
-R2      arg2:lvc Arg1:T19 Arg2:T18
+R2      arg2-lvc Arg1:T19 Arg2:T18
 ~~~
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
 
