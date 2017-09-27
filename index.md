@@ -236,6 +236,7 @@ When a verb has two unmarked arguments in addition to having an `arg1` argument,
 then we classify it as a three-place predicate with no obliques. For example:
 
 ~~~ ann
+ངེད་མ་སྨད་ཨ་ཁུ་དང་ཨ་ནེས་གཤའ་མ་རང་མ་བཅོལ་
 T924	PRON 0 4	ངེད་
 A924a	PronType T924 Prs
 T925	NOUN 4 10	མ་སྨད་
