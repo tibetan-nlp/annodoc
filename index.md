@@ -543,7 +543,7 @@ to a `VERB`. Semantically, such constructions differ from typical light verb
 constructions, in that the `VERB` is not bleached of meaning, and the `NOUN`
 contributes only honorific function. Nevertheless, given our present understanding
 of Tibetan grammar, these constructions cannot be formally distinguished from
-light verb constructions. Therefore, we treat them the same:
+light verb constructions. Therefore, we consider that they also involve `arg2`.
  
 ~~~ ann
 ཡབ་མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་སྐུ་གཤེགས་
