@@ -19,12 +19,18 @@ project.
     * [Part-of-speech tags](#part-of-speech-tags)
     * [Dependency relations](#dependency-relations)
 * [Annotation overview](#annotation-overview)
+    * [Missing arguments](#missing-arguments)
     * [Argument frames](#argument-frames)
         * [`arg1, arg2`](#arg1-arg2)
         * [`arg1, arg2, arg3`](#arg1-arg2-arg3)
         * [`arg1, argcl`](#arg1-argcl)
         * [`arg1`](#arg1)
-    * [Missing arguments](#missing-arguments)
+    * [Obliques](#obliques)
+        * [Oblique arguments](#oblique-arguments)
+        * [Oblique adjuncts](#oblique-adjuncts)
+    * [Adverbial modifiers](#adverbial modifiers)
+        * [Adverbs](#adverbs)
+        * [Adverbial clauses](#adverbial-clauses)
 * [Specific constructions](#specific-constructions)
     * [Auxiliaries](#auxiliaries)
     * [Copulas](#copulas)
@@ -124,6 +130,51 @@ annotation policy. We adopt the following principles:
 
 In this section, we draw examples from Old (OT), Classical (CT) and
 Modern Tibetan (MT). Each example is cited with its stage and source.
+
+### Missing arguments
+
+In Tibetan, verbal arguments are often inferred from the context or from previous
+discourse. In the following example, the verb is linked to its `arg2`,
+but `arg1` is not present.
+
+~~~ ann
+ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
+T1  NOUN 0 6    ཡི་གེ་
+A1a Number T1 Sing
+T3  NOUN 9 14  བླ་མ་
+A3a Number T3 Sing
+T5  VERB 16 19 འབུལ་
+R1  arg2 Arg1:T1 Arg2:T5
+R2  obl Arg1:T3 Arg2:T5
+~~~
+> _(He) presented the letter to the lama._ (CT - Milarepa)
+
+Provided that the argument that does appear
+is annotated as `arg2`, then it is not necessary to insert a zero
+element for the missing `arg1`. It is understood that a two-place predicate must
+have an `arg1` argument - therefore, a sentence with an `arg2` must have
+a missing `arg1`.
+
+This reasoning does not allow us to distinguish between a saturated
+one-place predicate and a two-place predicate with a missing `arg2`.
+Nor does it allow us to determine how many arguments a verb has when
+none of its arguments are overt.
+
+In an earlier version of this documentation, we proposed to handle
+such difficulties by labeling each verb with its argument structure.
+However, doing so comes with problems of its own. It can be difficult,
+especially during the early days of our understanding, to distinguish
+between a required but missing argument and something that just isn't
+there, Forcing annotators to make this decision is not always
+helpful, and the gain made by doing so is not always obvious -
+we have so far identified few verbs that occur in the same form with multiple
+argument structures.
+
+In light of these considerations, it makes most sense at this point to
+address argument structure at the word sense level. Annotators are
+required to choose a lemma, and perhaps eventually a word sense.
+For the moment, we assume that argument structure will be handled at this
+level, as and when it becomes necessary.
 
 ### Argument frames
 
@@ -379,50 +430,23 @@ A8a Tense T8 Invar
 
 Another example of a single argument verb in many of its uses is ཡོད་.
 
-### Missing arguments
+### Obliques
 
-In Tibetan, verbal arguments are often inferred from the context or from previous
-discourse. In the following example, the verb is linked to its `arg2`,
-but `arg1` is not present.
+#### Oblique arguments
 
-~~~ ann
-ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
-T1  NOUN 0 6  	ཡི་གེ་
-A1a Number T1 Sing
-T3  NOUN 9 14  བླ་མ་
-A3a Number T3 Sing
-T5  VERB 16 19 འབུལ་
-R1  arg2 Arg1:T1 Arg2:T5
-R2  obl Arg1:T3 Arg2:T5
-~~~
-> _(He) presented the letter to the lama._ (CT - Milarepa)
+#### Oblique adjuncts
 
-Provided that the argument that does appear
-is annotated as `arg2`, then it is not necessary to insert a zero
-element for the missing `arg1`. It is understood that a two-place predicate must
-have an `arg1` argument - therefore, a sentence with an `arg2` must have
-a missing `arg1`.
+Insert examples of `obl`.
 
-This reasoning does not allow us to distinguish between a saturated
-one-place predicate and a two-place predicate with a missing `arg2`.
-Nor does it allow us to determine how many arguments a verb has when
-none of its arguments are overt.
+### Adverbial modifiers
 
-In an earlier version of this documentation, we proposed to handle
-such difficulties by labeling each verb with its argument structure.
-However, doing so comes with problems of its own. It can be difficult,
-especially during the early days of our understanding, to distinguish
-between a required but missing argument and something that just isn't
-there, Forcing annotators to make this decision is not always
-helpful, and the gain made by doing so is not always obvious -
-we have so far identified few verbs that occur in the same form with multiple
-argument structures.
+#### Adverbs
 
-In light of these considerations, it makes most sense at this point to
-address argument structure at the word sense level. Annotators are
-required to choose a lemma, and perhaps eventually a word sense.
-For the moment, we assume that argument structure will be handled at this
-level, as and when it becomes necessary.
+Insert examples of `advmod`.
+
+#### Adverbial clauses
+
+Insert examples of `advcl`.
 
 ## Specific constructions
 
