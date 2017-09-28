@@ -260,36 +260,6 @@ R4b arg2 Arg1:T4 Arg2:T2
 ~~~
 > _I've got bad diarrhea._ (MT - Diarrhea)
 
-What in other contexts might be called a three-place predicate
-is for us a two-place predicate with an oblique nominal, since the
-third nominal occurs followed by an `ADP` other than agentive case.
-
-~~~ ann
-སེམས་ཅན་ཆེན་པོས་སྟག་མོ་ལ་ལུས་སྦྱིན་པ་ཟེར་ཡས་ལེའུ་དེ་རེད།
-T1  NOUN 0 8 སེམས་ཅན་
-A1a Number T1 Sing
-T2  ADJ 8 14  ཆེན་པོས་
-T4  NOUN 16 23 སྟག་མོ་
-A4a Number T4 Sing
-T6  NOUN 25 29 ལུས་
-A6a Number T6 Sing
-T7  VERB 29 37 སྦྱིན་པ་
-A7a Tense T7 Invar
-A7b VerbForm T7 Vnoun
-R7a arg1 Arg1:T7 Arg2:T1
-R7b arg2 Arg1:T7 Arg2:T6
-R7c obl Arg1:T7 Arg2:T4
-T8  VERB 37 41 ཟེར་
-A8a Mood T8 Qot
-T10 NOUN 44 49 ལེའུ་
-A10a  Number T10 Sing
-T11 DET 49 52 དེ་√d
-A11a  PronType T11 Dem
-T12 VERB 52 55 རེད་
-A12a  Tense T12 Invar
-~~~
-> _This dis the chapter on the story of the great sentient being giving his body to the tigress._ (MT - An Oral Commentary on The Tale of the Hungry Tigress: A Reader of Classical Tibetan 1.1)
-
 #### `arg1, arg2, arg3`
 
 When a verb has two unmarked arguments in addition to having an `arg1` argument,
@@ -442,6 +412,42 @@ Another example of a single argument verb in many of its uses is ཡོད་.
 ### Obliques
 
 #### Oblique arguments
+
+It is of considerable value to this project to identify and distinguish
+between arguments (those elements that are licensed by a verb and clearly
+essential to its meaning) and adjuncts (those elements that are optional
+and can occur with many or most verbs). Therefore we permit ourselves
+to label oblique-marked nominals that behave as arguments with the
+subtyped relation `obl:arg`.
+
+A typical case of `obl:arg` would be to mark the third argument of
+a verb of giving.
+
+~~~ ann
+སེམས་ཅན་ཆེན་པོས་སྟག་མོ་ལ་ལུས་སྦྱན་པ་ཟེར་ཡས་ལེའུ་དེ་རེད།
+T1  NOUN 0 8 སེམས་ཅན་
+A1a Number T1 Sing
+T2  ADJ 8 14  ཆེན་པོས་
+T4  NOUN 16 23 སྟག་མོ་
+A4a Number T4 Sing
+T6  NOUN 25 29 ལུས་
+A6a Number T6 Sing
+T7  VERB 29 37 སྦྱན་པ་
+A7a Tense T7 Invar
+A7b VerbForm T7 Vnoun
+R7a arg1 Arg1:T7 Arg2:T1
+R7b arg2 Arg1:T7 Arg2:T6
+R7c obl:arg Arg1:T7 Arg2:T4
+T8  VERB 37 41 ཟེར་
+A8a Mood T8 Qot
+T10 NOUN 44 49 ལེའུ་
+A10a  Number T10 Sing
+T11 DET 49 52 དེ་√d
+A11a  PronType T11 Dem
+T12 VERB 52 55 རེད་
+A12a  Tense T12 Invar
+~~~
+> _This is the chapter on the story of the great sentient being giving his body to the tigress._ (MT - An Oral Commentary on The Tale of the Hungry Tigress: A Reader of Classical Tibetan 1.1)
 
 #### Oblique adjuncts
 
