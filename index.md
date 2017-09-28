@@ -50,14 +50,23 @@ we ask the annotator to perform the following tasks:
 
 1. Identify and label the core arguments of each verb.
     * Identify at most one head word for each core argument position.
-    * Link each argument head word to its verb using one of the following
-    dependency relations: `arg1`, `arg2`, or `argcl`.
-1. Identify and label the oblique modifiers of each verb.
+    * Draw an arc from the verb to the head word of each argument 
+    using one of the following dependency relations: 
+    `arg1`, `arg2`, `arg3` or `argcl`.
+    * You may consider some arguments to be core, despite occurring
+    with oblique case marking. In this situation, you can mark
+    the argument using the subtyped dependency `obl:arg`.
+1. Identify and label the modifiers of each verb.
     * Identify any modifiers related to the verb.
-    * Link the head word of each such modifier to the verb, using one of
-    the following dependency relations:
-    [`obl`](http://universaldependencies.org/u/dep/obl.html) or
-    [`advcl`](http://universaldependencies.org/u/dep/advcl.html).
+    * Use [`obl`](http://universaldependencies.org/u/dep/obl.html)
+    to label arcs drawn from the verb 
+    to the head word of nominal modifiers followed by adpositions.
+    * Also use `obl` to link to nominal modifiers that do not have
+    case markers, such as temporal modifiers.
+    * Use [`advmod`](http://universaldependencies.org/u/dep/advmod.html)
+    to label arcs drawn from the verb to an adverb that modifies it.
+    * Use [`advcl`](http://universaldependencies.org/u/dep/advcl.html) 
+    to label arcs drawn from the verb to the head of an adverbial clause.
 
 Note that annotators are not asked to do the following:
 
