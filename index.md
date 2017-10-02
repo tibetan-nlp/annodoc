@@ -550,7 +550,7 @@ T1  NOUN 0 6 གོམ་པ་
 A1a Number T1 Sing
 T2  NOUN 6 9 ལན་
 A2a Number T2 Sing
-T3  NOUN 9 14  གསུམ་
+T3  NUM 9 14  གསུམ་
 A3a NumType T3 Card
 T4  VERB 14 19 རྒྱག་√1
 A4a Tense T4 Pres
@@ -580,7 +580,7 @@ R2      arg2-lvc Arg1:T19 Arg2:T18
 ~~~
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
 
-The UD project appears to suggest that in light verb constructions, the `NOUN`
+The UD project suggests that in light verb constructions, the `NOUN`
 should depend on the `VERB` via the
 [`compound`](http://universaldependencies.org/u/dep/all.html#al-u-dep/compound)
 relation. This is likely not the right approach for Tibetan. Instead,
@@ -592,10 +592,9 @@ semantic role occurs with a light verb, then it must not appear with (unmarked) 
 but must instead bear an overt oblique case marker. This suggests that the
 `NOUN` part of a light verb construction is a syntactic object. Second, adopting the `compound`
 dependency relation would make it more difficult to compare the use of a verb
-across different stages of the history of the language. Light verb constructions
-are widespread in Modern Tibetan, but perhaps less so in Classical and Old Tibetan.
-Yet, it is certainly possible that members of this construction arose from
-collocations that were once semantically compositional. Third and finally,
+across different stages of the history of the language: a given light verb
+construction may have arisen from
+a collocation that was once semantically compositional. Third and finally,
 in the absence of sound syntactic tests, there is a certain subjectivity
 in diagnosing light verb constructions. We are not convinced that
 annotators would agree on when to label the `compound` relation.
@@ -606,7 +605,7 @@ to include those `NOUN` + `VERB` collocations that convey fundamental verbal
 meanings in the language. Therefore when feasible we ask annotators to explicitly
 mark the light verb construction by marking the noun with the subtyped relation
 `arg2:lvc`. The sub-type `lvc` stands for "light verb construction" and has precedent in
-[other UD treebanks ](http://universaldependencies.org/ext-dep-index.html):
+[other UD treebanks](http://universaldependencies.org/ext-dep-index.html):
 Hungarian has `dobj:lvc`, while Persian and Turkish have `compound:lvc`.
 
 #### Honorifics
