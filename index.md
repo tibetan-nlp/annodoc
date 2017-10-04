@@ -627,10 +627,12 @@ T106  NOUN 24 28  སྐུ་
 A106a Number T106 Sing
 T107  VERB 28 34  གཤེགས་
 R14 arg1 Arg1:T107 Arg2:T104
-R85 arg2 Arg1:T107 Arg2:T106
+R85 arg2:hon Arg1:T107 Arg2:T106
 ~~~
 
-Here the honorific noun སྐུ་ is coded as `arg2` of the verb གཤེགས་.
+In order to make it easier for honorific compounds to be identified later,
+we code the honorific noun སྐུ་ as a subtyped `arg2:hon` of the verb གཤེགས་.
+This distinguishes such cases from typical light verb constructions.
 
 #### Special cases
 
