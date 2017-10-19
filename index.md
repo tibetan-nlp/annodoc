@@ -50,8 +50,8 @@ we ask the annotator to perform the following tasks:
 
 1. Identify and label the core arguments of each verb.
     * Identify at most one head word for each core argument position.
-    * Draw an arc from the verb to the head word of each argument 
-    using one of the following dependency relations: 
+    * Draw an arc from the verb to the head word of each argument
+    using one of the following dependency relations:
     `arg1`, `arg2`, `arg3` or `argcl`.
     * You may consider some arguments to be core, despite occurring
     with oblique case marking. In this situation, you can mark
@@ -59,13 +59,13 @@ we ask the annotator to perform the following tasks:
 1. Identify and label the modifiers of each verb.
     * Identify any modifiers related to the verb.
     * Use [`obl`](http://universaldependencies.org/u/dep/obl.html)
-    to label arcs drawn from the verb 
+    to label arcs drawn from the verb
     to the head word of nominal modifiers followed by adpositions.
     * Also use `obl` to link to nominal modifiers that do not have
     case markers, such as temporal modifiers.
     * Use [`advmod`](http://universaldependencies.org/u/dep/advmod.html)
     to label arcs drawn from the verb to an adverb that modifies it.
-    * Use [`advcl`](http://universaldependencies.org/u/dep/advcl.html) 
+    * Use [`advcl`](http://universaldependencies.org/u/dep/advcl.html)
     to label arcs drawn from the verb to the head of an adverbial clause.
 
 Note that annotators are not asked to do the following:
@@ -457,7 +457,36 @@ Insert examples of `obl`.
 
 #### Adverbs
 
-Insert examples of `advmod`.
+The [`advmod`](http://universaldependencies.org/u/dep/advmod.html)
+relation is used to link (non-clausal) adverbs and adverbial phrases
+to a predicate. Here are some examples:
+
+~~~ ann
+སློབ་དཔོན་ཀླུ་བརྒྱད་མཁན་གྲོང་ཆོག་ལ་ཤིན་དུ་བྲིན་པ་
+T973	NOUN 0 10	སློབ་དཔོན་
+A973a	Number T973 Sing
+T974	NOUN 10 24	ཀླུ་བརྒྱད་མཁན་
+A974a	Number T974 Sing
+T975	NOUN 24 33	གྲོང་ཆོག་
+A975a	Number T975 Sing
+T976	ADP 33 37	ལ་
+A976a	Case T976 All
+N976	Reference T976 Nonverbs:0028	ལ་√case
+T977	ADV 37 41	ཤིན་
+A977a	AdvType T977 Intens
+N977	Reference T977 Nonverbs:0386	ཤིན་
+T978	SCONJ 41 44	དུ་
+A978a	Case T978 Ter
+N978	Reference T978 Nonverbs:0173	དུ་√cv
+T979	VERB 44 51	བྲིན་པ་
+A979a	Tense T979 Past/Pres
+A979b	VerbForm T979 Vnoun
+N979	Reference T979 Hill:1174	བྲིན་
+R62	obl Arg1:T979 Arg2:T975
+R61	arg1 Arg1:T979 Arg2:T974
+R79	advmod Arg1:T979 Arg2:T977
+~~~
+> The master Klu brgyad mkhan was very much in demand for village rituals (CT - Mila 12a)
 
 #### Adverbial clauses
 
