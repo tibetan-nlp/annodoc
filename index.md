@@ -471,17 +471,13 @@ T975	NOUN 24 33	གྲོང་ཆོག་
 A975a	Number T975 Sing
 T976	ADP 33 37	ལ་
 A976a	Case T976 All
-N976	Reference T976 Nonverbs:0028	ལ་√case
 T977	ADV 37 41	ཤིན་
 A977a	AdvType T977 Intens
-N977	Reference T977 Nonverbs:0386	ཤིན་
 T978	SCONJ 41 44	དུ་
 A978a	Case T978 Ter
-N978	Reference T978 Nonverbs:0173	དུ་√cv
 T979	VERB 44 51	བྲིན་པ་
 A979a	Tense T979 Past/Pres
 A979b	VerbForm T979 Vnoun
-N979	Reference T979 Hill:1174	བྲིན་
 R62	obl Arg1:T979 Arg2:T975
 R61	arg1 Arg1:T979 Arg2:T974
 R79	advmod Arg1:T979 Arg2:T977
