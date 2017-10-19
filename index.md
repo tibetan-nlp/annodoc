@@ -469,17 +469,17 @@ T974	NOUN 10 24	ཀླུ་བརྒྱད་མཁན་
 A974a	Number T974 Sing
 T975	NOUN 24 33	གྲོང་ཆོག་
 A975a	Number T975 Sing
-T976	ADP 33 37	ལ་
+T976	ADP 33 35	ལ་
 A976a	Case T976 All
-T977	ADV 37 41	ཤིན་
+T977	ADV 35 39	ཤིན་
 A977a	AdvType T977 Intens
-T978	SCONJ 41 44	དུ་
+T978	SCONJ 39 42	དུ་
 A978a	Case T978 Ter
-T979	VERB 44 51	བྲིན་པ་
+T979	VERB 42 49	བྲིན་པ་
 A979a	Tense T979 Past/Pres
 A979b	VerbForm T979 Vnoun
 R62	obl Arg1:T979 Arg2:T975
-R61	arg1 Arg1:T979 Arg2:T974
+R61 arg1 Arg1:T979 Arg2:T974
 R79	advmod Arg1:T979 Arg2:T977
 ~~~
 > The master Klu brgyad mkhan was very much in demand for village rituals (CT - Mila 12a)
