@@ -793,17 +793,14 @@ A220a	Number T220 Sing
 T221	VERB 15 20	གསན་པ
 A221a	Tense T221 Past/Pres
 A221b	VerbForm T221 Vnoun
-#221l	AnnotatorNotes T221	[གཟོན་][གསན་]
 T222	ADP 20 22	ར་
 A222a	Case T222 Ter
 T223	VERB 22 25	ཞུ་
 A223a	Tense T223 Fut/Pres
-#223l	AnnotatorNotes T223	[ཞུ་√1][ཞུ་√2]
 T224	VERB 25 29	ཞེས་
 A224a	Mood T224 Qot
 T225	VERB 29 35	བརྗོད་
 A225a	Tense T225 Past
-#225l	AnnotatorNotes T225	[རྗོད་√1][རྗོད་√2]
 T226	SCONJ 35 37	ནས
 A226a	Case T226 Ela
 T227	PUNCT 37 38	།
