@@ -810,5 +810,10 @@ R40	argcl Arg1:T225 Arg2:T223
 ~~~
 > She said: ‘elders, please listen closely’. (CT - Mila 11a)
 
-Notice here that _zhes_ is entirely unlinked. In future, when functional dependencies are
-added to the tree, _zhes_ will be treated on a par with complementizers using the relation [`mark`](http://universaldependencies.org/u/dep/mark.html).
+In this example, the head of the embedded clause _zhu_ depends
+directly on the matrix verb _brjod_, without paying any notice
+of the intervening _zhes_.
+
+In future, when functional dependencies are added to our trees,
+_zhes_ will be treated on a par with complementizers using the relation
+[`mark`](http://universaldependencies.org/u/dep/mark.html).
