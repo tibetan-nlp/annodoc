@@ -482,7 +482,29 @@ R62	obl Arg1:T979 Arg2:T975
 R61 arg1 Arg1:T979 Arg2:T974
 R79	advmod Arg1:T979 Arg2:T977
 ~~~
-> The master Klu brgyad mkhan was very much in demand for village rituals (CT - Mila 12a)
+> The master Klu brgyad mkhan was very much in demand for village rituals. (CT - Mila 12a)
+
+~~~ ann
+དེ་རིང་འདིར་སྟོན་གྲལ་དུ་ཚོགས་པ་ཀུན་
+T779	ADV 0 7	དེ་རིང་
+A779a	AdvType T779 Tim
+T780	DET 7 10	འདི
+A780a	PronType T780 Dem
+T781	ADP 10 12	ར་
+A781a	Case T781 Ter
+T782	NOUN 12 21	སྟོན་གྲལ་
+A782a	Number T782 Sing
+T783	ADP 21 24	དུ་
+A783a	Case T783 Ter
+T784	VERB 24 31	ཚོགས་པ་
+A784a	VerbForm T784 Vnoun
+T785	DET 31 35	ཀུན་
+A785a	Number T785 Plur
+R18	obl Arg1:T784 Arg2:T782
+R20	arg1 Arg1:T789 Arg2:T784
+R87	advmod Arg1:T784 Arg2:T779
+~~~
+> all those who are gathered here today at the feast tables (CT - Mila 12a)
 
 #### Adverbial clauses
 
