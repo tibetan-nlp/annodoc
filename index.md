@@ -459,7 +459,7 @@ Insert examples of `obl`.
 
 The [`advmod`](http://universaldependencies.org/u/dep/advmod.html)
 relation is used to link (non-clausal) adverbs and adverbial phrases
-to a predicate. Here are some examples:
+to a predicate.
 
 ~~~ ann
 སློབ་དཔོན་ཀླུ་བརྒྱད་མཁན་གྲོང་ཆོག་ལ་ཤིན་དུ་བྲིན་པ་
