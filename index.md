@@ -473,18 +473,14 @@ T491	NOUN 0 3	ཆུ་
 A491a	Number T491 Coll
 T492	ADP 3 5	ལ་
 A492a	Case T492 All
-N492	Reference T492 Nonverbs:0028	ལ་√case
 T493	NOUN 5 8	བྲེ
 A493a	Number T493 Sing
 T494	ADP 8 10	ས་
 A494a	Case T494 Agn
-N494	Reference T494 Nonverbs:0026	གྱིས་√case
 T495	VERB 10 14	འཇལ་
 A495a	Tense T495 Pres
-N495	Reference T495 Hill:0555	འཇལ་
 T496	VERB 14 19	བྱེད་
 A496a	Tense T496 Pres
-N496	Reference T496 Hill:1168	བྱེད་
 R34	aux Arg1:T495 Arg2:T496
 R37	obl-arg Arg1:T495 Arg2:T491
 R87	obl Arg1:T495 Arg2:T493
