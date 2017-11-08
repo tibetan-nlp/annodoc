@@ -22,7 +22,6 @@ Where possible, our annotation scheme follows the guidelines of the
     * [Part-of-speech tags](#part-of-speech-tags)
     * [Dependency relations](#dependency-relations)
 * [Annotation overview](#annotation-overview)
-    * [Missing arguments](#missing-arguments)
     * [Arguments](#arguments)
     * [Obliques](#obliques)
 * [Specific constructions](#specific-constructions)
@@ -121,8 +120,6 @@ annotation policy. We adopt the following principles:
 
 In this section, we draw examples from Old (OT), Classical (CT) and
 Modern Tibetan (MT). Each example is cited with its stage and source.
-
-### Missing arguments
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
 discourse. In the following example, the verb is linked to its `arg2`,
