@@ -611,7 +611,7 @@ R70 arg2 Arg1:T114 Arg2:T112
 ~~~
 > _[They] had knowledge of the written testament._ (CT - Mila 11a)
 
-Here, `arg1:lvc` is  རྒྱས་ "knowledge" and `arg2` is ཡི་གེ་ "letter".
+Here, `arg1:lvc` is རྒྱུས་ "knowledge" and `arg2` is ཡི་གེ་ "letter".
 
 ### Honorifics
 
