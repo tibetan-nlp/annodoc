@@ -23,12 +23,8 @@ Where possible, our annotation scheme follows the guidelines of the
     * [Dependency relations](#dependency-relations)
 * [Annotation overview](#annotation-overview)
     * [Missing arguments](#missing-arguments)
-    * [Argument frames](#argument-frames)
-        * [`arg1, arg2`](#arg1-arg2)
-        * [`arg1, arg2, arg3`](#arg1-arg2-arg3)
-        * [`arg1, argcl`](#arg1-argcl)
-        * [`arg1`](#arg1)
-    * [Obliques](#obliques)
+    * [Annotating arguments](#annotating-arguments)
+    * [Annotating obliques](#annotating-obliques)
         * [Oblique arguments](#oblique-arguments)
         * [Oblique adjuncts](#oblique-adjuncts)
         * [Oblique adverbs](#oblique-adverbs)
@@ -175,17 +171,68 @@ required to choose a lemma, and perhaps eventually a word sense.
 For the moment, we assume that argument structure will be handled at this
 level, as and when it becomes necessary.
 
-### Argument frames
+### Annotating arguments
 
-This section catalogues the argument frames that Tibetan verbs are known to
-select for. Newly discovered frames should be added here.
-Because arguments can generally be [omitted](#missing-arguments),
-care must be taken to assign the correct roles to the arguments that are
-overt. A valid argument frame is composed of a set of core argument dependency
-relations, selected from the following list:
-`arg1`, `arg2`, `argcl`.
+This section gives examples of the various argument relations. Because
+arguments can generally be [omitted](#missing-arguments), care must be taken 
+to assign the correct roles to the arguments that are overt.
 
-#### `arg1, arg2`
+The sole argument of a one-place predicate is marked `arg1`.
+
+Although verbs of motion can occur with a variety of adpositional phrases,
+specifying source, destination, and so on, we classify their canonical
+use as sole argument verbs. Adpositional phrases
+should be linked to motion verbs as oblique modifiers rather than
+as arguments, using the [`obl`](http://universaldependencies.org/u/dep/obl.html)
+relation. In the following example, in addition to an `arg1`,
+there are two obliques. We follow UD guidelines in labeling the
+postposed temporal modifier as an
+[`obl`](http://universaldependencies.org/u/dep/obl.html),
+despite its being a nominal.
+
+~~~ ann
+ང་ལྦ་ཤིང་ཀྲན་སྒྲ་སི་ལ་ཕྱིན་པ་ཡིན་བདུན་ཕྲག་གཉིས།
+T1  PRON 0 2 ང་
+T2  PROPN 2 21   ལྦ་ཤིང་ཀྲན་སྒྲ་སི་
+T4  VERB 23 30  ཕྱིན་པ་
+A4a Tense T4 Past
+A4b VerbForm T4 Vnoun
+R4a arg1 Arg1:T4 Arg2:T1
+R4b obl Arg1:T4 Arg2:T2
+R4c obl Arg1:T4 Arg2:T6
+T5  VERB 30 34 ཡིན་
+A5a Tense T5 Invar
+T6  NOUN 34 43 བདུན་ཕྲག་
+A6a Number T6 Sing
+T7  NUM 43 47 གཉིས་
+~~~
+> _I went to Washington D.C for two weeks._ (MT - A Handmade Altar)
+
+The next example shows the same verb ཕྱིན་ occurring with a single
+argument, referring to the passage of time.
+
+~~~ ann
+དེ་ཚོ་བརྒྱབ་ནས་ལོ་ག་ཚོད་ཕྱིན་ཡོད་རེད།
+T1  DET 0 3 དེ་√d
+A1a PronType T1 Dem
+T3  VERB 6 12  རྒྱག་√1
+A3a Tense T3 Past
+R3a arg2 Arg1:T3 Arg2:T1
+T5  NOUN 15 18 ལོ་
+A5a Number T5 Sing
+T6  PRON 18 24 ག་ཚོད་
+A6a PronType T6 Int
+T7  VERB 24 29 ཕྱིན་
+A7a Tense T7 Past
+R7a arg1 Arg1:T7 Arg2:T5
+T8  VERB 29 33 ཡོད་
+A8a Tense T8 Invar
+T9  VERB 33 36 རེད་√1
+A8a Tense T8 Invar
+~~~
+> _How many years has it been since they were built?_ (MT - The Chapter 26 Dialog from A Manual)
+
+Another example of a single argument verb in many of its uses is ཡོད་.
 
 The arguments of a two-place predicate are marked `arg1` and `arg2`, as in the
 the following example with the verb "to write". Here, the agent (the writer)
@@ -250,8 +297,6 @@ R4b arg2 Arg1:T4 Arg2:T2
 ~~~
 > _I've got bad diarrhea._ (MT - Diarrhea)
 
-#### `arg1, arg2, arg3`
-
 When a verb has two unmarked arguments in addition to having an `arg1` argument,
 then we classify it as a three-place predicate with no obliques. For example:
 
@@ -282,8 +327,6 @@ R54	arg2 Arg1:T933 Arg2:T930
 R55	arg3 Arg1:T933 Arg2:T925
 ~~~
 > _Uncle and aunt did not return to us, mother and children, what was rightfully ours._ (CT - Mila 12a)
-
-#### `arg1, argcl`
 
 The following example shows a clausal argument of the verb བསམས་ "think".
 The content head word of the embedded clause (the verb བསྡད་) is linked to this
@@ -337,66 +380,7 @@ R7b argcl Arg1:T7 Arg2:T6
 ~~~
 > _I will go give the number._ (MT - A Visit to the Hospital, Abridged)
 
-#### `arg1`
-
-The sole argument of a one-place predicate is marked `arg1`.
-
-Although verbs of motion can occur with a variety of adpositional phrases,
-specifying source, destination, and so on, we classify their canonical
-use as sole argument verbs. Adpositional phrases
-should be linked to motion verbs as oblique modifiers rather than
-as arguments, using the [`obl`](http://universaldependencies.org/u/dep/obl.html)
-relation. In the following example, in addition to an `arg1`,
-there are two obliques. We follow UD guidelines in labeling the
-postposed temporal modifier as an
-[`obl`](http://universaldependencies.org/u/dep/obl.html),
-despite its being a nominal.
-
-~~~ ann
-ང་ལྦ་ཤིང་ཀྲན་སྒྲི་སི་ལ་ཕྱིན་པ་ཡིན་བདུན་ཕྲག་གཉིས།
-T1  PRON 0 2 ང་
-T2  PROPN 2 21   ལྦ་ཤིང་ཀྲན་སྒྲི་སི་
-T4  VERB 23 30  ཕྱིན་པ་
-A4a Tense T4 Past
-A4b VerbForm T4 Vnoun
-R4a arg1 Arg1:T4 Arg2:T1
-R4b obl Arg1:T4 Arg2:T2
-R4c obl Arg1:T4 Arg2:T6
-T5  VERB 30 34 ཡིན་
-A5a Tense T5 Invar
-T6  NOUN 34 43 བདུན་ཕྲག་
-A6a Number T6 Sing
-T7  NUM 43 47 གཉིས་
-~~~
-> _I went to Washington D.C for two weeks._ (MT - A Handmade Altar)
-
-The next example shows the same verb ཕྱིན་ occurring with a single
-argument, referring to the passage of time.
-
-~~~ ann
-དེ་ཚོ་བརྒྱབ་ནས་ལོ་ག་ཚོད་ཕྱིན་ཡོད་རེད།
-T1  DET 0 3 དེ་√d
-A1a PronType T1 Dem
-T3  VERB 6 12  རྒྱག་√1
-A3a Tense T3 Past
-R3a arg2 Arg1:T3 Arg2:T1
-T5  NOUN 15 18 ལོ་
-A5a Number T5 Sing
-T6  PRON 18 24 ག་ཚོད་
-A6a PronType T6 Int
-T7  VERB 24 29 ཕྱིན་
-A7a Tense T7 Past
-R7a arg1 Arg1:T7 Arg2:T5
-T8  VERB 29 33 ཡོད་
-A8a Tense T8 Invar
-T9  VERB 33 36 རེད་√1
-A8a Tense T8 Invar
-~~~
-> _How many years has it been since they were built?_ (MT - The Chapter 26 Dialog from A Manual)
-
-Another example of a single argument verb in many of its uses is ཡོད་.
-
-### Obliques
+### Annotating obliques 
 
 #### Oblique arguments
 
