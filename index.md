@@ -372,8 +372,6 @@ T7  NUM 43 47 གཉིས་
 
 The next example shows the same verb ཕྱིན་ occurring with a single
 argument, referring to the passage of time.
-The head (verb) of the adverbial clause is linked to the main verb via
-the [`advcl`](http://universaldependencies.org/u/dep/advcl.html) relation.
 
 ~~~ ann
 དེ་ཚོ་བརྒྱབ་ནས་ལོ་ག་ཚོད་ཕྱིན་ཡོད་རེད།
@@ -389,7 +387,6 @@ A6a PronType T6 Int
 T7  VERB 24 29 ཕྱིན་
 A7a Tense T7 Past
 R7a arg1 Arg1:T7 Arg2:T5
-R7b advcl Arg1:T7 Arg2:T3
 T8  VERB 29 33 ཡོད་
 A8a Tense T8 Invar
 T9  VERB 33 36 རེད་√1
