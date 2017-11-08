@@ -38,6 +38,7 @@ Where possible, our annotation scheme follows the guidelines of the
     * [Light verbs](#light-verbs)
         * [Honorifics](#honorifics)
         * [Special cases](#special-cases)
+    * [Complex verbs](#complex-verbs)
     * [Relative clauses](#relative-clauses)
     * [Quotatives](#quotatives)
 
@@ -53,17 +54,13 @@ We ask annotators to identify and label the core arguments of each verb.
 This involves finding at most one head word for each core argument position,
 and then drawing an arc from the verb to this word and labeling the arc with
 one of the following dependency relations: `arg1`, `arg2`, `arg3` or
-`argcl`.
-
-When present, agentive marked arguments fill the `arg1` slot. The remaining
+`argcl`. When present, agentive marked arguments fill the `arg1` slot. The remaining
 argument slots aside from clausal `argcl` are filled by nominals without
 overt case-marking. Nominal arguments occurring with any kind of oblique 
 case-marking are marked as `obl`. This includes words that function as adverbs,
-which can be marked with the subtype `obl:adv`.
-
-Some nominals may be considered to be core arguments, despite occurring with oblique
-case marking. In such cases, the arc from the verb to the argument may be labelled
-with the subtype `obl:arg`.
+which can be marked with the subtype `obl:adv`. Some nominals may be considered 
+to be core arguments, despite occurring with oblique case marking. In such cases, 
+the arc from the verb to the argument may be labelled with the subtype `obl:arg`.
 
 Note that annotators are not asked to udentify equivalencies across different verbs,
 or to label the semantic roles of core arguments or obliques. For example, the `arg1` 
@@ -687,6 +684,10 @@ R70     arg2 Arg1:T114 Arg2:T112
 > _[They] had knowledge of the written testament._ (CT - Mila 11a)
 
 Here, `arg1:lvc` is  རྒྱས་ "knowledge" and `arg2` is ཡི་གེ་ "letter".
+
+### Complex verbs
+
+Insert examples of V-V predicates here.
 
 ### Relative clauses
 
