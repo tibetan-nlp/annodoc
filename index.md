@@ -8,7 +8,7 @@ Tibetan language texts used by the project *Lexicography in Motion* (LIM)
 based at SOAS University of London and the Bavarian Academy of Sciences
 and Humanities (_Bayerische Akademie der Wissenschaften_) in Munich.
 The project is focused on verbs.  Our primary objective is to
-annotate the predicate-argument structure of verbs in the service 
+annotate the predicate-argument structure of verbs in the service
 of building a corpus-based Tibetan verb lexicon.
 
 Where possible, our annotation scheme follows the guidelines of the
@@ -40,7 +40,7 @@ The guidelines on this page are designed for *annotators* rather than *lexicogra
 The aim is to create a set of easy to follow instructions that facilitate a high
 degree of inter-annotator agreement. In particular, we aim
 to keep semantic decisions to a minimum, leaving such considerations to the
-lexicographer. 
+lexicographer.
 
 We ask annotators to identify and label the core arguments of each verb.
 This involves finding at most one head word for each core argument position,
@@ -48,15 +48,15 @@ and then drawing an arc from the verb to this word and labeling the arc with
 one of the following dependency relations: `arg1`, `arg2`, `arg3` or
 `argcl`. When present, agentive marked arguments fill the `arg1` slot. The remaining
 argument slots aside from clausal `argcl` are filled by nominals without
-overt case-marking. Nominal arguments occurring with any kind of oblique 
+overt case-marking. Nominal arguments occurring with any kind of oblique
 case-marking are marked as `obl`. This includes words that function as adverbs,
-which can be marked with the subtype `obl:adv`. Some nominals may be considered 
-to be core arguments, despite occurring with oblique case marking. In such cases, 
+which can be marked with the subtype `obl:adv`. Some nominals may be considered
+to be core arguments, despite occurring with oblique case marking. In such cases,
 the arc from the verb to the argument may be labelled with the subtype `obl:arg`.
 
 Note that annotators are not asked to identify equivalencies across different verbs,
-or to label the semantic roles of core arguments or obliques. For example, the `arg1` 
-for different verbs could have different semantic roles; it is only necessary that a 
+or to label the semantic roles of core arguments or obliques. For example, the `arg1`
+for different verbs could have different semantic roles; it is only necessary that a
 given verb's `arg1` is held constant across the various uses of *the same verb*.
 
 ## Universal dependencies
@@ -170,7 +170,7 @@ level, as and when it becomes necessary.
 ### Arguments
 
 This section gives examples of the various argument relations. Because
-arguments can generally be [omitted](#missing-arguments), care must be taken 
+arguments can generally be [omitted](#missing-arguments), care must be taken
 to assign the correct roles to the arguments that are overt.
 
 The sole argument of a one-place predicate is marked `arg1`.
@@ -376,7 +376,7 @@ R7b argcl Arg1:T7 Arg2:T6
 ~~~
 > _I will go give the number._ (MT - A Visit to the Hospital, Abridged)
 
-### Obliques 
+### Obliques
 
 We use the [`obl`](http://universaldependencies.org/u/dep/obl.html) relation
 to mark unmarked nominals that act as adverbials, and arguments marked with
@@ -524,9 +524,9 @@ limited to occur with only one or a small number of nouns.
 
 A satisfactory verb lexicon for Tibetan needs to include those `NOUN` + `VERB`
 collocations that convey fundamental verbal meanings in the language. Therefore,
-when feasible we ask annotators to explicitly encode a light verb construction 
-by marking the noun with the subtyped relation `arg2:lvc`. The sub-type `lvc` 
-stands for "light verb construction" and has precedent in 
+when feasible we ask annotators to explicitly encode a light verb construction
+by marking the noun with the subtyped relation `arg2:lvc`. The sub-type `lvc`
+stands for "light verb construction" and has precedent in
 [other UD treebanks](http://universaldependencies.org/ext-dep-index.html):
 Hungarian has `dobj:lvc`, while Persian and Turkish have `compound:lvc`.
 
@@ -596,18 +596,18 @@ verb in the following example:
 
 ~~~ ann
 ཞལ་ཆེམས་ཀྱི་ཡི་གེ་རྒྱས་ཡོད་པ་
-T110	NOUN 0 8	ཞལ་ཆེམས་
-A110a	Number T110 Sing
-T111	ADP 8 12	ཀྱི་
-A111a	Case T111 Gen
-T112	NOUN 12 18	ཡི་གེ་
-A112a	Number T112 Sing
-T113	NOUN 18 24	རྒྱས་
-A113a	Number T113 Sing
-T114	VERB 24 30	ཡོད་པ་
-A114a	VerbForm T114 Vnoun
-R35	arg1:lvc Arg1:T114 Arg2:T113
-R70	arg2 Arg1:T114 Arg2:T112
+T110  NOUN 0 8  ཞལ་ཆེམས་
+A110a Number T110 Sing
+T111  ADP 8 12  ཀྱི་
+A111a Case T111 Gen
+T112  NOUN 12 18  ཡི་གེ་
+A112a Number T112 Sing
+T113  NOUN 18 24  རྒྱས་
+A113a Number T113 Sing
+T114  VERB 24 30  ཡོད་པ་
+A114a VerbForm T114 Vnoun
+R35 arg1:lvc Arg1:T114 Arg2:T113
+R70 arg2 Arg1:T114 Arg2:T112
 ~~~
 > _[They] had knowledge of the written testament._ (CT - Mila 11a)
 
