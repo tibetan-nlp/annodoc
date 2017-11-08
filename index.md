@@ -7,10 +7,13 @@ This page provides documentation of the annotation scheme for
 Tibetan language texts used by the project *Lexicography in Motion* (LIM)
 based at SOAS University of London and the Bavarian Academy of Sciences
 and Humanities (_Bayerische Akademie der Wissenschaften_) in Munich.
-The project is focused on verbs, with the annotation of predicate-argument structure
-a key objective. In the process, we hope to build a dependency corpus for
-Tibetan that can be contributed to the [Universal Dependencies](http://universaldependencies.org/)
-project.
+The project is focused on verbs.  Our primary objective is to
+annotate the predicate-argument structure of verbs in the service 
+of building a corpus-based Tibetan verb lexicon.
+
+Where possible, our annotation scheme follows the guidelines of the
+[Universal Dependencies](http://universaldependencies.org/) project.
+
 
 ## Table of contents
 
@@ -28,9 +31,7 @@ project.
     * [Obliques](#obliques)
         * [Oblique arguments](#oblique-arguments)
         * [Oblique adjuncts](#oblique-adjuncts)
-    * [Adverbial modifiers](#adverbial modifiers)
-        * [Adverbs](#adverbs)
-        * [Adverbial clauses](#adverbial-clauses)
+        * [Oblique adverbs](#oblique-adverbs)
 * [Specific constructions](#specific-constructions)
     * [Auxiliaries](#auxiliaries)
     * [Copulas](#copulas)
@@ -42,41 +43,32 @@ project.
 
 ## Introduction
 
-The following guidelines are designed for *annotators* rather than *lexicographers*.
+The guidelines on this page are designed for *annotators* rather than *lexicographers*.
 The aim is to create a set of easy to follow instructions that facilitate a high
 degree of inter-annotator agreement. In particular, we aim
 to keep semantic decisions to a minimum, leaving such considerations to the
-lexicographer. For each part-of-speech tagged annotation unit,
-we ask the annotator to perform the following tasks:
+lexicographer. 
 
-1. Identify and label the core arguments of each verb.
-    * Identify at most one head word for each core argument position.
-    * Draw an arc from the verb to the head word of each argument
-    using one of the following dependency relations:
-    `arg1`, `arg2`, `arg3` or `argcl`.
-    * You may consider some arguments to be core, despite occurring
-    with oblique case marking. In this situation, you can mark
-    the argument using the subtyped dependency `obl:arg`.
-1. Identify and label the modifiers of each verb.
-    * Identify any modifiers related to the verb.
-    * Use [`obl`](http://universaldependencies.org/u/dep/obl.html)
-    to label arcs drawn from the verb
-    to the head word of nominal modifiers followed by adpositions.
-    * Also use `obl` to link to nominal modifiers that do not have
-    case markers, such as temporal modifiers.
-    * Use [`advmod`](http://universaldependencies.org/u/dep/advmod.html)
-    to label arcs drawn from the verb to an adverb that modifies it.
-    * Use [`advcl`](http://universaldependencies.org/u/dep/advcl.html)
-    to label arcs drawn from the verb to the head of an adverbial clause.
+We ask annotators to identify and label the core arguments of each verb.
+This involves finding at most one head word for each core argument position,
+and then drawing an arc from the verb to this word and labeling the arc with
+one of the following dependency relations: `arg1`, `arg2`, `arg3` or
+`argcl`.
 
-Note that annotators are not asked to do the following:
+When present, agentive marked arguments fill the `arg1` slot. The remaining
+argument slots aside from clausal `argcl` are filled by nominals without
+overt case-marking. Nominal arguments occurring with any kind of oblique 
+case-marking are marked as `obl`. This includes words that function as adverbs,
+which can be marked with the subtype `obl:adv`.
 
-1. Identify equivalencies across different verbs.
-2. Label the semantic roles of core arguments or oblique modifiers.
+Some nominals may be considered to be core arguments, despite occurring with oblique
+case marking. In such cases, the arc from the verb to the argument may be labelled
+with the subtype `obl:arg`.
 
-For example, the `arg1` for different verbs could have different semantic roles.
-It is only necessary that a given verb's `arg1` is held constant across the various
-uses of *the same verb*.
+Note that annotators are not asked to udentify equivalencies across different verbs,
+or to label the semantic roles of core arguments or obliques. For example, the `arg1` 
+for different verbs could have different semantic roles; it is only necessary that a 
+given verb's `arg1` is held constant across the various uses of *the same verb*.
 
 ## Universal dependencies
 
@@ -494,62 +486,9 @@ R35	argcl Arg1:T497 Arg2:T496
 
 Insert examples of `obl`.
 
-### Adverbial modifiers
+#### Oblique adverbs
 
-#### Adverbs
-
-The [`advmod`](http://universaldependencies.org/u/dep/advmod.html)
-relation is used to link (non-clausal) adverbs and adverbial phrases
-to a predicate.
-
-~~~ ann
-སློབ་དཔོན་ཀླུ་བརྒྱད་མཁན་གྲོང་ཆོག་ལ་ཤིན་དུ་བྲིན་པ་
-T973	NOUN 0 10	སློབ་དཔོན་
-A973a	Number T973 Sing
-T974	NOUN 10 24	ཀླུ་བརྒྱད་མཁན་
-A974a	Number T974 Sing
-T975	NOUN 24 33	གྲོང་ཆོག་
-A975a	Number T975 Sing
-T976	ADP 33 35	ལ་
-A976a	Case T976 All
-T977	ADV 35 39	ཤིན་
-A977a	AdvType T977 Intens
-T978	SCONJ 39 42	དུ་
-A978a	Case T978 Ter
-T979	VERB 42 49	བྲིན་པ་
-A979a	Tense T979 Past/Pres
-A979b	VerbForm T979 Vnoun
-R62	obl Arg1:T979 Arg2:T975
-R61 arg1 Arg1:T979 Arg2:T974
-R79	advmod Arg1:T979 Arg2:T977
-~~~
-> The master Klu brgyad mkhan was very much in demand for village rituals. (CT - Mila 12a)
-
-~~~ ann
-དེ་རིང་འདིར་སྟོན་གྲལ་དུ་ཚོགས་པ་ཀུན་
-T779	ADV 0 7	དེ་རིང་
-A779a	AdvType T779 Tim
-T780	DET 7 10	འདི
-A780a	PronType T780 Dem
-T781	ADP 10 12	ར་
-A781a	Case T781 Ter
-T782	NOUN 12 21	སྟོན་གྲལ་
-A782a	Number T782 Sing
-T783	ADP 21 24	དུ་
-A783a	Case T783 Ter
-T784	VERB 24 31	ཚོགས་པ་
-A784a	VerbForm T784 Vnoun
-T785	DET 31 35	ཀུན་
-A785a	Number T785 Plur
-R18	obl Arg1:T784 Arg2:T782
-R20	arg1 Arg1:T789 Arg2:T784
-R87	advmod Arg1:T784 Arg2:T779
-~~~
-> all those who are gathered here today at the feast tables (CT - Mila 12a)
-
-#### Adverbial clauses
-
-Insert examples of `advcl`.
+Insert examples of `obl:adv`.
 
 ## Specific constructions
 
