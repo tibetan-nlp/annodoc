@@ -21,7 +21,8 @@ Where possible, our annotation scheme follows the guidelines of the
 * [Universal dependencies](#universal-dependencies)
     * [Part-of-speech tags](#part-of-speech-tags)
     * [Dependency relations](#dependency-relations)
-* [Annotation overview](#annotation-overview)
+* [Argument structure](#argument-structure)
+    * [Overview](#overview)
     * [Arguments](#arguments)
     * [Obliques](#obliques)
 * [Specific constructions](#specific-constructions)
@@ -116,10 +117,12 @@ annotation policy. We adopt the following principles:
 5. **A word cannot be the argument of more than one verb at the same time.** When this principle appears to be violated, then all but one of the verbs likely has a missing argument. Link the word to the verb in whose local context it occurs. (This verb may, though not necessarily, determine the word's case marking.) This principle implies that argument-marking is local rather than long-distance. It also implies that when a word has been displaced from its "usual" position - for example, as the external head of a relative clause - then its usual position will be "occupied" by a missing argument.
 6. **Being an argument is distinct from contributing a semantic role to the verb.** For example, the nouns in light verb constructions are classified as `arg2` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` (or `obl:arg`) even though they may be essential to the meaning of the phrase.
 
-## Annotation overview
+## Argument structure 
 
 In this section, we draw examples from Old (OT), Classical (CT) and
 Modern Tibetan (MT). Each example is cited with its stage and source.
+
+### Overview
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
 discourse. In the following example, the verb is linked to its `arg2`,
