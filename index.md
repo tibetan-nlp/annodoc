@@ -23,17 +23,13 @@ Where possible, our annotation scheme follows the guidelines of the
     * [Dependency relations](#dependency-relations)
 * [Annotation overview](#annotation-overview)
     * [Missing arguments](#missing-arguments)
-    * [Annotating arguments](#annotating-arguments)
-    * [Annotating obliques](#annotating-obliques)
-        * [Oblique arguments](#oblique-arguments)
-        * [Oblique adjuncts](#oblique-adjuncts)
-        * [Oblique adverbs](#oblique-adverbs)
+    * [Arguments](#arguments)
+    * [Obliques](#obliques)
 * [Specific constructions](#specific-constructions)
     * [Auxiliaries](#auxiliaries)
     * [Copulas](#copulas)
     * [Light verbs](#light-verbs)
-        * [Honorifics](#honorifics)
-        * [Special cases](#special-cases)
+    * [Honorifics](#honorifics)
     * [Complex verbs](#complex-verbs)
     * [Relative clauses](#relative-clauses)
     * [Quotatives](#quotatives)
@@ -171,7 +167,7 @@ required to choose a lemma, and perhaps eventually a word sense.
 For the moment, we assume that argument structure will be handled at this
 level, as and when it becomes necessary.
 
-### Annotating arguments
+### Arguments
 
 This section gives examples of the various argument relations. Because
 arguments can generally be [omitted](#missing-arguments), care must be taken 
@@ -380,16 +376,22 @@ R7b argcl Arg1:T7 Arg2:T6
 ~~~
 > _I will go give the number._ (MT - A Visit to the Hospital, Abridged)
 
-### Annotating obliques 
+### Obliques 
 
-#### Oblique arguments
+We use the [`obl`](http://universaldependencies.org/u/dep/obl.html) relation
+to mark unmarked nominals that act as adverbials, and arguments marked with
+adpositions other than agentive case, regardless of whether or not they are
+considered to be arguments of the verb.
 
-It is of considerable value to this project to identify and distinguish
-between arguments (those elements that are licensed by a verb and clearly
-essential to its meaning) and adjuncts (those elements that are optional
-and can occur with many or most verbs). Therefore we permit ourselves
-to label oblique-marked nominals that behave as arguments with the
-subtyped relation `obl:arg`.
+We recognize the overarching class of obliques as well as two sub-types:
+
+1. `obl`: Used for most oblique modifiers, including unmarked nominals
+that behave adverbially.
+2. `obl:adv`: Used for words marked with oblique case-marking which
+derive etymologically from verbal nouns but which might commonly be
+called adverbs, such as _nye bar_, _so sor_, and _lhag par_.
+3. `obl:arg`: Used for nominals with oblique case-marking which are
+considered core verbal arguments.
 
 A typical case of `obl:arg` would be to mark the third required argument
 of a verb of transfer like 'give'.
@@ -460,14 +462,6 @@ R35	argcl Arg1:T497 Arg2:T496
 ~~~
 > One measures [running] water with a _bre_. (CT - Mila 11b)
 
-#### Oblique adjuncts
-
-Insert examples of `obl`.
-
-#### Oblique adverbs
-
-Insert examples of `obl:adv`.
-
 ## Specific constructions
 
 ### Auxiliaries
@@ -528,6 +522,14 @@ by a semantically bleached `VERB`. Some such verbs are used with many different
 nouns to form different light verb constructions, whereas other verbs are
 limited to occur with only one or a small number of nouns.
 
+A satisfactory verb lexicon for Tibetan needs to include those `NOUN` + `VERB`
+collocations that convey fundamental verbal meanings in the language. Therefore,
+when feasible we ask annotators to explicitly encode a light verb construction 
+by marking the noun with the subtyped relation `arg2:lvc`. The sub-type `lvc` 
+stands for "light verb construction" and has precedent in 
+[other UD treebanks](http://universaldependencies.org/ext-dep-index.html):
+Hungarian has `dobj:lvc`, while Persian and Turkish have `compound:lvc`.
+
 The following illustrates the use of the light verb གོམ་པ་རྒྱབ་ "to walk" - literally
 "take steps". Here, the `VERB` immediately follows the `NOUN`.
 
@@ -585,35 +587,33 @@ R2      arg2-lvc Arg1:T19 Arg2:T18
 ~~~
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
 
-The UD project suggests that in light verb constructions, the `NOUN`
-should depend on the `VERB` via the
-[`compound`](http://universaldependencies.org/u/dep/all.html#al-u-dep/compound)
-relation. This is likely not the right approach for Tibetan. Instead,
-we link the `NOUN` to the `VERB` via the `arg2` relation. So in the above examples,
-the verb has the frame `arg1, arg2`.
+In the above cases, which are typical examples of light verbs, the `NOUN`
+fills an argument position without introducing additional arguments. However,
+in other cases that we have found, the noun in a light verb construction
+causes the valency of the verb to change, introducing another otherwise
+unlicensed argument. For example, ཡོད་ itself occurs surprisingly as a light
+verb in the following example:
 
-We take this approach for three reasons. First, if an additional non-agent
-semantic role occurs with a light verb, then it must not appear with (unmarked) absolutive case,
-but must instead bear an overt oblique case marker. This suggests that the
-`NOUN` part of a light verb construction is a syntactic object. Second, adopting the `compound`
-dependency relation would make it more difficult to compare the use of a verb
-across different stages of the history of the language: a given light verb
-construction may have arisen from
-a collocation that was once semantically compositional. Third and finally,
-in the absence of sound syntactic tests, there is a certain subjectivity
-in diagnosing light verb constructions. We are not convinced that
-annotators would agree on when to label the `compound` relation.
+~~~ ann
+ཞལ་ཆེམས་ཀྱི་ཡི་གེ་རྒྱས་ཡོད་པ་
+T110    NOUN 0 8    ཞལ་ཆེམས་
+A110a   Number T110 Sing
+T111    ADP 8 12     ཀྱི་
+A111a   Case T111 Gen
+T112    NOUN 12 18    ཡི་གེ་
+A112a   Number T112 Sing
+T113    NOUN 18 24    རྒྱས་
+A113a   Number T113 Sing
+T114    VERB 24 30    ཡོད་པ་
+A114a   VerbForm T114 Vnoun
+R35     arg1:lvc Arg1:T114 Arg2:T113
+R70     arg2 Arg1:T114 Arg2:T112
+~~~
+> _[They] had knowledge of the written testament._ (CT - Mila 11a)
 
-Despite these objections, the importance to our project of identifying
-light verbs cannot be understated. A proper verb lexicon for Tibetan needs
-to include those `NOUN` + `VERB` collocations that convey fundamental verbal
-meanings in the language. Therefore when feasible we ask annotators to explicitly
-mark the light verb construction by marking the noun with the subtyped relation
-`arg2:lvc`. The sub-type `lvc` stands for "light verb construction" and has precedent in
-[other UD treebanks](http://universaldependencies.org/ext-dep-index.html):
-Hungarian has `dobj:lvc`, while Persian and Turkish have `compound:lvc`.
+Here, `arg1:lvc` is  རྒྱས་ "knowledge" and `arg2` is ཡི་གེ་ "letter".
 
-#### Honorifics
+### Honorifics
 
 Complex honorific verbs in Tibetan are formed by prepending an honorific `NOUN`
 to a `VERB`. Semantically, such constructions differ from typical light verb
@@ -637,34 +637,6 @@ R85 arg2:hon Arg1:T107 Arg2:T106
 In order to make it easier for honorific compounds to be identified later,
 we code the honorific noun སྐུ་ as a subtyped `arg2:hon` of the verb གཤེགས་.
 This distinguishes such cases from typical light verb constructions.
-
-#### Special cases
-
-In the above cases, which are typical examples of light verbs, the `NOUN`
-fills an argument position without introducing additional arguments. However,
-in other cases that we have found, the noun in a light verb construction
-causes the valency of the verb to change, introducing another otherwise
-unlicensed argument. For example, ཡོད་ itself occurs surprisingly as a light
-verb in the following example:
-
-~~~ ann
-ཞལ་ཆེམས་ཀྱི་ཡི་གེ་རྒྱུས་ཡོད་པ་
-T110    NOUN 0 8    ཞལ་ཆེམས་
-A110a   Number T110 Sing
-T111    ADP 8 12     ཀྱི་
-A111a   Case T111 Gen
-T112    NOUN 12 18    ཡི་གེ་
-A112a   Number T112 Sing
-T113    NOUN 18 24    རྒྱས་
-A113a   Number T113 Sing
-T114    VERB 24 30    ཡོད་པ་
-A114a   VerbForm T114 Vnoun
-R35     arg1:lvc Arg1:T114 Arg2:T113
-R70     arg2 Arg1:T114 Arg2:T112
-~~~
-> _[They] had knowledge of the written testament._ (CT - Mila 11a)
-
-Here, `arg1:lvc` is  རྒྱས་ "knowledge" and `arg2` is ཡི་གེ་ "letter".
 
 ### Complex verbs
 
