@@ -62,7 +62,7 @@ which can be marked with the subtype `obl:adv`. Some nominals may be considered
 to be core arguments, despite occurring with oblique case marking. In such cases, 
 the arc from the verb to the argument may be labelled with the subtype `obl:arg`.
 
-Note that annotators are not asked to udentify equivalencies across different verbs,
+Note that annotators are not asked to identify equivalencies across different verbs,
 or to label the semantic roles of core arguments or obliques. For example, the `arg1` 
 for different verbs could have different semantic roles; it is only necessary that a 
 given verb's `arg1` is held constant across the various uses of *the same verb*.
@@ -118,12 +118,12 @@ to describe them in a systematic way.
 In order to generalize across instances of a predicate, it is necessary to adopt a consistent
 annotation policy. We adopt the following principles:
 
-1. _Every verb is annotated and no verb is ignored._ A verb is either linked to its arguments or pointed to by a main predicate (as in the case of auxiliaries and copulas, which lack argument structure).
-2. _Arguments can occur marked by agentive case or without case-marking._ Other case markers signal an oblique. Agentive case is therefore given unique treatment amongst the adpositional case markers; it is the only `ADP` that doesn't force its nominal to be linked as an `obl`.
-3. _When a verb has more than one argument, link `arg1` to the argument that is the best proto-agent._ That is, compare the arguments in terms of the agent properties that they have, and pick the one that is the best agent.
-4. _`arg1` and `arg2` are reserved for nominal arguments, and `argcl` is reserved for clausal arguments._ `argcl` subsumes what UD refers to as [`ccomp`](http://universaldependencies.org/u/dep/ccomp.html) and [`xcomp`](http://universaldependencies.org/u/dep/xcomp.html).
-5. _A word cannot be the argument of more than one verb at the same time._ When this principle appears to be violated, then all but one of the verbs likely has a missing argument. Link the word to the verb in whose local context it occurs. (This verb may, though not necessarily, determine the word's case marking.) This principle implies that argument-marking is local rather than long-distance. It also implies that when a word has been displaced from its "usual" position - for example, as the external head of a relative clause - then its usual position will be "occupied" by a missing argument.
-6. _Being an argument is distinct from contributing a semantic role to the verb._ For example, the nouns in light verb constructions are classified as `arg2` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` even though they may be essential to the meaning of the phrase.
+1. **Every verb is annotated and no verb is ignored.** A verb is either linked to its arguments or pointed to by a main predicate (as in the case of auxiliaries and copulas, which lack argument structure).
+2. **Arguments can occur marked by agentive case or without case-marking.** Other case markers signal an oblique. Agentive case is therefore given unique treatment amongst the adpositional case markers; it is the only `ADP` that doesn't force its nominal to be linked as an `obl`.
+3. **When a verb has more than one argument, link `arg1` to the argument that is the best proto-agent.** That is, compare the arguments in terms of the agent properties that they have, and pick the one that is the best agent.
+4. **`arg1`, `arg2`, and `arg3` are reserved for nominal arguments, and `argcl` is reserved for clausal arguments.** `argcl` subsumes what UD refers to as [`ccomp`](http://universaldependencies.org/u/dep/ccomp.html) and [`xcomp`](http://universaldependencies.org/u/dep/xcomp.html).
+5. **A word cannot be the argument of more than one verb at the same time.** When this principle appears to be violated, then all but one of the verbs likely has a missing argument. Link the word to the verb in whose local context it occurs. (This verb may, though not necessarily, determine the word's case marking.) This principle implies that argument-marking is local rather than long-distance. It also implies that when a word has been displaced from its "usual" position - for example, as the external head of a relative clause - then its usual position will be "occupied" by a missing argument.
+6. **Being an argument is distinct from contributing a semantic role to the verb.** For example, the nouns in light verb constructions are classified as `arg2` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` (or `obl:arg`) even though they may be essential to the meaning of the phrase.
 
 ## Annotation overview
 
