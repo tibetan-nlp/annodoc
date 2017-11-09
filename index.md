@@ -28,9 +28,9 @@ Where possible, our annotation scheme follows the guidelines of the
 * [Specific constructions](#specific-constructions)
     * [Auxiliaries](#auxiliaries)
     * [Copulas](#copulas)
+    * [Complex verbs](#complex-verbs)
     * [Light verbs](#light-verbs)
     * [Honorifics](#honorifics)
-    * [Complex verbs](#complex-verbs)
     * [Relative clauses](#relative-clauses)
     * [Quotatives](#quotatives)
 
@@ -640,7 +640,14 @@ This distinguishes such cases from typical light verb constructions.
 
 ### Complex verbs
 
-Insert examples of V-V predicates here.
+Butt (2010:49) defines a *complex predicate* as:
+
+> a construction that involves two or more predicational elements 
+> (such as nouns, verbs, and adjectives) which predicate as a single unit,
+> i.e. their arguments map onto a monoclausal syntactic structure.
+
+A *complex verb* is then a complex predicate where all (or more usually
+both) predicates are verbs.
 
 ### Relative clauses
 
