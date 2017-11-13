@@ -29,7 +29,7 @@ Where possible, our annotation scheme follows the guidelines of the
       * [`arg3`](#arg3)
       * [`argcl`](#argcl)
     * [Obliques](#obliques)
-      * [`obl`](#obl`]
+      * [`obl`](#obl`)
       * [`obl:adv`](#obl-adv)
       * [`obl:arg`](#obl-arg)
 * [Specific constructions](#specific-constructions)
