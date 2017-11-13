@@ -37,6 +37,8 @@ Where possible, our annotation scheme follows the guidelines of the
     * [Copulas](#copulas)
     * [Complex verbs](#complex-verbs)
     * [Light verbs](#light-verbs)
+      * [`arg2:lvc`](#arg2lvc)
+      * [`arg1:lvc`](#arg1lvc)
     * [Honorifics](#honorifics)
     * [Relative clauses](#relative-clauses)
     * [Quotatives](#quotatives)
@@ -618,9 +620,11 @@ by marking the noun with the subtyped relation `arg2:lvc`. The sub-type `lvc`
 stands for "light verb construction" and has precedent in
 [other UD treebanks](http://universaldependencies.org/ext-dep-index.html):
 Hungarian has `dobj:lvc`, while Persian and Turkish have `compound:lvc`.
+We also have found a few instances of `arg1:lvc`.
 
-The following illustrates the use of the light verb གོམ་པ་རྒྱབ་ "to walk" - literally
-"take steps". Here, the `VERB` immediately follows the `NOUN`.
+#### `arg2:lvc`
+
+The following illustrates the use of the light verb གོམ་པ་རྒྱབ་ "to walk" - literally "take steps". Here, the `VERB` immediately follows the `NOUN`.
 
 ~~~ ann
 གོམ་པ་རྒྱབ་བྱས་ཐད་དོ།
@@ -675,6 +679,8 @@ R1      arg1 Arg1:T19 Arg2:T16
 R2      arg2-lvc Arg1:T19 Arg2:T18
 ~~~
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
+
+#### `arg1:lvc`
 
 In the above cases, which are typical examples of light verbs, the `NOUN`
 fills an argument position without introducing additional arguments. However,
