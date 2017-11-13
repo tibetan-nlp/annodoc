@@ -24,6 +24,10 @@ Where possible, our annotation scheme follows the guidelines of the
 * [Argument structure](#argument-structure)
     * [Overview](#overview)
     * [Arguments](#arguments)
+      *[`arg1`](#arg1)
+      *[`arg2`](#arg2)
+      *[`arg3`](#arg3)
+      *[`argcl`](#argcl)
     * [Obliques](#obliques)
 * [Specific constructions](#specific-constructions)
     * [Auxiliaries](#auxiliaries)
@@ -173,6 +177,8 @@ This section gives examples of the various argument relations. Because
 arguments can generally be [omitted](#missing-arguments), care must be taken
 to assign the correct roles to the arguments that are overt.
 
+#### `arg1`
+
 The sole argument of a one-place predicate is marked `arg1`.
 
 Although verbs of motion can occur with a variety of adpositional phrases,
@@ -229,6 +235,8 @@ A8a Tense T8 Invar
 > _How many years has it been since they were built?_ (MT - The Chapter 26 Dialog from A Manual)
 
 Another example of a single argument verb in many of its uses is ཡོད་.
+
+#### `arg2`
 
 The arguments of a two-place predicate are marked `arg1` and `arg2`, as in the
 the following example with the verb "to write". Here, the agent (the writer)
@@ -293,6 +301,8 @@ R4b arg2 Arg1:T4 Arg2:T2
 ~~~
 > _I've got bad diarrhea._ (MT - Diarrhea)
 
+#### `arg3`
+
 When a verb has two unmarked arguments in addition to having an `arg1` argument,
 then we classify it as a three-place predicate with no obliques. For example:
 
@@ -323,6 +333,8 @@ R54	arg2 Arg1:T933 Arg2:T930
 R55	arg3 Arg1:T933 Arg2:T925
 ~~~
 > _Uncle and aunt did not return to us, mother and children, what was rightfully ours._ (CT - Mila 12a)
+
+#### `argcl`
 
 The following example shows a clausal argument of the verb བསམས་ "think".
 The content head word of the embedded clause (the verb བསྡད་) is linked to this
