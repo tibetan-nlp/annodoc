@@ -753,7 +753,7 @@ to a sentence.
 
 It is useful to annotate complex verbs, and in some cases, we may wish to include specific complex verb constructions in the lexicon. However, doing so is not yet on a secure footing, since we have not carried out the requisite tests documented by Butt and others to show which examples count as complex verbs, and which do not.
 
-Therefore, we adopt a flexible annotation scheme that allows us to identify complex verb constructions at any time, without having to change the dependency structure of a sentence. Since each verb contributes to the predication and argument structure, there is no correct verb from which to link arguments. In a basic dependency graph, however, a choice must be made, and so we link the arguments and obliques to the first verb. Subsequent verbs then depend on the first verb via the `aux:lvc` relation.
+Therefore, we adopt a flexible annotation scheme that allows us to identify complex verb constructions at any time, without having to change the dependency structure of a sentence. Since each verb contributes to the predication and argument structure, there is no correct verb from which to link arguments. In a basic dependency tree, however, a choice must be made, and so we link the arguments and obliques to the first verb. Subsequent verbs then depend on the first verb via the `aux:lvc` relation.
 
 ~~~ ann
 ངས་བླ་མའི་དྲུང་དུ་ལོག་འོངས་པའི་ལམ་ལ།
