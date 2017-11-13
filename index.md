@@ -29,6 +29,9 @@ Where possible, our annotation scheme follows the guidelines of the
       * [`arg3`](#arg3)
       * [`argcl`](#argcl)
     * [Obliques](#obliques)
+      * [`obl`](#obl`]
+      * [`obl:adv`](#obl-adv)
+      * [`obl:arg`](#obl-arg)
 * [Specific constructions](#specific-constructions)
     * [Auxiliaries](#auxiliaries)
     * [Copulas](#copulas)
@@ -395,14 +398,22 @@ to mark unmarked nominals that act as adverbials, and arguments marked with
 adpositions other than agentive case, regardless of whether or not they are
 considered to be arguments of the verb.
 
-We recognize the overarching class of obliques as well as two sub-types:
+#### `obl`
 
-1. `obl` - Used for most oblique modifiers, including unmarked nominals
+`obl` is used for most oblique modifiers, including unmarked nominals
 that behave adverbially.
-2. `obl:adv` - Used for words marked with oblique case-marking which
+
+#### `obl:adv`
+
+`obl:adv` (occasionally seen as `obl-adv` in the BRAT UI) 
+is used for nominals marked with oblique case-marking which
 derive etymologically from verbal nouns but which might commonly be
 called adverbs, such as _nye bar_, _so sor_, and _lhag par_.
-3. `obl:arg` - Used for nominals with oblique case-marking which are
+
+#### `obl:arg`
+
+`obl:arg` (occasionally seen as `obl-arg` in the BRAT UI) 
+is used for nominals with oblique case-marking which are
 nevertheless considered core verbal arguments.
 
 A typical case of `obl:arg` would be to mark the third required argument
