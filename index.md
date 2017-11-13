@@ -433,21 +433,6 @@ T500	NOUN 54 58	འདྲ་
 A500a	NounType T500 Rel
 T501	ADP 58 60	ལ་
 A501a	Case T501 All
-T502	VERB 60 66	ཟེར་བ་
-A502a	Tense T502 Fut/Pres
-A502b	VerbForm T502 Vnoun
-T503	AUX 66 70	ཡིན་
-T504	VERB 70 73	ཟེར
-T505	PUNCT 73 74	།
-R30	arg2 Arg1:T489 Arg2:T488
-R31	obl-arg Arg1:T489 Arg2:T486
-R34	aux Arg1:T495 Arg2:T496
-R37	obl-arg Arg1:T495 Arg2:T491
-R87	obl Arg1:T495 Arg2:T493
-R10	argcl Arg1:T497 Arg2:T495
-R32	aux Arg1:T502 Arg2:T503
-R33	argcl Arg1:T504 Arg2:T502
-R36	arg2 Arg1:T502 Arg2:T499
 ~~~
 
 ### Obliques
