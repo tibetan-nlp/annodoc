@@ -398,64 +398,47 @@ to the main verb rather than the auxiliaries.
 ~~~ ann
 T484	ADV 0 1	ལ
 A484a	PronType T484 Dem
-N484	Reference T484 Nonverbs:0422	ལ་
 T485	ADP 1 3	ར་
 A485a	Case T485 Ter
-N485	Reference T485 Nonverbs:0051	དུ་√case
 T486	NOUN 3 9	མི་ངན་
 A486a	Number T486 Sing
 T487	ADP 9 11	ལ་
 A487a	Case T487 All
-N487	Reference T487 Nonverbs:0028	ལ་√case
 T488	NOUN 11 15	དབང་
 A488a	Number T488 Sing
 T489	VERB 15 21	བསྐུར་
 A489a	Tense T489 Fut/Past
-N489	Reference T489 Hill:0046	སྐུར་
 T490	SCONJ 21 23	ན་
 A490a	Case T490 Loc
-N490	Reference T490 Nonverbs:0123	ན་√cv
 T491	NOUN 23 26	ཆུ་
 A491a	Number T491 Coll
 T492	ADP 26 28	ལ་
 A492a	Case T492 All
-N492	Reference T492 Nonverbs:0028	ལ་√case
 T493	NOUN 28 31	བྲེ
 A493a	Number T493 Sing
 T494	ADP 31 33	ས་
 A494a	Case T494 Agn
-N494	Reference T494 Nonverbs:0026	གྱིས་√case
 T495	VERB 33 37	འཇལ་
 A495a	Tense T495 Pres
-N495	Reference T495 Hill:0555	འཇལ་
 T496	VERB 37 42	བྱེད་
 A496a	Tense T496 Pres
-N496	Reference T496 Hill:1168	བྱེད་
 T497	VERB 42 47	བྱ་བ་
 A497a	Tense T497 Fut
 A497b	VerbForm T497 Vnoun
-N497	Reference T497 Hill:1168	བྱེད་
 T498	DET 47 50	དེ་
 A498a	PronType T498 Dem
-N498	Reference T498 Nonverbs:0233	དེ་√d
 T499	DET 50 54	འདི་
 A499a	PronType T499 Dem
-N499	Reference T499 Nonverbs:0235	འདི་√d
 T500	NOUN 54 58	འདྲ་
 A500a	NounType T500 Rel
 T501	ADP 58 60	ལ་
 A501a	Case T501 All
-N501	Reference T501 Nonverbs:0028	ལ་√case
 T502	VERB 60 66	ཟེར་བ་
 A502a	Tense T502 Fut/Pres
 A502b	VerbForm T502 Vnoun
-#502l	AnnotatorNotes T502	[ཟེར་√1][ཟེར་√2]
 T503	AUX 66 70	ཡིན་
-N503	Reference T503 Hill:1619	ཡིན་
 T504	VERB 70 73	ཟེར
-#504l	AnnotatorNotes T504	[ཟེར་√1][ཟེར་√2]
 T505	PUNCT 73 74	།
-N505	Reference T505 Nonverbs:0529	།
 R30	arg2 Arg1:T489 Arg2:T488
 R31	obl-arg Arg1:T489 Arg2:T486
 R34	aux Arg1:T495 Arg2:T496
@@ -465,7 +448,6 @@ R10	argcl Arg1:T497 Arg2:T495
 R32	aux Arg1:T502 Arg2:T503
 R33	argcl Arg1:T504 Arg2:T502
 R36	arg2 Arg1:T502 Arg2:T499
-N6	Reference T502 Hill:1572	ཟེར་√1
 ~~~
 
 ### Obliques
