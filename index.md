@@ -749,7 +749,7 @@ both) predicates are verbs. In contrast, an auxiliary is a non-predicational
 element that merely contributes TAME (tense, aspect, mood and evidentiality)
 to a sentence.
 
-#### `arg:lvc`
+#### `aux:lvc`
 
 It is useful to annotate complex verbs, and in some cases, we may wish to include specific complex verb constructions in the lexicon. However, doing so is not yet on a secure footing, since we have not carried out the requisite tests documented by Butt and others to show which examples count as complex verbs, and which do not.
 
