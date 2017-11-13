@@ -711,11 +711,16 @@ Here, `arg1:lvc` is རྒྱུས་ "knowledge" and `arg2` is ཡི་གེ
 ### Honorifics
 
 Complex honorific verbs in Tibetan are formed by prepending an honorific `NOUN`
-to a `VERB`. Semantically, such constructions differ from typical light verb
-constructions, in that the `VERB` is not bleached of meaning, and the `NOUN`
-contributes only honorific function. Nevertheless, given our present understanding
-of Tibetan grammar, these constructions cannot be formally distinguished from
-light verb constructions. Therefore, we consider that they also involve `arg2`.
+to a `VERB`. Given our present understanding of Tibetan grammar,
+these constructions cannot be formally distinguished from
+other `arg2` constructions. However, it is important to for them to be
+catalogued so that they can be entered into the verb lexicon.
+
+#### `arg2:hon`
+
+In the following example, we code the honorific noun སྐུ་ as a subtyped
+`arg2:hon` of the verb གཤེགས་. This distinguishes such cases from other
+`arg2` or light verb constructions.
 
 ~~~ ann
 ཡབ་མི་ལ་ཤེས་རབ་རྒྱལ་མཚན་སྐུ་གཤེགས་
@@ -728,10 +733,6 @@ T107  VERB 28 34  གཤེགས་
 R14 arg1 Arg1:T107 Arg2:T104
 R85 arg2:hon Arg1:T107 Arg2:T106
 ~~~
-
-In order to make it easier for honorific compounds to be identified later,
-we code the honorific noun སྐུ་ as a subtyped `arg2:hon` of the verb གཤེགས་.
-This distinguishes such cases from typical light verb constructions.
 
 ### Complex verbs
 
