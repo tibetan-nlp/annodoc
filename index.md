@@ -34,7 +34,9 @@ Where possible, our annotation scheme follows the guidelines of the
       * [`obl:arg`](#oblarg)
 * [Specific constructions](#specific-constructions)
     * [Auxiliaries](#auxiliaries)
+      * [`aux`](#aux)
     * [Copulas](#copulas)
+      * [`cop`](#cop)
     * [Complex verbs](#complex-verbs)
       * [`aux:lvc`](#auxlvc)
     * [Light verbs](#light-verbs)
@@ -555,6 +557,9 @@ R35	argcl Arg1:T497 Arg2:T496
 
 The [`aux`](http://universaldependencies.org/u/dep/aux_.html)
 relation is used to link functional auxiliaries to main verbs.
+
+#### `aux`
+
 Modal verbs such as དགོས་ 'need to', ནུས་ 'able to', and འདོད་ 'want to'
 fall under this category when used after main verbs, as in the
 following example:
@@ -606,6 +611,8 @@ In a copular linking construction, we use the
 relation to link a predicate
 (e.g. an adjective) to the `x` or `x n`. The copula itself does not have an
 argument structure.
+
+#### `cop`
 
 ### Light verbs
 
