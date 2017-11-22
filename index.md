@@ -132,9 +132,6 @@ annotation policy. We adopt the following principles:
 
 ## Argument structure
 
-In this section, we draw examples from Old (OT), Classical (CT) and
-Modern Tibetan (MT). Each example is cited with its stage and source.
-
 ### Overview
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
@@ -143,15 +140,20 @@ but `arg1` is not present.
 
 ~~~ ann
 ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
-T1  NOUN 0 6    ཡི་གེ་
-A1a Number T1 Sing
-T3  NOUN 9 14  བླ་མ་
-A3a Number T3 Sing
-T5  VERB 16 19 འབུལ་
+T5796  NOUN 0 6    ཡི་གེ་
+A5796a Number T1 Sing
+T5797  DET 6 9 དེ་√d
+A5797a PronType T1 Dem
+T5798  NOUN 9 14  བླ་མ་
+A5798a Number T3 Sing
+T5799	ADP 9 11	ལ་
+A5799a	Case T487 All
+T5800  VERB 16 19 འབུལ་
+T5801 PUNCT 34 35	།
 R1  arg2 Arg1:T1 Arg2:T5
 R2  obl Arg1:T3 Arg2:T5
 ~~~
-> _(He) presented the letter to the lama._ (CT - Milarepa)
+> _(He) presented the letter to the lama._ (CT - Mila 19a:T5796)
 
 Provided that the argument that does appear
 is annotated as `arg2`, then it is not necessary to insert a zero
@@ -174,16 +176,10 @@ helpful, and the gain made by doing so is not always obvious -
 we have so far identified few verbs that occur in the same form with multiple
 argument structures.
 
-In light of these considerations, it makes most sense at this point to
-address argument structure at the word sense level. Annotators are
-required to choose a lemma, and perhaps eventually a word sense.
-For the moment, we assume that argument structure will be handled at this
-level, as and when it becomes necessary.
-
 ### Arguments
 
 This section gives examples of the various argument relations. Because
-arguments can generally be [omitted](#missing-arguments), care must be taken
+arguments can generally be omitted, care must be taken
 to assign the correct roles to the arguments that are overt.
 
 #### `arg1`
@@ -195,53 +191,7 @@ specifying source, destination, and so on, we classify their canonical
 use as sole argument verbs. Adpositional phrases
 should be linked to motion verbs as oblique modifiers rather than
 as arguments, using the [`obl`](http://universaldependencies.org/u/dep/obl.html)
-relation. In the following example, in addition to an `arg1`,
-there are two obliques. We follow UD guidelines in labeling the
-postposed temporal modifier as an
-[`obl`](http://universaldependencies.org/u/dep/obl.html),
-despite its being a nominal.
-
-~~~ ann
-ང་ལྦ་ཤིང་ཀྲན་སྒྲ་སི་ལ་ཕྱིན་པ་ཡིན་བདུན་ཕྲག་གཉིས།
-T1  PRON 0 2 ང་
-T2  PROPN 2 21   ལྦ་ཤིང་ཀྲན་སྒྲ་སི་
-T4  VERB 23 30  ཕྱིན་པ་
-A4a Tense T4 Past
-A4b VerbForm T4 Vnoun
-R4a arg1 Arg1:T4 Arg2:T1
-R4b obl Arg1:T4 Arg2:T2
-R4c obl Arg1:T4 Arg2:T6
-T5  VERB 30 34 ཡིན་
-A5a Tense T5 Invar
-T6  NOUN 34 43 བདུན་ཕྲག་
-A6a Number T6 Sing
-T7  NUM 43 47 གཉིས་
-~~~
-> _I went to Washington D.C for two weeks._ (MT - A Handmade Altar)
-
-The next example shows the same verb ཕྱིན་ occurring with a single
-argument, referring to the passage of time.
-
-~~~ ann
-དེ་ཚོ་བརྒྱབ་ནས་ལོ་ག་ཚོད་ཕྱིན་ཡོད་རེད།
-T1  DET 0 3 དེ་√d
-A1a PronType T1 Dem
-T3  VERB 6 12  རྒྱག་√1
-A3a Tense T3 Past
-R3a arg2 Arg1:T3 Arg2:T1
-T5  NOUN 15 18 ལོ་
-A5a Number T5 Sing
-T6  PRON 18 24 ག་ཚོད་
-A6a PronType T6 Int
-T7  VERB 24 29 ཕྱིན་
-A7a Tense T7 Past
-R7a arg1 Arg1:T7 Arg2:T5
-T8  VERB 29 33 ཡོད་
-A8a Tense T8 Invar
-T9  VERB 33 36 རེད་√1
-A8a Tense T8 Invar
-~~~
-> _How many years has it been since they were built?_ (MT - The Chapter 26 Dialog from A Manual)
+relation.
 
 Another example of a single argument verb in many of its uses is ཡོད་.
 
@@ -254,61 +204,27 @@ genitives ("letter") is marked `arg2`.
 
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
-T1  PRON 0 5 ཁྱོད་√p
-A1a PronType T1 Prs
-T3  NOUN 9 16  ཁ་ཆེམས་
-A3a Number T3 Sing
-T5  NOUN 20 26 ཡི་གེ་
-A5a Number T5 Sing
-T6  PRON 26 28 སུ་√p
-A6a PronType T6 Int
-T8  VERB 30 34 འབྲི་√1
-A8a Tense T8 Past
-R1  arg1 Arg1:T6 Arg2:T8
-R2  arg2 Arg1:T5 Arg2:T8
+T461	PRON 0 5	ཁྱོད་
+A461a	PronType T461 Prs
+T462	ADP 5 9	ཀྱི་
+A462a	Case T462 Gen
+T463	NOUN 9 16	ཁ་ཆེམས་
+A463a	Number T463 Sing
+T464	ADP 16 20	ཀྱི་
+A464a	Case T464 Gen
+T465	NOUN 20 26	ཡི་གེ་
+A465a	Number T465 Sing
+T466	PRON 26 28	སུ
+A466a	PronType T466 Int
+T467	ADP 28 30	ས་
+A467a	Case T467 Agn
+T468	VERB 30 34	བྲིས
+A468a	Tense T468 Past
+T469	PUNCT 34 35	།
+R23	arg1 Arg1:T468 Arg2:T466
+R24	arg2 Arg1:T468 Arg2:T465
 ~~~
-> _Who wrote your will?_ (CT - Milarepa)
-
-The next example illustrates the same verbal lemma in Modern Tibetan.
-Despite the presence of periphrastic TAME marking following the verb,
-the dependency relations still link the verb directly to its two nominal
-arguments.
-
-~~~ ann
-ཚིག་དེ་ངས་བྲིས་པ་ཡིན།
-T1  NOUN 0 4 ཚིག་
-A1a Number T1 Sing
-T2  PRON 4 7 དེ་√d
-A2a PronType T2 Dem
-T3  PRON 7 8 ང་√p
-A3a PronType T3 Pers
-T5  VERB 10 17 འབྲི་པ་√1
-A5a Tense T5 Past
-A5b VerbForm T5 Vnoun
-R1  arg1 Arg1:T3 Arg2:T5
-R2  arg2 Arg1:T1 Arg2:T5
-~~~
-> _I wrote the words._ (MT - An Interview with the Fiddler Drado)
-
-It is not necessary for a verb with two arguments to be agentive. In the
-following case, the verb is involuntary, and the object forms a
-[light verb](#light-verbs) construction together with the verb.
-Still, there are clearly two distinct verbal arguments in play.
-Because the human experiencer is a better proto-agent than their
-stomach, `arg1` is the 1p pronoun ང་.
-
-~~~ ann
-ང་གྲོད་ཁོག་ཞེ་པོ་བཤལ་གྱིས་ལགས།
-T1  PRON 0 2 ང་
-T2  NOUN 2 11 གྲོད་ཁོག་
-A2a Number T2 Sing
-T3  ADV 11 17  ཞེ་པོ་
-T4  VERB 17 21 བཤལ་
-A4a Tense V Pres
-R4a arg1 Arg1:T4 Arg2:T1
-R4b arg2 Arg1:T4 Arg2:T2
-~~~
-> _I've got bad diarrhea._ (MT - Diarrhea)
+> _Who wrote your will?_ (CT - Mila 11b:T461)
 
 #### `arg3`
 
@@ -341,7 +257,7 @@ R53	arg1 Arg1:T933 Arg2:T928
 R54	arg2 Arg1:T933 Arg2:T930
 R55	arg3 Arg1:T933 Arg2:T925
 ~~~
-> _Uncle and aunt did not return to us, mother and children, what was rightfully ours._ (CT - Mila 12a)
+> _Uncle and aunt did not return to us, mother and children, what was rightfully ours._ (CT - Mila 12a:T924)
 
 #### `argcl`
 
