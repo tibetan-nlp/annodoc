@@ -140,16 +140,16 @@ but `arg1` is not present.
 
 ~~~ ann
 ཡི་གེ་དེ་བླ་མ་ལ་ཕུལ།
-T5796  NOUN 0 6    ཡི་གེ་
-A5796a Number T1 Sing
-T5797  DET 6 9 དེ་√d
-A5797a PronType T1 Dem
-T5798  NOUN 9 14  བླ་མ་
-A5798a Number T3 Sing
-T5799	ADP 9 11	ལ་
-A5799a	Case T487 All
-T5800  VERB 16 19 འབུལ་
-T5801 PUNCT 34 35	།
+T5796 NOUN 0 6    ཡི་གེ་
+A5796a  Number T1 Sing
+T5797 DET 6 9 དེ་√d
+A5797a  PronType T1 Dem
+T5798 NOUN 9 14  བླ་མ་
+A5798a  Number T3 Sing
+T5799 ADP 14 16	ལ་
+A5799a  Case T487 All
+T5800 VERB 16 21 འབུལ་
+T5801 PUNCT 21 22	།
 R1  arg2 Arg1:T1 Arg2:T5
 R2  obl Arg1:T3 Arg2:T5
 ~~~
