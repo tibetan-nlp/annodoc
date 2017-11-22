@@ -151,7 +151,7 @@ A5799a  Case T487 All
 T5800 VERB 16 21 འབུལ་
 T5801 PUNCT 21 22	།
 R1  arg2 Arg1:T5800 Arg2:T5796
-R2  obl Arg1:T5800 Arg2:T5798
+R2  obl-arg Arg1:T5800 Arg2:T5798
 ~~~
 > _(He) presented the letter to the lama._ (CT - Mila 19a:T5796)
 
