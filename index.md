@@ -43,7 +43,7 @@ Where possible, our annotation scheme follows the guidelines of the
       * [`arg2:lvc`](arg2lvc)
       * [`arg1:lvc`](arg1lvc)
     * [Honorifics](#honorifics)
-      * [`arg2:hon`](#arg2hon)
+      * [`arg2:hon`](arg2hon)
     * [Relative clauses](#relative-clauses)
     * [Quotatives](#quotatives)
 
