@@ -601,7 +601,7 @@ pre.embedding svg {
   border: none;
 }
 .ttt-wrapper {
-  padding: 10px 25px;
+  padding: 10px 20px 5px 0px;
   margin: 0;
   border-top: none;
   border-left: 1px solid #7fa2ff;
@@ -625,6 +625,8 @@ pre.embedding svg {
 .ttt-response {
   margin-top: 8px;
   font-size: 12px;
+  height: 200px;
+  overflow-y: auto;
 }
 .ttt-response dt {
   font-size: 18px;
