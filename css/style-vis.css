@@ -600,14 +600,19 @@ a.doclink {
 }
 .ttt-radios label {
   padding: 5px;
+  font-size: 18px;
   border-bottom: 1px solid #7fa2ff;
 }
 .ttt-wrapper input[type="radio"]:checked+label {
+  padding-bottom: 6px; /* pull left and right borders down one extra pixel to meet bottom border */
   border-top: 1px solid #7fa2ff;
   border-left: 1px solid #7fa2ff;
   border-right: 1px solid #7fa2ff;
   border-bottom: none;
 }
-.ttt-response {
+.ttt-response dt {
+  font-size: 18px;
+}
+.ttt-response dd {
   font-size: 12px;
 }
