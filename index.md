@@ -24,7 +24,7 @@ Where possible, our annotation scheme follows the guidelines of the
 * [Argument structure](#argument-structure)
     * [Overview](#overview)
     * [Arguments](#arguments)
-      * [`arg1`](#arg1)
+      * [arg1]()
       * [`arg2`](#arg2)
       * [`arg3`](#arg3)
       * [`argcl`](#argcl)
@@ -181,19 +181,6 @@ argument structures.
 This section gives examples of the various argument relations. Because
 arguments can generally be omitted, care must be taken
 to assign the correct roles to the arguments that are overt.
-
-#### `arg1`
-
-The sole argument of a one-place predicate is marked `arg1`.
-
-Although verbs of motion can occur with a variety of adpositional phrases,
-specifying source, destination, and so on, we classify their canonical
-use as sole argument verbs. Adpositional phrases
-should be linked to motion verbs as oblique modifiers rather than
-as arguments, using the [`obl`](http://universaldependencies.org/u/dep/obl.html)
-relation.
-
-Another example of a single argument verb in many of its uses is ཡོད་.
 
 #### `arg2`
 
