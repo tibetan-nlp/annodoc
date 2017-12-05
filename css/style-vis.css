@@ -601,7 +601,7 @@ pre.embedding svg {
   border: none;
 }
 .ttt-wrapper {
-  padding: 10px 20px 5px 0px;
+  padding: 10px 0px 5px 20px;
   margin: 0;
   border-top: none;
   border-left: 1px solid #7fa2ff;
