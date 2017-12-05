@@ -635,4 +635,9 @@ pre.embedding svg {
 }
 ul.ttt-defs {
   list-style-type: none;
+  margin-left: 0;
+  padding-left: 5px;
+}
+ul.ttt-defs > li {
+  margin-bottom: 5px;
 }
