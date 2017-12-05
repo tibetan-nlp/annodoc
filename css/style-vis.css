@@ -598,7 +598,7 @@ a.doclink {
 .ttt-wrapper input[type="radio"] {
   display: none;
 }
-.ttt-radops label {
+.ttt-radios label {
   padding: 5px;
   border-bottom: 1px solid #7fa2ff;
 }
