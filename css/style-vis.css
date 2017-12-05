@@ -590,10 +590,20 @@ a.doclink {
 }
 
 /* lim-annodoc additions */
+pre.embedding svg {
+  margin: 0;
+  border-top: 1px solid #7fa2ff;
+  border-left: 1px dashed #7fa2ff;
+  border-right: 1px dashed #7fa2ff;
+  border-bottom: none;
+}
 .ttt-wrapper {
-  margin: 0px;
-  border: 1px solid #7fa2ff;
   padding: 10px 25px;
+  margin: 0;
+  border-top: none;
+  border-left: 1px dashed #7fa2ff;
+  border-right: 1px dashed #7fa2ff;
+  border-bottom: 1px solid #7fa2ff;
 }
 .ttt-wrapper input[type="radio"] {
   display: none;
@@ -604,7 +614,7 @@ a.doclink {
   border-bottom: 1px solid #7fa2ff;
 }
 .ttt-wrapper input[type="radio"]:checked+label {
-  border-top: 1px dashed #7fa2ff;
+  border-top: 1px solid #7fa2ff;
   border-left: 1px dashed #7fa2ff;
   border-right: 1px dashed #7fa2ff;
   border-bottom: none;
