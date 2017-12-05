@@ -24,12 +24,12 @@ Where possible, our annotation scheme follows the guidelines of the
 * [Argument structure](#argument-structure)
     * [Overview](#overview)
     * [Arguments](#arguments)
-      * [ARG1]() [person]() [PERSON]()
+      * [arg1]()
       * [`arg2`](#arg2)
       * [`arg3`](#arg3)
       * [`argcl`](#argcl)
     * [Obliques](#obliques)
-      * [`obl`](#obl)
+      * [obl]()
       * [`obl:adv`](#obladv)
       * [`obl:arg`](#oblarg)
 * [Specific constructions](#specific-constructions)
@@ -366,11 +366,6 @@ We use the [`obl`](http://universaldependencies.org/u/dep/obl.html) relation
 to mark unmarked nominals that act as adverbials, and arguments marked with
 adpositions other than agentive case, regardless of whether or not they are
 considered to be arguments of the verb.
-
-#### `obl`
-
-`obl` is used for most oblique modifiers, including unmarked nominals
-that behave adverbially.
 
 #### `obl:adv`
 
