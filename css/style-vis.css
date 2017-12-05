@@ -598,13 +598,15 @@ a.doclink {
 .ttt-wrapper input[type="radio"] {
   display: none;
 }
-.ttt-wrapper input[type="radio"]+label {
+.ttt-radops label {
+  padding: 5px;
   border-bottom: 1px solid #7fa2ff;
 }
 .ttt-wrapper input[type="radio"]:checked+label {
   border-top: 1px solid #7fa2ff;
   border-left: 1px solid #7fa2ff;
   border-right: 1px solid #7fa2ff;
+  border-bottom: none;
 }
 .ttt-response {
   font-size: 12px;
