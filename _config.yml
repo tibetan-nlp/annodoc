@@ -26,7 +26,8 @@ issueurl: "https://github.com/tibetan-nlp/lim-annodoc/issues"
 # Collection settings
 
 collections:
-  relation:
+  dependencies:
     output: true
+    permalink: /dependencies/:path/
 
 theme: jekyll-theme-tactile
