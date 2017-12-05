@@ -26,8 +26,6 @@ issueurl: "https://github.com/tibetan-nlp/lim-annodoc/issues"
 # Collection settings
 
 collections:
-  dependency:
-    output: true
   entity:
     output: true
   relation:
