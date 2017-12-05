@@ -296,12 +296,12 @@ rect.shadow_EditHighlight {
 .sentnum text {
   font-size: 13px;
   display: none; /* sentence number disabled by default (JS may toggle) */
-  fill: #999999;
+  /* fill: #999999; */
   text-anchor: end;
 }
 
 .sentnum path {
-  display: none; /* sentence number disabled by default (JS may toggle) */
+  display: none !important; /* sentence number disabled by default (JS may toggle) */
   stroke: #999999;
   stroke-width: 1px;
 }
@@ -593,8 +593,8 @@ a.doclink {
 pre.embedding {
   margin: 0;
   border-top: 1px solid #7fa2ff;
-  border-left: 1px dashed #7fa2ff;
-  border-right: 1px dashed #7fa2ff;
+  border-left: 1px solid #7fa2ff;
+  border-right: 1px solid #7fa2ff;
   border-bottom: none;
 }
 pre.embedding svg {
@@ -604,8 +604,8 @@ pre.embedding svg {
   padding: 10px 25px;
   margin: 0;
   border-top: none;
-  border-left: 1px dashed #7fa2ff;
-  border-right: 1px dashed #7fa2ff;
+  border-left: 1px solid #7fa2ff;
+  border-right: 1px solid #7fa2ff;
   border-bottom: 1px solid #7fa2ff;
 }
 .ttt-wrapper input[type="radio"] {
