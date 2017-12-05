@@ -26,6 +26,9 @@ issueurl: "https://github.com/tibetan-nlp/lim-annodoc/issues"
 # Collection settings
 
 collections:
+  entity:
+    output: true
+    permalink: /entity/:path/
   dependencies:
     output: true
     permalink: /dependencies/:path/
