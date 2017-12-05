@@ -599,8 +599,11 @@ a.doclink {
   display: none;
 }
 .ttt-wrapper input[type="radio"]:checked+label {
-  background-color: yellow;
+  border: 1px 1px 0px 1px solid #7fa2ff;
 }
 .ttt-wrapper > div {
   font-size: 12px;
+}
+.ttt-radios {
+  border-bottom: 1px solid #7fa2ff;
 }
