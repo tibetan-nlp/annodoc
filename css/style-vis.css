@@ -633,3 +633,6 @@ pre.embedding svg {
 .ttt-response dt {
   font-size: 18px;
 }
+ul.ttt-defs {
+  list-style-type: none;
+}
