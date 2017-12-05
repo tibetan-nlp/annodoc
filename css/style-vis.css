@@ -280,7 +280,7 @@ rect.shadow_EditHighlight {
 
 .background0 {
   stroke: none;
-  fill: #ffffff;
+  fill: #D3D3D3; /* #ffffff; */
 }
 
 .background1 {
@@ -592,10 +592,11 @@ a.doclink {
 /* lim-annodoc additions */
 pre.embedding {
   margin: 0;
-  border-top: 1px solid #7fa2ff;
+  bacgkground: #D3D3D3;
+  /* border-top: 1px solid #7fa2ff;
   border-left: 1px solid #7fa2ff;
   border-right: 1px solid #7fa2ff;
-  border-bottom: none;
+  border-bottom: none; */
 }
 pre.embedding svg {
   border: none;
@@ -603,10 +604,11 @@ pre.embedding svg {
 .ttt-wrapper {
   padding: 15px 0px 5px 20px;
   margin: 0;
-  border-top: none;
+  background: #D3D3D3;
+  /* border-top: none;
   border-left: 1px solid #7fa2ff;
   border-right: 1px solid #7fa2ff;
-  border-bottom: 1px solid #7fa2ff;
+  border-bottom: 1px solid #7fa2ff; */
 }
 .ttt-wrapper input[type="radio"] {
   display: none;
