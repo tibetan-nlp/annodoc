@@ -591,13 +591,16 @@ a.doclink {
 
 /* lim-annodoc additions */
 .ttt-wrapper {
+  margin: 0px;
   border: 1px solid #7fa2ff;
-  padding: 10px 30px;
-  font-size: 12px;
+  padding: 10px 25px;
 }
 .ttt-wrapper input[type="radio"] {
   display: none;
 }
 .ttt-wrapper input[type="radio"]:checked+label {
   background-color: yellow;
+}
+.ttt-wrapper > div {
+  font-size: 12px;
 }
