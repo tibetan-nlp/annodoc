@@ -598,6 +598,9 @@ a.doclink {
 .ttt-wrapper input[type="radio"] {
   display: none;
 }
+.ttt-wrapper input[type="radio"]+label {
+  border-bottom: 1px solid #7fa2ff;
+}
 .ttt-wrapper input[type="radio"]:checked+label {
   border-top: 1px solid #7fa2ff;
   border-left: 1px solid #7fa2ff;
@@ -605,7 +608,4 @@ a.doclink {
 }
 .ttt-response {
   font-size: 12px;
-}
-.ttt-radios {
-  border-bottom: 1px solid #7fa2ff;
 }
