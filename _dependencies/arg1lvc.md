@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: arg1-lvc 
+title: arg1:lvc 
 ---
 
 In the above cases, which are typical examples of light verbs, the `NOUN`
