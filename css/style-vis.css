@@ -610,9 +610,10 @@ a.doclink {
   border-right: 1px solid #7fa2ff;
   border-bottom: none;
 }
+.ttt-response {
+  margin-top: 8px;
+  font-size: 12px;
+}
 .ttt-response dt {
   font-size: 18px;
-}
-.ttt-response dd {
-  font-size: 12px;
 }
