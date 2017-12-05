@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: arg3 
+title: argcl 
 ---
 
 The following example shows a clausal argument of the verb བསམས་ "think".
