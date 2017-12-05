@@ -590,6 +590,9 @@ a.doclink {
 }
 
 /* lim-annodoc additions */
+.ttt-wrapper {
+  margin-left: 10px 30px;
+}
 .ttt-wrapper input[type="radio"] {
   display: none;
 }
