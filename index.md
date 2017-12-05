@@ -25,25 +25,20 @@ Where possible, our annotation scheme follows the guidelines of the
     * [Overview](#overview)
     * [Arguments](#arguments)
       * [`arg1`](arg1)
-      * [`arg2`](arg2) 
+      * [`arg1:lvc`](arg1lvc) 
+      * [`arg2`](arg2)
+      * [`arg2:hon`](arg2hon)
+      * [`arg2:lvc`](arg2lvc) 
       * [`arg3`](arg3) 
       * [`argcl`](argcl) 
     * [Obliques](#obliques)
       * [`obl`](obl) 
-      * [`obl:adv`](#obladv)
-      * [`obl:arg`](#oblarg)
+      * [`obl:adv`](obladv)
+      * [`obl:arg`](oblarg)
 * [Specific constructions](#specific-constructions)
-    * [Auxiliaries](#auxiliaries)
-      * [`aux`](aux)
-    * [Copulas](#copulas)
-      * [`cop`](cop)
     * [Complex verbs](#complex-verbs)
       * [`aux:lvc`](auxlvc)
-    * [Light verbs](#light-verbs)
-      * [`arg2:lvc`](arg2lvc)
-      * [`arg1:lvc`](arg1lvc)
-    * [Honorifics](#honorifics)
-      * [`arg2:hon`](arg2hon)
+    * [Light verbs[(#light-verbs)
     * [Relative clauses](#relative-clauses)
     * [Quotatives](#quotatives)
 
@@ -188,88 +183,6 @@ We use the [`obl`](http://universaldependencies.org/u/dep/obl.html) relation
 to mark unmarked nominals that act as adverbials, and arguments marked with
 adpositions other than agentive case, regardless of whether or not they are
 considered to be arguments of the verb.
-
-#### `obl:adv`
-
-`obl:adv` (occasionally seen as `obl-adv` in the BRAT UI)
-is used for nominals marked with oblique case-marking which
-derive etymologically from verbal nouns but which might commonly be
-called adverbs, such as _nye bar_, _so sor_, and _lhag par_.
-
-#### `obl:arg`
-
-`obl:arg` (occasionally seen as `obl-arg` in the BRAT UI)
-is used for nominals with oblique case-marking which are
-nevertheless considered core verbal arguments.
-
-A typical case of `obl:arg` would be to mark the third required argument
-of a verb of transfer like 'give'.
-
-~~~ ann
-སེམས་ཅན་ཆེན་པོས་སྟག་མོ་ལ་ལུས་སྦྱན་པ་ཟེར་ཡས་ལེའུ་དེ་རེད།
-T1  NOUN 0 8 སེམས་ཅན་
-A1a Number T1 Sing
-T2  ADJ 8 14  ཆེན་པོས་
-T4  NOUN 16 23 སྟག་མོ་
-A4a Number T4 Sing
-T6  NOUN 25 29 ལུས་
-A6a Number T6 Sing
-T7  VERB 29 37 སྦྱན་པ་
-A7a Tense T7 Invar
-A7b VerbForm T7 Vnoun
-R7a arg1 Arg1:T7 Arg2:T1
-R7b arg2 Arg1:T7 Arg2:T6
-R7c obl:arg Arg1:T7 Arg2:T4
-T8  VERB 37 41 ཟེར་
-A8a Mood T8 Qot
-T10 NOUN 44 49 ལེའུ་
-A10a  Number T10 Sing
-T11 DET 49 52 དེ་√d
-A11a  PronType T11 Dem
-T12 VERB 52 55 རེད་
-A12a  Tense T12 Invar
-~~~
-> _This is the chapter on the story of the great sentient being giving his body to the tigress._ (MT - An Oral Commentary on The Tale of the Hungry Tigress: A Reader of Classical Tibetan 1.1)
-
-~~~ ann
-ནས་དཀར་མོ་མང་པོ་ལ་ཕྱེ་བྱས།
-T44	NOUN 0 3	ནས་
-A44a	Number T44 Coll
-T45	ADJ 3 10	དཀར་མོ་
-T46	ADJ 10 16	མང་པོ་
-T47	ADP 16 18	ལ་
-A47a	Case T47 All
-T48	NOUN 18 22	ཕྱེ་
-A48a	Number T48 Sing
-T49	VERB 22 25	བྱས
-A49a	Tense T49 Past
-T50	PUNCT 25 26	།
-R3	arg2-lvc Arg1:T49 Arg2:T48
-R4	obl-arg Arg1:T49 Arg2:T44
-~~~
-> He ground a large amount of white barley into flour. (CT - Mila 11a)
-
-~~~ ann
-ཆུ་ལ་བྲེས་འཇལ་བྱེད་
-T491	NOUN 0 3	ཆུ་
-A491a	Number T491 Coll
-T492	ADP 3 5	ལ་
-A492a	Case T492 All
-T493	NOUN 5 8	བྲེ
-A493a	Number T493 Sing
-T494	ADP 8 10	ས་
-A494a	Case T494 Agn
-T495	VERB 10 14	འཇལ་
-A495a	Tense T495 Pres
-T496	VERB 14 19	བྱེད་
-A496a	Tense T496 Pres
-R34	aux Arg1:T495 Arg2:T496
-R37	obl-arg Arg1:T495 Arg2:T491
-R87	obl Arg1:T495 Arg2:T493
-R34	aux Arg1:T495 Arg2:T496
-R35	argcl Arg1:T497 Arg2:T496
-~~~
-> One measures [running] water with a _bre_. (CT - Mila 11b)
 
 ## Specific constructions
 
