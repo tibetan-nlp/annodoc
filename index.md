@@ -24,7 +24,7 @@ Where possible, our annotation scheme follows the guidelines of the
 * [Argument structure](#argument-structure)
     * [Overview](#overview)
     * [Arguments](#arguments)
-      * [arg1]()
+      * [ARG1]() [person]() [PERSON]()
       * [`arg2`](#arg2)
       * [`arg3`](#arg3)
       * [`argcl`](#argcl)
