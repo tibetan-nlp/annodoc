@@ -1,6 +1,5 @@
 ---
 layout: entry
-title: Relative clauses 
 ---
 
 Repeating the example from above:
