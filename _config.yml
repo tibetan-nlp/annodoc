@@ -29,5 +29,8 @@ collections:
   deprel:
     output: true
     permalink: /deprel/:path/
+  construction:
+    output: true
+    permalink: /construction/:path/
 
 theme: jekyll-theme-tactile
