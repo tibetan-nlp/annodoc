@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: arg2-hon 
+title: arg2:hon 
 ---
 
 Complex honorific verbs in Tibetan are formed by prepending an honorific `NOUN`

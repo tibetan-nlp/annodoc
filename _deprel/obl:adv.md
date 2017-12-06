@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: obl-adv 
+title: obl:adv 
 ---
 
 `obl:adv` (occasionally seen as `obl-adv` in the BRAT UI)
