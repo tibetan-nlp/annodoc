@@ -34,6 +34,8 @@ Where possible, our annotation scheme follows the guidelines of the
       * [`obl`](obl) 
       * [`obl:adv`](obladv)
       * [`obl:arg`](oblarg)
+    * [Other](#other)
+      * [`aux:lvc`](auxlvc)
 * [Constructions](#constructions)
     * [Auxiliaries](#auxiliaries)
     * [Copulas](#copulas)
@@ -181,6 +183,8 @@ We use the [`obl`](http://universaldependencies.org/u/dep/obl.html) relation
 to mark unmarked nominals that act as adverbials, and arguments marked with
 adpositions other than agentive case, regardless of whether or not they are
 considered to be arguments of the verb.
+
+### Other
 
 ## Constructions
 
