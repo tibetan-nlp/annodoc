@@ -37,8 +37,8 @@ Where possible, our annotation scheme follows the guidelines of the
     * [Other](#other)
       * [`aux:lvc`](aux:lvc)
 * [Constructions](#constructions)
-    * [Auxiliaries](#auxiliaries)
-    * [Copulas](#copulas)
+    * [Auxiliaries]()
+    * [Copulas]()
     * [Complex verbs](#complex-verbs)
     * [Light verbs](#light-verbs)
     * [Relative clauses](#relative-clauses)
@@ -187,10 +187,6 @@ considered to be arguments of the verb.
 ### Other
 
 ## Constructions
-
-### Auxiliaries
-
-### Copulas
 
 ### Complex verbs
 
