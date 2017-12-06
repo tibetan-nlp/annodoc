@@ -590,6 +590,10 @@ a.doclink {
 }
 
 /* lim-annodoc additions */
+p.shortdef {
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
 pre.embedding {
   margin: 0;
   bacgkground: #D3D3D3;

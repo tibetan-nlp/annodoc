@@ -5,7 +5,11 @@ layout: default
 
   <header class="entry-header">
     <h1>{{ page.title }}</h1>
-    {% if page.shortdef %}<p><em>{{ page.shortdef }}</em></p>{% endif %}
+    {% if page.shortdef %}
+      <p class="shortdef">>
+        {{ page.shortdef }}
+      </p>
+    {% endif %}
   </header>
 
   <article class="entry-content">
