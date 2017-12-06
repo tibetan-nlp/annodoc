@@ -38,7 +38,7 @@ Where possible, our annotation scheme follows the guidelines of the
     * [Auxiliaries](#auxiliaries)
     * [Copulas](#copulas)
     * [Complex verbs](#complex-verbs)
-    * [Light verbs[(#light-verbs)
+    * [Light verbs](#light-verbs)
     * [Relative clauses](#relative-clauses)
     * [Quotatives](#quotatives)
 
