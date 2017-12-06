@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: obl:arg 
+title: oblarg 
 ---
 
 #### `obl:arg`

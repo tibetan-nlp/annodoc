@@ -24,7 +24,7 @@ Where possible, our annotation scheme follows the guidelines of the
 * [Deprels](#deprels)
     * [Arguments](#arguments)
       * [`arg1`](arg1)
-      * [`arg1:lvc`](arg1lvc) 
+      * [`arg1:lvc`](arg1-lvc) 
       * [`arg2`](arg2)
       * [`arg2:hon`](arg2hon)
       * [`arg2:lvc`](arg2lvc) 
