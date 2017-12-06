@@ -21,8 +21,7 @@ Where possible, our annotation scheme follows the guidelines of the
 * [Universal dependencies](#universal-dependencies)
     * [Part-of-speech tags](#part-of-speech-tags)
     * [Dependency relations](#dependency-relations)
-* [Argument structure](#argument-structure)
-    * [Overview](#overview)
+* [Deprels](#deprels)
     * [Arguments](#arguments)
       * [`arg1`](arg1)
       * [`arg1:lvc`](arg1lvc) 
@@ -35,9 +34,10 @@ Where possible, our annotation scheme follows the guidelines of the
       * [`obl`](obl) 
       * [`obl:adv`](obladv)
       * [`obl:arg`](oblarg)
-* [Specific constructions](#specific-constructions)
+* [Constructions](#constructions)
+    * [Auxiliaries](#auxiliaries)
+    * [Copulas](#copulas)
     * [Complex verbs](#complex-verbs)
-      * [`aux:lvc`](auxlvc)
     * [Light verbs[(#light-verbs)
     * [Relative clauses](#relative-clauses)
     * [Quotatives](#quotatives)
@@ -125,9 +125,9 @@ annotation policy. We adopt the following principles:
 5. **A word cannot be the argument of more than one verb at the same time.** When this principle appears to be violated, then all but one of the verbs likely has a missing argument. Link the word to the verb in whose local context it occurs. (This verb may, though not necessarily, determine the word's case marking.) This principle implies that argument-marking is local rather than long-distance. It also implies that when a word has been displaced from its "usual" position - for example, as the external head of a relative clause - then its usual position will be "occupied" by a missing argument.
 6. **Being an argument is distinct from contributing a semantic role to the verb.** For example, the nouns in light verb constructions are classified as `arg2` despite the fact that they contribute 'verbal' meaning. Conversely, recipients and other roles that do not meet the case-marking criteria in (1) are classified as `obl` (or `obl:arg`) even though they may be essential to the meaning of the phrase.
 
-## Argument structure
+## Deprels 
 
-### Overview
+### Arguments 
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
 discourse. In the following example, the verb is linked to its `arg2`,
@@ -171,8 +171,6 @@ helpful, and the gain made by doing so is not always obvious -
 we have so far identified few verbs that occur in the same form with multiple
 argument structures.
 
-### Arguments
-
 This section gives examples of the various argument relations. Because
 arguments can generally be omitted, care must be taken
 to assign the correct roles to the arguments that are overt.
@@ -184,24 +182,11 @@ to mark unmarked nominals that act as adverbials, and arguments marked with
 adpositions other than agentive case, regardless of whether or not they are
 considered to be arguments of the verb.
 
-## Specific constructions
+## Constructions
 
-### Light verbs
+### Auxiliaries
 
-Like other languages of the region, Tibetan has a wealth of idiomatic light verb
-constructions. Usually these consist of a `NOUN` without any case marking followed
-by a semantically bleached `VERB`. Some such verbs are used with many different
-nouns to form different light verb constructions, whereas other verbs are
-limited to occur with only one or a small number of nouns.
-
-A satisfactory verb lexicon for Tibetan needs to include those `NOUN` + `VERB`
-collocations that convey fundamental verbal meanings in the language. Therefore,
-when feasible we ask annotators to explicitly encode a light verb construction
-by marking the noun with the subtyped relation `arg2:lvc`. The sub-type `lvc`
-stands for "light verb construction" and has precedent in
-[other UD treebanks](http://universaldependencies.org/ext-dep-index.html):
-Hungarian has `dobj:lvc`, while Persian and Turkish have `compound:lvc`.
-We also have found a few instances of `arg1:lvc`.
+### Copulas
 
 ### Complex verbs
 
@@ -238,6 +223,23 @@ R1      arg1 Arg1:T19 Arg2:T16
 R2      arg2 Arg1:T19 Arg2:T18
 ~~~
 > _the barley which was cultivated by the uncle_ (CT - Mila 11a)
+
+### Light verbs
+
+Like other languages of the region, Tibetan has a wealth of idiomatic light verb
+constructions. Usually these consist of a `NOUN` without any case marking followed
+by a semantically bleached `VERB`. Some such verbs are used with many different
+nouns to form different light verb constructions, whereas other verbs are
+limited to occur with only one or a small number of nouns.
+
+A satisfactory verb lexicon for Tibetan needs to include those `NOUN` + `VERB`
+collocations that convey fundamental verbal meanings in the language. Therefore,
+when feasible we ask annotators to explicitly encode a light verb construction
+by marking the noun with the subtyped relation `arg2:lvc`. The sub-type `lvc`
+stands for "light verb construction" and has precedent in
+[other UD treebanks](http://universaldependencies.org/ext-dep-index.html):
+Hungarian has `dobj:lvc`, while Persian and Turkish have `compound:lvc`.
+We also have found a few instances of `arg1:lvc`.
 
 ### Quotatives
 
