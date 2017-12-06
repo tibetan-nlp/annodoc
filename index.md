@@ -36,10 +36,6 @@ Annotators are asked to attend to the following dependency relations:
     * [Relative clauses]()
     * [Quotatives]()
 
-{% for r in site.deprel %}
-* [{{ r.title }}]({{ r.url | remove_first:'/' }}): {{ r.shortdef }}
-{% endfor %}
-
 ## Introduction
 
 The guidelines on this page are designed for *annotators* rather than *lexicographers*.
