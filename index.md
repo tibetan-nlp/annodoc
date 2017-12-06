@@ -23,7 +23,7 @@ Where possible, our annotation scheme follows the guidelines of the
     * [Dependency relations](#dependency-relations)
 * [Deprels](#deprels)
     * [Arguments](#arguments)
-      * `[arg1]()`
+      * [`arg1`](arg1)
       * [`arg1:lvc`](arg1:lvc) 
       * [`arg2`](arg2)
       * [`arg2:hon`](arg2:hon)
