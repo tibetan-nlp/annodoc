@@ -1,6 +1,7 @@
 ---
 layout: entry
 title: arg1:lvc 
+shortdef: the first argument of a verb, with which it forms a complex predicate
 ---
 
 In the above cases, which are typical examples of light verbs, the `NOUN`

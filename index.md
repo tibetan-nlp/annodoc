@@ -14,6 +14,13 @@ of building a corpus-based Tibetan verb lexicon.
 Where possible, our annotation scheme follows the guidelines of the
 [Universal Dependencies](http://universaldependencies.org/) project.
 
+## Dependency relations
+
+Annotators are asked to attend to the following dependency relations:
+
+{% for r in site.deprel %}
+* [`{{ r.title }}`]({{ r.url | remove_first:'/' }}) {{ r.shortdef }}
+{% endfor %}
 
 ## Table of contents
 
@@ -22,10 +29,6 @@ Where possible, our annotation scheme follows the guidelines of the
     * [Part-of-speech tags](#part-of-speech-tags)
     * [Dependency relations](#dependency-relations)
 * [Arguments](#arguments)
-* [Deprels][#deprels)
-{% for r in site.deprel %}
-    * [`{{ r.title }}`]({{ r.url | remove_first:'/' }}): {{ r.shortdef }}
-{% endfor %}
 * [Constructions](#constructions)
     * [Auxiliaries]()
     * [Copulas]()
