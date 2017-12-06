@@ -3,7 +3,7 @@ layout: entry
 title: LIM Annotation Documentation  
 ---
 
-This page provides documentation of the annotation scheme for
+This site provides documentation of the annotation scheme for
 Tibetan language texts used by the project *Lexicography in Motion* (LIM)
 based at SOAS University of London and the Bavarian Academy of Sciences
 and Humanities (_Bayerische Akademie der Wissenschaften_) in Munich.
@@ -14,13 +14,9 @@ of building a corpus-based Tibetan verb lexicon.
 Where possible, our annotation scheme follows the guidelines of the
 [Universal Dependencies](http://universaldependencies.org/) project.
 
-## Dependency relations
+Please see the following pages for further details.
 
-Annotators are asked to attend to the following dependency relations:
-
-{% for r in site.deprel %}
-- [`{{ r.title }}`]({{ r.url | remove_first:'/' }})
-{% endfor %}
+- [Deprels](deprels)
 
 ## Table of contents
 
