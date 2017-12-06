@@ -16,7 +16,7 @@ Where possible, our annotation scheme follows the guidelines of the
 
 Please see the following pages for further details.
 
-- [Deprels](/deprels)
+- [Deprels](/lim-annodoc/deprels)
 
 ## Table of contents
 
