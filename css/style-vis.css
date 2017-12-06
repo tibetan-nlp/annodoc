@@ -594,7 +594,8 @@ p.shortdef {
   margin-top: 1rem;
   margin-left: 2rem;
   font-style: italic;
-  font-size: font-size: larger;
+  font-weight: bolder;
+  font-size: larger;
 }
 pre.embedding {
   margin: 0;
