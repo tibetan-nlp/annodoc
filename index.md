@@ -18,8 +18,10 @@ Where possible, our annotation scheme follows the guidelines of the
 
 Annotators are asked to attend to the following dependency relations:
 
+| Relation | Description |
+| :--- | :--- |
 {% for r in site.deprel %}
-- [`{{ r.title }}`]({{ r.url | remove_first:'/' }}) — {{ r.shortdef }}
+| [`{{ r.title }}`]({{ r.url | remove_first:'/' }}) | {{ r.shortdef }} |
 {% endfor %}
 
 ## Table of contents
