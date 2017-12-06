@@ -1,6 +1,7 @@
 ---
 layout: entry
 title: obl 
+shortdef: an oblique nominal that modifies a verb
 ---
 
 

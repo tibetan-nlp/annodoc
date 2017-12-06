@@ -1,6 +1,7 @@
 ---
 layout: entry
 title: arg2:hon 
+shortdef: the second argument of a verb, which functions to make the verb honorific
 ---
 
 Complex honorific verbs in Tibetan are formed by prepending an honorific `NOUN`

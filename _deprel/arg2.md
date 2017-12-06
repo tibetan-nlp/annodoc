@@ -1,6 +1,7 @@
 ---
 layout: entry
 title: arg2 
+shortdef: the second argument or "object" of a verb, which cannot be oblique
 ---
 
 The arguments of a two-place predicate are marked `arg1` and `arg2`, as in the

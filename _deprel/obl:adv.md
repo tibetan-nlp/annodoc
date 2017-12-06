@@ -1,6 +1,7 @@
 ---
 layout: entry
 title: obl:adv 
+shortdef: an oblique marked nominal, which behaves like an adverb
 ---
 
 `obl:adv` (occasionally seen as `obl-adv` in the BRAT UI)

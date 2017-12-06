@@ -1,6 +1,7 @@
 ---
 layout: entry
 title: aux:lvc 
+shortdef: a verb which follows the main verb, and together with it forms a complex predicate
 ---
 
 Butt (2010:49) defines a *complex predicate* as:

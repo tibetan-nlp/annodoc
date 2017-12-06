@@ -1,6 +1,7 @@
 ---
 layout: entry
 title: obl:arg 
+shortdef: an oblique marked nominal, which is considered an argument of the verb
 ---
 
 #### `obl:arg`

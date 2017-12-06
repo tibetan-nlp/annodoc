@@ -1,6 +1,7 @@
 ---
 layout: entry
 title: argcl 
+shortdef: the clausal argument of a verb
 ---
 
 The following example shows a clausal argument of the verb བསམས་ "think".
