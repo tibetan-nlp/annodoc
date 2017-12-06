@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: auxlvc 
+title: aux-lvc 
 ---
 
 Butt (2010:49) defines a *complex predicate* as:
