@@ -3,12 +3,12 @@ layout: entry
 title: Annotation principles 
 ---
 
-- Contents
-    - [Introduction](#introduction)
-    - [Missing arguments](#missing-arguments)
-    - [Annotation policy](#annotation-policy)
+Jump to:
+- [Introduction](#introduction)
+- [Missing arguments](#missing-arguments)
+- [Annotation policy](#annotation-policy)
 
-# Introduction
+## Introduction
 
 The guidelines on this site are designed for *annotators* rather than *lexicographers*.
 The aim is to create a set of easy to follow instructions that facilitate a high
@@ -33,7 +33,7 @@ or to label the semantic roles of core arguments or obliques. For example, the `
 for different verbs could have different semantic roles; it is only necessary that a
 given verb's `arg1` is held constant across the various uses of *the same verb*.
 
-# Missing arguments
+## Missing arguments
 
 In Tibetan, verbal arguments are often inferred from the context or from previous
 discourse. In the following example, the verb is linked to its `arg2`,
@@ -80,7 +80,7 @@ argument structures.
 In summary, because arguments can generally be omitted, care must be taken
 to assign the correct roles to the arguments that are overt.
 
-# Annotation policy
+## Annotation policy
 
 In order to generalize across instances of a predicate, it is necessary to adopt a consistent
 annotation policy. We adopt the following principles:

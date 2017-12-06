@@ -3,7 +3,7 @@ layout: entry
 title: LIM Annotation Documentation  
 ---
 
-This site provides documentation of the annotation scheme for
+This site documents the annotation scheme for
 Tibetan language texts used by the project *Lexicography in Motion* (LIM)
 based at SOAS University of London and the Bavarian Academy of Sciences
 and Humanities (_Bayerische Akademie der Wissenschaften_) in Munich.
