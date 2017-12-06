@@ -41,7 +41,7 @@ Where possible, our annotation scheme follows the guidelines of the
     * [Copulas]()
     * [Complex verbs](#complex-verbs)
     * [Light verbs](#light-verbs)
-    * [Relative clauses](relative-clauses)
+    * [Relative clauses]()
     * [Quotatives]()
 
 ## Introduction

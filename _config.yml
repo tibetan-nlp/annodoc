@@ -31,6 +31,6 @@ collections:
     permalink: /deprel/:path/
   construction:
     output: true
-    permalink: /construction/:path/
+    permalink: /construction/:name/
 
 theme: jekyll-theme-tactile
