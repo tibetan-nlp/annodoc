@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: Deprels
+title: Dependency relations 
 ---
 
 Annotators are asked to attend to the following dependency relations:
