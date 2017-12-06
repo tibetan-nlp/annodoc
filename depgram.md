@@ -2,7 +2,6 @@
 layout: entry
 title: Dependency grammar
 ---
-
 Our annotation guidelines follow the UD project in privileging content words over
 function words. Instead of linking a predicate to the function word (for example, the case
 marker) that marks its argument, we link the predicate to the content head word (for example,

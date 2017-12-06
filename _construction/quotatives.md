@@ -2,7 +2,6 @@
 layout: entry
 title: Quotatives 
 ---
-
 We tag _ces_, _zhes_ and related words as `VERB` because of their etymology and
 because of the existence of variant forms like _ce na_ and _ces pa_.
 However, the usage of these words suggests that they are quotative clitics.

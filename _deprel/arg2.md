@@ -3,7 +3,6 @@ layout: entry
 title: arg2 
 shortdef: the second argument or "object" of a verb, which cannot be oblique
 ---
-
 The arguments of a two-place predicate are marked `arg1` and `arg2`, as in the
 the following example with the verb "to write". Here, the agent (the writer)
 is marked `arg1`, and the rightmost of three nominals linked by two

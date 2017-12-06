@@ -3,7 +3,6 @@ layout: entry
 title: arg3 
 shortdef: the third argument or "indirect object" of a verb, which cannot be oblique
 ---
-
 When a verb has two unmarked arguments in addition to having an `arg1` argument,
 then we classify it as a three-place predicate with no obliques. For example:
 

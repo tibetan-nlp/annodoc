@@ -3,7 +3,6 @@ layout: entry
 title: arg2:lvc 
 shortdef: the second argument of a verb, which together with it forms a complex predicate
 ---
-
 The following illustrates the use of the light verb གོམ་པ་རྒྱབ་ "to walk" - literally "take steps". Here, the `VERB` immediately follows the `NOUN`.
 
 ~~~ ann

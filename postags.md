@@ -2,7 +2,6 @@
 layout: entry
 title: Part-of-speech tags 
 ---
-
 We use the universal POS tag scheme rather than the more verbose SOAS tags.
 We have mapped directly from the
 [SOAS system](http://larkpie.net/tibetancorpus/tags)

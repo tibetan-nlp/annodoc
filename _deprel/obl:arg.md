@@ -3,9 +3,6 @@ layout: entry
 title: obl:arg 
 shortdef: an oblique marked nominal, which is considered an argument of the verb
 ---
-
-#### `obl:arg`
-
 `obl:arg` (occasionally seen as `obl-arg` in the BRAT UI)
 is used for nominals with oblique case-marking which are
 nevertheless considered core verbal arguments.

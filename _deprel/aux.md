@@ -3,7 +3,6 @@ layout: entry
 title: aux 
 shortdef: a verb which follows and functionally modifies the main verb
 ---
-
 The [`aux`](http://universaldependencies.org/u/dep/aux_.html)
 relation is used to link functional auxiliaries to main verbs.
 

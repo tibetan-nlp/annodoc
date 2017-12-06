@@ -3,7 +3,6 @@ layout: entry
 title: arg1 
 shortdef: the first argument or "subject" of a verb, which may be agentive or unmarked, but not oblique
 ---
-
 The sole argument of a one-place predicate is marked `arg1`.
 
 Although verbs of motion can occur with a variety of adpositional phrases,

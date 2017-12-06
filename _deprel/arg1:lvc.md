@@ -3,7 +3,6 @@ layout: entry
 title: arg1:lvc 
 shortdef: the first argument or "subject" of a verb, with which it forms a complex predicate
 ---
-
 In the above cases, which are typical examples of light verbs, the `NOUN`
 fills an argument position without introducing additional arguments. However,
 in other cases that we have found, the noun in a light verb construction

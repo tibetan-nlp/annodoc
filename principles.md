@@ -2,8 +2,6 @@
 layout: entry
 title: Annotation principles 
 ---
-
-Jump to:
 - [Introduction](#introduction)
 - [Missing arguments](#missing-arguments)
 - [Annotation policy](#annotation-policy)

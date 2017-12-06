@@ -2,7 +2,6 @@
 layout: entry
 title: Complex predicates 
 ---
-
 Butt (2010:49) defines a *complex predicate* as:
 
 > a construction that involves two or more predicational elements
