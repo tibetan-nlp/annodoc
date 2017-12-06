@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: arg2:lvc 
+title: arg2-lvc 
 ---
 
 The following illustrates the use of the light verb གོམ་པ་རྒྱབ་ "to walk" - literally "take steps". Here, the `VERB` immediately follows the `NOUN`.
