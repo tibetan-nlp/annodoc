@@ -592,7 +592,8 @@ a.doclink {
 /* lim-annodoc additions */
 p.shortdef {
   margin-top: 1rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
+  font-style: italic;
 }
 pre.embedding {
   margin: 0;
