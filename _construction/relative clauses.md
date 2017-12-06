@@ -2,7 +2,10 @@
 layout: entry
 title: Relative clauses
 ---
-Repeating the example from above:
+Argument-marking is local rather than long-distance.
+So when a word has been displaced from its “usual” position - 
+for example, as the external head of a relative clause - 
+then its usual position will be “occupied” by a missing argument.
 
 ~~~ ann
 ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
