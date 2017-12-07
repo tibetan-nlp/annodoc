@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: obl:arg 
+title: obl:arg
 shortdef: an oblique marked nominal, which is considered an argument of the verb
 ---
 `obl:arg` (occasionally seen as `obl-arg` in the BRAT UI)
@@ -9,6 +9,26 @@ nevertheless considered core verbal arguments.
 
 A typical case of `obl:arg` would be to mark the third required argument
 of a verb of transfer like 'give'.
+
+~~~ ann
+ཨ་ཁུ་དང་ཨ་ནེ་ལ་ཤ་ཁོག་འཛུགས།
+T120	NOUN 0 5	ཨ་ཁུ་
+A120a	Number T120 Sing
+T121	ADP 5 8	དང་
+A121a	Case T121 Com
+T122	NOUN 8 13	ཨ་ནེ་
+A122a	Number T122 Sing
+T123	ADP 13 15	ལ་
+A123a	Case T123 All
+T124	NOUN 15 21	ཤ་ཁོག་
+A124a	Number T124 Sing
+T125	VERB 21 26	འཛུགས
+A125a	Tense T125 Pres
+T126	PUNCT 26 27	།
+R21	arg2 Arg1:T125 Arg2:T124
+R22	obl-arg Arg1:T125 Arg2:T122
+~~~
+> To my aunt and uncle we presented an entire animal carcass. (Mila 11a:T120)
 
 ~~~ ann
 སེམས་ཅན་ཆེན་པོས་སྟག་མོ་ལ་ལུས་སྦྱན་པ་ཟེར་ཡས་ལེའུ་དེ་རེད།
@@ -75,5 +95,3 @@ R34     aux Arg1:T495 Arg2:T496
 R35     argcl Arg1:T497 Arg2:T496
 ~~~
 > One measures [running] water with a _bre_. (CT - Mila 11b)
-
-
