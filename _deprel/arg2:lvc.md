@@ -1,64 +1,102 @@
 ---
 layout: entry
-title: arg2:lvc 
+title: arg2:lvc
 shortdef: the second argument of a verb, which together with it forms a complex predicate
 ---
-The following illustrates the use of the light verb གོམ་པ་རྒྱབ་ "to walk" - literally "take steps". Here, the `VERB` immediately follows the `NOUN`.
+
+Here is a nice simple example of `arg2:lvc` with _mchi ma shor_ "to shed tears":
 
 ~~~ ann
-གོམ་པ་རྒྱབ་བྱས་ཐད་དོ།
-T1  NOUN 0 6 གོམ་པ་
-A1a Number T1 Sing
-T2  VERB 6 11  རྒྱག་√1
-A2a Tense T2 Past
-R2a arg2-lvc Arg1:T2 Arg2:T1
-T3  VERB 11 15 བྱེད་
-A3a Tense T3 Past
-T4  VERB 15 18 ཐད་
-A4a Tense T4 Fut,Pres
+ང་རང་ཡང་མཆི་མ་མང་པོ་ཤོར།
+T1537	PRON 0 2	ང་
+A1537a	PronType T1537 Prs
+T1538	PRON 2 5	རང་
+A1538a	Reflex T1538 Yes
+T1539	PART 5 8	ཡང་
+T1540	NOUN 8 14	མཆི་མ་
+A1540a	Number T1540 Sing
+T1541	ADJ 14 20	མང་པོ་
+T1542	VERB 20 23	ཤོར
+A1542a	Tense T1542 Past
+T1543	PUNCT 23 24	།
+R31	arg2-lvc Arg1:T1542 Arg2:T1540
+R32	arg1 Arg1:T1542 Arg2:T1537
 ~~~
-> _Let's walk there._ (MT - A Visit to the Hospital, Abridged)
 
-In the following case, by contrast, the adverbial phrase ལན་གསུམ་ "three times"
-intervenes, showing that the component parts of the light verb construction
-are separable.
+The following three sentences combine multiple instances of `arg2:lvc`
+together into a single passage of text.
 
 ~~~ ann
-གོམ་པ་ལན་གསུམ་རྒྱབ་ཤོག
-T1  NOUN 0 6 གོམ་པ་
-A1a Number T1 Sing
-T2  NOUN 6 9 ལན་
-A2a Number T2 Sing
-T3  NUM 9 14  གསུམ་
-A3a NumType T3 Card
-T4  VERB 14 19 རྒྱག་√1
-A4a Tense T4 Pres
-R4a arg2-lvc Arg1:T4 Arg2:T1
-T5  VERB 19 22 ཤོག
+ང་ཨ་མ་ལ་སེམས་འཁྲེང་གྲགས་ཏེ།
+T2161	PRON 0 2	ང་
+A2161a	PronType T2161 Prs
+T2162	NOUN 2 6	ཨ་མ་
+A2162a	Number T2162 Sing
+T2163	ADP 6 8	ལ་
+A2163a	Case T2163 All
+T2164	NOUN 8 13	སེམས་
+A2164a	Number T2164 Sing
+T2165	VERB 13 19	འཁྲེང་
+T2166	VERB 19 24	གྲགས་
+A2166a	VerbType T2166 Aux
+T2167	SCONJ 24 26	ཏེ
+A2167a	Case T2167 Sem
+T2168	PUNCT 26 27	།
+R7	arg1 Arg1:T2165 Arg2:T2161
+R8	obl-arg Arg1:T2165 Arg2:T2162
+R9	arg2-lvc Arg1:T2165 Arg2:T2164
+R84	aux Arg1:T2165 Arg2:T2166
 ~~~
-> _Take three steps._ (MT - Sang né la: A0002)
-
-There are also examples in Classical Tibetan, for example:
+> Feeling a powerful longing for my mother... [Mila 14a:T2161]
 
 ~~~ ann
-ཞང་པོས་སོ་ནམ་བྱས་པའི་ནས་
-T16     NOUN 0 5      ཞང་པོ
-A16a    Number T16 Sing
-T17     ADP 5 7       ས་
-A17a    Case T17 Agn
-T18     NOUN 7 13      སོ་ནམ་
-A18a    Number T18 Sing
-T19     VERB 13 18      བྱས་པ
-A19a    Tense T19 Past
-A19b    VerbForm T19 Vnoun
-T20     ADP 18 21      འི་
-A20a    Case T20 Gen
-T21     NOUN 21 24    ནས་
-R1      arg1 Arg1:T19 Arg2:T16
-R2      arg2-lvc Arg1:T19 Arg2:T18
+ཡང་ཡང་ཕྱི་མིག་ལྟ་བ་དང་མཆི་མ་མང་པོ་ཤོར།
+T2170	ADV 0 3	ཡང་
+A2170a	PronType T2170 Dem
+T2171	ADV 3 6	ཡང་
+A2171a	PronType T2171 Dem
+T2172	DET 6 10	ཕྱི་
+A2172a	PronType T2172 Dem
+T2173	NOUN 10 14	མིག་
+A2173a	Number T2173 Sing
+T2174	VERB 14 19	ལྟ་བ་
+A2174a	Tense T2174 Pres
+A2174b	VerbForm T2174 Vnoun
+T2175	ADP 19 22	དང་
+A2175a	Case T2175 Com
+T2176	NOUN 22 28	མཆི་མ་
+A2176a	Number T2176 Sing
+T2177	ADJ 28 34	མང་པོ་
+T2178	VERB 34 37	ཤོར
+A2178a	Tense T2178 Past
+T2179	PUNCT 37 38	།
+R83	arg2-lvc Arg1:T2174 Arg2:T2173
+R12	arg2-lvc Arg1:T2178 Arg2:T2176
 ~~~
-> _the barley which was cultivated by the uncle_ (CT - Mila 11a)
+> I looked back at her again and again and shed many tears.
 
-
-
-
+~~~ ann
+ཨ་མ་ཡང་ང་བུ་གཅིག་པོ་ལ་སེམས་འཁྲེང་བས།
+T2181	NOUN 0 4	ཨ་མ་
+A2181a	Number T2181 Sing
+T2182	PART 4 7	ཡང་
+T2183	PRON 7 9	ང་
+A2183a	PronType T2183 Prs
+T2184	NOUN 9 12	བུ་
+A2184a	Number T2184 Sing
+T2185	ADJ 12 20	གཅིག་པོ་
+T2186	ADP 20 22	ལ་
+A2186a	Case T2186 All
+T2187	NOUN 22 27	སེམས་
+A2187a	Number T2187 Sing
+T2188	VERB 27 34	འཁྲེང་བ
+A2188a	VerbForm T2188 Vnoun
+T2189	ADP 34 35	ས
+A2189a	Case T2189 Agn
+T2190	PUNCT 35 36	།
+R10	arg2-lvc Arg1:T2188 Arg2:T2187
+R12	arg2-lvc Arg1:T2178 Arg2:T2176
+R13	arg1 Arg1:T2188 Arg2:T2181
+R14	obl-arg Arg1:T2188 Arg2:T2184
+~~~
+> My mother also felt a strong attachment for me, her only son...
