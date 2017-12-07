@@ -23,3 +23,10 @@ R70 arg2 Arg1:T114 Arg2:T112
 > _[They] had knowledge of the written testament._ (Mila 11a:T110)
 
 Here, `arg1:lvc` is རྒྱུས་ "knowledge" and `arg2` is ཡི་གེ་ "letter".
+
+## Other examples
+```
+/mila/017b?focus=T4790
+/mila/021b?focus=T7580
+/mila/021b?focus=T7782
+/mila/023a?focus=T8507
