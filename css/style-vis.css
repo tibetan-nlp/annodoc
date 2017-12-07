@@ -636,8 +636,8 @@ pre.embedding svg {
   height: 200px;
   overflow-y: auto;
 }
-.ttt-response dt {
-  font-size: 18px;
+.ttt-response h3 {
+  margin: 10px 0 5px;
 }
 ul.ttt-defs {
   list-style-type: none;
