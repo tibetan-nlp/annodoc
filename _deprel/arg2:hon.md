@@ -24,10 +24,12 @@ R14 arg1 Arg1:T107 Arg2:T104
 R85 arg2:hon Arg1:T107 Arg2:T106
 ~~~
 
-**Admin:** *evaluate the following examples for inclusion.*
-- [ ] `/mila/011a?focus=T196`
-- [ ] `/mila/012b?focus=T1238`
-- [ ] `/mila/014b?focus=T2495`
-- [ ] `/mila/023a?focus=T8742`
-- [ ] `/mila/023b?focus=T8925`
-- [ ] `/mila/025a?focus=T10061`
+**Admin:** *Evaluate the following examples.*
+```
+/mila/011a?focus=T196
+/mila/012b?focus=T1238
+/mila/014b?focus=T2495
+/mila/023a?focus=T8742
+/mila/023b?focus=T8925
+/mila/025a?focus=T10061
+```
