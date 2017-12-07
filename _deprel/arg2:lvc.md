@@ -100,3 +100,32 @@ R13	arg1 Arg1:T2188 Arg2:T2181
 R14	obl-arg Arg1:T2188 Arg2:T2184
 ~~~
 > My mother also felt a strong attachment for me, her only son...
+
+The following example illustrates _sdug po btang_:
+
+~~~ ann
+ཁྱོད་ལ་ཡུལ་མིས་སྡུག་པོ་ཅི་འདྲ་བཏང་གསུང་།
+T3090	PRON 0 5	ཁྱོད་
+A3090a	PronType T3090 Prs
+T3091	ADP 5 7	ལ་
+A3091a	Case T3091 All
+T3092	NOUN 7 13	ཡུལ་མི
+A3092a	Number T3092 Sing
+T3093	ADP 13 15	ས་
+A3093a	Case T3093 Agn
+T3094	NOUN 15 23	སྡུག་པོ་
+A3094a	Number T3094 Sing
+T3095	PRON 23 26	ཅི་
+A3095a	PronType T3095 Int
+T3096	NOUN 26 30	འདྲ་
+A3096a	NounType T3096 Rel
+T3097	VERB 30 34	བཏང་
+A3097a	Tense T3097 Past
+T3098	VERB 34 39	གསུང་
+T3099	PUNCT 39 40	།
+R70	argcl Arg1:T3098 Arg2:T3097
+R71	arg2-lvc Arg1:T3097 Arg2:T3094
+R72	arg1 Arg1:T3097 Arg2:T3092
+R73	obl-arg Arg1:T3097 Arg2:T3090
+~~~
+> "How have your countrymen tormented you?" asked (the lama). [CT, Mila 15a:T3090]
