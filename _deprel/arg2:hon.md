@@ -24,7 +24,7 @@ R14 arg1 Arg1:T107 Arg2:T104
 R85 arg2:hon Arg1:T107 Arg2:T106
 ~~~
 
-**See also:**
+*More examples -*
 ```
 /mila/011a?focus=T196
 /mila/012b?focus=T1238
