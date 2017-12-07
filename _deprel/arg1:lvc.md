@@ -24,7 +24,7 @@ R70 arg2 Arg1:T114 Arg2:T112
 
 Here, `arg1:lvc` is རྒྱུས་ "knowledge" and `arg2` is ཡི་གེ་ "letter".
 
-** See also: **
+**See also:**
 ```
 /mila/017b?focus=T4790
 /mila/021b?focus=T7580

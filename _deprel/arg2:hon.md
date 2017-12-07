@@ -1,13 +1,12 @@
 ---
 layout: entry
-title: arg2:hon 
+title: arg2:hon
 shortdef: the second argument of a verb, which functions to make the verb honorific
 ---
 Complex honorific verbs in Tibetan are formed by prepending an honorific `NOUN`
-to a `VERB`. Given our present understanding of Tibetan grammar,
-these constructions cannot be formally distinguished from
+to a `VERB`. We cannot yet formally distinguished these examples from
 other `arg2` constructions. However, it is important to for them to be
-catalogued so that they can be entered into the verb lexicon.
+catalogued separately in case they should be included in the verb lexicon.
 
 In the following example, we code the honorific noun སྐུ་ as a subtyped
 `arg2:hon` of the verb གཤེགས་. This distinguishes such cases from other
@@ -25,6 +24,7 @@ R14 arg1 Arg1:T107 Arg2:T104
 R85 arg2:hon Arg1:T107 Arg2:T106
 ~~~
 
+**See also:**
+```
 
-
-
+```
