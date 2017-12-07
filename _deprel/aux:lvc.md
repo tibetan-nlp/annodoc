@@ -4,7 +4,7 @@ title: aux:lvc
 shortdef: a verb which follows the main verb, and together with it forms a complex predicate
 ---
 In a sequence of two or more adjacent verbs, if the verbs together form a
-[complex predicate](complex predicates), then non-initial verbs depend on the first verb via
+[complex predicate](/lim-annodoc/construction/complex-predicates), then non-initial verbs depend on the first verb via
 the `aux:lvc` relation. In this scenario, all arguments and obliques should
 depend on the first verb.
 
