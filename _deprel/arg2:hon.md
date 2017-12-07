@@ -24,11 +24,31 @@ R14 arg1 Arg1:T107 Arg2:T104
 R85 arg2:hon Arg1:T107 Arg2:T106
 ~~~
 
+~~~ ann
+བླ་མ་ཞལ་འཛུམ་པ་ཅིག་མཛད་ནས།
+T2493	NOUN 0 5	བླ་མ་
+A2493a	Number T2493 Sing
+T2494	NOUN 5 8	ཞལ་
+A2494a	Number T2494 Sing
+T2495	VERB 8 15	འཛུམ་པ་
+A2495a	VerbForm T2495 Vnoun
+T2496	DET 15 19	ཅིག་
+A2496a	PronType T2496 Ind
+T2497	VERB 19 23	མཛད་
+A2497a	Tense T2497 Past/Pres
+T2498	SCONJ 23 25	ནས
+A2498a	Case T2498 Ela
+T2499	PUNCT 25 26	།
+R13	arg2-hon Arg1:T2495 Arg2:T2494
+R14	arg1 Arg1:T2497 Arg2:T2493
+R15	arg2 Arg1:T2497 Arg2:T2495
+~~~
+> The lama smiled and... [Mila 14b:T2493]
+
 **Admin:** *Evaluate the following examples.*
 ```
 /mila/011a?focus=T196
 /mila/012b?focus=T1238
-/mila/014b?focus=T2495
 /mila/023a?focus=T8742
 /mila/023b?focus=T8925
 /mila/025a?focus=T10061
