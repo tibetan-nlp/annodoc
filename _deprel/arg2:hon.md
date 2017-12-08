@@ -90,31 +90,23 @@ A2498a	Case T2498 Ela
 T2499	PUNCT 25 26	།
 T2501	PRON 27 32	ཁྱོད་
 A2501a	PronType T2501 Prs
-N2501	Reference T2501 Nonverbs:0221	ཁྱོད་√p
 T2502	ADP 32 36	ཀྱི་
 A2502a	Case T2502 Gen
-N2502	Reference T2502 Nonverbs:0012	གྱི་√case
 T2503	NOUN 36 40	གཏམ་
 A2503a	Number T2503 Sing
 T2504	DET 40 43	དེ་
 A2504a	PronType T2504 Dem
-N2504	Reference T2504 Nonverbs:0233	དེ་√d
 T2505	DET 43 48	རྣམས་
 A2505a	Number T2505 Plur
-N2505	Reference T2505 Nonverbs:0305	རྣམས་√d
 T2506	ADP 48 50	ལ་
 A2506a	Case T2506 All
-N2506	Reference T2506 Nonverbs:0028	ལ་√case
 T2507	VERB 50 56	བརྟག་པ
 A2507a	Tense T2507 Fut/Past
 A2507b	VerbForm T2507 Vnoun
-N2507	Reference T2507 Hill:0709	རྟོག་
 T2508	ADP 56 58	ར་
 A2508a	Case T2508 Ter
-N2508	Reference T2508 Nonverbs:0051	དུ་√case
 T2509	VERB 58 61	བྱ་
 A2509a	Tense T2509 Fut
-N2509	Reference T2509 Hill:1168	བྱེད་
 T2510	VERB 61 66	གསུང་
 T2511	PUNCT 66 67	།
 R13	arg2-hon Arg1:T2495 Arg2:T2494
