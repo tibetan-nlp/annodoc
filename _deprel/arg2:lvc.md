@@ -4,7 +4,7 @@ title: arg2:lvc
 shortdef: the second argument of a verb, which together with it forms a complex predicate
 ---
 
-Here is a nice simple example of `arg2:lvc` with _mchi ma shor_ "to shed tears":
+Here is a simple example of `arg2:lvc` with _mchi ma shor_ "to shed tears":
 ~~~ ann
 ང་རང་ཡང་མཆི་མ་མང་པོ་ཤོར།
 T1537	PRON 0 2	ང་
@@ -21,9 +21,9 @@ T1543	PUNCT 23 24	།
 R31	arg2-lvc Arg1:T1542 Arg2:T1540
 R32	arg1 Arg1:T1542 Arg2:T1537
 ~~~
-> ([Mila 13a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/013a?focus=T1542))
+> Then I too shed many tears. ([Mila 13a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/013a?focus=T1542))
 
-The following example illustrates _sdug po btang_:
+The following example illustrates _sdug po gtong_ "to torment":
 ~~~ ann
 ཁྱོད་ལ་ཡུལ་མིས་སྡུག་པོ་ཅི་འདྲ་བཏང་གསུང་།
 T3090	PRON 0 5	ཁྱོད་
@@ -52,7 +52,8 @@ R73	obl-arg Arg1:T3097 Arg2:T3090
 > "How have your countrymen tormented you?" asked (the lama). ([Mila 15a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015a?focus=T3097))
 
 The following example is excellent, in that it exhibits not one, not two, but three
-cases of `arg2:lvc`.
+cases of `arg2:lvc`: _sems 'phreng_ "to be attached", _mig lta_ "to look", and 
+_mchi ma shor_ "to shed tears".
 
 ~~~ ann
 ང་ཨ་མ་ལ་སེམས་འཁྲེང་གྲགས་ཏེ། ཡང་ཡང་ཕྱི་མིག་ལྟ་བ་དང་མཆི་མ་མང་པོ་ཤོར།
