@@ -20,7 +20,7 @@ A114a VerbForm T114 Vnoun
 R35 arg1:lvc Arg1:T114 Arg2:T113
 R70 arg2 Arg1:T114 Arg2:T112
 ~~~
-> _[They] had knowledge of the written testament._ (Mila 11a:T110)
+> _[They] had knowledge of the written testament._ ([Mila 11a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/011a?focus=T114))
 
 Here, `arg1:lvc` is རྒྱུས་ "knowledge" and `arg2` is ཡི་གེ་ "letter".
 
