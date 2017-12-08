@@ -52,7 +52,7 @@ T5801 PUNCT 19 20       །
 R1  arg2 Arg1:T5800 Arg2:T5796
 R2  obl-arg Arg1:T5800 Arg2:T5798
 ~~~
-> _(He) presented the letter to the lama._ (CT - Mila 19a:T5796)
+> _(He) presented the letter to the lama._ ([Mila 19a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/019a?focus=T5800))
 
 Provided that the argument that does appear
 is annotated as `arg2`, then it is not necessary to insert a zero
