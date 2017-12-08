@@ -9,7 +9,7 @@ from other `arg2` constructions. However, it is important to for them to be
 catalogued separately in case they should be included in the verb lexicon.
 
 In the following example, we code the honorific noun _sku_ "body" as a subtyped
-`arg2:hon` of the verb _gshegs_ "to depart/die" This distinguishes such cases from other
+`arg2:hon` of the verb _gshegs_ "to depart/die". This distinguishes such cases from other
 `arg2` or light verb constructions.
 
 ~~~ ann
@@ -68,7 +68,7 @@ R78	obl-adv Arg1:T3122 Arg2:T3120
 R79	obl Arg1:T3122 Arg2:T3118
 R80	argcl Arg1:T3122 Arg2:T3115
 ~~~
-> Sobbing, I described at length about how my father Mila Sherab Gyaltsen died and about the ways in which my uncle and aunt then tormented us. ([Mila 15a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015a?focus=T3106]))
+> Sobbing, I described at length about how my father Mila Sherab Gyaltsen died and about the ways in which my uncle and aunt then tormented us. ([Mila 15a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015a?focus=T3106))
 
 The following example shows _zhal 'dzum_ "to smile" with the honorific
 prefix _zhal_ "mouth".
