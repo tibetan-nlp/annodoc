@@ -8,7 +8,7 @@ is used for nominals with oblique case-marking which are
 nevertheless considered core verbal arguments.
 
 A typical case of `obl:arg` would be to mark the third required argument
-of verbs of transfer, such as "give".
+of verbs of transfer, such as _sprod_ "to give" and _'dzugs_ "to set down (?)".
 
 ~~~ ann
 ཁོ་རང་འཆི་ཁར་ནོར་བདག་པོ་ལ་སྤྲད་པ་ཡིན།
@@ -56,7 +56,7 @@ R22	obl-arg Arg1:T125 Arg2:T122
 ~~~
 > To my aunt and uncle we presented an entire animal carcass. ([Mila 11a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/011a?focus=T125))
 
-Other verbs may also subcategorise for `obl:arg`.
+Other verbs may also subcategorise for `obl:arg` - note the argument structure of _byed_ "to make" and _'tshod_ "to cook/boil".
 
 ~~~ ann
 ནས་དཀར་མོ་མང་པོ་ལ་ཕྱེ་བྱས། ནག་མོ་མང་པོ་ཆང་དུ་བཙོས་པས།
@@ -87,5 +87,7 @@ R3      arg2-lvc Arg1:T49 Arg2:T48
 R4      obl-arg Arg1:T49 Arg2:T44
 R3	arg2-lvc Arg1:T49 Arg2:T48
 R4	obl-arg Arg1:T49 Arg2:T44
+R12	obl-arg Arg1:T56 Arg2:T54
+R11	arg2 Arg1:T56 Arg2:T52
 ~~~
 > He ground a large amount of white barley into flour, and brewed a good deal of black barley into beer. ([Mila 11a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/011a?focus=T56))
