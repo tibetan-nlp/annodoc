@@ -24,7 +24,7 @@ T21     NOUN 21 24    ནས་
 R1      arg1 Arg1:T19 Arg2:T16
 R2      arg2 Arg1:T19 Arg2:T18
 ~~~
-> _the barley which was cultivated by the uncle_ (CT - Mila 11a)
+> _the barley which was cultivated by the uncle_ ([Mila 11a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/011a?focus=T19))
 
 
 

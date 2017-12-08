@@ -34,7 +34,7 @@ R15	arg1 Arg1:T411 Arg2:T409
 R16	aux Arg1:T416 Arg2:T417
 R17	obl-arg Arg1:T416 Arg2:T414
 ~~~
-> When he died, these possessions were returned to their owner. (Mila 011b:T409)
+> When he died, these possessions were returned to their owner. ([Mila 11b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/011b?focus=T416))
 
 ~~~ ann
 ཨ་ཁུ་དང་ཨ་ནེ་ལ་ཤ་ཁོག་འཛུགས།
@@ -54,7 +54,7 @@ T126	PUNCT 26 27	།
 R21	arg2 Arg1:T125 Arg2:T124
 R22	obl-arg Arg1:T125 Arg2:T122
 ~~~
-> To my aunt and uncle we presented an entire animal carcass. (Mila 11a:T120)
+> To my aunt and uncle we presented an entire animal carcass. ([Mila 11a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/011a?focus=T125))
 
 Other verbs may also subcategorise for `obl:arg`.
 
@@ -88,4 +88,4 @@ R4      obl-arg Arg1:T49 Arg2:T44
 R3	arg2-lvc Arg1:T49 Arg2:T48
 R4	obl-arg Arg1:T49 Arg2:T44
 ~~~
-> He ground a large amount of white barley into flour, and brewed a good deal of black barley into beer. (Mila 11a:T44)
+> He ground a large amount of white barley into flour, and brewed a good deal of black barley into beer. ([Mila 11a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/011a?focus=T56))

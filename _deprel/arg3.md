@@ -32,5 +32,5 @@ R53     arg1 Arg1:T933 Arg2:T928
 R54     arg2 Arg1:T933 Arg2:T930
 R55     arg3 Arg1:T933 Arg2:T925
 ~~~
-> _Uncle and aunt did not return to us, mother and children, what was rightfully ours._ (CT - Mila 12a:T924)
+> _Uncle and aunt did not return to us, mother and children, what was rightfully ours._ ([Mila 12a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/012a?focus=T933))
 

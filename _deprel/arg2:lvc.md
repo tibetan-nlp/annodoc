@@ -21,7 +21,7 @@ T1543	PUNCT 23 24	།
 R31	arg2-lvc Arg1:T1542 Arg2:T1540
 R32	arg1 Arg1:T1542 Arg2:T1537
 ~~~
-> (Mila 13a:T1537)
+> ([Mila 13a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/013a?focus=T1542))
 
 The following example illustrates _sdug po btang_:
 ~~~ ann
@@ -49,7 +49,7 @@ R71	arg2-lvc Arg1:T3097 Arg2:T3094
 R72	arg1 Arg1:T3097 Arg2:T3092
 R73	obl-arg Arg1:T3097 Arg2:T3090
 ~~~
-> "How have your countrymen tormented you?" asked (the lama). [CT, Mila 15a:T3090]
+> "How have your countrymen tormented you?" asked (the lama). ([Mila 15a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015a?focus=T3097))
 
 The following example is excellent, in that it exhibits not one, not two, but three
 cases of `arg2:lvc`.
@@ -96,4 +96,4 @@ R84	aux Arg1:T2165 Arg2:T2166
 R83	arg2-lvc Arg1:T2174 Arg2:T2173
 R12	arg2-lvc Arg1:T2178 Arg2:T2176
 ~~~
-> Feeling a powerful longing for my mother, I looked back at her again and again and shed many tears. [Mila 14a:T2161]
+> Feeling a powerful longing for my mother, I looked back at her again and again and shed many tears. ([Mila 14a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/011a?focus=T2178))

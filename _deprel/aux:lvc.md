@@ -54,4 +54,4 @@ R34	arg1 Arg1:T2952 Arg2:T2950
 R31	aux-lvc Arg1:T2952 Arg2:T2954
 R33	aux Arg1:T2954 Arg2:T2956
 ~~~
-> I then went to see the lama, who asked, "Töpaga, why did you not return home?" [Mila 015a:T2938]
+> I then went to see the lama, who asked, "Töpaga, why did you not return home?" ([Mila 15a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015a?focus=T2952))
