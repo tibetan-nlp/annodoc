@@ -36,7 +36,7 @@ R39     arg1 Arg1:T221 Arg2:T218
 R79     argcl Arg1:T223 Arg2:T221
 R40     argcl Arg1:T225 Arg2:T223
 ~~~
-> She said: ‘elders, please listen closely’. (CT - Mila 11a)
+> She said: ‘elders, please listen closely’. ([Mila 11a](http://tibetanverbs.soas.ac.uk/~badw/mila/#/mila/011a?focus=T224)))
 
 In this example, the head of the embedded clause _zhu_ depends
 directly on the matrix verb _brjod_, without paying any notice
