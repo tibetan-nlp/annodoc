@@ -8,7 +8,33 @@ is used for nominals with oblique case-marking which are
 nevertheless considered core verbal arguments.
 
 A typical case of `obl:arg` would be to mark the third required argument
-of a verb of transfer like 'give'.
+of verbs of transfer, such as "give".
+
+~~~ ann
+ཁོ་རང་འཆི་ཁར་ནོར་བདག་པོ་ལ་སྤྲད་པ་ཡིན།
+T409	PRON 0 3	ཁོ་
+A409a	PronType T409 Prs
+T410	PRON 3 6	རང་
+A410a	Reflex T410 Yes
+T411	VERB 6 10	འཆི་
+A411a	Tense T411 Fut/Pres
+T412	NOUN 10 11	ཁ
+A412a	NounType T412 Rel
+T413	ADP 11 13	ར་
+A413a	Case T413 Ter
+T414	NOUN 13 22	ནོར་བདག་པོ་
+A414a	Number T414 Sing
+T415	ADP 22 24	ལ་
+A415a	Case T415 All
+T416	VERB 24 31	སྤྲད་པ་
+A416a	VerbForm T416 Vnoun
+T417	AUX 31 34	ཡིན
+T418	PUNCT 34 35	།
+R15	arg1 Arg1:T411 Arg2:T409
+R16	aux Arg1:T416 Arg2:T417
+R17	obl-arg Arg1:T416 Arg2:T414
+~~~
+> When he died, these possessions were returned to their owner. (Mila 011b:T409)
 
 ~~~ ann
 ཨ་ཁུ་དང་ཨ་ནེ་ལ་ཤ་ཁོག་འཛུགས།
@@ -30,34 +56,10 @@ R22	obl-arg Arg1:T125 Arg2:T122
 ~~~
 > To my aunt and uncle we presented an entire animal carcass. (Mila 11a:T120)
 
-~~~ ann
-སེམས་ཅན་ཆེན་པོས་སྟག་མོ་ལ་ལུས་སྦྱན་པ་ཟེར་ཡས་ལེའུ་དེ་རེད།
-T1  NOUN 0 8 སེམས་ཅན་
-A1a Number T1 Sing
-T2  ADJ 8 14  ཆེན་པོས་
-T4  NOUN 16 23 སྟག་མོ་
-A4a Number T4 Sing
-T6  NOUN 25 29 ལུས་
-A6a Number T6 Sing
-T7  VERB 29 37 སྦྱན་པ་
-A7a Tense T7 Invar
-A7b VerbForm T7 Vnoun
-R7a arg1 Arg1:T7 Arg2:T1
-R7b arg2 Arg1:T7 Arg2:T6
-R7c obl:arg Arg1:T7 Arg2:T4
-T8  VERB 37 41 ཟེར་
-A8a Mood T8 Qot
-T10 NOUN 44 49 ལེའུ་
-A10a  Number T10 Sing
-T11 DET 49 52 དེ་√d
-A11a  PronType T11 Dem
-T12 VERB 52 55 རེད་
-A12a  Tense T12 Invar
-~~~
-> _This is the chapter on the story of the great sentient being giving his body to the tigress._ (MT - An Oral Commentary on The Tale of the Hungry Tigress: A Reader of Classical Tibetan 1.1)
+Other verbs may also subcategorise for `obl:arg`.
 
 ~~~ ann
-ནས་དཀར་མོ་མང་པོ་ལ་ཕྱེ་བྱས།
+ནས་དཀར་མོ་མང་པོ་ལ་ཕྱེ་བྱས། ནག་མོ་མང་པོ་ཆང་དུ་བཙོས་པས།
 T44     NOUN 0 3        ནས་
 A44a    Number T44 Coll
 T45     ADJ 3 10        དཀར་མོ་
@@ -69,29 +71,21 @@ A48a    Number T48 Sing
 T49     VERB 22 25      བྱས
 A49a    Tense T49 Past
 T50     PUNCT 25 26     །
+T52	ADJ 27 33	ནག་མོ་
+T53	ADJ 33 39	མང་པོ་
+T54	NOUN 39 42	ཆང་
+A54a	Number T54 Coll
+T55	ADP 42 45	དུ་
+A55a	Case T55 Ter
+T56	VERB 45 51	བཙོས་པ
+A56a	Tense T56 Past
+A56b	VerbForm T56 Vnoun
+T57	ADP 51 52	ས
+A57a	Case T57 Agn
+T58	PUNCT 52 53	།
 R3      arg2-lvc Arg1:T49 Arg2:T48
 R4      obl-arg Arg1:T49 Arg2:T44
+R3	arg2-lvc Arg1:T49 Arg2:T48
+R4	obl-arg Arg1:T49 Arg2:T44
 ~~~
-> He ground a large amount of white barley into flour. (CT - Mila 11a)
-
-~~~ ann
-ཆུ་ལ་བྲེས་འཇལ་བྱེད་
-T491    NOUN 0 3        ཆུ་
-A491a   Number T491 Coll
-T492    ADP 3 5 ལ་
-A492a   Case T492 All
-T493    NOUN 5 8        བྲེ
-A493a   Number T493 Sing
-T494    ADP 8 10        ས་
-A494a   Case T494 Agn
-T495    VERB 10 14      འཇལ་
-A495a   Tense T495 Pres
-T496    VERB 14 19      བྱེད་
-A496a   Tense T496 Pres
-R34     aux Arg1:T495 Arg2:T496
-R37     obl-arg Arg1:T495 Arg2:T491
-R87     obl Arg1:T495 Arg2:T493
-R34     aux Arg1:T495 Arg2:T496
-R35     argcl Arg1:T497 Arg2:T496
-~~~
-> One measures [running] water with a _bre_. (CT - Mila 11b)
+> He ground a large amount of white barley into flour, and brewed a good deal of black barley into beer. (Mila 11a:T44)
