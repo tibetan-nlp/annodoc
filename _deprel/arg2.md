@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: arg2 
+title: arg2
 shortdef: the second argument or "object" of a verb, which cannot be oblique
 ---
 The arguments of a two-place predicate are marked `arg1` and `arg2`, as in the
@@ -30,6 +30,4 @@ T469    PUNCT 34 35     །
 R23     arg1 Arg1:T468 Arg2:T466
 R24     arg2 Arg1:T468 Arg2:T465
 ~~~
-> _Who wrote your will?_ (CT - Mila 11b:T461)
-
-
+> _Who wrote the text of your testament?_ (CT - Mila 11b:T461)
