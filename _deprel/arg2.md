@@ -30,4 +30,4 @@ T469    PUNCT 34 35     །
 R23     arg1 Arg1:T468 Arg2:T466
 R24     arg2 Arg1:T468 Arg2:T465
 ~~~
-> _Who wrote the text of your testament?_ (CT - Mila 11b:T461)
+> _Who wrote the text of your testament?_ ([Mila 11b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/011a?focus=T468))
