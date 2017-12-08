@@ -23,6 +23,28 @@ R32	arg1 Arg1:T1542 Arg2:T1537
 ~~~
 > Then I too shed many tears. ([Mila 13a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/013a?focus=T1542))
 
+And another with _yid ches_ "to believe":
+~~~ ann
+ང་ནི་ཡིད་ཅིག་མ་ཆེས་ཏེ།
+T2587	PRON 0 2	ང་
+A2587a	PronType T2587 Prs
+T2588	PART 2 5	ནི་
+T2589	NOUN 5 9	ཡིད་
+A2589a	Number T2589 Sing
+T2590	DET 9 13	ཅིག་
+A2590a	PronType T2590 Ind
+T2591	PART 13 15	མ་
+A2591a	Polarity T2591 Neg
+T2592	VERB 15 19	ཆེས་
+A2592a	Tense T2592 Past
+T2593	SCONJ 19 21	ཏེ
+A2593a	Case T2593 Sem
+T2594	PUNCT 21 22	།
+R36	arg1 Arg1:T2592 Arg2:T2587
+R37	arg2-lvc Arg1:T2592 Arg2:T2589
+~~~
+> But I was not convinced. ([Mila 14b])(http://tibetanverbs.soas.ac.uk/~badw/#/mila/014b?focus=T2592))
+
 The following example illustrates _sdug po gtong_ "to torment":
 ~~~ ann
 ཁྱོད་ལ་ཡུལ་མིས་སྡུག་པོ་ཅི་འདྲ་བཏང་གསུང་།
@@ -52,7 +74,7 @@ R73	obl-arg Arg1:T3097 Arg2:T3090
 > "How have your countrymen tormented you?" asked (the lama). ([Mila 15a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015a?focus=T3097))
 
 The following example is excellent, in that it exhibits not one, not two, but three
-cases of `arg2:lvc`: _sems 'phreng_ "to be attached", _mig lta_ "to look", and 
+cases of `arg2:lvc`: _sems 'phreng_ "to be attached", _mig lta_ "to look", and
 _mchi ma shor_ "to shed tears".
 
 ~~~ ann
