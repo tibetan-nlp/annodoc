@@ -56,7 +56,7 @@ R22	obl-arg Arg1:T125 Arg2:T122
 ~~~
 > To my aunt and uncle we presented an entire animal carcass. ([Mila 11a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/011a?focus=T125))
 
-Other verbs may also subcategorise for `obl:arg` - note the argument structure of _byed_ "to make" and _'tshod_ "to cook/boil".
+Other verbs may also subcategorise for `obl:arg`; note the argument structure of _byed_ "to make" and _'tshod_ "to cook/boil".
 
 ~~~ ann
 ནས་དཀར་མོ་མང་པོ་ལ་ཕྱེ་བྱས། ནག་མོ་མང་པོ་ཆང་དུ་བཙོས་པས།
