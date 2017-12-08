@@ -55,3 +55,41 @@ R31	aux-lvc Arg1:T2952 Arg2:T2954
 R33	aux Arg1:T2954 Arg2:T2956
 ~~~
 > I then went to see the lama, who asked, "Töpaga, why did you not return home?" ([Mila 15a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015a?focus=T2952))
+
+In the following example we have _'gyel gtong_ "to send-collapse":
+~~~ ann
+ང་ལ་མཐུ་གཟའ་གདོང་དམར་ནག་ཞེས་བྱ་བ་ཧཱུཾ་ཤི་དང་ཕཊ་འགྱེལ་ཐོངས་པ་གཅིག་ཡོད་པ་དེ།
+T3353	PRON 0 2	ང་
+A3353a	PronType T3353 Prs
+T3354	ADP 2 4	ལ་
+A3354a	Case T3354 All
+T3355	NOUN 4 8	མཐུ་
+A3355a	Number T3355 Sing
+T3356	PROPN 8 24	གཟའ་གདོང་དམར་ནག་
+T3357	VERB 24 28	ཞེས་
+A3357a	Mood T3357 Qot
+T3358	VERB 28 33	བྱ་བ་
+A3358a	Tense T3358 Fut
+A3358b	VerbForm T3358 Vnoun
+T3359	X 33 41	ཧཱུཾ་ཤི་
+T3360	ADP 41 44	དང་
+A3360a	Case T3360 Com
+T3361	X 44 47	ཕཊ་
+T3362	VERB 47 53	འགྱེལ་
+T3363	VERB 53 60	ཐོངས་པ་
+A3363a	Mood T3363 Imp
+A3363b	VerbForm T3363 Vnoun
+T3364	NUM 60 65	གཅིག་
+A3364a	NumType T3364 Card
+A3364b	NumForm T3364 Word
+T3365	VERB 65 71	ཡོད་པ་
+A3365a	VerbForm T3365 Vnoun
+T3366	DET 71 73	དེ
+A3366a	PronType T3366 Dem
+T3367	PUNCT 73 74	།
+R40	arg2 Arg1:T3358 Arg2:T3356
+R43	aux-lvc Arg1:T3362 Arg2:T3363
+R41	arg1 Arg1:T3365 Arg2:T3355
+R42	obl Arg1:T3365 Arg2:T3353
+~~~
+> I possess a black magic rite called Zadong Marnak (Dark Red Faced Dza) that, when cast, kills with the syllable hūṃ and causes unconsciousness with the syllable phaṭ. ([Mila 15b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015b?focus=T3363))
