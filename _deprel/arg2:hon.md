@@ -78,7 +78,7 @@ R16	argcl Arg1:T2510 Arg2:T2507
 R17	aux Arg1:T2507 Arg2:T2509
 R18	obl-arg Arg1:T2507 Arg2:T2503
 ~~~
-> The lama smiled and replied, "I shall think over what you have said." ([Mila 14b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/014bfocus=T2495))
+> The lama smiled and replied, "I shall think over what you have said." ([Mila 14b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/014b/focus=T2495))
 
 **Admin:** *Evaluate the following examples.*
 ```
