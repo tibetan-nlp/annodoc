@@ -92,4 +92,51 @@ R43	aux-lvc Arg1:T3362 Arg2:T3363
 R41	arg1 Arg1:T3365 Arg2:T3355
 R42	obl Arg1:T3365 Arg2:T3353
 ~~~
-> I possess a black magic rite called Zadong Marnak (Dark Red Faced Dza) that, when cast, kills with the syllable hūṃ and causes unconsciousness with the syllable phaṭ. ([Mila 15b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015b?focus=T3363))
+> I possess a black magic rite called Zadong Marnak (Dark Red Faced Dza) that, when cast, kills with the syllable hūṃ and causes unconsciousness with the syllable phaṭ. ([Mila 15b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015b?focus=T3362))
+
+A frequent second verb in such constructions is _song_, a suppletive past stem of _'gro_ "to go".
+In Modern Tibetan, _song_ is typically characterized as a full-fledged evidential auxiliary marking
+witnessed past, and so questions arise as to whether some of its uses in the Milarepa text share
+these features.
+
+~~~ ann
+དེ་ནས་ཁང་ཐོག་ལ་འཛེགས་སོང་སྟེ། ཡུམ་གྱིས་བེམ་པོའི་ནང་ནས་གསེར་བཏོན།
+T5962	DET 0 3	དེ་
+A5962a	PronType T5962 Dem
+T5963	ADP 3 6	ནས་
+A5963a	Case T5963 Ela
+T5964	NOUN 6 13	ཁང་ཐོག་
+A5964a	Number T5964 Sing
+T5965	ADP 13 15	ལ་
+A5965a	Case T5965 All
+T5966	VERB 15 21	འཛེགས་
+A5966a	Tense T5966 Past
+T5967	VERB 21 25	སོང་
+A5967a	Tense T5967 Past
+T5968	SCONJ 25 28	སྟེ
+A5968a	Case T5968 Sem
+T5969	PUNCT 28 29	།
+T5971	NOUN 29 33	ཡུམ་
+A5971a	Number T5971 Sing
+T5972	ADP 33 38	གྱིས་
+A5972a	Case T5972 Agn
+T5973	NOUN 38 44	བེམ་པོ
+A5973a	Number T5973 Sing
+T5974	ADP 44 47	འི་
+A5974a	Case T5974 Gen
+T5975	NOUN 47 50	ནང་
+A5975a	NounType T5975 Rel
+T5976	ADP 50 53	ནས་
+A5976a	Case T5976 Ela
+T5977	NOUN 53 58	གསེར་
+A5977a	Number T5977 Coll
+T5978	VERB 58 62	བཏོན
+A5978a	Tense T5978 Past
+T5979	PUNCT 62 63	།
+R54	aux-lvc Arg1:T5966 Arg2:T5967
+R55	obl Arg1:T5966 Arg2:T5964
+R56	arg1 Arg1:T5978 Arg2:T5971
+R57	arg2 Arg1:T5978 Arg2:T5977
+R58	obl Arg1:T5978 Arg2:T5975
+~~~
+> Then, having slipped up to the roof, the lama’s wife removed the gold from inside the cloak. ([Mila 019a:T5966])
