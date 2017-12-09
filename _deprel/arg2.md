@@ -3,7 +3,7 @@ layout: entry
 title: arg2
 shortdef: the second argument or "object" of a verb, which cannot be oblique
 ---
-The second argument of a two-place verb is linked to it via the `arg2` relation. `arg2` is roughly equivalent to the UD relation [`obj`](http://universaldependencies.org/u/dep/obj.html), but is preferred as a less opinionated label.
+The second argument of a two-place verb is linked to it via the `arg2` relation. `arg2` is roughly equivalent to the UD relation [`obj`](http://universaldependencies.org/u/dep/obj.html), but is preferred as the less opinionated label.
 ~~~ ann
 ཁྱོད་ཀྱི་ཁ་ཆེམས་ཀྱི་ཡི་གེ་སུས་བྲིས།
 T461    PRON 0 5        ཁྱོད་
