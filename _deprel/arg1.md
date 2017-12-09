@@ -81,7 +81,7 @@ T2594	PUNCT 21 22	།
 R36	arg1 Arg1:T2592 Arg2:T2587
 R37	arg2-lvc Arg1:T2592 Arg2:T2589
 ~~~
-> But I was not convinced. ([Mila 14b])(http://tibetanverbs.soas.ac.uk/~badw/#/mila/014b?focus=T2592))
+> But I was not convinced. ([Mila 14b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/014b?focus=T2592))
 
 Finally, departing from some analyses, obliques are not allowed to be `arg1`,
 and so the `arg1` of a verb of possession like _yod_ is the possessed element
