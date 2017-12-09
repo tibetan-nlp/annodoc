@@ -56,6 +56,94 @@ R33	aux Arg1:T2954 Arg2:T2956
 ~~~
 > I then went to see the lama, who asked, "Töpaga, why did you not return home?" ([Mila 15a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015a?focus=T2952))
 
+Verbs of motion are common second verbs in such constructions,
+as in the following example with _khyer phyin_ "to bring-go".
+~~~ ann
+ཡང་བུམ་པ་གང་ཁྱེར་ཕྱིན་པས། དེ་ས་ལ་སྐུངས་དབུ་ཞྭ་བཀབ་སྟེ།
+T9025	ADV 0 3	ཡང་
+A9025a	PronType T9025 Dem
+T9026	NOUN 3 9	བུམ་པ་
+A9026a	Number T9026 Sing
+T9027	ADJ 9 12	གང་
+T9028	VERB 12 17	ཁྱེར་
+A9028a	Tense T9028 Fut/Past
+T9029	VERB 17 23	ཕྱིན་པ
+A9029a	Tense T9029 Past
+A9029b	VerbForm T9029 Vnoun
+T9030	ADP 23 24	ས
+A9030a	Case T9030 Agn
+T9031	PUNCT 24 25	།
+T9033	DET 26 29	དེ་
+A9033a	PronType T9033 Dem
+T9034	NOUN 29 31	ས་
+A9034a	Number T9034 Sing
+T9035	ADP 31 33	ལ་
+A9035a	Case T9035 All
+T9036	VERB 33 39	སྐུངས་
+A9036a	Tense T9036 Past
+T9037	NOUN 39 46	དབུ་ཞྭ་
+A9037a	Number T9037 Sing
+T9038	VERB 46 50	བཀབ་
+A9038a	Tense T9038 Past
+T9039	SCONJ 50 53	སྟེ
+A9039a	Case T9039 Sem
+T9040	PUNCT 53 54	།
+R56	arg2 Arg1:T9028 Arg2:T9026
+R57	aux-lvc Arg1:T9028 Arg2:T9029
+R58	arg2 Arg1:T9036 Arg2:T9033
+R59	obl Arg1:T9036 Arg2:T9034
+R60	arg2 Arg1:T9038 Arg2:T9037
+~~~
+> She brought another full jar of beer, which he buried in the ground and covered with his hat. ([Mila 23b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/023b?focus=T9028))
+
+A frequent second verb in such constructions is _song_, a suppletive past stem of _'gro_ "to go".
+In Modern Tibetan, _song_ is typically characterized as a full-fledged evidential auxiliary marking
+witnessed past, and so questions arise as to whether some of its uses in the Milarepa text share
+these features.
+
+~~~ ann
+དེ་ནས་ཁང་ཐོག་ལ་འཛེགས་སོང་སྟེ། ཡུམ་གྱིས་བེམ་པོའི་ནང་ནས་གསེར་བཏོན།
+T5962	DET 0 3	དེ་
+A5962a	PronType T5962 Dem
+T5963	ADP 3 6	ནས་
+A5963a	Case T5963 Ela
+T5964	NOUN 6 13	ཁང་ཐོག་
+A5964a	Number T5964 Sing
+T5965	ADP 13 15	ལ་
+A5965a	Case T5965 All
+T5966	VERB 15 21	འཛེགས་
+A5966a	Tense T5966 Past
+T5967	VERB 21 25	སོང་
+A5967a	Tense T5967 Past
+T5968	SCONJ 25 28	སྟེ
+A5968a	Case T5968 Sem
+T5969	PUNCT 28 29	།
+T5971	NOUN 30 34	ཡུམ་
+A5971a	Number T5971 Sing
+T5972	ADP 34 39	གྱིས་
+A5972a	Case T5972 Agn
+T5973	NOUN 39 45	བེམ་པོ
+A5973a	Number T5973 Sing
+T5974	ADP 45 48	འི་
+A5974a	Case T5974 Gen
+T5975	NOUN 48 51	ནང་
+A5975a	NounType T5975 Rel
+T5976	ADP 51 54	ནས་
+A5976a	Case T5976 Ela
+T5977	NOUN 54 59	གསེར་
+A5977a	Number T5977 Coll
+T5978	VERB 59 63	བཏོན
+A5978a	Tense T5978 Past
+T5979	PUNCT 63 64	།
+R54	aux-lvc Arg1:T5966 Arg2:T5967
+R55	obl Arg1:T5966 Arg2:T5964
+R56	arg1 Arg1:T5978 Arg2:T5971
+R57	arg2 Arg1:T5978 Arg2:T5977
+R58	obl Arg1:T5978 Arg2:T5975
+~~~
+> Then, having slipped up to the roof, the lama’s wife removed the gold from inside the cloak. ([Mila 019a:T5966](http://tibetanverbs.soas.ac.uk/~badw/#/mila/019a?focus=T5966))
+
+The second verb in a complex verb construction is not limited to verbs of motion.
 In the following example we have _'gyel gtong_ "to send-collapse":
 ~~~ ann
 ང་ལ་མཐུ་གཟའ་གདོང་དམར་ནག་ཞེས་བྱ་བ་ཧཱུཾ་ཤི་དང་ཕཊ་འགྱེལ་ཐོངས་པ་གཅིག་ཡོད་པ་དེ།
@@ -93,50 +181,3 @@ R41	arg1 Arg1:T3365 Arg2:T3355
 R42	obl Arg1:T3365 Arg2:T3353
 ~~~
 > I possess a black magic rite called Zadong Marnak (Dark Red Faced Dza) that, when cast, kills with the syllable hūṃ and causes unconsciousness with the syllable phaṭ. ([Mila 15b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015b?focus=T3362))
-
-A frequent second verb in such constructions is _song_, a suppletive past stem of _'gro_ "to go".
-In Modern Tibetan, _song_ is typically characterized as a full-fledged evidential auxiliary marking
-witnessed past, and so questions arise as to whether some of its uses in the Milarepa text share
-these features.
-
-~~~ ann
-དེ་ནས་ཁང་ཐོག་ལ་འཛེགས་སོང་སྟེ། ཡུམ་གྱིས་བེམ་པོའི་ནང་ནས་གསེར་བཏོན།
-T5962	DET 0 3	དེ་
-A5962a	PronType T5962 Dem
-T5963	ADP 3 6	ནས་
-A5963a	Case T5963 Ela
-T5964	NOUN 6 13	ཁང་ཐོག་
-A5964a	Number T5964 Sing
-T5965	ADP 13 15	ལ་
-A5965a	Case T5965 All
-T5966	VERB 15 21	འཛེགས་
-A5966a	Tense T5966 Past
-T5967	VERB 21 25	སོང་
-A5967a	Tense T5967 Past
-T5968	SCONJ 25 28	སྟེ
-A5968a	Case T5968 Sem
-T5969	PUNCT 28 29	།
-T5971	NOUN 29 33	ཡུམ་
-A5971a	Number T5971 Sing
-T5972	ADP 33 38	གྱིས་
-A5972a	Case T5972 Agn
-T5973	NOUN 38 44	བེམ་པོ
-A5973a	Number T5973 Sing
-T5974	ADP 44 47	འི་
-A5974a	Case T5974 Gen
-T5975	NOUN 47 50	ནང་
-A5975a	NounType T5975 Rel
-T5976	ADP 50 53	ནས་
-A5976a	Case T5976 Ela
-T5977	NOUN 53 58	གསེར་
-A5977a	Number T5977 Coll
-T5978	VERB 58 62	བཏོན
-A5978a	Tense T5978 Past
-T5979	PUNCT 62 63	།
-R54	aux-lvc Arg1:T5966 Arg2:T5967
-R55	obl Arg1:T5966 Arg2:T5964
-R56	arg1 Arg1:T5978 Arg2:T5971
-R57	arg2 Arg1:T5978 Arg2:T5977
-R58	obl Arg1:T5978 Arg2:T5975
-~~~
-> Then, having slipped up to the roof, the lama’s wife removed the gold from inside the cloak. ([Mila 019a:T5966])
