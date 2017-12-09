@@ -3,31 +3,30 @@ layout: entry
 title: arg1:lvc
 shortdef: the first argument or "subject" of a verb, with which it forms a complex predicate
 ---
-In most cases that we are aware of, the `NOUN` in a light verb construction is in the `arg2` or "object" position. However, an `arg1` can also be a light noun, as in the following example with ཡོད་. This is likely because the oblique possessor can be considered an argument (`obl:arg`).
-
+Because we consider the possessed nominal of the verb _yod_ to be an `arg1`, idiomatic constructions involving this verb will have an `arg1:lvc`. So the verb common idiom _rgyus yod_ "to have knowledge of" links _rgyus_ to _yod_ via the `arg1:lvc` relation. Moreover, the construction introduces an `arg2`, as illustrated below.
 ~~~ ann
-ཞལ་ཆེམས་ཀྱི་ཡི་གེ་རྒྱུས་ཡོད་པ་
-T110  NOUN 0 8  ཞལ་ཆེམས་
-A110a Number T110 Sing
-T111  ADP 8 12  ཀྱི་
-A111a Case T111 Gen
-T112  NOUN 12 18  ཡི་གེ་
-A112a Number T112 Sing
-T113  NOUN 18 24  རྒྱུས་
-A113a Number T113 Sing
-T114  VERB 24 30  ཡོད་པ་
-A114a VerbForm T114 Vnoun
-R35 arg1:lvc Arg1:T114 Arg2:T113
-R70 arg2 Arg1:T114 Arg2:T112
+ལུང་བ་དང་ཉེ་ཚན་རྒྱུས་མེད་པས་མཆི་མ་མང་པོ་ཤོར།
+T5695	NOUN 0 6	ལུང་བ་
+A5695a	Number T5695 Sing
+T5696	ADP 6 9	དང་
+A5696a	Case T5696 Com
+T5697	NOUN 9 15	ཉེ་ཚན་
+A5697a	Number T5697 Sing
+T5698	NOUN 15 21	རྒྱུས་
+A5698a	Number T5698 Sing
+T5699	VERB 21 26	མེད་པ
+A5699a	Polarity T5699 Neg
+A5699b	VerbForm T5699 Vnoun
+T5700	ADP 26 28	ས་
+A5700a	Case T5700 Agn
+T5701	NOUN 28 34	མཆི་མ་
+A5701a	Number T5701 Sing
+T5702	ADJ 34 40	མང་པོ་
+T5703	VERB 40 43	ཤོར
+A5703a	Tense T5703 Past
+T5704	PUNCT 43 44	།
+R7	arg1-lvc Arg1:T5699 Arg2:T5698
+R8	arg2-lvc Arg1:T5703 Arg2:T5701
+R9	arg2 Arg1:T5699 Arg2:T5697
 ~~~
-> _[They] had knowledge of the written testament._ ([Mila 11a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/011a?focus=T114))
-
-Here, `arg1:lvc` is རྒྱུས་ "knowledge" and `arg2` is ཡི་གེ་ "letter".
-
-**Admin:** *Evaluate the following examples.*
-```
-/mila/017b?focus=T4790
-/mila/021b?focus=T7580
-/mila/021b?focus=T7782
-/mila/023a?focus=T8507
-```
+> I was unfamiliar with that region or those relations so I broke down in tears. ([Mila 18b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/018b?focus=T5699))
