@@ -141,7 +141,7 @@ R56	arg1 Arg1:T5978 Arg2:T5971
 R57	arg2 Arg1:T5978 Arg2:T5977
 R58	obl Arg1:T5978 Arg2:T5975
 ~~~
-> Then, having slipped up to the roof, the lama’s wife removed the gold from inside the cloak. ([Mila 019a:T5966](http://tibetanverbs.soas.ac.uk/~badw/#/mila/019a?focus=T5966))
+> Then, having slipped up to the roof, the lama’s wife removed the gold from inside the cloak. ([Mila 019a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/019a?focus=T5966))
 
 The second verb in a complex verb construction is not limited to verbs of motion.
 In the following example we have _'gyel gtong_ "to send-collapse":
