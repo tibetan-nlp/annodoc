@@ -1,11 +1,11 @@
 ---
 layout: entry
-title: arg3 
+title: arg3
 shortdef: the third argument or "indirect object" of a verb, which cannot be oblique
 ---
-When a verb has two unmarked arguments in addition to having an `arg1` argument,
-then we classify it as a three-place predicate with no obliques. For example:
+When a verb has two unmarked arguments in addition to having an `arg1` argument, then we classify it as a three-place predicate with no obliques, and the third argument is marked `arg3`.
 
+The instances of `arg3` that we have found fall into two types. In the first type, a normally oblique argument - for example, the recipient of a verb of transfer - occurs without its usual oblique marking.
 ~~~ ann
 ངེད་མ་སྨད་ཨ་ཁུ་དང་ཨ་ནེས་གཤའ་མ་རང་མ་བཅོལ་
 T924    PRON 0 4        ངེད་
@@ -34,3 +34,77 @@ R55     arg3 Arg1:T933 Arg2:T925
 ~~~
 > Uncle and aunt did not return to us (mother and children), what was rightfully ours. ([Mila 12a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/012a?focus=T933))
 
+The second type of `arg3` involves honorific or light verb constructions in which the `arg2` is semantically marginalized. It is easy to imagine a different approach in which the `arg2` does not have argument status, and the `arg3` is promoted to `arg2`, reflecting its semantic role.
+~~~ ann
+ང་མི་ཐོད་གད་ཁ་ན་ཀློག་སློབ་དུས་རྩའི་མདའ་རུ། སྐྱིད་སྟོན་གྱི་ཆང་ས་ཆེན་པོ་ཅིག་བྱུང་བ་དེའི་གྲལ་དབུ་ལ་སློབ་དཔོན་སྤྱན་དྲངས་པའི་ཕྱགས་ཕྱི་ལ་ངས་ཀྱང་ཕྱིན།
+T1214	PRON 0 2	ང་
+A1214a	PronType T1214 Prs
+T1215	PROPN 2 14	མི་ཐོད་གད་ཁ་
+T1216	ADP 14 16	ན་
+A1216a	Case T1216 Loc
+T1217	VERB 16 21	ཀློག་
+A1217a	Tense T1217 Pres
+T1218	VERB 21 26	སློབ་
+A1218a	Tense T1218 Pres
+T1219	NOUN 26 30	དུས་
+A1219a	NounType T1219 Rel
+T1220	PROPN 30 32	རྩ
+T1221	ADP 32 35	འི་
+A1221a	Case T1221 Gen
+T1222	NOUN 35 39	མདའ་
+A1222a	Number T1222 Sing
+T1223	ADP 39 41	རུ
+A1223a	Case T1223 Ter
+T1224	PUNCT 41 42	།
+T1226	NOUN 43 54	སྐྱིད་སྟོན་
+A1226a	Number T1226 Sing
+T1227	ADP 54 58	གྱི་
+A1227a	Case T1227 Gen
+T1228	NOUN 58 63	ཆང་ས་
+A1228a	Number T1228 Sing
+T1229	ADJ 63 70	ཆེན་པོ་
+T1230	DET 70 74	ཅིག་
+A1230a	PronType T1230 Ind
+T1231	VERB 74 81	བྱུང་བ་
+A1231a	Tense T1231 Past
+A1231b	VerbForm T1231 Vnoun
+T1232	DET 81 83	དེ
+A1232a	PronType T1232 Dem
+T1233	ADP 83 86	འི་
+A1233a	Case T1233 Gen
+T1234	NOUN 86 94	གྲལ་དབུ་
+A1234a	Number T1234 Sing
+T1235	ADP 94 96	ལ་
+A1235a	Case T1235 All
+T1236	NOUN 96 106	སློབ་དཔོན་
+A1236a	Number T1236 Sing
+T1237	NOUN 106 111	སྤྱན་
+A1237a	Number T1237 Sing
+T1238	VERB 111 117	དྲངས་པ
+A1238a	Tense T1238 Past
+A1238b	VerbForm T1238 Vnoun
+T1239	ADP 117 120	འི་
+A1239a	Case T1239 Gen
+T1240	NOUN 120 129	ཕྱགས་ཕྱི་
+A1240a	Number T1240 Sing
+T1241	ADP 129 131	ལ་
+A1241a	Case T1241 All
+T1242	PRON 131 132	ང
+A1242a	PronType T1242 Prs
+T1243	ADP 132 134	ས་
+A1243a	Case T1243 Agn
+T1244	PART 134 138	ཀྱང་
+T1245	VERB 138 142	ཕྱིན
+A1245a	Tense T1245 Past
+T1246	PUNCT 142 143	།
+R33	argcl Arg1:T1218 Arg2:T1217
+R34	arg1 Arg1:T1218 Arg2:T1214
+R35	obl Arg1:T1218 Arg2:T1215
+R36	arg1 Arg1:T1231 Arg2:T1228
+R37	arg2-hon Arg1:T1238 Arg2:T1237
+R38	arg3 Arg1:T1238 Arg2:T1236
+R39	arg1 Arg1:T1245 Arg2:T1242
+R40	obl Arg1:T1245 Arg2:T1240
+R41	obl Arg1:T1238 Arg2:T1234
+~~~
+> While studying to read in Mithögeka, one day I accompanied my master to the lower valley of Tsa where he was invited to preside over a great wedding feast. ([Mila 12b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/012b?focus=T1238))
