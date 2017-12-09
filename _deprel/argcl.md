@@ -1,117 +1,81 @@
 ---
 layout: entry
-title: argcl 
+title: argcl
 shortdef: the clausal argument of a verb
 ---
-The following example shows a clausal argument of the verb བསམས་ "think".
-The content head word of the embedded clause (the verb བསྡད་) is linked to this
-verb by the `argcl` relationship.
+The relation `argcl` subsumes two dependency relations from the UD project: [`ccomp`](http://universaldependencies.org/u/dep/ccomp.html) and [`xcomp`](http://universaldependencies.org/u/dep/xcomp.html). `ccomp` is intended for clausal complements that have overt subjects - for example, the complement clause in _He said that I would leave_ - while `xcomp` is intended for clausal complements with obligatorily covert controlled subjects. Since Tibetan regularly drops pronouns, and in particular subjects, this distinction was difficult for annotators to make. Therefore we decided to merge the two relations into a single relation called `argcl`.
 
+On the face of it, `argcl` constructions can look similar to complex verb constructions, however, they should not be confused. In the following example, _gsung_ "to say" has its own arguments, completely distinct from the arguments of the verb that precedes it.
 ~~~ ann
-ནང་ལ་བསྡད་འདུག་ག་ངས་ནི་རང་བསྡད་ཨ་ཡོད་བསམས་བྱུང་།
-T1  NOUN 0 3 ནང་
-A1a Number T1 Sing
-T3  VERB 5 10  བསྡད་
-A3a Tense T3 Past
-T4  VERB 10 15 འདུག་
-A4a Tense T4 Invar
-T6  PRON 17 18 ང་
-A6a PronType T6 Pers
-T8  PRON 23 26 རང་
-A8a PronType T8 Pers
-T9  VERB 26 31 བསྡད་
-A9a Tense T9 Past
-R9a arg1 Arg1:T9 Arg2:T8
-T11 VERB 33 37 ཡོད་
-A11a  Tense T11 Invar
-T12 VERB 37 42 སེམས་
-A12a  Tense T12 Past
-R12a  arg1 Arg1:T12 Arg2:T6
-R12b  argcl Arg1:T12 Arg2:T9
-T13 VERB 42 47 བྱུང་√x
-A13a  Tense T13 Invar
+ཁྱོད་ལ་ཡུལ་མིས་སྡུག་པོ་ཅི་འདྲ་བཏང་གསུང་།
+T3090	PRON 0 5	ཁྱོད་
+A3090a	PronType T3090 Prs
+T3091	ADP 5 7	ལ་
+A3091a	Case T3091 All
+T3092	NOUN 7 13	ཡུལ་མི
+A3092a	Number T3092 Sing
+T3093	ADP 13 15	ས་
+A3093a	Case T3093 Agn
+T3094	NOUN 15 23	སྡུག་པོ་
+A3094a	Number T3094 Sing
+T3095	PRON 23 26	ཅི་
+A3095a	PronType T3095 Int
+T3096	NOUN 26 30	འདྲ་
+A3096a	NounType T3096 Rel
+T3097	VERB 30 34	བཏང་
+A3097a	Tense T3097 Past
+T3098	VERB 34 39	གསུང་
+T3099	PUNCT 39 40	།
+R70	argcl Arg1:T3098 Arg2:T3097
+R71	arg2-lvc Arg1:T3097 Arg2:T3094
+R72	arg1 Arg1:T3097 Arg2:T3092
+R73	obl-arg Arg1:T3097 Arg2:T3090
 ~~~
-> _You're home. I thought you might not be home._ (MT - A Handmade Altar)
+> "How have your countrymen tormented you?" asked (the lama). ([Mila 15a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015a?focus=T3097))
 
-In the following example, the verb ཕྱིན་ takes a
-clausal argument where the embedded subject (the subject of ཕུལ་)
-must be the same as its own subject. (In UD, this is called an
-`xcomp` as opposed to a `ccomp`, but for simplicity we lump both
-categories together under `argcl`.)
-
+The `argcl` arc must point to the head of the embedded clause. So if the main verb of a clause is followed by auxiliaries, the arc should point to the main verb rather than the auxiliaries:
 ~~~ ann
-ཨ་ནི་ངས་ཨང་ཀི་དེ་ཕུལ་གག་ཕྱིན།
-T2  PRON 5 6 ང་
-T4  NOUN 8 14  ཨང་ཀི་
-A4a Number T4 Sing
-T5  DET 14 17 དེ་√d
-A5a PronType T5 Dem
-T6  VERB 17 21 འབུལ་
-R6a arg2 Arg1:T6 Arg2:T4
-T7  VERB 24 28 ཕྱིན་
-A7a Tense T7 Past
-R7a arg1 Arg1:T7 Arg2:T2
-R7b argcl Arg1:T7 Arg2:T6
+བླ་མའི་དྲུང་དུ་ཕྱིན་པས། བླ་མའི་ཞལ་ཏ་ལ་ཐོས་པ་དགའ་ཁྱོད་ལོག་མི་འགྲོ་བ་ཅི་ཡིན་གསུང་།
+T2938	NOUN 0 4	བླ་མ
+A2938a	Number T2938 Sing
+T2939	ADP 4 7	འི་
+A2939a	Case T2939 Gen
+T2940	NOUN 7 12	དྲུང་
+A2940a	NounType T2940 Rel
+T2941	ADP 12 15	དུ་
+A2941a	Case T2941 Ter
+T2942	VERB 15 21	ཕྱིན་པ
+A2942a	Tense T2942 Past
+A2942b	VerbForm T2942 Vnoun
+T2943	ADP 21 22	ས
+A2943a	Case T2943 Agn
+T2944	PUNCT 22 23	།
+T2946	NOUN 24 28	བླ་མ
+A2946a	Number T2946 Sing
+T2947	ADP 28 31	འི་
+A2947a	Case T2947 Gen
+T2948	NOUN 31 36	ཞལ་ཏ་
+A2948a	Number T2948 Sing
+T2949	ADP 36 38	ལ་
+A2949a	Case T2949 All
+T2950	PROPN 38 48	ཐོས་པ་དགའ་
+T2951	PRON 48 53	ཁྱོད་
+A2951a	PronType T2951 Prs
+T2952	VERB 53 57	ལོག་
+T2953	PART 57 60	མི་
+A2953a	Polarity T2953 Neg
+T2954	VERB 60 67	འགྲོ་བ་
+A2954a	Tense T2954 Fut/Pres
+A2954b	VerbForm T2954 Vnoun
+T2955	PRON 67 70	ཅི་
+A2955a	PronType T2955 Int
+T2956	AUX 70 74	ཡིན་
+T2957	VERB 74 79	གསུང་
+T2958	PUNCT 79 80	།
+R30	obl Arg1:T2942 Arg2:T2940
+R32	argcl Arg1:T2957 Arg2:T2952
+R34	arg1 Arg1:T2952 Arg2:T2950
+R31	aux-lvc Arg1:T2952 Arg2:T2954
+R33	aux Arg1:T2954 Arg2:T2956
 ~~~
-> _I will go give the number._ (MT - A Visit to the Hospital, Abridged)
-
-Take care that the `argcl` arc points to the head of the embedded clause.
-For example, if the main verb of a clause is followed by auxiliaries, point
-to the main verb rather than the auxiliaries.
-
-~~~ ann
-ལར་མི་ངན་ལ་དབང་བསྐུར་ན་ཆུ་ལ་བྲེས་འཇལ་བྱེད་བྱ་བ་དེ་འདི་འདྲ་ལ་ཟེར་བ་ཡིན་ཟེར།
-T484    ADV 0 1 ལ
-A484a   PronType T484 Dem
-T485    ADP 1 3 ར་
-A485a   Case T485 Ter
-T486    NOUN 3 9        མི་ངན་
-A486a   Number T486 Sing
-T487    ADP 9 11        ལ་
-A487a   Case T487 All
-T488    NOUN 11 15      དབང་
-A488a   Number T488 Sing
-T489    VERB 15 21      བསྐུར་
-A489a   Tense T489 Fut/Past
-T490    SCONJ 21 23     ན་
-A490a   Case T490 Loc
-T491    NOUN 23 26      ཆུ་
-A491a   Number T491 Coll
-T492    ADP 26 28       ལ་
-A492a   Case T492 All
-T493    NOUN 28 31      བྲེ
-A493a   Number T493 Sing
-T494    ADP 31 33       ས་
-A494a   Case T494 Agn
-T495    VERB 33 37      འཇལ་
-A495a   Tense T495 Pres
-T496    VERB 37 42      བྱེད་
-A496a   Tense T496 Pres
-T497    VERB 42 47      བྱ་བ་
-A497a   Tense T497 Fut
-A497b   VerbForm T497 Vnoun
-T498    DET 47 50       དེ་
-A498a   PronType T498 Dem
-T499    DET 50 54       འདི་
-A499a   PronType T499 Dem
-T500    NOUN 54 58      འདྲ་
-A500a   NounType T500 Rel
-T501    ADP 58 60       ལ་
-A501a   Case T501 All
-T502    VERB 60 66      ཟེར་བ་
-A502a   Tense T502 Fut/Pres
-A502b   VerbForm T502 Vnoun
-T503    AUX 66 70       ཡིན་
-T504    VERB 70 73      ཟེར
-T505    PUNCT 73 74     །
-R30     arg2 Arg1:T489 Arg2:T488
-R31     obl-arg Arg1:T489 Arg2:T486
-R34     aux Arg1:T495 Arg2:T496
-R37     obl-arg Arg1:T495 Arg2:T491
-R87     obl Arg1:T495 Arg2:T493
-R10     argcl Arg1:T497 Arg2:T495
-R32     aux Arg1:T502 Arg2:T503
-R33     argcl Arg1:T504 Arg2:T502
-R36     arg2 Arg1:T502 Arg2:T499
-~~~
-
+> I then went to see the lama, who asked, "Töpaga, why did you not return home?" ([Mila 15a](http://tibetanverbs.soas.ac.uk/~badw/#/mila/015a?focus=T2952))
