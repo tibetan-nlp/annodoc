@@ -2,7 +2,7 @@
 layout: entry
 title: Dependency grammar
 ---
-Our annotation guidelines follow the UD project in privileging content words over
+Our annotation guidelines follow the [Universal Dependencies](http://universaldependencies.org/) project in privileging content words over
 function words. Instead of linking a predicate to the function word (for example, the case
 marker) that marks its argument, we link the predicate to the content head word (for example,
 the head noun) of the argument. Function words then depend on the content words which they "modify".
@@ -19,6 +19,3 @@ A particular predicate might mark its agent with agentive case at one stage,
 and no case at another stage. Viewing predicate-argument annotation
 as a relation between content words allows us both to abstract over such differences and
 to describe them in a systematic way.
-
-
-
