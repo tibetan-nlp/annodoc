@@ -3,6 +3,19 @@ layout: entry
 title: arg2:lvc
 shortdef: the second argument of a verb, which together with it forms a complex predicate
 ---
+Like other languages of the region, Tibetan has a wealth of idiomatic light verb
+constructions. Usually these consist of a `NOUN` without any case marking followed
+by a semantically bleached `VERB`. Some such verbs are used with many different
+nouns to form different light verb constructions, whereas other verbs are
+limited to occur with only one or a small number of nouns.
+
+A satisfactory verb lexicon for Tibetan needs to include those `NOUN` + `VERB`
+collocations that convey fundamental verbal meanings in the language. Therefore,
+when feasible we ask annotators to explicitly encode a light verb construction
+by marking the noun with the subtyped relation `arg2:lvc`. The sub-type `lvc`
+stands for "light verb construction" and has precedent in
+[other UD treebanks](http://universaldependencies.org/ext-dep-index.html):
+Hungarian has `dobj:lvc`, while Persian and Turkish have `compound:lvc`.
 
 Here is a simple example of `arg2:lvc` with _mchi ma shor_ "to shed tears":
 ~~~ ann
