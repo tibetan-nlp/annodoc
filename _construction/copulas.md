@@ -1,7 +1,0 @@
----
-layout: entry
-title: Copulas 
----
-
-
-

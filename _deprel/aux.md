@@ -1,6 +1,6 @@
 ---
 layout: entry
-title: aux 
+title: aux
 shortdef: a verb which follows and functionally modifies the main verb
 ---
 The [`aux`](http://universaldependencies.org/u/dep/aux_.html)
@@ -9,11 +9,6 @@ We adhere to the [UD guidelines](http://universaldependencies.org/u/overview/syn
 regarding stacked auxiliaries:
 > ... multiple function words related to the same content word always appear as siblings, never in a nested structure, regardless of their interpretation. A typical case is that of auxiliary verbs, which never depend on each other.
 
-Modal verbs such as དགོས་ 'need to', ནུས་ 'able to', and འདོད་ 'want to'
-fall under this category when used after main verbs.
-
 When used in periphrastic constructions to mark tense or aspect,
 copulas (`x` and `x n`) also depend on main verbs or verbal nouns via
 the `aux` relation.
-
-
