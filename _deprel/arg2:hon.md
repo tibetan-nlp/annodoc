@@ -4,7 +4,7 @@ title: arg2:hon
 shortdef: the second argument of a verb, which functions to make the verb honorific
 ---
 Complex honorific verbs in Tibetan are formed by prepending an honorific `NOUN` -
-often a body part noun - to a `VERB`. We cannot yet formally distinguished these examples 
+often a body part noun - to a `VERB`. We cannot yet formally distinguished these examples
 from other `arg2` constructions. However, it is important to for them to be
 catalogued separately in case they should be included in the verb lexicon.
 
@@ -117,12 +117,3 @@ R17	aux Arg1:T2507 Arg2:T2509
 R18	obl-arg Arg1:T2507 Arg2:T2503
 ~~~
 > The lama smiled and replied, "I shall think over what you have said." ([Mila 14b](http://tibetanverbs.soas.ac.uk/~badw/#/mila/014b/focus=T2495))
-
-**Admin:** *Evaluate the following examples.*
-```
-/mila/011a?focus=T196
-/mila/012b?focus=T1238
-/mila/023a?focus=T8742
-/mila/023b?focus=T8925
-/mila/025a?focus=T10061
-```
