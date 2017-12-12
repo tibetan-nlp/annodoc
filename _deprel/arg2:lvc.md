@@ -17,6 +17,8 @@ stands for "light verb construction" and has precedent in
 [other UD treebanks](http://universaldependencies.org/ext-dep-index.html):
 Hungarian has `dobj:lvc`, while Persian and Turkish have `compound:lvc`.
 
+For detailed examples of `arg2:lvc`, see below. For a list of all cases, see [arg2lvcs](/lim-annodoc/arg2lvcs).
+
 Here is a simple example of `arg2:lvc` with _mchi ma shor_ "to shed tears":
 ~~~ ann
 ང་རང་ཡང་མཆི་མ་མང་པོ་ཤོར།

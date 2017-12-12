@@ -8,6 +8,8 @@ In a sequence of two or more adjacent verbs, if the verbs together form a
 the `aux:lvc` relation. In this scenario, all arguments and obliques should
 depend on the first verb.
 
+For detailed examples of `aux:lvc`, see below. For a list of all cases, see [auxlvcs](/lim-annodoc/auxlvcs).
+
 In the following example, _log 'gro_ "to return-go" forms a complex predicate.
 
 ~~~ ann
