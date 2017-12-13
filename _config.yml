@@ -32,5 +32,8 @@ collections:
   construction:
     output: true
     permalink: /construction/:name/
+  milarepa:
+    output: true
+    permalink: /milarepa/:path/
 
 theme: jekyll-theme-tactile
