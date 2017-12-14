@@ -590,6 +590,9 @@ a.doclink {
 }
 
 /* lim-annodoc additions */
+g.highlight rect {
+  fill: #d3d3d3;
+} 
 p.shortdef {
   margin-top: 0.5rem;
   margin-left: 1.5rem;
