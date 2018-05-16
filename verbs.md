@@ -4,9 +4,9 @@ title: Verbs
 ---
 Here is a list of verb lemmas with associated numeric ids as
 extracted from Nathan Hill's verb dictionary. See 
-[[this github repo]](https://github.com/tibetan-nlp/lexicon-of-tibetan-verb-stems)
-for more details.
+[github](https://github.com/tibetan-nlp/lexicon-of-tibetan-verb-stems)
+for further details.
 
 {% for r in site.verb %}
-- [{{ r.vid }}]({{ r.url | remove_first:'/' }}): {{ r.title }}
+- [{{ r.vid | slice: 5 }}]({{ r.url | remove_first:'/' }}): {{ r.title }}
 {% endfor %}
