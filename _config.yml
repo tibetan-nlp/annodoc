@@ -34,7 +34,7 @@ collections:
     permalink: /construction/:name/
   verb:
     output: true
-    permalink: /verb/:path/
+    permalink: /verb/:name/
   milarepa:
     output: true
     permalink: /milarepa/:path/
