@@ -7,7 +7,7 @@ extracted from Nathan Hill's verb dictionary. See
 [github](https://github.com/tibetan-nlp/lexicon-of-tibetan-verb-stems)
 for further details.
 
-{% assign verbs = site.verb | sort: 'count' | reverse %}
+{% assign verbs = site.verb | sort: 'vcount' | reverse %}
 {% for r in verbs %}
-- [{{ r.vid }}]({{ r.url | remove_first:'/' }}): {{ r.title }} ({{ r.count }})
+- [{{ r.vid }}]({{ r.url | remove_first:'/' }}): {{ r.title }} ({{ r.vcount }})
 {% endfor %}
