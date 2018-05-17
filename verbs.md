@@ -8,5 +8,5 @@ extracted from Nathan Hill's verb dictionary. See
 for further details.
 
 {% for r in site.verb %}
-- [{{ r.vid }}]({{ r.url | remove_first:'/' }}): {{ r.title }}
+- [{{ r.vid }}]({{ r.url | remove_first:'/' }}): {{ r.title }} ({{ r.count }})
 {% endfor %}
