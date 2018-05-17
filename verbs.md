@@ -9,5 +9,5 @@ for further details.
 
 {% assign verbs = site.verb | sort: 'vcount' % }
 {% for r in verbs %}
-- [{{ r.vid }}]({{ r.url | remove_first:'/' }}): {{ r.title }} ({{ r.vcount }})
+- [{{ r.vid }}]({{ r.url | remove_first:'/' }}): {{ r.title }}
 {% endfor %}
