@@ -23,4 +23,5 @@ Please see the following pages for further details.
     - [Annotation principles](/lim-annodoc/principles)
     - [Dependency relations](/lim-annodoc/deprels)
     - [Linguistic constructions](/lim-annodoc/constructions)
+    - [Verb lemmas](/lim-annodoc/verbs)
 
