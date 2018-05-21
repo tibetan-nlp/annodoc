@@ -32,6 +32,9 @@ collections:
   construction:
     output: true
     permalink: /construction/:name/
+  frame:
+    output: true
+    permalink: /verb/:path/
   verb:
     output: true
     permalink: /verb/:path/
