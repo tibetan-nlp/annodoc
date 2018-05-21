@@ -1,0 +1,39 @@
+---
+layout: entry
+title: arg1 arg2 obl
+vcount: 34
+---
+- <a target='blank' href='/lim-annodoc/verb/0640/'>Hill:0640</a>: སྙམ་
+- <a target='blank' href='/lim-annodoc/verb/1075/'>Hill:1075</a>: སྤྲུལ་
+- <a target='blank' href='/lim-annodoc/verb/1558/'>Hill:1558</a>: ཟ་√2
+- <a target='blank' href='/lim-annodoc/verb/0661/'>Hill:0661</a>: སྙོད་√1
+- <a target='blank' href='/lim-annodoc/verb/1231/'>Hill:1231</a>: འབོད་
+- <a target='blank' href='/lim-annodoc/verb/0366/'>Hill:0366</a>: སྒོ་
+- <a target='blank' href='/lim-annodoc/verb/0893/'>Hill:0893</a>: འདོན་
+- <a target='blank' href='/lim-annodoc/verb/1869/'>Hill:1869</a>: གསོལ་
+- <a target='blank' href='/lim-annodoc/verb/1240/'>Hill:1240</a>: འབྱིན་
+- <a target='blank' href='/lim-annodoc/verb/0746/'>Hill:0746</a>: སྟོན་
+- <a target='blank' href='/lim-annodoc/verb/1509/'>Hill:1509</a>: ཞུ་√1
+- <a target='blank' href='/lim-annodoc/verb/0488/'>Hill:0488</a>: ཆུད་
+- <a target='blank' href='/lim-annodoc/verb/0818/'>Hill:0818</a>: འཐོར་√1
+- <a target='blank' href='/lim-annodoc/verb/0638/'>Hill:0638</a>: སྙད་
+- <a target='blank' href='/lim-annodoc/verb/0816/'>Hill:0816</a>: འཐོབ་
+- <a target='blank' href='/lim-annodoc/verb/0608/'>Hill:0608</a>: ཉོ་
+- <a target='blank' href='/lim-annodoc/verb/1836/'>Hill:1836</a>: སློང་
+- <a target='blank' href='/lim-annodoc/verb/1369/'>Hill:1369</a>: སྨྲ་
+- <a target='blank' href='/lim-annodoc/verb/0883/'>Hill:0883</a>: འདེགས་
+- <a target='blank' href='/lim-annodoc/verb/0085/'>Hill:0085</a>: སྐྱོན་√2
+- <a target='blank' href='/lim-annodoc/verb/0181/'>Hill:0181</a>: འཁྲིད་√1
+- <a target='blank' href='/lim-annodoc/verb/1863/'>Hill:1863</a>: གསོད་
+- <a target='blank' href='/lim-annodoc/verb/0511/'>Hill:0511</a>: འཆད་√1
+- <a target='blank' href='/lim-annodoc/verb/1503/'>Hill:1503</a>: རྫོང་
+- <a target='blank' href='/lim-annodoc/verb/0412/'>Hill:0412</a>: ངོམས་
+- <a target='blank' href='/lim-annodoc/verb/0918/'>Hill:0918</a>: འདྲོང་
+- <a target='blank' href='/lim-annodoc/verb/1329/'>Hill:1329</a>: མྱོང་√2
+- <a target='blank' href='/lim-annodoc/verb/1858/'>Hill:1858</a>: གསོག་√1
+- <a target='blank' href='/lim-annodoc/verb/1388/'>Hill:1388</a>: རྩེ་
+- <a target='blank' href='/lim-annodoc/verb/1385/'>Hill:1385</a>: རྩིག་
+- <a target='blank' href='/lim-annodoc/verb/1297/'>Hill:1297</a>: སྦྱོར་
+- <a target='blank' href='/lim-annodoc/verb/1481/'>Hill:1481</a>: འཛུགས་
+- <a target='blank' href='/lim-annodoc/verb/0074/'>Hill:0074</a>: སྐྱེད་
+- <a target='blank' href='/lim-annodoc/verb/0695/'>Hill:0695</a>: གཏོང་√1

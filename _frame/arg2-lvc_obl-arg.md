@@ -1,0 +1,32 @@
+---
+layout: entry
+title: arg2:lvc obl:arg
+vcount: 27
+---
+- <a target='blank' href='/lim-annodoc/verb/0231/'>Hill:0231</a>: གླན་
+- <a target='blank' href='/lim-annodoc/verb/1677/'>Hill:1677</a>: རེག་
+- <a target='blank' href='/lim-annodoc/verb/0850/'>Hill:0850</a>: གདུང་√1
+- <a target='blank' href='/lim-annodoc/verb/0619/'>Hill:0619</a>: མཉམ་
+- <a target='blank' href='/lim-annodoc/verb/1149/'>Hill:1149</a>: འཕྲེང་
+- <a target='blank' href='/lim-annodoc/verb/0482/'>Hill:0482</a>: ཆགས་√1
+- <a target='blank' href='/lim-annodoc/verb/0697/'>Hill:0697</a>: གཏོད་√1
+- <a target='blank' href='/lim-annodoc/verb/1465/'>Hill:1465</a>: མཛད་
+- <a target='blank' href='/lim-annodoc/verb/1869/'>Hill:1869</a>: གསོལ་
+- <a target='blank' href='/lim-annodoc/verb/1397/'>Hill:1397</a>: སྩོལ་
+- <a target='blank' href='/lim-annodoc/verb/0046/'>Hill:0046</a>: སྐུར་
+- <a target='blank' href='/lim-annodoc/verb/1632/'>Hill:1632</a>: ཡོད་
+- <a target='blank' href='/lim-annodoc/verb/1437/'>Hill:1437</a>: འཚལ་√2
+- <a target='blank' href='/lim-annodoc/verb/0375/'>Hill:0375</a>: སྒྱུར་
+- <a target='blank' href='/lim-annodoc/verb/0260/'>Hill:0260</a>: བགྱིད་
+- <a target='blank' href='/lim-annodoc/verb/1436/'>Hill:1436</a>: འཚལ་√1
+- <a target='blank' href='/lim-annodoc/verb/1517/'>Hill:1517</a>: ཞེན་
+- <a target='blank' href='/lim-annodoc/verb/0341/'>Hill:0341</a>: རྒྱག་√1
+- <a target='blank' href='/lim-annodoc/verb/1659/'>Hill:1659</a>: རང་
+- <a target='blank' href='/lim-annodoc/verb/0890/'>Hill:0890</a>: འདོགས་
+- <a target='blank' href='/lim-annodoc/verb/1856/'>Hill:1856</a>: གསོ་√1
+- <a target='blank' href='/lim-annodoc/verb/1225/'>Hill:1225</a>: འབེབས་
+- <a target='blank' href='/lim-annodoc/verb/1399/'>Hill:1399</a>: བརྩེ་√1
+- <a target='blank' href='/lim-annodoc/verb/1716/'>Hill:1716</a>: ལེན་
+- <a target='blank' href='/lim-annodoc/verb/1315/'>Hill:1315</a>: མེད་√1
+- <a target='blank' href='/lim-annodoc/verb/1168/'>Hill:1168</a>: བྱེད་
+- <a target='blank' href='/lim-annodoc/verb/0695/'>Hill:0695</a>: གཏོང་√1
