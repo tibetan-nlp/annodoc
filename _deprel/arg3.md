@@ -5,6 +5,8 @@ shortdef: the third argument or "indirect object" of a verb, which cannot be obl
 ---
 When a verb has two unmarked arguments in addition to having an `arg1` argument, then we classify it as a three-place predicate with no obliques, and the third argument is marked `arg3`. Therefore, `arg3` might be seen as functionally equivalent to the UD relation [`iobj`](http://universaldependencies.org/u/dep/iobj.html), but is preferred as the less opinionated label.
 
+arg3ནི་ཕྲད་མེད་པ་དང་བྱེད་པ་པོ་མ་ཡིན་པ་སོགས་arg2དང་འདྲ་བོ་ཡོད་ཀྱང་དོན་དེའི་ནང་གིarg2མིང་ཚིག་ཕྱི་མ་དེས་གྲུབ་ཟིན་པ་ཞིག་སྟེ། དཔེར་ན། ཡི་གེ་རྒྱུས་ཡོད་པ་ལྟ་བུར་མཚོན་ན་རྒྱུས་ཡོད་པ་arg2དང་ཡི་གེ་རྒྱུས་ཡོད་པ་ནི་arg3ཡིན།
+
 The instances of `arg3` that we have found fall into two types. In the first type, a normally oblique argument - for example, the recipient of a verb of transfer - occurs without its usual oblique marking.
 ~~~ ann
 ངེད་མ་སྨད་ཨ་ཁུ་དང་ཨ་ནེས་གཤའ་མ་རང་མ་བཅོལ་

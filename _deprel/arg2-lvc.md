@@ -19,6 +19,8 @@ Hungarian has `dobj:lvc`, while Persian and Turkish have `compound:lvc`.
 
 For detailed examples of `arg2:lvc`, see below. For a list of all cases, see [arg2lvcs](/lim-annodoc/arg2lvcs).
 
+ཕྲད་མེད་པ་དང་བྱེད་པ་པོ་མ་ཡིན་པ་སོགས་arg2དང་ཕལ་ཆེར་མཚུངས་ཀྱང་བྱ་ཚིག་དང་མིང་ཚིག་གཉིས་ཚོགས་ན་དོན་དག་གཞན་ཞིག་ཡོད་པ་སྟེ། དཔེར་ན། དོགས་པ་ཟ། ཁ་འབྲལ། ལྟ་བུ། གཉེན་སྒྲིག་བྱེད། མཆི་མ་ཤོར། ཞེ་སྣང་སྐྱེ། ལྟ་བུ། གོང་གི་དཔེར་བརྗོད་རྣམས་ལས་སྐབས་འགར་བྱ་ཚིག་ནུས་པ་ཆེ་ཞིང་། སྐབས་འགར་མིང་ཚིག་ནུས་པ་ཆེ་ན་ཡང་། དེ་དག་གཅིག་པ་ལྟར་སྣང་གི་ཡོད་པས། ང་ཚོས་དེ་དག་བྱ་ཚིག་གི་ཚིག་མཛོད་དུ་འཇུག་གི་ཡོད།
+
 Here is a simple example of `arg2:lvc` with _mchi ma shor_ "to shed tears":
 ~~~ ann
 ང་རང་ཡང་མཆི་མ་མང་པོ་ཤོར།

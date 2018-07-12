@@ -7,6 +7,8 @@ shortdef: an oblique marked nominal, which is considered an argument of the verb
 is used for nominals with oblique case-marking which are
 nevertheless considered core verbal arguments.
 
+བྱ་ཚིག་དང་འབྲེལ་ཆེ་བའི་དོན་དག་ལ་obl:argའབྲི་དགོས་ཤིང་། འབྲེལ་བ་དེ་ཙམ་མེད་ན་obl འབྲི་ན་འཐུས། དེ་ཉིད་ཀྱི་ཕྲད་ཡོད་ན་obl:arg འབྲི་དགོས་པར་སྣང་། དཔེར་ན་མི་དར་མར་གྱུར་ལྟ་བུ། 
+
 A typical case of `obl:arg` would be to mark the third required argument
 of verbs of transfer, such as _sprod_ "to give" and _'dzugs_ "to set down (?)".
 
