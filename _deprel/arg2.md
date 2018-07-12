@@ -1,7 +1,7 @@
 ---
 layout: entry
 title: arg2
-shortdef: the second argument or "object" of a verb, which cannot be oblique
+shortdef: the second argument or "object" of a verb which cannot be oblique
 ---
 ཕྲད་མེད་པ་དང་བྱེད་པ་པོ་མ་ཡིན་པ་དེ་Arg2ཡིན་ལ། དེ་བྱ་ཚིག་དང་འབྲེལ་བ་དམ་པོ་ཡོད་དགོས།
 
