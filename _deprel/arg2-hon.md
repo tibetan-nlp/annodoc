@@ -3,12 +3,12 @@ layout: entry
 title: arg2:hon
 shortdef: the second argument of a verb, which functions to make the verb honorific
 ---
+arg2:honནི་ཕྲད་མེད་པ་དང་བྱེད་པ་པོ་མ་ཡིན་པ་སོགས་arg2 དང་ཕལ་ཆེར་མཚུངས་ཀྱང་མིང་ཚིག་དང་བྱ་ཚིག་གཉིས་ཀ་ཞེ་ས་ཡིན་པའམ་བྱ་ཚིག་དང་མིང་ཚིག་གང་རུང་ཞེ་ས་ཡིན་དགོས། དཔེར་ན། སྐུ་གཤེགས། ཞལ་མཇལ། ཐུགས་སྐྲག ཐུགས་ཁྲོས། ཞལ་འཛུམ།
+
 Complex honorific verbs in Tibetan are formed by prepending an honorific `NOUN` -
 often a body part noun - to a `VERB`. We cannot yet formally distinguished these examples
 from other `arg2` constructions. However, it is important to for them to be
 catalogued separately in case they should be included in the verb lexicon.
-
-arg2:honནི་ཕྲད་མེད་པ་དང་བྱེད་པ་པོ་མ་ཡིན་པ་སོགས་arg2 དང་ཕལ་ཆེར་མཚུངས་ཀྱང་མིང་ཚིག་དང་བྱ་ཚིག་གཉིས་ཀ་ཞེ་ས་ཡིན་པའམ་བྱ་ཚིག་དང་མིང་ཚིག་གང་རུང་ཞེ་ས་ཡིན་དགོས། དཔེར་ན། སྐུ་གཤེགས། ཞལ་མཇལ། ཐུགས་སྐྲག ཐུགས་ཁྲོས། ཞལ་འཛུམ།
 
 In the following example, we code the honorific noun _sku_ "body" as a subtyped
 `arg2:hon` of the verb _gshegs_ "to depart/die". This distinguishes such cases from other

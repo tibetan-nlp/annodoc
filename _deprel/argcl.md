@@ -3,9 +3,9 @@ layout: entry
 title: argcl
 shortdef: the clausal argument of a verb
 ---
-The relation `argcl` subsumes two dependency relations from the UD project: [`ccomp`](http://universaldependencies.org/u/dep/ccomp.html) and [`xcomp`](http://universaldependencies.org/u/dep/xcomp.html). `ccomp` is intended for clausal complements that have overt subjects - for example, the complement clause in _He said that I would leave_ - while `xcomp` is intended for clausal complements with obligatorily covert controlled subjects. Since Tibetan regularly drops pronouns, and in particular subjects, this distinction was difficult for annotators to make. Therefore we decided to merge the two relations into a single relation called `argcl`.
-
 བྱ་ཚིག་ཐ་དད་པ་གཉིས་ལས་argclགྲུབ། དཔེར་ན། ཁྱོད་ལ་ཡུལ་མིས་སྡུག་པོ་ཅི་འདྲ་བཏང་གསུང་ལྟ་བུར་མཚོན་ན། བཏང་དང་གསུང་གཉིས་ལས་argcl གྲུབ་པ་ཡིན། ཡིན་ཡང་། འགྲོ་གི་ཡིན་ལྟ་བུ་ནི་argclམ་ཡིན་ཏེ་ཡིན་གྱིས་འགྲོ་ལ་རོགས་པ་བྱེད་པ་ཙམ་ལས་བྱ་ཚིག་གཙོ་བོ་མ་ཡིན་པའི་ཕྱིར། ཡང་། བླ་མའི་ཞལ་ཏ་ལ་ཐོས་པ་དགའ་ཁྱོད་ལོག་མི་འགྲོ་བ་ཅི་ཡིན་གསུང་ཞེས་པ་ལྟ་བུར་མཚོན་ན། ལོག་བྱ་ཚིག་གཙོ་བོ་ཡིན་པས་ལོག་དང་གསུང་གཉིས་ལས་argcl གྲུབ་པ་ཡིན།
+
+The relation `argcl` subsumes two dependency relations from the UD project: [`ccomp`](http://universaldependencies.org/u/dep/ccomp.html) and [`xcomp`](http://universaldependencies.org/u/dep/xcomp.html). `ccomp` is intended for clausal complements that have overt subjects - for example, the complement clause in _He said that I would leave_ - while `xcomp` is intended for clausal complements with obligatorily covert controlled subjects. Since Tibetan regularly drops pronouns, and in particular subjects, this distinction was difficult for annotators to make. Therefore we decided to merge the two relations into a single relation called `argcl`.
 
 On the face of it, `argcl` constructions can look similar to complex verb constructions, however, they should not be confused. In the following example, _gsung_ "to say" has its own arguments, completely distinct from the arguments of the verb that precedes it.
 ~~~ ann
