@@ -2,8 +2,8 @@
 layout: entry
 title: arg1
 shortdef: the first argument or "subject" of a verb, which may be agentive or unmarked, but not oblique
-arg1ནི་བྱེད་པ་པོ་དང་བྱ་ཚིག་ལས་གྲུབ་ཅིང་།     བྱེད་པ་པོ་གཅིག་ལ་བྱ་ཚིག་གཉིས་སམ་གསུམ་ཡོད་ཚེ་བྱེད་པ་པོ་དང་ཐག་ཉེ་ཤོས་སམ་འབྲེལ་ཆེ་ཤོས་ཀྱི་བྱ་ཚིག་དེ་དང་བྱེད་པ་པོ་ལས་arg1 གྲུབ་པ་ཡིན།
 
+arg1ནི་བྱེད་པ་པོ་དང་བྱ་ཚིག་ལས་གྲུབ་ཅིང་།     བྱེད་པ་པོ་གཅིག་ལ་བྱ་ཚིག་གཉིས་སམ་གསུམ་ཡོད་ཚེ་བྱེད་པ་པོ་དང་ཐག་ཉེ་ཤོས་སམ་འབྲེལ་ཆེ་ཤོས་ཀྱི་བྱ་ཚིག་དེ་དང་བྱེད་པ་པོ་ལས་arg1 གྲུབ་པ་ཡིན།
 `arg1` links the "subject" to the verb. It is often an agent, or the closest argument there is for a particular verb to an agent. It can be marked with agentive case or it can be unmarked, and it is roughly equivalent to the UD relation [`nsubj`](http://universaldependencies.org/u/dep/nsubj.html), but is preferred as the less opinionated label.
 
 The following example shows an agentive marked `arg1` of a transitive verb:
