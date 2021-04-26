@@ -1,4 +1,8 @@
-Lexicography in Motion Annotation Documentation
-===============================================
+Annotation Docs
+===============
 
-See: <https://tibetan-nlp.github.io/lim-annodoc/>
+Eventually, this repository may contain useful documentation.
+For the time being, we are just using it to discuss issues
+relating to Tibetan annotation.
+
+
